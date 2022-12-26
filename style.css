@@ -32,6 +32,14 @@ label {
     border-style: dashed;
 }
 
+.botao {
+    width: 40px;
+    height: 40px;
+    background-color: #94be7ce0;
+    color: white;
+    border-style: hidden;
+}
+
 p {
     margin: 10px;
 }
