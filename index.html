@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculador</title>
+</head>
+<body>
+    <h1>Calculador</h1>
+    <input type="button" value="5%" onclick="porcento5()">
+    <input type="button" value="3%" onclick="porcento3()">
+    <label for="entrada">Valor:</label>
+    <input type="number" id="entrada" onchange="soma()">
+    <p id="retorno"></p>
+    <script>
+        var total = 0
+        var registro = []
+        
+        function soma() {
+            var entrada = window.document.getElementById('entrada')
+            var retorno = window.document.getElementById('retorno')
+            var valor = parseFloat(entrada.value)
+
+            total += valor
+            registro.push(valor.toFixed(2))
+            
+            retorno.innerText = ''
+            for (let index in registro) {
+                retorno.innerHTML += `R&#36; ${registro[index]}<br>`
+            }
+            retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}`
+            entrada.value = ''
+        }
+
+        function porcento5() {
+            var total5 = total - (total*5/100)
+            document.body.innerHTML += `<p>O valor final com 5% de desconto é R&#36 ${total5.toFixed(2)}</p>`
+        }
+
+        function porcento3() {
+            var total3 = total - (total*3/100)
+            document.body.innerHTML += `<p>O valor final com 3% de desconto é R&#36 ${total3.toFixed(2)}</p>`
+        }
+    </script>
+</body>
+</html>
