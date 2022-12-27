@@ -6,49 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Calculador</title>
+    <title>Plantas</title>
 </head>
 <body>
-    <h1>Calculador</h1>
-    <input type="button" class="botao" value="5%" onclick="porcento5()">
-    <input type="button" class="botao" value="3%" onclick="porcento3()">
-    <input type="button" class="botao" value="X" onclick="multiplicação()">
-    <label for="entrada">Valor:</label>
-    <input type="number" id="entrada" onchange="soma()">
-    <p id="retorno"></p>
-    <script>
-        var total = 0
-        var registro = []
-        
-        function soma() {
-            var entrada = window.document.getElementById('entrada')
-            var retorno = window.document.getElementById('retorno')
-            var valor = parseFloat(entrada.value)
-
-            total += valor
-            registro.push(valor.toFixed(2))
-            
-            retorno.innerText = ''
-            for (let index in registro) {
-                retorno.innerHTML += `R&#36; ${registro[index]}<br>`
-            }
-            retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}`
-            entrada.value = ''
-        }
-
-        function porcento5() {
-            var total5 = total - (total*5/100)
-            document.body.innerHTML += `<p>O valor final com 5% de desconto é R&#36 ${total5.toFixed(2)}</p>`
-        }
-
-        function porcento3() {
-            var total3 = total - (total*3/100)
-            document.body.innerHTML += `<p>O valor final com 3% de desconto é R&#36 ${total3.toFixed(2)}</p>`
-        }
-
-        function multiplicação() {
-
-        }
-    </script>
+    <header>
+        <h1>Plantas</h1>
+    </header>
+    <nav>
+        <ul>
+            <li class="navItem">Plantas para ambiente interno (Se há luz)</li>
+            <li class="navItem">Plantas para ambiente interno (Sombra total)</li>
+            <li class="navItem">Plantas para forração</li>
+            <li class="navItem">Plantas para jardim (Ambiente de sol)</li>
+            <li class="navItem">Plantas para jardim (Ambiente de meia sombra)</li>
+            <li class="navItem">Plantas usadas como cerca viva</li>
+            <li class="navItem">Plantas pendentes de sol</li>
+            <li class="navItem">Plantas pendentes de sombra</li>
+            <li class="navItem">Pantas utilizadas em calçadas</li>
+            <li class="navItem">Plantas para Área de piscina</li>
+            <li class="navItem">Plantas para presente</li>
+            <li class="navItem">Plantas que aguentão vento</li>
+        </ul>
+    </nav>
 </body>
 </html>

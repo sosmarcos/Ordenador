@@ -1,3 +1,18 @@
+@font-face {
+    font-family: 'hina';
+    src: url(fonts/HinaMincho-Regular.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'island';
+    src: url(fonts/IslandMoments-Regular.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'tenor';
+    src: url(fonts/TenorSans-Regular.ttf) format('TrueType');
+}
+
 * {
     padding: 0px;
 }
@@ -14,12 +29,25 @@ body > label, input, #retorno {
     font-size: 1.1em;
 }
 
+header {
+    margin: 0px;
+}
+
+nav {
+    margin: 0px;
+}
+
 h1 {
-    margin: 0px 0px 10px 0px;
-    padding: 10px 20px;
+    margin: 0px;
+    padding: 0px 20px;
     background-image: linear-gradient(90deg, #609541, #60a433);
     color: white;
     box-shadow: 0px 1px 1px #00000045;
+    font: normal 5.5em 'island';
+}
+
+.navItem {
+    font: normal 1.3em 'hina';
 }
 
 label {
