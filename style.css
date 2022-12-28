@@ -46,8 +46,37 @@ h1 {
     font: normal 5.5em 'island';
 }
 
+ul {
+    margin: 6px;
+    display: inline-grid;
+    background-image: linear-gradient(90deg, #609541, #60a433);
+    box-shadow: 2px 3px 4px 0px #00000033;
+}
+
 .navItem {
-    font: normal 1.3em 'hina';
+    display: contents;
+    font: normal 1.5em 'hina';
+    list-style-type: none;
+}
+
+.navItem > a {
+    padding: 3px 40px;
+    min-width: 170px;
+    color: white;
+    text-decoration: none;
+}
+
+.navItem > a:hover {
+    background-color: #91b867;
+    
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.navItem > a:active {
+    background-color: #91b867;
+    transition-duration: 0.2s;
+    box-shadow: inset 0px 0px 4px 0px #0000009e;
 }
 
 label {
