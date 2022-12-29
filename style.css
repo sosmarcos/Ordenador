@@ -31,25 +31,25 @@ body > label, input, #retorno {
 
 header {
     margin: 0px;
+    background-image: linear-gradient(90deg, #609541, #60a433);
 }
 
 nav {
     margin: 0px;
 }
 
-h1 {
+h1.cabeça {
     margin: 0px;
     padding: 0px 20px;
-    background-image: linear-gradient(90deg, #609541, #60a433);
     color: white;
     box-shadow: 0px 1px 1px #00000045;
     font: normal 5.5em 'island';
 }
 
 ul {
-    margin: 6px;
+    margin: 0px;
     display: inline-grid;
-    background-image: linear-gradient(90deg, #609541, #60a433);
+    background-image: linear-gradient(90deg, #325d85, #3376a4);
     box-shadow: 2px 3px 4px 0px #00000033;
 }
 
@@ -67,14 +67,14 @@ ul {
 }
 
 .navItem > a:hover {
-    background-color: #91b867;
+    background-color: #678ab8;
     
     padding-left: 50px;
     padding-right: 30px;
 }
 
 .navItem > a:active {
-    background-color: #91b867;
+    background-color: #678ab8;
     transition-duration: 0.2s;
     box-shadow: inset 0px 0px 4px 0px #0000009e;
 }
