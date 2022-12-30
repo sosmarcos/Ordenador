@@ -36,6 +36,7 @@ header {
 
 nav {
     margin: 0px;
+    background-image: linear-gradient(90deg, #609541, #60a433);
 }
 
 h1.cabeça {
@@ -48,18 +49,35 @@ h1.cabeça {
 
 ul {
     margin: 0px;
-    display: inline-grid;
+    display: none;
+    position: absolute;
     background-image: linear-gradient(90deg, #325d85, #3376a4);
     box-shadow: 2px 3px 4px 0px #00000033;
 }
 
+.navButton {
+    background: transparent;
+    color: white;
+    border: none;
+    padding: 2px 25px 8px 25px;
+    margin: 5px;
+    border-radius: 50px;
+    font: normal 1.7em 'hina';
+}
+
+.navButton:active {
+    background-color: #7db45d;
+    box-shadow: inset 1px 1px 3px 0px #00000061;
+    transition-duration: 0.1s;
+}
+
 .navItem {
-    display: contents;
     font: normal 1.5em 'hina';
     list-style-type: none;
 }
 
 .navItem > a {
+    display: block;
     padding: 3px 40px;
     min-width: 170px;
     color: white;
