@@ -13,20 +13,34 @@
         <h1 class="cabeça">Plantas</h1>
     </header>
     <nav>
-        <input type="button" value="Menu" class="navButton" onclick="menuExpand()">
+        <input type="button" value="Categorias" class="navButton" onclick="menuExpand()">
+        <input type="button" value="Calculadora" class="navButton" onclick="sectionExpand('calculadora')">
         <ul id="navMenu">
-            <li class="navItem"><a href="plantas_internas.html">Internas</a></li>
-            <li class="navItem"><a href="#">Jardins</a></li>
-            <li class="navItem"><a href="#">Cercas vivas</a></li>
-            <li class="navItem"><a href="#">Pendentes</a></li>
-            <li class="navItem"><a href="#">Calçadas</a></li>
-            <li class="navItem"><a href="#">Piscinas</a></li>
-            <li class="navItem"><a href="#">Presentes</a></li>
-            <li class="navItem"><a href="#">Vento</a></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'internas')">Internas</div></li>
+            <li class="navItem"><div class="navItem">Jardins</div></li>
+            <li class="navItem"><div class="navItem">Cercas vivas</div></li>
+            <li class="navItem"><div class="navItem">Pendentes</div></li>
+            <li class="navItem"><div class="navItem">Calçadas</div></li>
+            <li class="navItem"><div class="navItem">Piscinas</div></li>
+            <li class="navItem"><div class="navItem">Presentes</div></li>
+            <li class="navItem"><div class="navItem">Vento</div></li>
         </ul>
     </nav>
     <main>
-        <a href="calculadora.html">Calculador</a>
+        <!--<a href="calculadora.html">Calculador</a>-->
+        <section id="calculadora">
+            <input type="button" class="botao" value="5%" onclick="porcento5()">
+            <input type="button" class="botao" value="3%" onclick="porcento3()">
+            <input type="button" class="botao" value="X" onclick="multiplicação()">
+            <label for="entrada">Valor:</label>
+            <input type="number" id="entrada" onchange="soma()">
+            <p id="retorno"></p>
+        </section>
+        <section id="plantas">
+            <article id="internas">
+                <h1>Plantas para ambientes internos</h1>
+            </article>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>

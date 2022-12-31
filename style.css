@@ -19,6 +19,7 @@
 
 body {
     margin: 0px;
+    background-image: linear-gradient(90deg, #c5c3c3, #c5ccc7);
 }
 
 body > label, input, #retorno {
@@ -37,6 +38,18 @@ header {
 nav {
     margin: 0px;
     background-image: linear-gradient(90deg, #609541, #60a433);
+}
+
+main {
+    max-width: 900px;
+    min-height: 500px;
+    margin: 0px auto;
+    padding: 20px;
+    background-color: white;
+}
+
+section#calculadora {
+    display: none;
 }
 
 h1.cabeça {
@@ -59,24 +72,29 @@ ul {
     background: transparent;
     color: white;
     border: none;
-    padding: 2px 25px 8px 25px;
-    margin: 5px;
+    padding: 0px 29px 1px 25px;
+    margin: 0px 0px 5px 5px;
     border-radius: 50px;
-    font: normal 1.7em 'hina';
+    font: normal 1.5em 'hina';
+}
+
+.navButton:hover {
+    background-color: #7db45d;
+    transition-duration: 0.2s;
 }
 
 .navButton:active {
-    background-color: #7db45d;
+    background-color: #cdedba;
     box-shadow: inset 1px 1px 3px 0px #00000061;
-    transition-duration: 0.1s;
+    transition-duration: 0.5s;
 }
 
-.navItem {
+li.navItem {
     font: normal 1.5em 'hina';
     list-style-type: none;
 }
 
-.navItem > a {
+div.navItem {
     display: block;
     padding: 3px 40px;
     min-width: 170px;
@@ -84,14 +102,13 @@ ul {
     text-decoration: none;
 }
 
-.navItem > a:hover {
+div.navItem:hover {
     background-color: #678ab8;
-    
     padding-left: 50px;
     padding-right: 30px;
 }
 
-.navItem > a:active {
+div.navItem:active {
     background-color: #678ab8;
     transition-duration: 0.2s;
     box-shadow: inset 0px 0px 4px 0px #0000009e;

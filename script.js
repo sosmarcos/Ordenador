@@ -37,3 +37,10 @@ function menuExpand() {
     else {menu.style.display = 'block'}
     
 }
+
+function sectionExpand(section, article='') {
+    var sect = window.document.getElementById(section)
+    sect.style.display = 'block'
+
+    if (article)
+}
