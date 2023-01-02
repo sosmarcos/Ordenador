@@ -39,12 +39,40 @@ function menuExpand() {
 }
 
 function sectionExpand(section, article='') {
-    var sect = window.document.getElementById(section)
-    sect.style.display = 'block'
+    var sectPlantas = window.document.getElementById('plantas')
+    var sectCalculo = window.document.getElementById('calculadora')
 
-    if (article) {}
-}
+    if (section == 'plantas') {
+        sectPlantas.style.display = 'block'
+        sectCalculo.style.display = 'none'
+    } else {
+        sectCalculo.style.display = 'block'
+        sectPlantas.style.display = 'none'
+    }
 
-function sectionRetract() {
-    
+    if (article) {
+        var menu = window.document.getElementById('navMenu')
+        var arct
+        var categorias = [
+            'internas',
+            'jardins',
+            'forracao',
+            'cercas',
+            'pendentes',
+            'calcadas',
+            'piscinas',
+            'presentes',
+            'vento'
+        ]
+        menu.style.display = 'none'
+
+        for (let index in categorias) {
+            arct = window.document.getElementById(categorias[index])
+            if (categorias[index] == article) {
+                arct.style.display = 'block'
+            } else {
+                arct.style.display = 'none'
+            }
+        }
+    }
 }

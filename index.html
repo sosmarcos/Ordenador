@@ -17,18 +17,18 @@
         <input type="button" value="Calculadora" class="navButton" onclick="sectionExpand('calculadora')">
         <ul id="navMenu">
             <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'internas')">Internas</div></li>
-            <li class="navItem"><div class="navItem">Jardins</div></li>
-            <li class="navItem"><div class="navItem">Forração</div></li>
-            <li class="navItem"><div class="navItem">Cercas vivas</div></li>
-            <li class="navItem"><div class="navItem">Pendentes</div></li>
-            <li class="navItem"><div class="navItem">Calçadas</div></li>
-            <li class="navItem"><div class="navItem">Piscinas</div></li>
-            <li class="navItem"><div class="navItem">Presentes</div></li>
-            <li class="navItem"><div class="navItem">Vento</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'jardins')">Jardins</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'forracao')">Forração</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'cercas')">Cercas vivas</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'pendentes')">Pendentes</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'calcadas')">Calçadas</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'piscinas')">Piscinas</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'presentes')">Presentes</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'vento')">Vento</div></li>
         </ul>
     </nav>
     <main>
-        <!--<a href="calculadora.html">Calculador</a>-->
+        <!--<==========================================|Seção da Calculadora|========================================================>-->
         <section id="calculadora">
             <input type="button" class="botao" value="5%" onclick="porcento5()">
             <input type="button" class="botao" value="3%" onclick="porcento3()">
@@ -37,6 +37,8 @@
             <input type="number" id="entrada" onchange="soma()">
             <p id="retorno"></p>
         </section>
+        
+        <!--<==========================================|Seção dos Artigos|==========================================================>-->
         <section id="plantas">
             <article id="internas">
                 <h1>Plantas para ambientes internos</h1>

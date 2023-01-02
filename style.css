@@ -43,12 +43,16 @@ nav {
 main {
     max-width: 900px;
     min-height: 500px;
-    margin: 0px auto;
+    margin: 1px auto;
     padding: 20px;
     background-color: white;
 }
 
 section#calculadora {
+    display: none;
+}
+
+article {
     display: none;
 }
 
