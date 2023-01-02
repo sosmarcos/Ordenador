@@ -60,6 +60,12 @@ h1.cabeça {
     font: normal 5.5em 'island';
 }
 
+h1 {
+    font: normal 1.5em times;
+    border-bottom: solid 1px #8b8b8b7a;
+    text-align: justify;
+}
+
 ul {
     margin: 0px;
     display: none;

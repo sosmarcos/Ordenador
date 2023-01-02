@@ -42,5 +42,9 @@ function sectionExpand(section, article='') {
     var sect = window.document.getElementById(section)
     sect.style.display = 'block'
 
-    if (article)
+    if (article) {}
+}
+
+function sectionRetract() {
+    
 }
