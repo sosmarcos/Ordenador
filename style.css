@@ -33,6 +33,7 @@ body > label, input, #retorno {
 header {
     margin: 0px;
     background-image: linear-gradient(90deg, #609541, #60a433);
+    box-shadow: 0px 1px 1px #00000045;
 }
 
 nav {
@@ -60,7 +61,6 @@ h1.cabeça {
     margin: 0px;
     padding: 0px 20px;
     color: white;
-    box-shadow: 0px 1px 1px #00000045;
     font: normal 5.5em 'island';
 }
 
@@ -69,7 +69,15 @@ h1 {
     border-bottom: solid 1px #8b8b8b7a;
 }
 
-ul {
+h2 {
+    font: normal 1.3em georgia;
+    color: white;
+    background-color: #609541;
+    padding: 5px 14px;
+    box-shadow: 1px 1px 1px #0000002e;
+}
+
+#navMenu {
     margin: 0px;
     display: none;
     position: absolute;
@@ -85,6 +93,7 @@ ul {
     margin: 0px 0px 5px 5px;
     border-radius: 50px;
     font: normal 1.5em 'hina';
+    
 }
 
 .navButton:hover {
@@ -121,6 +130,15 @@ div.navItem:active {
     background-color: #678ab8;
     transition-duration: 0.2s;
     box-shadow: inset 0px 0px 4px 0px #0000009e;
+}
+
+ul {
+    list-style: none;
+    margin: 10px 0px;
+}
+
+li {
+    font: normal 1.1em 'arial';
 }
 
 label {
