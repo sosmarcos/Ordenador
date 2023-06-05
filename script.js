@@ -19,12 +19,16 @@ function soma() {
 
 function porcento5() {
     var total5 = total - (total*5/100)
-    document.body.innerHTML += `<p>O valor final com 5% de desconto é R&#36 ${total5.toFixed(2)}</p>`
+    var principal = window.document.getElementById('principal')
+
+    principal.innerHTML += `<p>O valor final com 5% de desconto é R&#36 ${total5.toFixed(2)}</p>`
 }
 
 function porcento3() {
     var total3 = total - (total*3/100)
-    document.body.innerHTML += `<p>O valor final com 3% de desconto é R&#36 ${total3.toFixed(2)}</p>`
+    var principal = window.document.getElementById('principal')
+
+    principal.innerHTML += `<p>O valor final com 3% de desconto é R&#36 ${total3.toFixed(2)}</p>`
 }
 
 function multiplicação() {
