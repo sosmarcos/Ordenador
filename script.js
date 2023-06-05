@@ -1,5 +1,7 @@
 var total = 0
 var registro = []
+var porcento3On = false
+var porcento5On = false
 
 function soma() {
     var entrada = window.document.getElementById('entrada')
@@ -13,22 +15,58 @@ function soma() {
     for (let index in registro) {
         retorno.innerHTML += `R&#36; ${registro[index]}<br>`
     }
-    retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}`
+    retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
     entrada.value = ''
+    porcento3On = false
+    porcento5On = false
 }
 
 function porcento5() {
     var total5 = total - (total*5/100)
-    var principal = window.document.getElementById('principal')
+    var retorno = window.document.getElementById('retorno')
+    if (!porcento5On) {
+        porcento5On = true
+        porcento3On = false
 
-    principal.innerHTML += `<p>O valor final com 5% de desconto é R&#36 ${total5.toFixed(2)}</p>`
+        retorno.innerText = ''
+        for (let index in registro) {
+            retorno.innerHTML += `R&#36; ${registro[index]}<br>`
+        }
+        retorno.innerHTML += `R&#36; -${(total*5/100).toFixed(2)}<br>`
+        retorno.innerHTML += `Total: R&#36 ${total5.toFixed(2)}<br>`
+    } else {
+        porcento5On = false
+
+        retorno.innerText = ''
+        for (let index in registro) {
+            retorno.innerHTML += `R&#36; ${registro[index]}<br>`
+        }
+        retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
+    }
 }
 
 function porcento3() {
     var total3 = total - (total*3/100)
-    var principal = window.document.getElementById('principal')
+    var retorno = window.document.getElementById('retorno')
+    if (!porcento3On) {
+        porcento3On = true
+        porcento5On = false
 
-    principal.innerHTML += `<p>O valor final com 3% de desconto é R&#36 ${total3.toFixed(2)}</p>`
+        retorno.innerText = ''
+        for (let index in registro) {
+            retorno.innerHTML += `R&#36; ${registro[index]}<br>`
+        }
+        retorno.innerHTML += `R&#36; -${(total*3/100).toFixed(2)}<br>`
+        retorno.innerHTML += `Total: R&#36 ${total3.toFixed(2)}<br>`
+    } else {
+        porcento3On = false
+
+        retorno.innerText = ''
+        for (let index in registro) {
+            retorno.innerHTML += `R&#36; ${registro[index]}<br>`
+        }
+        retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
+    }
 }
 
 function multiplicação() {
