@@ -200,3 +200,18 @@ p {
     box-shadow: inset 1px 1px 3px 0px #00000061;
     transition-duration: 0.5s;
 }
+
+.entradaMultiplo {
+    height: 21px;
+}
+.entradaMultiplo {
+    display: none;
+    font: normal 0.9em 'hina';
+    text-align: center;
+    width: 50px;
+    background: transparent;
+    color: white;
+    border-color: white;
+    border-width: 0px 0px 2px 0px;
+    border-style: groove;
+}

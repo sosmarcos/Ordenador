@@ -5,9 +5,19 @@ var porcento5On = false
 var menuEspecificOn = false
 
 class ValorUnitario {
-    constructor(valor_especifico, texto) {
+    constructor(valor_especifico, texto, index) {
         this.valor = valor_especifico
         this.texto = texto
+        this.multiplicado = 0
+        this.codigo = `
+            <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
+                ${this.texto}
+            </label>
+            <div id='funçoes${index}' class="menuEspecifico">
+            <input type="button" class="funçoes" value="X" onclick="multiplicanção(${index})">
+            <input type="number" id="entrada${index}" class='entradaMultiplo' onchange="multiplicanção(${index})">
+            <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
+        </div><br>`
         } 
     }
 
@@ -17,19 +27,12 @@ function soma() {
     var valor = parseFloat(entrada.value)
 
     total += valor
-    registro.push(new ValorUnitario(valor, `
-        <label id='linha${registro.length}' class='linhaRetorno' onclick='funçoesDoValor(${registro.length})'>
-            R&#36; ${valor.toFixed(2)}
-        </label>
-        <div id='funçoes${registro.length}' class="menuEspecifico">
-            <input type="button" class="funçoes" value="X" onclick="multiplicanção()">
-            <input type="button" class="funçoes" value="D" onclick="deletar(${registro.length})">
-        </div><br>`))
+    registro.push(new ValorUnitario(valor, `R&#36; ${valor.toFixed(2)}`, registro.length))
     console.log(registro)
     
     retorno.innerText = ''
     for (let index in registro) {
-        retorno.innerHTML += registro[index].texto
+        retorno.innerHTML += registro[index].codigo
     }
     retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
     entrada.value = ''
@@ -46,7 +49,7 @@ function porcento5() {
 
         retorno.innerText = ''
         for (let index in registro) {
-            retorno.innerHTML += registro[index].texto
+            retorno.innerHTML += registro[index].codigo
         }
         retorno.innerHTML += `R&#36; -${(total*5/100).toFixed(2)}<br>`
         retorno.innerHTML += `Total: R&#36 ${total5.toFixed(2)}<br>`
@@ -55,7 +58,7 @@ function porcento5() {
 
         retorno.innerText = ''
         for (let index in registro) {
-            retorno.innerHTML += registro[index].texto
+            retorno.innerHTML += registro[index].codigo
         }
         retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
     }
@@ -70,7 +73,7 @@ function porcento3() {
 
         retorno.innerText = ''
         for (let index in registro) {
-            retorno.innerHTML += registro[index].texto
+            retorno.innerHTML += registro[index].codigo
         }
         retorno.innerHTML += `R&#36; -${(total*3/100).toFixed(2)}<br>`
         retorno.innerHTML += `Total: R&#36 ${total3.toFixed(2)}<br>`
@@ -79,15 +82,13 @@ function porcento3() {
 
         retorno.innerText = ''
         for (let index in registro) {
-            retorno.innerHTML += registro[index].texto
+            retorno.innerHTML += registro[index].codigo
         }
         retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
     }
 }
 
 function funçoesDoValor(index) {
-    var multiplicando = registro[index]
-    var valorEmLinha = window.document.getElementById(`linha${index}`)
     var menuEspecifico = window.document.getElementById(`funçoes${index}`)
 
     for (let index in registro) {
@@ -107,11 +108,42 @@ function funçoesDoValor(index) {
         menuEspecificOn = false
         menuEspecifico.style.display = 'none'
     }
-    
 }
 
-function multiplicanção() {
-    null
+function multiplicanção(index) {
+    var multiplicando = registro[index].valor
+    var multiplicador = window.document.getElementById(`entrada${index}`).value
+
+    if (!registro[index].multiplicado) {
+        window.document.getElementById(`entrada${index}`).style.display = 'inline'
+        registro[index].multiplicado = 1
+        
+    } else if (registro[index].multiplicado == 1) {
+        if (multiplicador) {
+            registro[index].valor = multiplicando * multiplicador
+            registro[index].texto += `x${multiplicador}`
+            registro[index].codigo = `
+                <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
+                    ${registro[index].texto}
+                </label>
+                <div id='funçoes${index}' class="menuEspecifico">
+                <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
+                </div><br>`
+
+            retorno.innerText = ''
+            total = 0
+            for (let valores in registro) {
+                total += registro[valores].valor
+                retorno.innerHTML += registro[valores].codigo
+            }
+            retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
+            menuEspecificOn = false
+        } else {
+            window.document.getElementById(`entrada${index}`).style.display = 'none'
+            registro[index].multiplicado = 0
+        }
+    }
+    console.log(multiplicador)
 }
 
 function deletar(index) {
@@ -120,7 +152,7 @@ function deletar(index) {
     delete registro[index]
     retorno.innerText = ''
     for (let index in registro) {
-        retorno.innerHTML += registro[index].texto
+        retorno.innerHTML += registro[index].codigo
     }
     retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
     menuEspecificOn = false
