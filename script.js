@@ -14,8 +14,8 @@ class ValorUnitario {
                 ${this.texto}
             </label>
             <div id='funçoes${index}' class="menuEspecifico">
-            <input type="button" class="funçoes" value="X" onclick="multiplicanção(${index})">
-            <input type="number" id="entrada${index}" class='entradaMultiplo' onchange="multiplicanção(${index})">
+            
+            <input type="number" id="entrada${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
             <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
         </div><br>`
         } 
@@ -90,6 +90,7 @@ function porcento3() {
 
 function funçoesDoValor(index) {
     var menuEspecifico = window.document.getElementById(`funçoes${index}`)
+    let menuEspecificoInput = window.document.getElementById(`entrada${index}`)
 
     for (let index in registro) {
         let menu = window.document.getElementById(`funçoes${index}`)
@@ -103,14 +104,16 @@ function funçoesDoValor(index) {
     if (!menuEspecificOn) {
         menuEspecificOn = true
         
-        menuEspecifico.style.display = 'inline-block'
+        menuEspecifico.style.display = 'inline-block'   
+        menuEspecificoInput.focus();
+        menuEspecificoInput.select();
     } else {
         menuEspecificOn = false
         menuEspecifico.style.display = 'none'
     }
 }
 
-function multiplicanção(index) {
+function multiplicação(index) {
     var multiplicando = registro[index].valor
     var multiplicador = window.document.getElementById(`entrada${index}`).value
 
@@ -162,7 +165,6 @@ function menuExpand() {
     var menu = window.document.getElementById('navMenu')
     if (menu.style.display == 'block') {menu.style.display = 'none'}
     else {menu.style.display = 'block'}
-    
 }
 
 function sectionExpand(section, article='') {

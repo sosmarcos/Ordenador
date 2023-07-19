@@ -205,7 +205,7 @@ p {
     height: 21px;
 }
 .entradaMultiplo {
-    display: none;
+    margin-left: 10px;
     font: normal 0.9em 'hina';
     text-align: center;
     width: 50px;
