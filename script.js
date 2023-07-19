@@ -8,13 +8,11 @@ class ValorUnitario {
     constructor(valor_especifico, texto, index) {
         this.valor = valor_especifico
         this.texto = texto
-        this.multiplicado = 0
         this.codigo = `
             <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
                 ${this.texto}
             </label>
             <div id='funçoes${index}' class="menuEspecifico">
-            
             <input type="number" id="entrada${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
             <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
         </div><br>`
@@ -105,8 +103,8 @@ function funçoesDoValor(index) {
         menuEspecificOn = true
         
         menuEspecifico.style.display = 'inline-block'   
-        menuEspecificoInput.focus();
-        menuEspecificoInput.select();
+        try {document.getElementById(`entrada${index}`).select()}
+        catch {null}
     } else {
         menuEspecificOn = false
         menuEspecifico.style.display = 'none'
@@ -117,34 +115,28 @@ function multiplicação(index) {
     var multiplicando = registro[index].valor
     var multiplicador = window.document.getElementById(`entrada${index}`).value
 
-    if (!registro[index].multiplicado) {
-        window.document.getElementById(`entrada${index}`).style.display = 'inline'
-        registro[index].multiplicado = 1
-        
-    } else if (registro[index].multiplicado == 1) {
-        if (multiplicador) {
-            registro[index].valor = multiplicando * multiplicador
-            registro[index].texto += `x${multiplicador}`
-            registro[index].codigo = `
-                <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
-                    ${registro[index].texto}
-                </label>
-                <div id='funçoes${index}' class="menuEspecifico">
-                <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
-                </div><br>`
+    if (multiplicador) {
+        registro[index].valor = multiplicando * multiplicador
+        registro[index].texto += `x${multiplicador}`
+        registro[index].codigo = `
+            <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
+                ${registro[index].texto}
+            </label>
+            <div id='funçoes${index}' class="menuEspecifico">
+            <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
+            </div><br>`
 
-            retorno.innerText = ''
-            total = 0
-            for (let valores in registro) {
-                total += registro[valores].valor
-                retorno.innerHTML += registro[valores].codigo
-            }
-            retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
-            menuEspecificOn = false
-        } else {
-            window.document.getElementById(`entrada${index}`).style.display = 'none'
-            registro[index].multiplicado = 0
+        retorno.innerText = ''
+        total = 0
+        for (let valores in registro) {
+            total += registro[valores].valor
+            retorno.innerHTML += registro[valores].codigo
         }
+        retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
+        menuEspecificOn = false
+    } else {
+        window.document.getElementById(`entrada${index}`).style.display = 'none'
+        registro[index].multiplicado = 0
     }
     console.log(multiplicador)
 }
