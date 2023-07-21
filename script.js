@@ -88,7 +88,6 @@ function porcento3() {
 
 function funçoesDoValor(index) {
     var menuEspecifico = window.document.getElementById(`funçoes${index}`)
-    let menuEspecificoInput = window.document.getElementById(`entrada${index}`)
 
     for (let index in registro) {
         let menu = window.document.getElementById(`funçoes${index}`)
