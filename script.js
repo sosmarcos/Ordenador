@@ -519,8 +519,8 @@ function impreçao(sec, lista) {
     let objeto
     for (let index in lista) {
         if (objeto != lista[index].objeto) {sec.innerHTML += '<br>'}
-        sec.innerText += `${lista[index].nome}${'.'.repeat(43 - (lista[index].nome.length))}${'.'.repeat(4 - String(lista[index].quantidade).length)}${lista[index].quantidade}
-        `
+        sec.innerHTML += `<p>${lista[index].nome}${'.'.repeat(43 - (lista[index].nome.length))}${'.'.repeat(4 - String(lista[index].quantidade).length)}${lista[index].quantidade}
+        </p>`
         objeto = lista[index].objeto
     }
 }

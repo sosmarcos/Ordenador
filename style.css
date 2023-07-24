@@ -13,6 +13,11 @@
     src: url(fonts/TenorSans-Regular.ttf) format('TrueType');
 }
 
+@font-face {
+    font-family: 'syne';
+    src: url(fonts/SyneMono-Regular.ttf) format(TrueType);
+}
+
 * {
     padding: 0px;
 }
@@ -47,6 +52,13 @@ main {
 
 section#calculadora {
     display: none;
+}
+
+section.inventario {
+    font-family: syne;
+    font-weight: bold;
+    font-size: 13px;
+    color: black;
 }
 
 article {
