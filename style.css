@@ -85,7 +85,15 @@ h2 {
     box-shadow: 1px 1px 1px #0000002e;
 }
 
-#navMenuPlantas, #navMenuInventarios {
+#navMenuPlantas {
+    margin: 0px;
+    display: none;
+    position: absolute;
+    background-image: linear-gradient(90deg, #325d85, #3376a4);
+    box-shadow: 2px 3px 4px 0px #00000033;
+}
+
+#navMenuInventarios {
     margin: 0px;
     display: none;
     position: absolute;
