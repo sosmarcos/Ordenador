@@ -27,9 +27,29 @@ var registro = []
 var porcento3On = false
 var porcento5On = false
 var menuEspecificOn = false
-var sectRegaplan = document.getElementById('regaplan')
-var sectEmeAEme = document.getElementById('eme_a_eme')
-var secForth = document.getElementById('forth')
+
+var sectPlantas = window.document.getElementById('plantas')
+var sectCalculo = window.document.getElementById('calculadora')
+var sectInventarios = window.document.getElementById('inventarios')
+var articleRegaplan = window.document.getElementById('regaplan')
+var articleEmeAEme = window.document.getElementById('eme_a_eme')
+var articleForth = window.document.getElementById('forth')
+var categorias = [
+    'internas',
+    'jardins',
+    'forracao',
+    'cercas',
+    'pendentes',
+    'calcadas',
+    'piscinas',
+    'presentes',
+    'vento'
+]
+var inventorios = [
+    'regaplan',
+    'eme_a_eme',
+    'forth'
+]
 var regaplan = [
     new item(5, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
     new item(6, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -569,46 +589,59 @@ function deletar(index) {
     menuEspecificOn = false
 }
 
-function menuExpand() {
-    var menu = window.document.getElementById('navMenu')
+function menuExpand(menu) {
+    var menu = window.document.getElementById(`${menu}`)
+    
+    document.getElementById('navMenuInventarios').style.display = 'none'
+    document.getElementById('navMenuPlantas').style.display = 'none'
+
     if (menu.style.display == 'block') {menu.style.display = 'none'}
     else {menu.style.display = 'block'}
 }
 
-function sectionExpand(section, article='') {
-    var sectPlantas = window.document.getElementById('plantas')
-    var sectCalculo = window.document.getElementById('calculadora')
-
+function sectionExpand(section, article='', menu='') {
     if (section == 'plantas') {
         sectPlantas.style.display = 'block'
+
         sectCalculo.style.display = 'none'
-    } else {
+        sectInventarios.style.display = 'none'
+    } else if (section == 'calculadora'){
         sectCalculo.style.display = 'block'
+
+        document.getElementById('navMenuInventarios').style.display = 'none'
+        document.getElementById('navMenuPlantas').style.display = 'none'
+
         sectPlantas.style.display = 'none'
+        sectInventarios.style.display = 'none'
+    } else if (section == 'inventarios') {
+        sectInventarios.style.display = 'block'
+        
+        sectPlantas.style.display = 'none'
+        sectCalculo.style.display = 'none'
     }
 
     if (article) {
-        var menu = window.document.getElementById('navMenu')
+        var menu = window.document.getElementById(`${menu}`)
         var arct
-        var categorias = [
-            'internas',
-            'jardins',
-            'forracao',
-            'cercas',
-            'pendentes',
-            'calcadas',
-            'piscinas',
-            'presentes',
-            'vento'
-        ]
         menu.style.display = 'none'
 
-        for (let index in categorias) {
-            arct = window.document.getElementById(categorias[index])
-            if (categorias[index] == article) {
-                arct.style.display = 'block'
-            } else {
-                arct.style.display = 'none'
+        if (section == 'plantas') {
+            for (let index in categorias) {
+                arct = window.document.getElementById(categorias[index])
+                if (categorias[index] == article) {
+                    arct.style.display = 'block'
+                } else {
+                    arct.style.display = 'none'
+                }
+            }
+        } else if (section == 'inventarios') {
+            for (let index in inventorios) {
+                arct = window.document.getElementById(inventorios[index])
+                if (inventorios[index] == article) {
+                    arct.style.display = 'block'
+                } else {
+                    arct.style.display = 'none'
+                }
             }
         }
     }
@@ -624,6 +657,6 @@ function impreçao(sec, lista) {
     }
 }
 
-impreçao(sectRegaplan, regaplan)
-impreçao(sectEmeAEme, emeAeme)
-impreçao(secForth, forth)
+impreçao(articleRegaplan, regaplan)
+impreçao(articleEmeAEme, emeAeme)
+impreçao(articleForth, forth)

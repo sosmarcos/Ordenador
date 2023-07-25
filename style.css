@@ -54,7 +54,7 @@ section#calculadora {
     display: none;
 }
 
-section.inventario {
+.inventario > p{
     font-family: syne;
     font-weight: bold;
     font-size: 13px;
@@ -85,7 +85,7 @@ h2 {
     box-shadow: 1px 1px 1px #0000002e;
 }
 
-#navMenu {
+#navMenuPlantas, #navMenuInventarios {
     margin: 0px;
     display: none;
     position: absolute;

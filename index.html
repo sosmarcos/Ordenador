@@ -13,18 +13,24 @@
         <h1 class="cabeça">Plantas</h1>
     </header>
     <nav>
-        <input type="button" value="Categorias" class="navButton" onclick="menuExpand()">
+        <input type="button" value="Categorias" class="navButton" onclick="menuExpand('navMenuPlantas')">
         <input type="button" value="Calculadora" class="navButton" onclick="sectionExpand('calculadora')">
-        <ul id="navMenu">
-            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'internas')">Internas</div></li>
-            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'jardins')">Jardins</div></li>
-            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'forracao')">Forração</div></li>
-            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'cercas')">Cercas vivas</div></li>
-            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'pendentes')">Pendentes</div></li>
-            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'calcadas')">Calçadas</div></li>
-            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'piscinas')">Piscinas</div></li>
-            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'presentes')">Presentes</div></li>
-            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'vento')">Vento</div></li>
+        <input type="button" value="Inventario" class="navButton" onclick="menuExpand('navMenuInventarios')">
+        <ul id="navMenuPlantas">
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'internas', 'navMenuPlantas')">Internas</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'jardins', 'navMenuPlantas')">Jardins</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'forracao', 'navMenuPlantas')">Forração</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'cercas', 'navMenuPlantas')">Cercas vivas</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'pendentes', 'navMenuPlantas')">Pendentes</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'calcadas', 'navMenuPlantas')">Calçadas</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'piscinas', 'navMenuPlantas')">Piscinas</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'presentes', 'navMenuPlantas')">Presentes</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'vento', 'navMenuPlantas')">Vento</div></li>
+        </ul>
+        <ul id="navMenuInventarios">
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('inventarios', 'regaplan', 'navMenuInventarios')">Regaplan</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('inventarios', 'eme_a_eme', 'navMenuInventarios')">Eme A Eme</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('inventarios', 'forth', 'navMenuInventarios')">Forth</div></li>
         </ul>
     </nav>
     <main id="principal">
@@ -185,15 +191,18 @@
             </article>
         </section>
         
-        <section id="regaplan" class="inventario">
-            <h2>Regaplan</h2>
+        <section id="inventarios">
+            <article id="regaplan" class="inventario">
+                <h1>Regaplan</h1>
+            </article>
+            <article id="eme_a_eme" class="inventario">
+                <h1>Eme A Eme</h1>
+            </article>
+            <article id="forth" class="inventario">
+                <h1>Forth</h1>
+            </article>
         </section>
-        <section id="eme_a_eme" class="inventario">
-            <h2>Eme A Eme</h2>
-        </section>
-        <section id="forth" class="inventario">
-            <h2>Forth</h2>
-        </section>
+        
     </main>
     <script src="script.js"></script>
 </body>
