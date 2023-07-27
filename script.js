@@ -27,6 +27,7 @@ var registro = []
 var porcento3On = false
 var porcento5On = false
 var menuEspecificOn = false
+var linhaDestacadaOn = false
 
 var sectPlantas = window.document.getElementById('plantas')
 var sectCalculo = window.document.getElementById('calculadora')
@@ -534,7 +535,6 @@ function porcento3() {
 
 function funçoesDoValor(index) {
     var menuEspecifico = window.document.getElementById(`funçoes${index}`)
-    let menuEspecificoInput = window.document.getElementById(`entrada${index}`)
 
     for (let index in registro) {
         let menu = window.document.getElementById(`funçoes${index}`)
@@ -659,19 +659,43 @@ function sectionExpand(section, article='', menu='') {
     }
 }
 
-function impreçao(sec, lista) {
+function impreçao(sec, lista, identificador) {
     sec.innerHTML += `<h2>${lista[0]}</h2>`
     delete(lista[0])
 
     let objeto = lista[1].objeto
     for (let index in lista) {
         if (objeto != lista[index].objeto) {sec.innerHTML += '<br>'}
-        sec.innerHTML += `<p>${lista[index].nome}${'.'.repeat(43 - (lista[index].nome.length))}${'.'.repeat(4 - String(lista[index].quantidade).length)}${lista[index].quantidade}
+        sec.innerHTML += `
+        <p id='${identificador}${index}' class='inventario' onclick="linhaDestacada(${identificador}${index})">
+            ${lista[index].nome}${'.'.repeat(43 - (lista[index].nome.length))}${'.'.repeat(4 - String(lista[index].quantidade).length)}${lista[index].quantidade}
         </p>`
         objeto = lista[index].objeto
     }
 }
 
-impreçao(articleRegaplan, regaplan)
-impreçao(articleEmeAEme, emeAeme)
-impreçao(articleForth, forth)
+function linhaDestacada(identidade) {
+    if (!linhaDestacadaOn) {
+        identidade.style.fontWeight = 'normal'
+        identidade.style.fontStyle = 'italic'
+        identidade.style.color = '#ffffff'
+        identidade.style.backgroundImage = 'linear-gradient(90deg, #548abd, #72a5c8)'
+        identidade.style.padding = '6px 1px'
+        identidade.style.borderRadius = '3px'
+
+        linhaDestacadaOn = true
+    } else {
+        identidade.style.fontWeight = 'bold'
+        identidade.style.fontStyle = 'normal'
+        identidade.style.color = 'black'
+        identidade.style.backgroundImage= 'none'
+        identidade.style.padding = '0px'
+        identidade.style.borderRadius = '0px'
+
+        linhaDestacadaOn = false
+    }
+}
+
+impreçao(articleRegaplan, regaplan, 'regaplan')
+impreçao(articleEmeAEme, emeAeme, 'emeAeme')
+impreçao(articleForth, forth, 'forth')
