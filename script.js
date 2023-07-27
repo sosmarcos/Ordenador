@@ -680,7 +680,7 @@ function linhaDestacada(identidade) {
         identidade.style.fontStyle = 'italic'
         identidade.style.color = '#ffffff'
         identidade.style.backgroundImage = 'linear-gradient(90deg, #548abd, #72a5c8)'
-        identidade.style.padding = '6px 1px'
+        identidade.style.padding = '6px 0px'
         identidade.style.borderRadius = '3px'
 
         linhaDestacadaOn = true
