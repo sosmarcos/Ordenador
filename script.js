@@ -35,6 +35,7 @@ var sectInventarios = window.document.getElementById('inventarios')
 var articleRegaplan = window.document.getElementById('regaplan')
 var articleEmeAEme = window.document.getElementById('eme_a_eme')
 var articleForth = window.document.getElementById('forth')
+var articleAlfa = window.document.getElementById('alfa')
 var categorias = [
     'internas',
     'jardins',
@@ -49,7 +50,8 @@ var categorias = [
 var inventorios = [
     'regaplan',
     'eme_a_eme',
-    'forth'
+    'forth',
+    'alfa'
 ]
 var regaplan = ['18/07/2023',
     new item(5, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -138,7 +140,7 @@ var regaplan = ['18/07/2023',
     new item(2, 'Violeteiro Pedestal - 9 Vasos Dourado', 'sp_violeteiro'),
     new item(2, 'Violeteiro Pedestal - 9 Vasos Preto', 'sp_violeteiro'),
 ]
-var emeAeme = ['24/07/2023',
+var emeAeme = ['28/07/2023',
     new item(209, 'Alça Universal Branca', 'alça_universal'),
     new item(54, 'Alça Universal Café', 'alça_universal'),
     new item(161, 'Alça Universal Cerâmica', 'alça_universal'),
@@ -163,7 +165,7 @@ var emeAeme = ['24/07/2023',
     new item(48, 'Cuia CBB 18 Com Base Branca', 'cuia_cbb_18'),
     new item(51, 'Cuia CBB 18 Com Base Café', 'cuia_cbb_18'),
     new item(55, 'Cuia CBB 18 Com Base Cerâmica', 'cuia_cbb_18'),
-    new item(49, 'Cuia CBB 18 Com Base Marfim', 'cuia_cbb_18'),
+    new item(41, 'Cuia CBB 18 Com Base Marfim', 'cuia_cbb_18'),
     new item(52, 'Cuia CBB 18 Com Base Preta', 'cuia_cbb_18'),
     new item(35, 'Cuia CBB 18 Com Base Verde', 'cuia_cbb_18'),
 
@@ -465,6 +467,249 @@ var forth = ['25/07/2023',
 
     new item(0, 'Violetas Concentrado - 60ml', 'v'),
 ]
+var alfa = ['28/07/2023',
+    new item(4, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
+    new item(4, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
+
+    new item(4, 'Bacia Diamante nº 2 Cimento', 'bacia_diamante_2'),
+    new item(3, 'Bacia Diamante nº 2 Marrom', 'bacia_diamante_2'),
+    new item(1, 'Bacia Diamante nº 2 Preto', 'bacia_diamante_2'),
+
+    new item(2, 'Bacia Diamante nº 3 Bege', 'bacia_diamante_3'),
+    new item(3, 'Bacia Diamante nº 3 Cimento', 'bacia_diamante_3'),
+    new item(2, 'Bacia Diamante nº 3 Marrom', 'bacia_diamante_3'),
+
+    new item(15, 'Bacia Grafito C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
+    new item(15, 'Bacia Grafito C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
+    new item(15, 'Bacia Grafito C/ Prato nº 1 Marrom', 'bacia_grafiato_1'),
+    new item(15, 'Bacia Grafito C/ Prato nº 1 Preto', 'bacia_grafiato_1'),
+
+    new item(9, 'Bacia Grafito C/Prato nº 2 Bege', 'bacia_grafiato_2'),
+    new item(10, 'Bacia Grafito C/Prato nº 2 Cimento', 'bacia_grafiato_2'),
+    new item(7, 'Bacia Grafito C/Prato nº 2 Marrom', 'bacia_grafiato_2'),
+    new item(7, 'Bacia Grafito C/Prato nº 2 Preto', 'bacia_grafiato_2'),
+
+    new item(1, 'Bacia Grafito C/Prato nº 3 Bege', 'bacia_grafiato_3'),
+    new item(4, 'Bacia Grafito C/Prato nº 3 Cimento', 'bacia_grafiato_3'),
+    new item(1, 'Bacia Grafito C/Prato nº 3 Marrom', 'bacia_grafiato_3'),
+    new item(2, 'Bacia Grafito C/Prato nº 3 Preto', 'bacia_grafiato_3'),
+
+    new item(5, 'Bacia Grafito C/Prato nº 4 Bege', 'bacia_grafiato_4'),
+    new item(2, 'Bacia Grafito C/Prato nº 4 Cimento', 'bacia_grafiato_4'),
+    new item(3, 'Bacia Grafito C/Prato nº 4 Marrom', 'bacia_grafiato_4'),
+    new item(4, 'Bacia Grafito C/Prato nº 4 Preto', 'bacia_grafiato_4'),
+
+    new item(10, 'Bacia Marmorizada C/Prato nº 1 Azul', 'bacia_marmorizada_1'),
+    new item(10, 'Bacia Marmorizada C/Prato nº 1 Vermelho', 'bacia_marmorizada_1'),
+
+    new item(3, 'Bacia Marmorizada C/Prato nº 2 Azul', 'bacia_marmorizada_2'),
+    new item(4, 'Bacia Marmorizada C/Prato nº 2 Vermelho', 'bacia_marmorizada_2'),
+
+    new item(10, 'Bacia Polida C/Prato nº 1 Bege', 'bacia_polida_1'),
+    new item(10, 'Bacia Polida C/Prato nº 1 Cimento', 'bacia_polida_1'),
+    new item(10, 'Bacia Polida C/Prato nº 1 Marrom', 'bacia_polida_1'),
+    new item(10, 'Bacia Polida C/Prato nº 1 Preto', 'bacia_polida_1'),
+
+    new item(6, 'Bacia Polida C/Prato nº 2 Bege', 'bacia_polida_2'),
+    new item(6, 'Bacia Polida C/Prato nº 2 Cimento', 'bacia_polida_2'),
+    new item(4, 'Bacia Polida C/Prato nº 2 Marrom', 'bacia_polida_2'),
+    new item(6, 'Bacia Polida C/Prato nº 2 Preto', 'bacia_polida_2'),
+
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Bege', 'coluna_degrau_1'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Cimento', 'coluna_degrau_1'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Marrom', 'coluna_degrau_1'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Preto', 'coluna_degrau_1'),
+
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Bege', 'coluna_degrau_2'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Cimento', 'coluna_degrau_2'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Marrom', 'coluna_degrau_2'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Preto', 'coluna_degrau_2'),
+
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 3 Bege', 'coluna_degrau_3'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 3 Cimento', 'coluna_degrau_3'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 3 Marrom', 'coluna_degrau_3'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 3 Preto', 'coluna_degrau_3'),
+
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 4 Bege', 'coluna_degrau_4'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 4 Cimento', 'coluna_degrau_4'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 4 Marrom', 'coluna_degrau_4'),
+    new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 4 Preto', 'coluna_degrau_4'),
+
+    new item(2, 'Coluna Red. Degrau Grafiato C/Prato nº 5 Bege', 'coluna_degrau_5'),
+    new item(2, 'Coluna Red. Degrau Grafiato C/Prato nº 5 Preto', 'coluna_degrau_5'),
+
+    new item(2, 'Coluna Red. Diamante C/Prato nº 1 Bege', 'coluna_diamante_1'),
+    new item(4, 'Coluna Red. Diamante C/Prato nº 1 Cimento', 'coluna_diamante_1'),
+    new item(1, 'Coluna Red. Diamante C/Prato nº 1 Marrom', 'coluna_diamante_1'),
+    new item(3, 'Coluna Red. Diamante C/Prato nº 1 Preta', 'coluna_diamante_1'),
+
+    new item(2, 'Coluna Red. Diamante C/Prato nº 2 Bege', 'coluna_diamante_2'),
+    new item(3, 'Coluna Red. Diamante C/Prato nº 2 Cimento', 'coluna_diamante_2'),
+    new item(1, 'Coluna Red. Diamante C/Prato nº 2 Marrom', 'coluna_diamante_2'),
+    new item(3, 'Coluna Red. Diamante C/Prato nº 2 Preta', 'coluna_diamante_2'),
+
+    new item(3, 'Coluna Red. Diamante C/Prato nº 3 Bege', 'coluna_diamante_3'),
+    new item(1, 'Coluna Red. Diamante C/Prato nº 3 Cimento', 'coluna_diamante_3'),
+    new item(4, 'Coluna Red. Diamante C/Prato nº 3 Marrom', 'coluna_diamante_3'),
+    new item(2, 'Coluna Red. Diamante C/Prato nº 3 Preta', 'coluna_diamante_3'),
+
+    new item(1, 'Coluna Red. Diamante C/Prato nº 4 Bege', 'coluna_diamante_4'),
+    new item(1, 'Coluna Red. Diamante C/Prato nº 4 Cimento', 'coluna_diamante_4'),
+    new item(1, 'Coluna Red. Diamante C/Prato nº 4 Marrom', 'coluna_diamante_4'),
+    new item(3, 'Coluna Red. Diamante C/Prato nº 4 Preta', 'coluna_diamante_4'),
+
+    new item(2, 'Coluna Red. Diamante C/Prato nº 5 Bege', 'coluna_diamante_5'),
+    new item(2, 'Coluna Red. Diamante C/Prato nº 5 Cimento', 'coluna_diamante_5'),
+    new item(2, 'Coluna Red. Diamante C/Prato nº 5 Marrom', 'coluna_diamante_5'),
+    new item(2, 'Coluna Red. Diamante C/Prato nº 5 Preta', 'coluna_diamante_5'),
+
+    new item(4, 'Coluna Red. Grafiato C/Preto nº 1 Bege', 'coluna_grafiato_1'),
+    new item(4, 'Coluna Red. Grafiato C/Preto nº Cimento', 'coluna_grafiato_1'),
+    new item(4, 'Coluna Red. Grafiato C/Preto nº 1 Marrom', 'coluna_grafiato_1'),
+    new item(4, 'Coluna Red. Grafiato C/Preto nº 1 Preto', 'coluna_grafiato_1'),
+
+    new item(5, 'Coluna Red. Grafiato C/Preto nº 2 Bege', 'coluna_grafiato_2'),
+    new item(6, 'Coluna Red. Grafiato C/Preto nº 2 Ciemento', 'coluna_grafiato_2'),
+    new item(5, 'Coluna Red. Grafiato C/Preto nº 2 Marrom', 'coluna_grafiato_2'),
+    new item(4, 'Coluna Red. Grafiato C/Preto nº 2 Preto', 'coluna_grafiato_2'),
+
+    new item(7, 'Coluna Red. Grafito C/Prato nº 3 Bege', 'coluna_grafiato_3'),
+    new item(5, 'Coluna Red. Grafito C/Prato nº 3 Cimento', 'coluna_grafiato_3'),
+    new item(5, 'Coluna Red. Grafito C/Prato nº 3 Marrom', 'coluna_grafiato_3'),
+    new item(6, 'Coluna Red. Grafito C/Prato nº 3 Preto', 'coluna_grafiato_3'),
+
+    new item(4, 'Coluna Red. Grafito C/Prato nº 4 Bege', 'coluna_grafiato_4'),
+    new item(4, 'Coluna Red. Grafito C/Prato nº 4 Cimento', 'coluna_grafiato_4'),
+    new item(4, 'Coluna Red. Grafito C/Prato nº 4 Marrom', 'coluna_grafiato_4'),
+    new item(4, 'Coluna Red. Grafito C/Prato nº 4 Preto', 'coluna_grafiato_4'),
+
+    new item(4, 'Coluna Red. Marmorizada C/Prato nº 1 Azul', 'coluna_marmorizada_1'),
+    new item(3, 'Coluna Red. Marmorizada C/Prato nº 1 Vermelho', 'coluna_marmorizada_1'),
+
+    new item(3, 'Coluna Red. Marmorizada C/Prato nº 2 Azul', 'coluna_marmorizada_2'),
+    new item(3, 'Coluna Red. Marmorizada C/Prato nº 2 Vermelho', 'coluna_marmorizada_2'),
+
+    new item(5, 'Coluna Red. Marmorizada C/Prato nº 3 Azul', 'coluna_marmorizada_3'),
+    new item(4, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
+
+    new item(4, 'Coluna Red. Marmorizada C/Prato nº 4 Azul', 'coluna_marmorizada_4'),
+    new item(3, 'Coluna Red. Marmorizada C/Prato nº 4 Vermelho', 'coluna_marmorizada_4'),
+
+    new item(6, 'Coluna Red. Polida C/Prato nº 1 Bege', 'coluna_polida_1'),
+    new item(6, 'Coluna Red. Polida C/Prato nº 1 Cimento', 'coluna_polida_1'),
+    new item(6, 'Coluna Red. Polida C/Prato nº 1 Marrom', 'coluna_polida_1'),
+    new item(6, 'Coluna Red. Polida C/Prato nº 1 Preto', 'coluna_polida_1'),
+
+    new item(5, 'Coluna Red. Polida C/Prato nº 2 Bege', 'coluna_polida_2'),
+    new item(5, 'Coluna Red. Polida C/Prato nº 2 Cimento', 'coluna_polida_2'),
+    new item(6, 'Coluna Red. Polida C/Prato nº 2 Marrom', 'coluna_polida_2'),
+    new item(5, 'Coluna Red. Polida C/Prato nº 2 Preto', 'coluna_polida_2'),
+
+    new item(5, 'Coluna Red. Polida C/Prato nº 3 Bege', 'coluna_polida_3'),
+    new item(5, 'Coluna Red. Polida C/Prato nº 3 Cimento', 'coluna_polida_3'),
+    new item(8, 'Coluna Red. Polida C/Prato nº 3 Marrom', 'coluna_polida_3'),
+    new item(5, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
+
+    new item(4, 'Coluna Red. Polida C/Prato nº 4 Bege', 'coluna_polida_4'),
+    new item(4, 'Coluna Red. Polida C/Prato nº 4 Cimento', 'coluna_polida_4'),
+    new item(5, 'Coluna Red. Polida C/Prato nº 4 Marrom', 'coluna_polida_4'),
+    new item(4, 'Coluna Red. Polida C/Prato nº 4 Preto', 'coluna_polida_4'),
+
+    new item(3, 'Jardineira Frisada C/Prato Bege', 'jardineira_frisada_1'),
+    new item(3, 'Jardineira Frisada C/Prato Preto', 'jardineira_frisada_1'),
+
+    new item(4, 'Jardineira Grafito C/Prato nº 1 Bege', 'jardineira_grafiato_1'),
+    new item(4, 'Jardineira Grafito C/Prato nº 1 Preto', 'jardineira_grafiato_1'),
+
+    new item(4, 'Jardineira Grafito C/Prato nº 2 Bege', 'jardineira_grafiato_2'),
+    new item(4, 'Jardineira Grafito C/Prato nº 2 Preto', 'jardineira_grafiato_2'),
+    
+    new item(6, 'Vaso Bojo Red. Diamante C/Prato nº 1 Bege', 'vaso_diamante_1'),
+    new item(6, 'Vaso Bojo Red. Diamante C/Prato nº 1 Cimento', 'vaso_diamante_1'),
+    new item(8, 'Vaso Bojo Red. Diamante C/Prato nº 1 Marrom', 'vaso_diamante_1'),
+    new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 1 Preto', 'vaso_diamante_1'),
+
+    new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 2 Bege', 'vaso_diamante_2'),
+    new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 2 Cimento', 'vaso_diamante_2'),
+    new item(4, 'Vaso Bojo Red. Diamante C/Prato nº 2 Marrom', 'vaso_diamante_2'),
+    new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 2 Preto', 'vaso_diamante_2'),
+
+    new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 3 Bege', 'vaso_diamante_3'),
+    new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 3 Cimento', 'vaso_diamante_3'),
+    new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 3 Marrom', 'vaso_diamante_3'),
+    new item(4, 'Vaso Bojo Red. Diamante C/Prato nº 3 Preto', 'vaso_diamante_3'),
+
+    new item(8, 'Vaso Bojo Red. Diamante C/Prato nº 4 Bege', 'vaso_diamante_4'),
+    new item(5, 'Vaso Bojo Red. Diamante C/Prato nº 4 Cimento', 'vaso_diamante_4'),
+    new item(7, 'Vaso Bojo Red. Diamante C/Prato nº 4 Marrom', 'vaso_diamante_4'),
+    new item(7, 'Vaso Bojo Red. Diamante C/Prato nº 4 Preto', 'vaso_diamante_4'),
+
+    new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Bege', 'vaso_frisado_1'),
+    new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Cimento', 'vaso_frisado_1'),
+    new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Marrom', 'vaso_frisado_1'),
+    new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Preto', 'vaso_frisado_1'),
+
+    new item(10, 'Vaso Bojo Frisado C/Prato nº 2 Bege', 'vaso_frisado_2'),
+    new item(10, 'Vaso Bojo Frisado C/Prato nº 2 Cimento', 'vaso_frisado_2'),
+    new item(7, 'Vaso Bojo Frisado C/Prato nº 2 Marrom', 'vaso_frisado_2'),
+    new item(7, 'Vaso Bojo Frisado C/Prato nº 2 Preto', 'vaso_frisado_2'),
+
+    new item(10, 'Vaso Bojo Frisado C/Prato nº 3 Bege', 'vaso_frisado_3'),
+    new item(10, 'Vaso Bojo Frisado C/Prato nº 3 Cimento', 'vaso_frisado_3'),
+    new item(4, 'Vaso Bojo Frisado C/Prato nº 3 Marrom', 'vaso_frisado_3'),
+    new item(7, 'Vaso Bojo Frisado C/Prato nº 3 Preto', 'vaso_frisado_3'),
+
+    new item(6, 'Vaso Bojo Frisado C/Prato nº 4 Bege', 'vaso_frisado_4'),
+    new item(6, 'Vaso Bojo Frisado C/Prato nº 4 Cimento', 'vaso_frisado_4'),
+    new item(5, 'Vaso Bojo Frisado C/Prato nº 4 Marrom', 'vaso_frisado_4'),
+    new item(7, 'Vaso Bojo Frisado C/Prato nº 4 Preto', 'vaso_frisado_4'),
+
+    new item(10, 'Vaso Bojo Red. Grafito C/Prato nº 1 Bege', 'vaso_grafito_1'),
+    new item(10, 'Vaso Bojo Red. Grafito C/Prato nº 1 Cimento', 'vaso_grafito_1'),
+    new item(10, 'Vaso Bojo Red. Grafito C/Prato nº 1 Marrom', 'vaso_grafito_1'),
+    new item(9, 'Vaso Bojo Red. Grafito C/Prato nº 1 Preto', 'vaso_grafito_1'),
+
+    new item(8, 'Vaso Bojo Red. Grafito C/Prato nº 2 Bege', 'vaso_grafito_2'),
+    new item(8, 'Vaso Bojo Red. Grafito C/Prato nº 2 Cimento', 'vaso_grafito_2'),
+    new item(6, 'Vaso Bojo Red. Grafito C/Prato nº 2 Marrom', 'vaso_grafito_2'),
+    new item(3, 'Vaso Bojo Red. Grafito C/Prato nº 2 Preto', 'vaso_grafito_2'),
+
+    new item(6, 'Vaso Bojo Red. Grafito C/Prato nº 3 Bege', 'vaso_grafito_3'),
+    new item(6, 'Vaso Bojo Red. Grafito C/Prato nº 3 Cimento', 'vaso_grafito_3'),
+    new item(4, 'Vaso Bojo Red. Grafito C/Prato nº 3 Marrom', 'vaso_grafito_3'),
+    new item(4, 'Vaso Bojo Red. Grafito C/Prato nº 3 Preto', 'vaso_grafito_3'),
+
+    new item(4, 'Vaso Bojo Red. Grafito C/Prato nº 4 Bege', 'vaso_grafito_4'),
+    new item(4, 'Vaso Bojo Red. Grafito C/Prato nº 4 Cimento', 'vaso_grafito_4'),
+    new item(5, 'Vaso Bojo Red. Grafito C/Prato nº 4 Marrom', 'vaso_grafito_4'),
+    new item(4, 'Vaso Bojo Red. Grafito C/Prato nº 4 Preto', 'vaso_grafito_4'),
+
+    new item(7, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
+    new item(6, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
+
+    new item(4, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
+    new item(6, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Vermelho', 'vaso_marmorizado_2'),
+
+    new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Azul', 'vaso_marmorizado_3'),
+    new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Vermelho', 'vaso_marmorizado_3'),
+
+    new item(7, 'Vaso Bojo Red. Polido C/Prato nº 1 Bege', 'vaso_polido_1'),
+    new item(7, 'Vaso Bojo Red. Polido C/Prato nº 1 Cimento', 'vaso_polido_1'),
+    new item(6, 'Vaso Bojo Red. Polido C/Prato nº 1 Marrom', 'vaso_polido_1'),
+    new item(9, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
+
+    new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Bege', 'vaso_polido_2'),
+    new item(6, 'Vaso Bojo Red. Polido C/Prato nº 2 Cimento', 'vaso_polido_2'),
+    new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Marrom', 'vaso_polido_2'),
+    new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Preto', 'vaso_polido_2'),
+
+    new item(3, 'Vaso Bojo Red. Polido C/Prato nº 3 Bege', 'vaso_polido_3'),
+    new item(3, 'Vaso Bojo Red. Polido C/Prato nº 3 Cimento', 'vaso_polido_3'),
+    new item(3, 'Vaso Bojo Red. Polido C/Prato nº 3 Marrom', 'vaso_polido_3'),
+    new item(5, 'Vaso Bojo Red. Polido C/Prato nº 3 Preto', 'vaso_polido_3'),
+
+    new item(1, 'Vaso Cone Polido C/Prato nº 4 Marrom', 'vaso_cone_4')
+]
 
 function soma() {
     var entrada = window.document.getElementById('entrada')
@@ -662,13 +907,18 @@ function sectionExpand(section, article='', menu='') {
 function impreçao(sec, lista, identificador) {
     sec.innerHTML += `<h2>${lista[0]}</h2>`
     delete(lista[0])
+    
+    let repeatNumber = 0
+    for (let index in lista) {
+        if (lista[index].nome.length > repeatNumber) {repeatNumber = lista[index].nome.length}
+    }
 
     let objeto = lista[1].objeto
     for (let index in lista) {
         if (objeto != lista[index].objeto) {sec.innerHTML += '<br>'}
         sec.innerHTML += `
         <p id='${identificador}${index}' class='inventario' onclick="linhaDestacada(${identificador}${index})">
-            ${lista[index].nome}${'.'.repeat(43 - (lista[index].nome.length))}${'.'.repeat(4 - String(lista[index].quantidade).length)}${lista[index].quantidade}
+            ${lista[index].nome}${'.'.repeat(repeatNumber - (lista[index].nome.length))}${'.'.repeat(5 - String(lista[index].quantidade).length)}${lista[index].quantidade}
         </p>`
         objeto = lista[index].objeto
     }
@@ -699,3 +949,4 @@ function linhaDestacada(identidade) {
 impreçao(articleRegaplan, regaplan, 'regaplan')
 impreçao(articleEmeAEme, emeAeme, 'emeAeme')
 impreçao(articleForth, forth, 'forth')
+impreçao(articleAlfa, alfa, 'alfa')

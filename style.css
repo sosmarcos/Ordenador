@@ -55,6 +55,7 @@ section#calculadora {
 }
 
 .inventario > p{
+    text-align: left;
     font-family: syne;
     font-weight: bold;
     font-size: 13px;
