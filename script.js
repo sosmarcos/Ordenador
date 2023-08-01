@@ -1047,7 +1047,7 @@ function repositor(identidade) {
     quadroDeEntrada.innerHTML = `<h1 style='text-align: center;'>Repositor ${empresa.nome}</h1>`
     contato(empresa.inventario[indiceRepositor].nome, 'h3')
     contato(`Estoque: ${empresa.inventario[indiceRepositor].quantidade}`)
-    contato(`Repor: <input tipe='number' id='entradaDoRepositor' class='repositor' onchange='validação("${identidade}")'>`)
+    contato(`Repor: <input type='number' id='entradaDoRepositor' class='repositor' onchange='validação("${identidade}")'>`)
 }
 
 //====================================================||Comandos||================================================
