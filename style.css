@@ -86,15 +86,7 @@ h2 {
     box-shadow: 1px 1px 1px #0000002e;
 }
 
-#navMenuPlantas {
-    margin: 0px;
-    display: none;
-    position: absolute;
-    background-image: linear-gradient(90deg, #325d85, #3376a4);
-    box-shadow: 2px 3px 4px 0px #00000033;
-}
-
-#navMenuInventarios {
+#navMenuPlantas, #navMenuInventarios, #navMenuRepositorios {
     margin: 0px;
     display: none;
     position: absolute;
@@ -225,6 +217,7 @@ p {
 .entradaMultiplo {
     height: 21px;
 }
+
 .entradaMultiplo {
     margin-left: 10px;
     font: normal 0.9em 'hina';
@@ -235,4 +228,51 @@ p {
     border-color: white;
     border-width: 0px 0px 2px 0px;
     border-style: groove;
+}
+
+#divDeEntrada {
+    margin-bottom: 28px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #0000003d;
+}
+
+p.repositor {
+    font-size: 1.2em;
+}
+
+p.menssagem_de_erro {
+    margin: 10px;
+    padding: 6px;
+    background-image: linear-gradient(45deg, #c40c0c, #9c3030);
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    font-family: "georgia";
+    border-radius: 5px;
+    box-shadow: 0px 3px 14px 1px #00000059;
+}
+
+p.ordem_de_reposição {
+    padding: 1px;
+    text-align: left;
+    font-family: syne;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.ordem_de_reposição:hover {
+    font-weight: normal;
+    font-style: italic;
+    color: #ffffff;
+    background-image: linear-gradient(90deg, #548abd, #72a5c8);
+    padding: 6px 0px;
+    border-radius: 3px;
+}
+
+input.repositor {
+    display: inline;
+    font-size: 1.2em;
+    border-width: 0px 0px 1px 0px;
+    border-style: dashed;
+    width: 40px;
 }

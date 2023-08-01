@@ -6,16 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <title>Plantas</title>
+    <title>Ordenador</title>
 </head>
 <body>
     <header>
-        <h1 class="cabeça">Plantas</h1>
+        <h1 class="cabeça">Ordenador</h1>
     </header>
     <nav>
         <input type="button" value="Categorias" class="navButton" onclick="menuExpand('navMenuPlantas')">
         <input type="button" value="Calculadora" class="navButton" onclick="sectionExpand('calculadora')">
-        <input type="button" value="Inventarios" class="navButton" onclick="menuExpand('navMenuInventarios')">
+        <input type="button" value="Inventários" class="navButton" onclick="menuExpand('navMenuInventarios')">
+        <input type="button" value="Repositórios" class="navButton" onclick="menuExpand('navMenuRepositorios')">
         <ul id="navMenuPlantas">
             <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'internas', 'navMenuPlantas')">Internas</div></li>
             <li class="navItem"><div class="navItem" onclick="sectionExpand('plantas', 'jardins', 'navMenuPlantas')">Jardins</div></li>
@@ -32,6 +33,12 @@
             <li class="navItem"><div class="navItem" onclick="sectionExpand('inventarios', 'eme_a_eme', 'navMenuInventarios')">Eme A Eme</div></li>
             <li class="navItem"><div class="navItem" onclick="sectionExpand('inventarios', 'forth', 'navMenuInventarios')">Forth</div></li>
             <li class="navItem"><div class="navItem" onclick="sectionExpand('inventarios', 'alfa', 'navMenuInventarios')">Alfa</div></li>
+        </ul>
+        <ul id="navMenuRepositorios">
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('repositor', 'regaplan', 'navMenuRepositorios')">Regaplan</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('repositor', 'eme_a_eme', 'navMenuRepositorios')">Eme A Eme</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('repositor', 'forth', 'navMenuRepositorios')">Forth</div></li>
+            <li class="navItem"><div class="navItem" onclick="sectionExpand('repositor', 'alfa', 'navMenuRepositorios')">Alfa</div></li>
         </ul>
     </nav>
     <main id="principal">
@@ -191,22 +198,16 @@
                 </ul>
             </article>
         </section>
-        
         <section id="inventarios">
-            <article id="regaplan" class="inventario">
-                <h1>Regaplan</h1>
-            </article>
-            <article id="eme_a_eme" class="inventario">
-                <h1>Eme A Eme</h1>
-            </article>
-            <article id="forth" class="inventario">
-                <h1>Forth</h1>
-            </article>
-            <article id="alfa" class="inventario">
-                <h1>Alfa</h1>
-            </article>
+            <article id="regaplan" class="inventario"></article>
+            <article id="eme_a_eme" class="inventario"></article>
+            <article id="forth" class="inventario"></article>
+            <article id="alfa" class="inventario"></article>
         </section>
-        
+        <section id="repositor">
+            <div id="divDeEntrada"></div>
+            <div id="divDeSaida"></div>
+        </section>
     </main>
     <script src="script.js"></script>
 </body>
