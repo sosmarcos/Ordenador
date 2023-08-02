@@ -639,7 +639,7 @@ var alfa = new Inventario(
         new item(6, 'Coluna Red. Polida C/Prato nº 2 Marrom', 'coluna_polida_2'),
         new item(5, 'Coluna Red. Polida C/Prato nº 2 Preto', 'coluna_polida_2'),
 
-        new item(5, 'Coluna Red. Polida C/Prato nº 3 Bege', 'coluna_polida_3'),
+        new item(2, 'Coluna Red. Polida C/Prato nº 3 Bege', 'coluna_polida_3'),
         new item(5, 'Coluna Red. Polida C/Prato nº 3 Cimento', 'coluna_polida_3'),
         new item(8, 'Coluna Red. Polida C/Prato nº 3 Marrom', 'coluna_polida_3'),
         new item(5, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
