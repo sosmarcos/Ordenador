@@ -32,10 +32,19 @@ class ValorUnitario {
         } 
     }
 
+class ItemEspecifico {
+    constructor (quantidade, nome, alternador) {
+        this.nome = nome
+        this.quantidade = quantidade
+        this.alternador = alternador
+    }
+} 
+
 //=============================================||Variaveis||======================================================
 
 var total = 0
-var registro = []
+var registroDaCalculadora = []
+var registroDoRepositor = []
 var porcento3On = false
 var porcento5On = false
 var menuEspecificOn = false
@@ -145,8 +154,8 @@ var regaplan = new Inventario(
         new item(0, 'Tripé Decorativo Pequeno Preto', 'tp_decorativo'),
 
         new item(5, 'Tripé Suspenso 01 20x40cm', 'tp_suspenso'),
-        new item(5, 'Tripé Suspenso 01 20x40cm', 'tp_suspenso'),
-        new item(10, 'Tripé Suspenso 01 20x40cm', 'tp_suspenso'),
+        new item(5, 'Tripé Suspenso 01 25x40cm', 'tp_suspenso'),
+        new item(10, 'Tripé Suspenso 01 30x40cm', 'tp_suspenso'),
 
         new item(8, 'Violeteiro Com Corrente - 2 Vasos', 'violeteiro'),
         new item(8, 'Violeteiro Com Corrente - 3 Vasos', 'violeteiro'),
@@ -755,12 +764,11 @@ function soma() {
     var valor = parseFloat(entrada.value)
 
     total += valor
-    registro.push(new ValorUnitario(valor, `R&#36; ${valor.toFixed(2)}`, registro.length))
-    console.log(registro)
+    registroDaCalculadora.push(new ValorUnitario(valor, `R&#36; ${valor.toFixed(2)}`, registroDaCalculadora.length))
     
     retorno.innerText = ''
-    for (let index in registro) {
-        retorno.innerHTML += registro[index].codigo
+    for (let index in registroDaCalculadora) {
+        retorno.innerHTML += registroDaCalculadora[index].codigo
     }
     retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
     entrada.value = ''
@@ -776,8 +784,8 @@ function porcento5() {
         porcento3On = false
 
         retorno.innerText = ''
-        for (let index in registro) {
-            retorno.innerHTML += registro[index].codigo
+        for (let index in registroDaCalculadora) {
+            retorno.innerHTML += registroDaCalculadora[index].codigo
         }
         retorno.innerHTML += `R&#36; -${(total*5/100).toFixed(2)}<br>`
         retorno.innerHTML += `Total: R&#36 ${total5.toFixed(2)}<br>`
@@ -785,8 +793,8 @@ function porcento5() {
         porcento5On = false
 
         retorno.innerText = ''
-        for (let index in registro) {
-            retorno.innerHTML += registro[index].codigo
+        for (let index in registroDaCalculadora) {
+            retorno.innerHTML += registroDaCalculadora[index].codigo
         }
         retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
     }
@@ -800,8 +808,8 @@ function porcento3() {
         porcento5On = false
 
         retorno.innerText = ''
-        for (let index in registro) {
-            retorno.innerHTML += registro[index].codigo
+        for (let index in registroDaCalculadora) {
+            retorno.innerHTML += registroDaCalculadora[index].codigo
         }
         retorno.innerHTML += `R&#36; -${(total*3/100).toFixed(2)}<br>`
         retorno.innerHTML += `Total: R&#36 ${total3.toFixed(2)}<br>`
@@ -809,8 +817,8 @@ function porcento3() {
         porcento3On = false
 
         retorno.innerText = ''
-        for (let index in registro) {
-            retorno.innerHTML += registro[index].codigo
+        for (let index in registroDaCalculadora) {
+            retorno.innerHTML += registroDaCalculadora[index].codigo
         }
         retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
     }
@@ -819,7 +827,7 @@ function porcento3() {
 function funçoesDoValor(index) {
     var menuEspecifico = window.document.getElementById(`funçoes${index}`)
 
-    for (let index in registro) {
+    for (let index in registroDaCalculadora) {
         let menu = window.document.getElementById(`funçoes${index}`)
         if (menu.style.display == 'inline-block') {
             if (menu != menuEspecifico) {
@@ -841,15 +849,15 @@ function funçoesDoValor(index) {
 }
 
 function multiplicação(index) {
-    var multiplicando = registro[index].valor
+    var multiplicando = registroDaCalculadora[index].valor
     var multiplicador = window.document.getElementById(`entrada${index}`).value
 
     if (multiplicador) {
-        registro[index].valor = multiplicando * multiplicador
-        registro[index].texto += `x${multiplicador}`
-        registro[index].codigo = `
+        registroDaCalculadora[index].valor = multiplicando * multiplicador
+        registroDaCalculadora[index].texto += `x${multiplicador}`
+        registroDaCalculadora[index].codigo = `
             <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
-                ${registro[index].texto}
+                ${registroDaCalculadora[index].texto}
             </label>
             <div id='funçoes${index}' class="menuEspecifico">
             <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
@@ -857,26 +865,26 @@ function multiplicação(index) {
 
         retorno.innerText = ''
         total = 0
-        for (let valores in registro) {
-            total += registro[valores].valor
-            retorno.innerHTML += registro[valores].codigo
+        for (let valores in registroDaCalculadora) {
+            total += registroDaCalculadora[valores].valor
+            retorno.innerHTML += registroDaCalculadora[valores].codigo
         }
         retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
         menuEspecificOn = false
     } else {
         window.document.getElementById(`entrada${index}`).style.display = 'none'
-        registro[index].multiplicado = 0
+        registroDaCalculadora[index].multiplicado = 0
     }
     console.log(multiplicador)
 }
 
 function deletar(index) {
-    total -= registro[index].valor
+    total -= registroDaCalculadora[index].valor
 
-    delete registro[index]
+    delete registroDaCalculadora[index]
     retorno.innerText = ''
-    for (let index in registro) {
-        retorno.innerHTML += registro[index].codigo
+    for (let index in registroDaCalculadora) {
+        retorno.innerHTML += registroDaCalculadora[index].codigo
     }
     retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
     menuEspecificOn = false
@@ -1016,6 +1024,18 @@ function buscadorDeInventario(nome) {
 var alternador = ''
 
 function validação(identidade) {
+    function retornar() {
+        alternador = ''
+        quadroDeSaida.innerHTML = ''
+        for (let index in registroDoRepositor) {
+            if (alternador != registroDoRepositor[index].alternador) {
+                if(alternador != '') {quadroDeSaida.innerHTML += '<br>'}
+            }
+            alternador = `${registroDoRepositor[index].alternador}`
+            quadroDeSaida.innerHTML += `<p class="ordem_de_reposição">${registroDoRepositor[index].nome} /${registroDoRepositor[index].quantidade}</p>`
+        }
+        indiceRepositor++
+    }
     let quadroDeEntrada = document.getElementById('divDeEntrada')
     let quadroDeSaida = document.getElementById('divDeSaida')
     let reposição = document.getElementById('entradaDoRepositor').value
@@ -1023,19 +1043,16 @@ function validação(identidade) {
 
     if ((item.quantidade - reposição) < 0) {
         if (!document.getElementsByClassName('menssagem_de_erro')[0]) {
-            quadroDeEntrada.innerHTML += '<p class="menssagem_de_erro">Quantidado no disponivel</p>'
+            quadroDeEntrada.innerHTML += '<p class="menssagem_de_erro">Quantidado não disponivel</p>'
         }
         
     } else {
         try {document.getElementsByClassName('menssagem_de_erro')[0].remove()}
         catch {null}
 
-        if (alternador != item.objeto) {quadroDeSaida.innerHTML += '<br>'}
-        alternador = `${item.objeto}`
-
-        quadroDeSaida.innerHTML += `<p class="ordem_de_reposição">${item.nome} /${reposição}</p>`
-        indiceRepositor++
-                
+        registroDoRepositor.unshift(new ItemEspecifico(reposição, item.nome, item.objeto))
+        retornar()
+             
         repositor(identidade)
     }
 }
@@ -1045,11 +1062,28 @@ function repositor(identidade) {
     
     let empresa = buscadorDeInventario(identidade)
     let quadroDeEntrada = document.getElementById('divDeEntrada')
+    let quadroDeSaida = document.getElementById('divDeSaida')
 
     quadroDeEntrada.innerHTML = `<h1 style='text-align: center;'>Repositor ${empresa.nome}</h1>`
-    contato(empresa.inventario[indiceRepositor].nome, 'h3')
-    contato(`Estoque: ${empresa.inventario[indiceRepositor].quantidade}`)
-    contato(`Repor: <input type='number' id='entradaDoRepositor' class='repositor' onchange='validação("${identidade}")'>`)
+    try {
+        contato(empresa.inventario[indiceRepositor].nome, 'h3')
+        contato(`Estoque: ${empresa.inventario[indiceRepositor].quantidade}`)
+        contato(`Repor: <input type='number' id='entradaDoRepositor' class='repositor' onchange='validação("${identidade}")'>`)
+        document.getElementById('entradaDoRepositor').select()
+    } catch {
+        contato(`Ordem de Reposição ${empresa.nome}`)
+        alternador = ''
+        quadroDeSaida.innerHTML = ''
+        for (var index=registroDoRepositor.length - 1; index > -1; index--) {
+            if (alternador != registroDoRepositor[index].alternador) {
+                if(alternador != '') {quadroDeSaida.innerHTML += '<br>'}
+            }
+            alternador = `${registroDoRepositor[index].alternador}`
+            quadroDeSaida.innerHTML += `<p class="ordem_de_reposição">${registroDoRepositor[index].nome} /${registroDoRepositor[index].quantidade}</p>`
+
+            indiceRepositor = 0
+        }
+    }
 }
 
 //====================================================||Comandos||================================================

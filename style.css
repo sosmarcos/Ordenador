@@ -95,6 +95,7 @@ h2 {
 }
 
 .navButton {
+    width: 170px;
     background: transparent;
     color: white;
     border: none;
