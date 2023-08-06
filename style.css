@@ -15,7 +15,7 @@
 
 @font-face {
     font-family: 'syne';
-    src: url(fonts/SyneMono-Regular.ttf) format(TrueType);
+    src: url(fonts/SyneMono-Regular.ttf) format('TrueType');
 }
 
 * {
@@ -95,7 +95,7 @@ h2 {
 }
 
 .navButton {
-    width: 170px;
+    width: 160px;
     background: transparent;
     color: white;
     border: none;
