@@ -103,7 +103,6 @@ h2 {
     margin: 0px 0px 5px 5px;
     border-radius: 50px;
     font: normal 1.5em 'hina';
-    
 }
 
 .navButton:hover {
@@ -231,6 +230,22 @@ p {
     border-style: groove;
 }
 
+.entradaDeOrdem {
+    display: none;
+    position: absolute;
+    background-color: #296cabe6;
+    margin-left: 10px;
+    font: normal 1.5em 'hina';
+    text-align: center;
+    width: 39px;
+    height: 32px;
+    color: white;
+    border-color: white;
+    border-width: 0px 0px 2px 0px;
+    border-style: groove;
+    border-radius: 3px;
+}
+
 #divDeEntrada {
     margin-bottom: 28px;
     padding-bottom: 5px;
@@ -253,7 +268,8 @@ p.menssagem_de_erro {
     box-shadow: 0px 3px 14px 1px #00000059;
 }
 
-p.ordem_de_reposição {
+.ordem_de_reposição {
+    display: block;
     padding: 1px;
     text-align: left;
     font-family: syne;

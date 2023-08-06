@@ -33,10 +33,14 @@ class ValorUnitario {
     }
 
 class ItemEspecifico {
-    constructor (quantidade, nome, alternador) {
+    constructor (quantidade, nome, alternador, identidade) {
         this.nome = nome
         this.quantidade = quantidade
         this.alternador = alternador
+        this.codigo = `
+            <label id='ordem${indiceRepositor}' class="ordem_de_reposição" onclick='editorDeOrdem(${indiceRepositor}, "${identidade}")'>
+                ${nome} /${quantidade}
+            </label>`
     }
 } 
 
@@ -1032,7 +1036,7 @@ function validação(identidade) {
                 if(alternador != '') {quadroDeSaida.innerHTML += '<br>'}
             }
             alternador = `${registroDoRepositor[index].alternador}`
-            quadroDeSaida.innerHTML += `<p class="ordem_de_reposição">${registroDoRepositor[index].nome} /${registroDoRepositor[index].quantidade}</p>`
+            quadroDeSaida.innerHTML += registroDoRepositor[index].codigo
         }
         indiceRepositor++
     }
@@ -1050,7 +1054,7 @@ function validação(identidade) {
         try {document.getElementsByClassName('menssagem_de_erro')[0].remove()}
         catch {null}
 
-        registroDoRepositor.unshift(new ItemEspecifico(reposição, item.nome, item.objeto))
+        registroDoRepositor.unshift(new ItemEspecifico(reposição, item.nome, item.objeto, identidade))
         retornar()
              
         repositor(identidade)
@@ -1086,10 +1090,46 @@ function repositor(identidade) {
     }
 }
 
+function validaçãoDaEdção(identidade, index) {
+    let quadroDeEntrada = document.getElementById('divDeEntrada')
+    let reposição = document.getElementById('entradaDoRepositor').value
+    let item = buscadorDeInventario(identidade).inventario[index]
+    let retorno = document.getElementById(`ordem${index}`)
+
+    if ((item.quantidade - reposição) < 0) {
+        if (!document.getElementsByClassName('menssagem_de_erro')[0]) {
+            quadroDeEntrada.innerHTML += '<p class="menssagem_de_erro">Quantidado não disponivel</p>'
+        }
+        
+    } else {
+        try {document.getElementsByClassName('menssagem_de_erro')[0].remove()}
+        catch {null}
+        
+        registroDoRepositor[(registroDoRepositor.length - 1) - index].quantidade = reposição
+        registroDoRepositor[(registroDoRepositor.length - 1) - index].codigo = `
+            <label id='ordem${index}' class="ordem_de_reposição" onclick='editorDeOrdem(${index}, "${identidade}")'>
+                ${registroDoRepositor[(registroDoRepositor.length - 1) - index].nome} /${reposição}
+            </label>`
+
+        retorno.innerText = `${registroDoRepositor[(registroDoRepositor.length - 1) - index].nome} /${reposição}`
+        repositor(identidade)
+    }
+}
+
+function editorDeOrdem(index, identidade) {
+    function contato(texto, tag='p class="repositor"') {quadroDeEntrada.innerHTML += `<${tag}>${texto}</${tag}>`}
+    let empresa = buscadorDeInventario(identidade)
+    let quadroDeEntrada = document.getElementById('divDeEntrada')
+
+    quadroDeEntrada.innerHTML = `<h1 style='text-align: center;'>Repositor ${empresa.nome}</h1>`
+    contato(empresa.inventario[index].nome, 'h3')
+    contato(`Estoque: ${empresa.inventario[index].quantidade}`)
+    contato(`Repor: <input type='number' id='entradaDoRepositor' class='repositor' onchange='validaçãoDaEdção("${identidade}", "${index}")'>`)
+    document.getElementById('entradaDoRepositor').select()
+}
+
 //====================================================||Comandos||================================================
 impreção(articleRegaplan, regaplan, 'regaplan')
 impreção(articleEmeAEme, emeAeme, 'emeAeme')
 impreção(articleForth, forth, 'forth')
 impreção(articleAlfa, alfa, 'alfa')
-
-//Teste de edição de código pelo aplicativo movel
