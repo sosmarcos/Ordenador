@@ -178,7 +178,7 @@ var regaplan = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '06/08/2023',
+    '07/08/2023',
     [
         new item(209, 'Alça Universal Branca', 'alça_universal'),
         new item(54, 'Alça Universal Café', 'alça_universal'),
@@ -380,7 +380,7 @@ var emeAeme = new Inventario(
         new item(1, 'Vaso T 16 Preto', 'vaso_t_16'),
 
         new item(6, 'Vaso T 18 Cerâmica', 'vaso_t_18'),
-        new item(7, 'Vaso T 18 Preto', 'vaso_t_18'),
+        new item(0, 'Vaso T 18 Preto', 'vaso_t_18'),
 
         new item(4, 'Vaso T 20 Cerâmica', 'vaso_t_20'),
         new item(11, 'Vaso T 20 Preto', 'vaso_t_20'),
