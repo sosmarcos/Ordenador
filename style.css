@@ -54,7 +54,9 @@ section#calculadora {
     display: none;
 }
 
-.inventario > p{
+label.inventario {
+    display: block;
+    padding: 0px;
     text-align: left;
     font-family: syne;
     font-weight: bold;
@@ -277,7 +279,7 @@ p.menssagem_de_erro {
     font-weight: bold;
 }
 
-.ordem_de_reposição:hover {
+.ordem_de_reposição:hover, label.inventario:hover {
     font-weight: normal;
     font-style: italic;
     color: #ffffff;
