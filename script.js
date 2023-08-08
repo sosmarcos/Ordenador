@@ -181,7 +181,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '07/08/2023',
+    '08/08/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -256,7 +256,7 @@ var rischioto = new Inventario(
 
         new item(0, 'Jardineira Floratta n80 Areia', 'jardineira_floratta_80'),
         new item(33, 'Jardineira Floratta n80 Azul', 'jardineira_floratta_80'),
-        new item(10, 'Jardineira Floratta n80 Rosa', 'jardineira_floratta_80'),
+        new item(4, 'Jardineira Floratta n80 Rosa', 'jardineira_floratta_80'),
         new item(24, 'Jardineira Floratta n80 Verde', 'jardineira_floratta_80'),
 
         new item(46, 'Jardineira n35 Areia', 'jardineira_n35'),
@@ -400,7 +400,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '07/08/2023',
+    '08/08/2023',
     [
         new item(209, 'Alça Universal Branca', 'alça_universal'),
         new item(54, 'Alça Universal Café', 'alça_universal'),
@@ -498,7 +498,7 @@ var emeAeme = new Inventario(
         new item(0, 'Prato B02 13cm Marfim', 'prato_b02'),
         new item(0, 'Prato B02 13cm Preto', 'prato_b02'),
 
-        new item(19, 'Prato B03 16cm Cerâmica', 'prato_b03'),
+        new item(18, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(15, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(28, 'Prato B03 16cm Marfim', 'prato_b03'),
         new item(0, 'Prato B03 16cm Preto', 'prato_b03'),
