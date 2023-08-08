@@ -622,9 +622,9 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '07/08/2023',
+    '08/08/2023',
     [
-        new item(18, 'Acaricida Concentrado - 60ml', 'a'),
+        new item(7, 'Acaricida Concentrado - 60ml', 'a'),
         new item(12, 'Acaricida p/uso - 500ml', 'a'),
 
         new item(33, 'Baraticida Gel', 'b'),
@@ -656,7 +656,7 @@ var forth = new Inventario(
         new item(5, 'Equilibrio Concentrado - 60ml', 'e'),
         new item(3, 'Equilibrio Concentrado - 500ml', 'e'),
 
-        new item(18, 'Fipronil+imidacloprid Concentrado - 60ml', 'f'),
+        new item(5, 'Fipronil+imidacloprid Concentrado - 60ml', 'f'),
         new item(10, 'Flores Concentrado - 60ml', 'f'),
         new item(6, 'Flores p/uso - 500ml', 'f'),
         new item(23, 'Flores - 400g', 'f'),
@@ -668,11 +668,11 @@ var forth = new Inventario(
         new item(0, 'Frutas Concentrado - 60ml', 'f'),
         new item(18, 'Frutas p/uso - 500ml', 'f'),
         new item(5, 'Frutas - 400g', 'f'),
-        new item(11, 'Frutas - 3kg', 'f'),
+        new item(9, 'Frutas - 3kg', 'f'),
         new item(0, 'Frutas - 10Kg', 'f'),
-        new item(36, 'Fungicida Concentrado - 30ml', 'f'),
-        new item(12, 'Fungicida p/uso - 500ml', 'f'),
-        new item(12, 'Fungicida cobre p/uso - 500ml', 'f'),
+        new item(16, 'Fungicida Concentrado - 30ml', 'f'),
+        new item(10, 'Fungicida p/uso - 500ml', 'f'),
+        new item(11, 'Fungicida cobre p/uso - 500ml', 'f'),
 
         new item(0, 'Gel para plantio - 100g', 'g'),
 
@@ -682,7 +682,7 @@ var forth = new Inventario(
         new item(6, 'Hortaliças - 3kg', 'h'),
         new item(0, 'Hortaliças - 10Kg', 'h'),
 
-        new item(54, 'Inseticida Concentrado - 30ml', 'i'),
+        new item(30, 'Inseticida Concentrado - 30ml', 'i'),
         new item(17, 'Inseticida p/uso - 500ml', 'i'),
 
         new item(0, 'Jabuticabeiras Concentrado - 60ml', 'j'),
@@ -724,7 +724,7 @@ var forth = new Inventario(
         new item(26, 'Rosa do Deserto - 400g', 'r'),
         new item(2, 'Rosa do Deserto - 3kg', 'r'),
 
-        new item(18, 'Samambaias Concentrado - 60ml', 's'),
+        new item(4, 'Samambaias Concentrado - 60ml', 's'),
         new item(14, 'Samambaias p/uso - 500ml', 's'),
         new item(26, 'Samambaias - 400g', 's'),
         new item(10, 'Suculentas Concentrado - 60ml', 's'),
@@ -732,7 +732,7 @@ var forth = new Inventario(
         new item(10, 'Temperos Concentrado - 60ml', 't'),
         new item(13, 'Temperos p/uso - 500ml', 't'),
 
-        new item(18, 'Violetas Concentrado - 60ml', 'v'),
+        new item(10, 'Violetas Concentrado - 60ml', 'v'),
     ]
 )
 var alfa = new Inventario(
