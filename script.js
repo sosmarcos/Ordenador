@@ -737,7 +737,7 @@ var forth = new Inventario(
 )
 var alfa = new Inventario(
     'Alfa',
-    '29/07/2023',
+    '09/08/2023',
     [
         new item(4, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(4, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -825,7 +825,7 @@ var alfa = new Inventario(
         new item(2, 'Coluna Red. Diamante C/Prato nº 3 Preta', 'coluna_diamante_3'),
 
         new item(1, 'Coluna Red. Diamante C/Prato nº 4 Bege', 'coluna_diamante_4'),
-        new item(1, 'Coluna Red. Diamante C/Prato nº 4 Cimento', 'coluna_diamante_4'),
+        new item(0, 'Coluna Red. Diamante C/Prato nº 4 Cimento', 'coluna_diamante_4'),
         new item(1, 'Coluna Red. Diamante C/Prato nº 4 Marrom', 'coluna_diamante_4'),
         new item(3, 'Coluna Red. Diamante C/Prato nº 4 Preta', 'coluna_diamante_4'),
 
