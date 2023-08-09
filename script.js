@@ -68,6 +68,8 @@ var articleRischioto = window.document.getElementById('rischioto')
 var articleEmeAEme = window.document.getElementById('eme_a_eme')
 var articleForth = window.document.getElementById('forth')
 var articleAlfa = window.document.getElementById('alfa')
+var articleJelPlast = window.document.getElementById('jel_plast')
+var articlePolicamp = window.document.getElementById('policamp')
 
 //=======================||Listas||=========================//
 var categorias = [
@@ -86,7 +88,9 @@ var inventorios = [
     'rischioto',
     'eme_a_eme',
     'forth',
-    'alfa'
+    'alfa',
+    'jel_plast',
+    'policamp'
 ]
 var regaplan = new Inventario(
     'Regaplan',
@@ -750,8 +754,8 @@ var alfa = new Inventario(
         new item(3, 'Bacia Diamante nº 3 Cimento', 'bacia_diamante_3'),
         new item(2, 'Bacia Diamante nº 3 Marrom', 'bacia_diamante_3'),
 
-        new item(15, 'Bacia Grafiato C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
-        new item(15, 'Bacia Grafiato C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
+        new item(14, 'Bacia Grafiato C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
+        new item(14, 'Bacia Grafiato C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
         new item(15, 'Bacia Grafiato C/ Prato nº 1 Marrom', 'bacia_grafiato_1'),
         new item(15, 'Bacia Grafiato C/ Prato nº 1 Preto', 'bacia_grafiato_1'),
 
@@ -786,12 +790,12 @@ var alfa = new Inventario(
         new item(4, 'Bacia Polida C/Prato nº 2 Marrom', 'bacia_polida_2'),
         new item(6, 'Bacia Polida C/Prato nº 2 Preto', 'bacia_polida_2'),
 
-        new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Bege', 'coluna_degrau_1'),
+        new item(2, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Bege', 'coluna_degrau_1'),
         new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Cimento', 'coluna_degrau_1'),
         new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Marrom', 'coluna_degrau_1'),
         new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Preto', 'coluna_degrau_1'),
 
-        new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Bege', 'coluna_degrau_2'),
+        new item(2, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Bege', 'coluna_degrau_2'),
         new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Cimento', 'coluna_degrau_2'),
         new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Marrom', 'coluna_degrau_2'),
         new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Preto', 'coluna_degrau_2'),
@@ -834,12 +838,12 @@ var alfa = new Inventario(
         new item(2, 'Coluna Red. Diamante C/Prato nº 5 Marrom', 'coluna_diamante_5'),
         new item(2, 'Coluna Red. Diamante C/Prato nº 5 Preta', 'coluna_diamante_5'),
 
-        new item(4, 'Coluna Red. Grafiato C/Preto nº 1 Bege', 'coluna_grafiato_1'),
-        new item(4, 'Coluna Red. Grafiato C/Preto nº Cimento', 'coluna_grafiato_1'),
-        new item(4, 'Coluna Red. Grafiato C/Preto nº 1 Marrom', 'coluna_grafiato_1'),
+        new item(3, 'Coluna Red. Grafiato C/Preto nº 1 Bege', 'coluna_grafiato_1'),
+        new item(4, 'Coluna Red. Grafiato C/Preto nº 1 Cimento', 'coluna_grafiato_1'),
+        new item(3, 'Coluna Red. Grafiato C/Preto nº 1 Marrom', 'coluna_grafiato_1'),
         new item(4, 'Coluna Red. Grafiato C/Preto nº 1 Preto', 'coluna_grafiato_1'),
 
-        new item(5, 'Coluna Red. Grafiato C/Preto nº 2 Bege', 'coluna_grafiato_2'),
+        new item(4, 'Coluna Red. Grafiato C/Preto nº 2 Bege', 'coluna_grafiato_2'),
         new item(6, 'Coluna Red. Grafiato C/Preto nº 2 Ciemento', 'coluna_grafiato_2'),
         new item(5, 'Coluna Red. Grafiato C/Preto nº 2 Marrom', 'coluna_grafiato_2'),
         new item(4, 'Coluna Red. Grafiato C/Preto nº 2 Preto', 'coluna_grafiato_2'),
@@ -881,7 +885,7 @@ var alfa = new Inventario(
         new item(8, 'Coluna Red. Polida C/Prato nº 3 Marrom', 'coluna_polida_3'),
         new item(5, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
 
-        new item(2, 'Coluna Red. Polida C/Prato nº 4 Bege', 'coluna_polida_4'),
+        new item(1, 'Coluna Red. Polida C/Prato nº 4 Bege', 'coluna_polida_4'),
         new item(4, 'Coluna Red. Polida C/Prato nº 4 Cimento', 'coluna_polida_4'),
         new item(5, 'Coluna Red. Polida C/Prato nº 4 Marrom', 'coluna_polida_4'),
         new item(4, 'Coluna Red. Polida C/Prato nº 4 Preto', 'coluna_polida_4'),
@@ -920,12 +924,12 @@ var alfa = new Inventario(
         new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Marrom', 'vaso_frisado_1'),
         new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Preto', 'vaso_frisado_1'),
 
-        new item(10, 'Vaso Bojo Frisado C/Prato nº 2 Bege', 'vaso_frisado_2'),
+        new item(8, 'Vaso Bojo Frisado C/Prato nº 2 Bege', 'vaso_frisado_2'),
         new item(10, 'Vaso Bojo Frisado C/Prato nº 2 Cimento', 'vaso_frisado_2'),
         new item(7, 'Vaso Bojo Frisado C/Prato nº 2 Marrom', 'vaso_frisado_2'),
         new item(7, 'Vaso Bojo Frisado C/Prato nº 2 Preto', 'vaso_frisado_2'),
 
-        new item(10, 'Vaso Bojo Frisado C/Prato nº 3 Bege', 'vaso_frisado_3'),
+        new item(9, 'Vaso Bojo Frisado C/Prato nº 3 Bege', 'vaso_frisado_3'),
         new item(10, 'Vaso Bojo Frisado C/Prato nº 3 Cimento', 'vaso_frisado_3'),
         new item(4, 'Vaso Bojo Frisado C/Prato nº 3 Marrom', 'vaso_frisado_3'),
         new item(7, 'Vaso Bojo Frisado C/Prato nº 3 Preto', 'vaso_frisado_3'),
@@ -940,7 +944,7 @@ var alfa = new Inventario(
         new item(10, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Marrom', 'vaso_grafiato_1'),
         new item(9, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Preto', 'vaso_grafiato_1'),
 
-        new item(8, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Bege', 'vaso_grafiato_2'),
+        new item(7, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Bege', 'vaso_grafiato_2'),
         new item(8, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Cimento', 'vaso_grafiato_2'),
         new item(6, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Marrom', 'vaso_grafiato_2'),
         new item(3, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Preto', 'vaso_grafiato_2'),
@@ -969,17 +973,43 @@ var alfa = new Inventario(
         new item(6, 'Vaso Bojo Red. Polido C/Prato nº 1 Marrom', 'vaso_polido_1'),
         new item(9, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
 
-        new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Bege', 'vaso_polido_2'),
+        new item(3, 'Vaso Bojo Red. Polido C/Prato nº 2 Bege', 'vaso_polido_2'),
         new item(6, 'Vaso Bojo Red. Polido C/Prato nº 2 Cimento', 'vaso_polido_2'),
         new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Marrom', 'vaso_polido_2'),
         new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Preto', 'vaso_polido_2'),
 
-        new item(3, 'Vaso Bojo Red. Polido C/Prato nº 3 Bege', 'vaso_polido_3'),
+        new item(2, 'Vaso Bojo Red. Polido C/Prato nº 3 Bege', 'vaso_polido_3'),
         new item(3, 'Vaso Bojo Red. Polido C/Prato nº 3 Cimento', 'vaso_polido_3'),
         new item(3, 'Vaso Bojo Red. Polido C/Prato nº 3 Marrom', 'vaso_polido_3'),
         new item(5, 'Vaso Bojo Red. Polido C/Prato nº 3 Preto', 'vaso_polido_3'),
 
         new item(1, 'Vaso Cone Polido C/Prato nº 4 Marrom', 'vaso_cone_4')
+    ]
+)
+var policamp = new Inventario(
+    'Policamp',
+    '09/08/2023',
+    [
+        new item(120, 'Pulverizador 500ml', 'pulverizador'),
+        new item(60, 'Pulverizador 1 litro', 'pulverizador'),
+        new item(38, 'Regador Com Cabo - Bico', 'Regador_cabo'),
+        new item(30, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
+        new item(0, 'Regador - 2 litros', 'Regador'),
+        new item(118, 'Regador - 4 litros', 'Regador'),
+        new item(48, 'Regador - 5 litros', 'Regador'),
+        new item(35, 'Regador - 10 litros', 'Regador')
+    ]
+)
+var jel_plast = new Inventario(
+    'Jel Plast',
+    '09/08/2023',
+    [
+        new item(108, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
+        new item(0, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
+        new item(144, 'Bebedouro Beija Flor Poleiro REF55', 'bebedouro'),
+        new item(408, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
+        new item(0, 'Nectar de Beija Flor Com Corante', 'nectar'),
+        new item(0, 'Nectar de Beija Flor Sem Corante', 'nectar')
     ]
 )
 
@@ -1245,6 +1275,10 @@ function buscadorDeInventario(nome) {
             return forth
         case 'alfa':
             return alfa
+        case 'jel_plast':
+            return jel_plast
+        case 'policamp':
+            return policamp
         default:
             break
     }
@@ -1357,3 +1391,5 @@ impreção(articleEmeAEme, emeAeme, 'emeAeme')
 impreção(articleForth, forth, 'forth')
 impreção(articleAlfa, alfa, 'alfa')
 impreção(articleRischioto, rischioto, 'rischioto')
+impreção(articleJelPlast, jel_plast, 'jel_plast')
+impreção(articlePolicamp, policamp, 'policamp')
