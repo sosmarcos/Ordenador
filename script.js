@@ -1304,7 +1304,7 @@ function validação(identidade) {
 
     if ((item.quantidade - reposição) < 0) {
         if (!document.getElementsByClassName('menssagem_de_erro')[0]) {
-            quadroDeEntrada.innerHTML += '<p class="menssagem_de_erro">Quantidado não disponivel</p>'
+            quadroDeEntrada.innerHTML += '<p class="menssagem_de_erro">Quantidade não disponivel</p>'
         }
         
     } else {

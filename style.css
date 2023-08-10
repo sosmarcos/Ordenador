@@ -295,3 +295,11 @@ input.repositor {
     border-style: dashed;
     width: 40px;
 }
+
+.esgotado {
+    padding: 5px 2px;
+    background-image: linear-gradient(46deg, #e11e1e94, #ea000005);
+    border-left: solid 2px #940707de;
+    border-radius: 10px 50px 50px 10px;
+    box-shadow: 1px -1px 5px 0px #00000024;
+}
