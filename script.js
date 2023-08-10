@@ -185,7 +185,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '08/08/2023',
+    '10/08/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -232,7 +232,7 @@ var rischioto = new Inventario(
 
         new item(35, 'Cuia Bella Fiore 4 litros Areia', 'cuia_bf_4'),
         new item(7, 'Cuia Bella Fiore 4 litros Cerâmica', 'cuia_bf_4'),
-        new item(21, 'Cuia Bella Fiore 4 litros Preto', 'cuia_bf_4'),
+        new item(20, 'Cuia Bella Fiore 4 litros Preto', 'cuia_bf_4'),
 
         new item(42, 'Cuia Bella Fiore 7.5 litros Areia', 'cuia_bf_7.5'),
         new item(0, 'Cuia Bella Fiore 7.5 litros Cerâmica', 'cuia_bf_7.5'),
