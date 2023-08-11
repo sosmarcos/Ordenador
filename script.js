@@ -70,6 +70,7 @@ var articleForth = window.document.getElementById('forth')
 var articleAlfa = window.document.getElementById('alfa')
 var articleJelPlast = window.document.getElementById('jel_plast')
 var articlePolicamp = window.document.getElementById('policamp')
+var articleInsetimax = window.document.getElementById('insetimax')
 
 //=======================||Listas||=========================//
 var categorias = [
@@ -90,7 +91,8 @@ var inventorios = [
     'forth',
     'alfa',
     'jel_plast',
-    'policamp'
+    'policamp',
+    'insetimax'
 ]
 var regaplan = new Inventario(
     'Regaplan',
@@ -1012,6 +1014,20 @@ var jel_plast = new Inventario(
         new item(0, 'Nectar de Beija Flor Sem Corante', 'nectar')
     ]
 )
+var insetimax = new Inventario(
+    'Insetimax',
+    '10/08/2023',
+    [
+        new item(29, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
+
+        new item(33, 'Formicida Insetimaster - 100ml', 'formicida'),
+        new item(3, 'Formicida Insetimaster - 1 litro', 'formicida'),
+
+        new item(9, 'Inseticom Jardim - Caixa', 'inseticom'),
+
+        new item(45, 'Malathion 500CE - 100ml', 'malathion')
+    ]   
+)
 
 //=================================================||Funções||====================================================
 function soma() {
@@ -1279,6 +1295,8 @@ function buscadorDeInventario(nome) {
             return jel_plast
         case 'policamp':
             return policamp
+        case 'insetimax':
+            return insetimax
         default:
             break
     }
@@ -1393,3 +1411,4 @@ impreção(articleAlfa, alfa, 'alfa')
 impreção(articleRischioto, rischioto, 'rischioto')
 impreção(articleJelPlast, jel_plast, 'jel_plast')
 impreção(articlePolicamp, policamp, 'policamp')
+impreção(articleInsetimax, insetimax, 'insetimax')
