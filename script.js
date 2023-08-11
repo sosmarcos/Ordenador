@@ -29,8 +29,8 @@ class ValorUnitario {
             <input type="number" id="entrada${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
             <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
         </div><br>`
-        } 
-    }
+    } 
+}
 
 class ItemEspecifico {
     constructor (quantidade, nome, alternador, identidade) {
