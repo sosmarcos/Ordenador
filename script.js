@@ -96,24 +96,24 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '18/07/2023',
+    '11/08/2023',
     [
-        new item(5, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(6, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(7, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(8, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(8, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(4, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(4, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(6, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(7, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(7, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
 
-        new item(6, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(7, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(6, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(7, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(5, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(6, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(5, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(6, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
         new item(0, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
         new item(40, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
         new item(0, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
 
-        new item(10, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
+        new item(0, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
         new item(10, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
         new item(20, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
         new item(40, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
@@ -141,7 +141,7 @@ var regaplan = new Inventario(
         new item(10, 'Suporte Margarida 03 - 23 cm Dourado', 'sp_margarida'),
         new item(30, 'Suporte Margarida 04 - 26 cm Dourado', 'sp_margarida'),
 
-        new item(20, 'Suporte Rasteiro Chapa 01 - 18cm Dourado', 'sp_rasteiro'),
+        new item(15, 'Suporte Rasteiro Chapa 01 - 18cm Dourado', 'sp_rasteiro'),
         new item(0, 'Suporte Rasteiro Chapa 02 - 21cm Dourado', 'sp_rasteiro'),
         new item(5, 'Suporte Rasteiro Chapa 03 - 24cm Dourado', 'sp_rasteiro'),
         new item(15, 'Suporte Rasteiro Chapa 04 - 27cm Dourado', 'sp_rasteiro'),
@@ -187,7 +187,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '10/08/2023',
+    '11/08/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -364,16 +364,16 @@ var rischioto = new Inventario(
         new item(43, 'Vaso Redondo n17 Preta', 'redondo_n17'),
 
         new item(54, 'Vaso Redondo n22 Areia', 'redondo_n22'),
-        new item(35, 'Vaso Redondo n22 Cerâmica', 'redondo_n22'),
-        new item(39, 'Vaso Redondo n22 Preta', 'redondo_n22'),
+        new item(25, 'Vaso Redondo n22 Cerâmica', 'redondo_n22'),
+        new item(29, 'Vaso Redondo n22 Preta', 'redondo_n22'),
 
         new item(23, 'Vaso Redondo n28 Areia', 'redondo_n28'),
         new item(0, 'Vaso Redondo n28 Cerâmica', 'redondo_n28'),
-        new item(13, 'Vaso Redondo n28 Preta', 'redondo_n28'),
+        new item(3, 'Vaso Redondo n28 Preta', 'redondo_n28'),
 
         new item(17, 'Vaso Redondo n35 Areia', 'redondo_n35'),
         new item(0, 'Vaso Redondo n35 Cerâmica', 'redondo_n35'),
-        new item(3, 'Vaso Redondo n35 Preta', 'redondo_n35'),
+        new item(0, 'Vaso Redondo n35 Preta', 'redondo_n35'),
 
         new item(20, 'Vaso Redondo n42 Areia', 'redondo_n42'),
         new item(3, 'Vaso Redondo n42 Cerâmica', 'redondo_n42'),
@@ -388,12 +388,12 @@ var rischioto = new Inventario(
         new item(36, 'Vaso Quadrado n17 Preta', 'quadrado_n17'),
 
         new item(61, 'Vaso Quadrado n22 Areia', 'quadrado_n22'),
-        new item(38, 'Vaso Quadrado n22 Cerâmica', 'quadrado_n22'),
-        new item(36, 'Vaso Quadrado n22 Preta', 'quadrado_n22'),
+        new item(28, 'Vaso Quadrado n22 Cerâmica', 'quadrado_n22'),
+        new item(26, 'Vaso Quadrado n22 Preta', 'quadrado_n22'),
 
         new item(17, 'Vaso Quadrado n28 Areia', 'quadrado_n28'),
-        new item(42, 'Vaso Quadrado n28 Cerâmica', 'quadrado_n28'),
-        new item(8, 'Vaso Quadrado n28 Preta', 'quadrado_n28'),
+        new item(32, 'Vaso Quadrado n28 Cerâmica', 'quadrado_n28'),
+        new item(0, 'Vaso Quadrado n28 Preta', 'quadrado_n28'),
 
         new item(8, 'Vaso Quadrado n35 Areia', 'quadrado_n35'),
         new item(0, 'Vaso Quadrado n35 Cerâmica', 'quadrado_n35'),
@@ -406,7 +406,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '08/08/2023',
+    '11/08/2023',
     [
         new item(209, 'Alça Universal Branca', 'alça_universal'),
         new item(54, 'Alça Universal Café', 'alça_universal'),
@@ -445,20 +445,20 @@ var emeAeme = new Inventario(
 
         new item(34, 'Cuia CBB 25 Com Base Branca', 'cuia_cbb_25'),
         new item(48, 'Cuia CBB 25 Com Base Café', 'cuia_cbb_25'),
-        new item(34, 'Cuia CBB 25 Com Base Cerâmica', 'cuia_cbb_25'),
+        new item(16, 'Cuia CBB 25 Com Base Cerâmica', 'cuia_cbb_25'),
         new item(47, 'Cuia CBB 25 Com Base Marfim', 'cuia_cbb_25'),
-        new item(29, 'Cuia CBB 25 Com Base Preta', 'cuia_cbb_25'),
-        new item(46, 'Cuia CBB 25 Com Base Verde', 'cuia_cbb_25'),
+        new item(21, 'Cuia CBB 25 Com Base Preta', 'cuia_cbb_25'),
+        new item(36, 'Cuia CBB 25 Com Base Verde', 'cuia_cbb_25'),
 
         new item(45, 'Cuia CBB 30 Com Base Branca', 'cuia_cbb_30'),
         new item(27, 'Cuia CBB 30 Com Base Café', 'cuia_cbb_30'),
-        new item(23, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
+        new item(15, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
         new item(35, 'Cuia CBB 30 Com Base Marfim', 'cuia_cbb_30'),
-        new item(13, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
+        new item(5, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
         new item(20, 'Cuia CBB 30 Com Base Verde', 'cuia_cbb_30'),
 
-        new item(35, 'Cuia Gran Imperial CBB 40 Com Base Cerâmica', 'cuia_cbb_40'),
-        new item(26, 'Cuia Gran Imperial CBB 40 Com Base Preta', 'cuia_cbb_40'),
+        new item(27, 'Cuia Gran Imperial CBB 40 Com Base Cerâmica', 'cuia_cbb_40'),
+        new item(18, 'Cuia Gran Imperial CBB 40 Com Base Preta', 'cuia_cbb_40'),
 
         new item(312, 'Etiqueta E00', 'etiqueta'),
         new item(0, 'Etiqueta E03', 'etiqueta'),
@@ -517,17 +517,17 @@ var emeAeme = new Inventario(
         new item(73, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
         new item(30, 'Prato B04.5 22cm Cimento', 'prato_b4.5'),
         new item(26, 'Prato B04.5 22cm Marfim', 'prato_b4.5'),
-        new item(80, 'Prato B04.5 22cm Preto', 'prato_b4.5'),
+        new item(70, 'Prato B04.5 22cm Preto', 'prato_b4.5'),
 
         new item(47, 'Prato B05 24cm Cerâmica', 'prato_b05'),
         new item(20, 'Prato B05 24cm Cimento', 'prato_b05'),
         new item(16, 'Prato B05 24cm Marfim', 'prato_b05'),
-        new item(51, 'Prato B05 24cm Preto', 'prato_b05'),
+        new item(41, 'Prato B05 24cm Preto', 'prato_b05'),
 
         new item(47, 'Prato B06 27cm Cerâmica', 'prato_b06'),
         new item(17, 'Prato B06 27cm Cimento', 'prato_b06'),
         new item(19, 'Prato B06 27cm Marfim', 'prato_b06'),
-        new item(51, 'Prato B06 27cm Preto', 'prato_b06'),
+        new item(41, 'Prato B06 27cm Preto', 'prato_b06'),
 
         new item(60, 'Prato B07 30cm Cerâmica', 'prato_b07'),
         new item(23, 'Prato B07 30cm Cimento', 'prato_b07'),
@@ -579,7 +579,7 @@ var emeAeme = new Inventario(
         new item(3, 'Vaso Imperial V25 Marfim', 'v_imperial_25'),
         new item(2, 'Vaso Imperial V25 Preto', 'v_imperial_25'),
 
-        new item(3, 'Vaso Imperial V30 Cerâmica', 'v_imperial_30'),
+        new item(1, 'Vaso Imperial V30 Cerâmica', 'v_imperial_30'),
         new item(3, 'Vaso Imperial V30 Cimento', 'v_imperial_30'),
         new item(5, 'Vaso Imperial V30 Marfim', 'v_imperial_30'),
         new item(3, 'Vaso Imperial V30 Preto', 'v_imperial_30'),
@@ -743,38 +743,39 @@ var forth = new Inventario(
 )
 var alfa = new Inventario(
     'Alfa',
-    '10/08/2023',
+    '11/08/2023',
     [
-        new item(4, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
-        new item(4, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
+        new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
+        new item(0, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
 
-        new item(4, 'Bacia Diamante nº 2 Cimento', 'bacia_diamante_2'),
-        new item(3, 'Bacia Diamante nº 2 Marrom', 'bacia_diamante_2'),
-        new item(1, 'Bacia Diamante nº 2 Preto', 'bacia_diamante_2'),
+        new item(2, 'Bacia Diamante nº 2 Bege', 'bacia_diamante_2'),
+        new item(2, 'Bacia Diamante nº 2 Cimento', 'bacia_diamante_2'),
+        new item(1, 'Bacia Diamante nº 2 Marrom', 'bacia_diamante_2'),
+        new item(3, 'Bacia Diamante nº 2 Preto', 'bacia_diamante_2'),
 
         new item(0, 'Bacia Diamante nº 3 Bege', 'bacia_diamante_3'),
-        new item(3, 'Bacia Diamante nº 3 Cimento', 'bacia_diamante_3'),
+        new item(1, 'Bacia Diamante nº 3 Cimento', 'bacia_diamante_3'),
         new item(2, 'Bacia Diamante nº 3 Marrom', 'bacia_diamante_3'),
 
-        new item(14, 'Bacia Grafiato C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
-        new item(14, 'Bacia Grafiato C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
-        new item(15, 'Bacia Grafiato C/ Prato nº 1 Marrom', 'bacia_grafiato_1'),
-        new item(15, 'Bacia Grafiato C/ Prato nº 1 Preto', 'bacia_grafiato_1'),
+        new item(11, 'Bacia Grafiato C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
+        new item(11, 'Bacia Grafiato C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
+        new item(12, 'Bacia Grafiato C/ Prato nº 1 Marrom', 'bacia_grafiato_1'),
+        new item(12, 'Bacia Grafiato C/ Prato nº 1 Preto', 'bacia_grafiato_1'),
 
-        new item(9, 'Bacia Grafiato C/Prato nº 2 Bege', 'bacia_grafiato_2'),
-        new item(10, 'Bacia Grafiato C/Prato nº 2 Cimento', 'bacia_grafiato_2'),
+        new item(6, 'Bacia Grafiato C/Prato nº 2 Bege', 'bacia_grafiato_2'),
+        new item(8, 'Bacia Grafiato C/Prato nº 2 Cimento', 'bacia_grafiato_2'),
         new item(7, 'Bacia Grafiato C/Prato nº 2 Marrom', 'bacia_grafiato_2'),
         new item(7, 'Bacia Grafiato C/Prato nº 2 Preto', 'bacia_grafiato_2'),
 
-        new item(1, 'Bacia Grafiato C/Prato nº 3 Bege', 'bacia_grafiato_3'),
-        new item(4, 'Bacia Grafiato C/Prato nº 3 Cimento', 'bacia_grafiato_3'),
-        new item(1, 'Bacia Grafiato C/Prato nº 3 Marrom', 'bacia_grafiato_3'),
-        new item(2, 'Bacia Grafiato C/Prato nº 3 Preto', 'bacia_grafiato_3'),
+        new item(4, 'Bacia Grafiato C/Prato nº 3 Bege', 'bacia_grafiato_3'),
+        new item(3, 'Bacia Grafiato C/Prato nº 3 Cimento', 'bacia_grafiato_3'),
+        new item(3, 'Bacia Grafiato C/Prato nº 3 Marrom', 'bacia_grafiato_3'),
+        new item(3, 'Bacia Grafiato C/Prato nº 3 Preto', 'bacia_grafiato_3'),
 
-        new item(5, 'Bacia Grafiato C/Prato nº 4 Bege', 'bacia_grafiato_4'),
+        new item(3, 'Bacia Grafiato C/Prato nº 4 Bege', 'bacia_grafiato_4'),
         new item(2, 'Bacia Grafiato C/Prato nº 4 Cimento', 'bacia_grafiato_4'),
         new item(3, 'Bacia Grafiato C/Prato nº 4 Marrom', 'bacia_grafiato_4'),
-        new item(4, 'Bacia Grafiato C/Prato nº 4 Preto', 'bacia_grafiato_4'),
+        new item(2, 'Bacia Grafiato C/Prato nº 4 Preto', 'bacia_grafiato_4'),
 
         new item(10, 'Bacia Marmorizada C/Prato nº 1 Azul', 'bacia_marmorizada_1'),
         new item(10, 'Bacia Marmorizada C/Prato nº 1 Vermelho', 'bacia_marmorizada_1'),
@@ -990,10 +991,10 @@ var alfa = new Inventario(
 )
 var policamp = new Inventario(
     'Policamp',
-    '09/08/2023',
+    '11/08/2023',
     [
         new item(120, 'Pulverizador 500ml', 'pulverizador'),
-        new item(60, 'Pulverizador 1 litro', 'pulverizador'),
+        new item(53, 'Pulverizador 1 litro', 'pulverizador'),
         new item(38, 'Regador Com Cabo - Bico', 'Regador_cabo'),
         new item(30, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
         new item(0, 'Regador - 2 litros', 'Regador'),
@@ -1004,11 +1005,11 @@ var policamp = new Inventario(
 )
 var jel_plast = new Inventario(
     'Jel Plast',
-    '09/08/2023',
+    '11/08/2023',
     [
-        new item(108, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
+        new item(66, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
         new item(0, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
-        new item(144, 'Bebedouro Beija Flor Poleiro REF55', 'bebedouro'),
+        new item(126, 'Bebedouro Beija Flor Poleiro REF55', 'bebedouro'),
         new item(408, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
         new item(0, 'Nectar de Beija Flor Com Corante', 'nectar'),
         new item(0, 'Nectar de Beija Flor Sem Corante', 'nectar')
