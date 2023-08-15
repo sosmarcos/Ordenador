@@ -96,7 +96,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '11/08/2023',
+    '15/08/2023',
     [
         new item(4, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(4, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -129,10 +129,10 @@ var regaplan = new Inventario(
         new item(2, 'Suporte Arvore - 5 Vasos Dourado', 'sp_arvore'),
         new item(4, 'Suporte Arvore - 5 Vasos Preto', 'sp_arvore'),
 
-        new item(12, 'Suporte Coador 26cm Preto', 'sp_coador'),
-        new item(7, 'Suporte Coador 28cm Preto', 'sp_coador'),
-        new item(15, 'Suporte Coador 30cm Preto', 'sp_coador'),
-        new item(9, 'Suporte Coador 32cm Preto', 'sp_coador'),
+        new item(9, 'Suporte Coador 26cm Preto', 'sp_coador'),
+        new item(4, 'Suporte Coador 28cm Preto', 'sp_coador'),
+        new item(12, 'Suporte Coador 30cm Preto', 'sp_coador'),
+        new item(6, 'Suporte Coador 32cm Preto', 'sp_coador'),
 
         new item(20, 'Suporte de Canto Dourado'),
 
@@ -151,9 +151,9 @@ var regaplan = new Inventario(
         new item(20, 'Suporte Rasteiro Chapa 08 - 40cm Dourado', 'sp_rasteiro'),
 
         new item(0, 'Suporte Torre 40cm Dourado', 'sp_torre'),
-        new item(7, 'Suporte Torre 40cm Preto', 'sp_torre'),
+        new item(6, 'Suporte Torre 40cm Preto', 'sp_torre'),
         new item(0, 'Suporte Torre 60cm Dourado', 'sp_torre'),
-        new item(7, 'Suporte Torre 60cm Preto', 'sp_torre'),
+        new item(6, 'Suporte Torre 60cm Preto', 'sp_torre'),
         new item(1, 'Suporte Torre 80cm Dourado', 'sp_torre'),
         new item(14, 'Suporte Torre 80cm Preto', 'sp_torre'),
         new item(4, 'Suporte Torre 110cm Dourado', 'sp_torre'),
@@ -406,7 +406,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '11/08/2023',
+    '15/08/2023',
     [
         new item(209, 'Alça Universal Branca', 'alça_universal'),
         new item(54, 'Alça Universal Café', 'alça_universal'),
@@ -550,18 +550,18 @@ var emeAeme = new Inventario(
         new item(28, 'Prato B10 42cm Preto', 'prato_b10'),
 
         new item(57, 'Vaso De Parede VP 14 Branco', 'vp_14'),
-        new item(44, 'Vaso De Parede VP 14 Cerâmica', 'vp_14'),
-        new item(88, 'Vaso De Parede VP 14 Preto', 'vp_14'),
+        new item(29, 'Vaso De Parede VP 14 Cerâmica', 'vp_14'),
+        new item(73, 'Vaso De Parede VP 14 Preto', 'vp_14'),
         new item(75, 'Vaso De Parede VP 14 Verde', 'vp_14'),
 
         new item(44, 'Vaso De Parede VP 20 Branco', 'vp_20'),
-        new item(58, 'Vaso De Parede VP 20 Cerâmica', 'vp_20'),
-        new item(71, 'Vaso De Parede VP 20 Preto', 'vp_20'),
+        new item(43, 'Vaso De Parede VP 20 Cerâmica', 'vp_20'),
+        new item(56, 'Vaso De Parede VP 20 Preto', 'vp_20'),
         new item(56, 'Vaso De Parede VP 20 Verde', 'vp_20'),
 
         new item(55, 'Vaso De Parede VP 30 Branco', 'vp_30'),
-        new item(87, 'Vaso De Parede VP 30 Cerâmica', 'vp_30'),
-        new item(112, 'Vaso De Parede VP 30 Preto', 'vp_30'),
+        new item(72, 'Vaso De Parede VP 30 Cerâmica', 'vp_30'),
+        new item(97, 'Vaso De Parede VP 30 Preto', 'vp_30'),
         new item(53, 'Vaso De Parede VP 30 Verde', 'vp_30'),
 
         new item(34, 'Vaso Imperial V15 Cerâmica', 'v_imperial_15'),
