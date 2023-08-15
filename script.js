@@ -628,13 +628,13 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '08/08/2023',
+    '15/08/2023',
     [
         new item(7, 'Acaricida Concentrado - 60ml', 'a'),
         new item(12, 'Acaricida p/uso - 500ml', 'a'),
 
         new item(33, 'Baraticida Gel', 'b'),
-        new item(31, 'Bokashi - 250g', 'b'),
+        new item(24, 'Bokashi - 250g', 'b'),
         new item(0, 'Bonsai Concentrado - 60ml', 'b'),
         new item(6, 'Bonsai p/uso - 500ml', 'b'),
         new item(0, 'Brilha folha Concentrado - 60ml', 'b'),
