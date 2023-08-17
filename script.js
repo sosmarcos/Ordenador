@@ -187,7 +187,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '16/08/2023',
+    '17/08/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -318,7 +318,7 @@ var rischioto = new Inventario(
         new item(18, 'Vaso Parede Floratta 6 litros Verde', 'vp_floratta_6'),
 
         new item(20, 'Vaso Parede Florença 1.7 litros Areia', 'vp_florença_1.7'),
-        new item(31, 'Vaso Parede Florença 1.7 litros Cerâmica', 'vp_florença_1.7'),
+        new item(25, 'Vaso Parede Florença 1.7 litros Cerâmica', 'vp_florença_1.7'),
         new item(27, 'Vaso Parede Florença 1.7 litros Preto', 'vp_florença_1.7'),
 
         new item(10, 'Vaso Parede Florença 3.3 litros Areia', 'vp_florença_3.3'),
@@ -743,7 +743,7 @@ var forth = new Inventario(
 )
 var alfa = new Inventario(
     'Alfa',
-    '16/08/2023',
+    '17/08/2023',
     [
         new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(0, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -927,7 +927,7 @@ var alfa = new Inventario(
         new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Marrom', 'vaso_frisado_1'),
         new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Preto', 'vaso_frisado_1'),
 
-        new item(8, 'Vaso Bojo Frisado C/Prato nº 2 Bege', 'vaso_frisado_2'),
+        new item(6, 'Vaso Bojo Frisado C/Prato nº 2 Bege', 'vaso_frisado_2'),
         new item(10, 'Vaso Bojo Frisado C/Prato nº 2 Cimento', 'vaso_frisado_2'),
         new item(7, 'Vaso Bojo Frisado C/Prato nº 2 Marrom', 'vaso_frisado_2'),
         new item(7, 'Vaso Bojo Frisado C/Prato nº 2 Preto', 'vaso_frisado_2'),
@@ -959,7 +959,7 @@ var alfa = new Inventario(
 
         new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Bege', 'vaso_grafiato_4'),
         new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Cimento', 'vaso_grafiato_4'),
-        new item(5, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Marrom', 'vaso_grafiato_4'),
+        new item(2, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Marrom', 'vaso_grafiato_4'),
         new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Preto', 'vaso_grafiato_4'),
 
         new item(7, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
