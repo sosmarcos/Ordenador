@@ -887,39 +887,39 @@ var alfa = new Inventario(
         new item(6, 'Coluna Red. Polida C/Prato nº 2 Marrom', 'coluna_polida_2'),
         new item(3, 'Coluna Red. Polida C/Prato nº 2 Preto', 'coluna_polida_2'),
 
-        new item(2, 'Coluna Red. Polida C/Prato nº 3 Bege', 'coluna_polida_3'),
-        new item(5, 'Coluna Red. Polida C/Prato nº 3 Cimento', 'coluna_polida_3'),
+        new item(0, 'Coluna Red. Polida C/Prato nº 3 Bege', 'coluna_polida_3'),
+        new item(3, 'Coluna Red. Polida C/Prato nº 3 Cimento', 'coluna_polida_3'),
         new item(8, 'Coluna Red. Polida C/Prato nº 3 Marrom', 'coluna_polida_3'),
-        new item(5, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
+        new item(3, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
 
-        new item(1, 'Coluna Red. Polida C/Prato nº 4 Bege', 'coluna_polida_4'),
-        new item(4, 'Coluna Red. Polida C/Prato nº 4 Cimento', 'coluna_polida_4'),
-        new item(5, 'Coluna Red. Polida C/Prato nº 4 Marrom', 'coluna_polida_4'),
-        new item(4, 'Coluna Red. Polida C/Prato nº 4 Preto', 'coluna_polida_4'),
+        new item(0, 'Coluna Red. Polida C/Prato nº 4 Bege', 'coluna_polida_4'),
+        new item(2, 'Coluna Red. Polida C/Prato nº 4 Cimento', 'coluna_polida_4'),
+        new item(4, 'Coluna Red. Polida C/Prato nº 4 Marrom', 'coluna_polida_4'),
+        new item(2, 'Coluna Red. Polida C/Prato nº 4 Preto', 'coluna_polida_4'),
 
-        new item(3, 'Jardineira Frisada C/Prato Bege', 'jardineira_frisada_1'),
-        new item(3, 'Jardineira Frisada C/Prato Preto', 'jardineira_frisada_1'),
+        new item(1, 'Jardineira Frisada C/Prato Bege', 'jardineira_frisada_1'),
+        new item(2, 'Jardineira Frisada C/Prato Preto', 'jardineira_frisada_1'),
 
-        new item(4, 'Jardineira Grafiato C/Prato nº 1 Bege', 'jardineira_grafiato_1'),
-        new item(4, 'Jardineira Grafiato C/Prato nº 1 Preto', 'jardineira_grafiato_1'),
+        new item(2, 'Jardineira Grafiato C/Prato nº 1 Bege', 'jardineira_grafiato_1'),
+        new item(2, 'Jardineira Grafiato C/Prato nº 1 Preto', 'jardineira_grafiato_1'),
 
-        new item(4, 'Jardineira Grafiato C/Prato nº 2 Bege', 'jardineira_grafiato_2'),
-        new item(4, 'Jardineira Grafiato C/Prato nº 2 Preto', 'jardineira_grafiato_2'),
+        new item(0, 'Jardineira Grafiato C/Prato nº 2 Bege', 'jardineira_grafiato_2'),
+        new item(2, 'Jardineira Grafiato C/Prato nº 2 Preto', 'jardineira_grafiato_2'),
         
-        new item(6, 'Vaso Bojo Red. Diamante C/Prato nº 1 Bege', 'vaso_diamante_1'),
-        new item(6, 'Vaso Bojo Red. Diamante C/Prato nº 1 Cimento', 'vaso_diamante_1'),
-        new item(8, 'Vaso Bojo Red. Diamante C/Prato nº 1 Marrom', 'vaso_diamante_1'),
+        new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 1 Bege', 'vaso_diamante_1'),
+        new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 1 Cimento', 'vaso_diamante_1'),
+        new item(7, 'Vaso Bojo Red. Diamante C/Prato nº 1 Marrom', 'vaso_diamante_1'),
         new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 1 Preto', 'vaso_diamante_1'),
 
-        new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 2 Bege', 'vaso_diamante_2'),
-        new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 2 Cimento', 'vaso_diamante_2'),
+        new item(0, 'Vaso Bojo Red. Diamante C/Prato nº 2 Bege', 'vaso_diamante_2'),
+        new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 2 Cimento', 'vaso_diamante_2'),
         new item(4, 'Vaso Bojo Red. Diamante C/Prato nº 2 Marrom', 'vaso_diamante_2'),
         new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 2 Preto', 'vaso_diamante_2'),
 
-        new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 3 Bege', 'vaso_diamante_3'),
-        new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 3 Cimento', 'vaso_diamante_3'),
+        new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 3 Bege', 'vaso_diamante_3'),
+        new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 3 Cimento', 'vaso_diamante_3'),
         new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 3 Marrom', 'vaso_diamante_3'),
-        new item(4, 'Vaso Bojo Red. Diamante C/Prato nº 3 Preto', 'vaso_diamante_3'),
+        new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 3 Preto', 'vaso_diamante_3'),
 
         new item(8, 'Vaso Bojo Red. Diamante C/Prato nº 4 Bege', 'vaso_diamante_4'),
         new item(5, 'Vaso Bojo Red. Diamante C/Prato nº 4 Cimento', 'vaso_diamante_4'),
@@ -1042,18 +1042,21 @@ var nutriplan = new Inventario(
     [
         new item(1, 'Vaso Classic Cilindrico 55 cobre', 'cilindrico_55'),
 
-        new item(1, 'Vaso Classic Cônico 46 Areia', 'conico_46'),
-        new item(1, 'Vaso Classic Cônico 46 Azul Cobalto', 'conico_46'),
-        new item(1, 'Vaso Classic Cônico 46 Ferrugem', 'conico_46') ,
-        new item(1, 'Vaso Classic Cônico 46 Grafite', 'conico_46'),
+        new item(1, 'Vaso Classic Cônico 46 - Areia', 'conico_46'),
+        new item(1, 'Vaso Classic Cônico 46 - Azul Cobalto', 'conico_46'),
+        new item(1, 'Vaso Classic Cônico 46 - Ferrugem', 'conico_46') ,
+        new item(1, 'Vaso Classic Cônico 46 - Grafite', 'conico_46'),
 
-        new item(1, 'Vaso Classic Cônico 66 Ferrugem', 'conico_66'),
+        new item(1, 'Vaso Classic Cônico 66 - Ferrugem', 'conico_66'),
 
-        new item(1, 'Vaso Classic Cone 100 Verde Guatemala', 'cone_100'),
+        new item(2, 'Vaso Classic Cone 100 - Rubi', 'cone_100'),
+        new item(1, 'Vaso Classic Cone 100 - Verde Guatemala', 'cone_100'),
 
-        new item(2, 'Vaso Riscatto Redondo 45 Granito', 'redondo_45'),
+        new item(1, 'Vaso Riscatto Oval Baixo 30 - Ferrugem', 'oval_baixo_30'),
 
-        new item(3, 'Vaso Riscatto Redondo 60 Granito', 'redondo_60')
+        new item(2, 'Vaso Riscatto Redondo 45 - Granito', 'redondo_45'),
+
+        new item(3, 'Vaso Riscatto Redondo 60 - Granito', 'redondo_60')
     ]
 )
 var coquim = new Inventario(
