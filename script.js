@@ -747,7 +747,7 @@ var forth = new Inventario(
 )
 var alfa = new Inventario(
     'Alfa',
-    '21/08/2023',
+    '22/08/2023',
     [
         new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(0, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -918,7 +918,7 @@ var alfa = new Inventario(
 
         new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 3 Bege', 'vaso_diamante_3'),
         new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 3 Cimento', 'vaso_diamante_3'),
-        new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 3 Marrom', 'vaso_diamante_3'),
+        new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 3 Marrom', 'vaso_diamante_3'),
         new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 3 Preto', 'vaso_diamante_3'),
 
         new item(8, 'Vaso Bojo Red. Diamante C/Prato nº 4 Bege', 'vaso_diamante_4'),
@@ -939,37 +939,37 @@ var alfa = new Inventario(
         new item(9, 'Vaso Bojo Frisado C/Prato nº 3 Bege', 'vaso_frisado_3'),
         new item(10, 'Vaso Bojo Frisado C/Prato nº 3 Cimento', 'vaso_frisado_3'),
         new item(4, 'Vaso Bojo Frisado C/Prato nº 3 Marrom', 'vaso_frisado_3'),
-        new item(7, 'Vaso Bojo Frisado C/Prato nº 3 Preto', 'vaso_frisado_3'),
+        new item(6, 'Vaso Bojo Frisado C/Prato nº 3 Preto', 'vaso_frisado_3'),
 
         new item(6, 'Vaso Bojo Frisado C/Prato nº 4 Bege', 'vaso_frisado_4'),
         new item(6, 'Vaso Bojo Frisado C/Prato nº 4 Cimento', 'vaso_frisado_4'),
         new item(5, 'Vaso Bojo Frisado C/Prato nº 4 Marrom', 'vaso_frisado_4'),
         new item(7, 'Vaso Bojo Frisado C/Prato nº 4 Preto', 'vaso_frisado_4'),
 
-        new item(10, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Bege', 'vaso_grafiato_1'),
-        new item(10, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Cimento', 'vaso_grafiato_1'),
-        new item(10, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Marrom', 'vaso_grafiato_1'),
-        new item(9, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Preto', 'vaso_grafiato_1'),
+        new item(7, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Bege', 'vaso_grafiato_1'),
+        new item(7, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Cimento', 'vaso_grafiato_1'),
+        new item(9, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Marrom', 'vaso_grafiato_1'),
+        new item(8, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Preto', 'vaso_grafiato_1'),
 
-        new item(7, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Bege', 'vaso_grafiato_2'),
-        new item(8, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Cimento', 'vaso_grafiato_2'),
+        new item(5, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Bege', 'vaso_grafiato_2'),
+        new item(6, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Cimento', 'vaso_grafiato_2'),
         new item(6, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Marrom', 'vaso_grafiato_2'),
         new item(3, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Preto', 'vaso_grafiato_2'),
 
         new item(6, 'Vaso Bojo Red. Grafiato C/Prato nº 3 Bege', 'vaso_grafiato_3'),
         new item(6, 'Vaso Bojo Red. Grafiato C/Prato nº 3 Cimento', 'vaso_grafiato_3'),
         new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 3 Marrom', 'vaso_grafiato_3'),
-        new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 3 Preto', 'vaso_grafiato_3'),
+        new item(3, 'Vaso Bojo Red. Grafiato C/Prato nº 3 Preto', 'vaso_grafiato_3'),
 
-        new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Bege', 'vaso_grafiato_4'),
+        new item(3, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Bege', 'vaso_grafiato_4'),
         new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Cimento', 'vaso_grafiato_4'),
         new item(2, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Marrom', 'vaso_grafiato_4'),
         new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Preto', 'vaso_grafiato_4'),
 
-        new item(7, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
-        new item(6, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
+        new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
+        new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
 
-        new item(4, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
+        new item(3, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
         new item(6, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Vermelho', 'vaso_marmorizado_2'),
 
         new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Azul', 'vaso_marmorizado_3'),
@@ -977,18 +977,18 @@ var alfa = new Inventario(
 
         new item(7, 'Vaso Bojo Red. Polido C/Prato nº 1 Bege', 'vaso_polido_1'),
         new item(7, 'Vaso Bojo Red. Polido C/Prato nº 1 Cimento', 'vaso_polido_1'),
-        new item(6, 'Vaso Bojo Red. Polido C/Prato nº 1 Marrom', 'vaso_polido_1'),
-        new item(9, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
+        new item(5, 'Vaso Bojo Red. Polido C/Prato nº 1 Marrom', 'vaso_polido_1'),
+        new item(7, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
 
-        new item(3, 'Vaso Bojo Red. Polido C/Prato nº 2 Bege', 'vaso_polido_2'),
-        new item(6, 'Vaso Bojo Red. Polido C/Prato nº 2 Cimento', 'vaso_polido_2'),
+        new item(1, 'Vaso Bojo Red. Polido C/Prato nº 2 Bege', 'vaso_polido_2'),
+        new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Cimento', 'vaso_polido_2'),
         new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Marrom', 'vaso_polido_2'),
-        new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Preto', 'vaso_polido_2'),
+        new item(3, 'Vaso Bojo Red. Polido C/Prato nº 2 Preto', 'vaso_polido_2'),
 
-        new item(2, 'Vaso Bojo Red. Polido C/Prato nº 3 Bege', 'vaso_polido_3'),
+        new item(0, 'Vaso Bojo Red. Polido C/Prato nº 3 Bege', 'vaso_polido_3'),
         new item(3, 'Vaso Bojo Red. Polido C/Prato nº 3 Cimento', 'vaso_polido_3'),
-        new item(3, 'Vaso Bojo Red. Polido C/Prato nº 3 Marrom', 'vaso_polido_3'),
-        new item(5, 'Vaso Bojo Red. Polido C/Prato nº 3 Preto', 'vaso_polido_3'),
+        new item(1, 'Vaso Bojo Red. Polido C/Prato nº 3 Marrom', 'vaso_polido_3'),
+        new item(3, 'Vaso Bojo Red. Polido C/Prato nº 3 Preto', 'vaso_polido_3'),
 
         new item(0, 'Vaso Cone Polido C/Prato nº 4 Bege', 'vaso_cone_4'),
         new item(1, 'Vaso Cone Polido C/Prato nº 4 Cimento', 'vaso_cone_4'),
@@ -1061,7 +1061,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '21/08/2023',
+    '22/08/2023',
     [
         new item(15, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(11, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1101,13 +1101,13 @@ var coquim = new Inventario(
         new item(21, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
         new item(24, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
 
-        new item(5, '4000 - Mix Coquim 1kg', 'adubos'),
-        new item(12, '4001 - Pó de Coco 1kg', 'adubos'),
-        new item(40, '4002 - Fibra de Coco 200g', 'adubos'),
+        new item(0, '4000 - Mix Coquim 1kg', 'adubos'),
+        new item(7, '4001 - Pó de Coco 1kg', 'adubos'),
+        new item(35, '4002 - Fibra de Coco 200g', 'adubos'),
         new item(5, '4003 - Pó de Coco Magico 400g', 'adubos'),
         new item(3, '4004 - Fibra de Coco Curta 1kg', 'adubos'),
         new item(0, '4005 - Chips de Coco 200g', 'adubos'),
-        new item(10, '4006 - Fibra de Coco Protein', 'adubos'),
+        new item(5, '4006 - Fibra de Coco Protein', 'adubos'),
         new item(0, '4007 - Chips de Mix Protem 1kg', 'adubos'),
         new item(0, '4008 - Chips de Coco 3kg', 'adubos'),
         new item(0, '4009 - Fibra de Coco 1.5kg', 'adubos'),
