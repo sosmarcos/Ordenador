@@ -100,7 +100,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '21/08/2023',
+    '25/08/2023',
     [
         new item(4, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(4, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -133,10 +133,10 @@ var regaplan = new Inventario(
         new item(2, 'Suporte Arvore - 5 Vasos Dourado', 'sp_arvore'),
         new item(4, 'Suporte Arvore - 5 Vasos Preto', 'sp_arvore'),
 
-        new item(9, 'Suporte Coador 26cm Preto', 'sp_coador'),
-        new item(4, 'Suporte Coador 28cm Preto', 'sp_coador'),
-        new item(12, 'Suporte Coador 30cm Preto', 'sp_coador'),
-        new item(6, 'Suporte Coador 32cm Preto', 'sp_coador'),
+        new item(8, 'Suporte Coador 26cm Preto', 'sp_coador'),
+        new item(3, 'Suporte Coador 28cm Preto', 'sp_coador'),
+        new item(11, 'Suporte Coador 30cm Preto', 'sp_coador'),
+        new item(5, 'Suporte Coador 32cm Preto', 'sp_coador'),
 
         new item(20, 'Suporte de Canto Dourado'),
 
@@ -410,7 +410,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '15/08/2023',
+    '25/08/2023',
     [
         new item(209, 'Alça Universal Branca', 'alça_universal'),
         new item(54, 'Alça Universal Café', 'alça_universal'),
@@ -487,7 +487,7 @@ var emeAeme = new Inventario(
         new item(8, 'Floreira FCB 40 Com Base Verde', 'floreira_fcb_40'),
 
         new item(13, 'Floreira FCB 60 Com Base Café', 'floreira_fcb_60'),
-        new item(20, 'Floreira FCB 60 Com Base Cerâmica', 'floreira_fcb_60'),
+        new item(19, 'Floreira FCB 60 Com Base Cerâmica', 'floreira_fcb_60'),
         new item(21, 'Floreira FCB 60 Com Base Cimento', 'floreira_fcb_60'),
         new item(17, 'Floreira FCB 60 Com Base Preta', 'floreira_fcb_60'),
         new item(8, 'Floreira FCB 60 Com Base Verde', 'floreira_fcb_60'),
