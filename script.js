@@ -67,10 +67,12 @@ var articleRegaplan = window.document.getElementById('regaplan')
 var articleRischioto = window.document.getElementById('rischioto')
 var articleEmeAEme = window.document.getElementById('eme_a_eme')
 var articleForth = window.document.getElementById('forth')
-var articleAlfa = window.document.getElementById('alfa')
+var articleAlfa_polietileno = window.document.getElementById('alfa_polietileno')
+var articleAlfa_fibraSintetica = window.document.getElementById('alfa_fibraSintetica')
 var articleJelPlast = window.document.getElementById('jel_plast')
 var articlePolicamp = window.document.getElementById('policamp')
 var articleInsetimax = window.document.getElementById('insetimax')
+var articleMadeiras = window.document.getElementById('madeiras')
 var articleNutriplan = window.document.getElementById('nutriplan')
 var articleCoquim = window.document.getElementById('coquim')
 
@@ -91,36 +93,38 @@ var inventorios = [
     'rischioto',
     'eme_a_eme',
     'forth',
-    'alfa',
+    'alfa_polietileno',
+    'alfa_fibraSintetica',
     'jel_plast',
     'policamp',
     'insetimax',
+    'madeiras',
     'nutriplan',
     'coquim'
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '25/08/2023',
+    '29/08/2023',
     [
-        new item(4, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(4, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(6, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(7, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(7, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(108, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(96, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(108, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(108, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(108, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
 
-        new item(5, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(6, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(5, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(6, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(108, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(108, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(108, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(108, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
-        new item(0, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
+        new item(40, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
         new item(40, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
-        new item(0, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
+        new item(40, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
 
-        new item(0, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
-        new item(0, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
-        new item(10, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
-        new item(30, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
+        new item(80, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
+        new item(80, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
+        new item(90, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
+        new item(40, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
 
         new item(90, 'Suporte Artístico 00 - 19cm Dourado', 'sp_artistico'),
         new item(100, 'Suporte Artístico 01 - 26cm Dourado', 'sp_artistico'),
@@ -134,45 +138,45 @@ var regaplan = new Inventario(
         new item(4, 'Suporte Arvore - 5 Vasos Preto', 'sp_arvore'),
 
         new item(8, 'Suporte Coador 26cm Preto', 'sp_coador'),
-        new item(3, 'Suporte Coador 28cm Preto', 'sp_coador'),
+        new item(6, 'Suporte Coador 28cm Preto', 'sp_coador'),
         new item(11, 'Suporte Coador 30cm Preto', 'sp_coador'),
         new item(5, 'Suporte Coador 32cm Preto', 'sp_coador'),
 
         new item(20, 'Suporte de Canto Dourado'),
 
-        new item(10, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
-        new item(0, 'Suporte Margarida 02 - 21 cm Dourado', 'sp_margarida'),
-        new item(10, 'Suporte Margarida 03 - 23 cm Dourado', 'sp_margarida'),
+        new item(30, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
+        new item(30, 'Suporte Margarida 02 - 21 cm Dourado', 'sp_margarida'),
+        new item(30, 'Suporte Margarida 03 - 23 cm Dourado', 'sp_margarida'),
         new item(30, 'Suporte Margarida 04 - 26 cm Dourado', 'sp_margarida'),
 
-        new item(15, 'Suporte Rasteiro Chapa 01 - 18cm Dourado', 'sp_rasteiro'),
-        new item(0, 'Suporte Rasteiro Chapa 02 - 21cm Dourado', 'sp_rasteiro'),
-        new item(5, 'Suporte Rasteiro Chapa 03 - 24cm Dourado', 'sp_rasteiro'),
-        new item(15, 'Suporte Rasteiro Chapa 04 - 27cm Dourado', 'sp_rasteiro'),
-        new item(5, 'Suporte Rasteiro Chapa 05 - 30cm Dourado', 'sp_rasteiro'),
-        new item(15, 'Suporte Rasteiro Chapa 06 - 33cm Dourado', 'sp_rasteiro'),
+        new item(25, 'Suporte Rasteiro Chapa 01 - 18cm Dourado', 'sp_rasteiro'),
+        new item(30, 'Suporte Rasteiro Chapa 02 - 21cm Dourado', 'sp_rasteiro'),
+        new item(30, 'Suporte Rasteiro Chapa 03 - 24cm Dourado', 'sp_rasteiro'),
+        new item(30, 'Suporte Rasteiro Chapa 04 - 27cm Dourado', 'sp_rasteiro'),
+        new item(20, 'Suporte Rasteiro Chapa 05 - 30cm Dourado', 'sp_rasteiro'),
+        new item(20, 'Suporte Rasteiro Chapa 06 - 33cm Dourado', 'sp_rasteiro'),
         new item(20, 'Suporte Rasteiro Chapa 07 - 36cm Dourado', 'sp_rasteiro'),
         new item(20, 'Suporte Rasteiro Chapa 08 - 40cm Dourado', 'sp_rasteiro'),
 
         new item(0, 'Suporte Torre 40cm Dourado', 'sp_torre'),
-        new item(6, 'Suporte Torre 40cm Preto', 'sp_torre'),
+        new item(9, 'Suporte Torre 40cm Preto', 'sp_torre'),
         new item(0, 'Suporte Torre 60cm Dourado', 'sp_torre'),
-        new item(6, 'Suporte Torre 60cm Preto', 'sp_torre'),
+        new item(9, 'Suporte Torre 60cm Preto', 'sp_torre'),
         new item(1, 'Suporte Torre 80cm Dourado', 'sp_torre'),
         new item(14, 'Suporte Torre 80cm Preto', 'sp_torre'),
         new item(4, 'Suporte Torre 110cm Dourado', 'sp_torre'),
         new item(10, 'Suporte Torre 110cm Preto', 'sp_torre'),
 
         new item(0, 'Tripé Decorativo Grande Dourado', 'tp_decorativo'),
-        new item(0, 'Tripé Decorativo Grande Preto', 'tp_decorativo'),
+        new item(10, 'Tripé Decorativo Grande Preto', 'tp_decorativo'),
         new item(0, 'Tripé Decorativo Médio Dourado', 'tp_decorativo'),
-        new item(0, 'Tripé Decorativo Médio Preto', 'tp_decorativo'),
+        new item(10, 'Tripé Decorativo Médio Preto', 'tp_decorativo'),
         new item(0, 'Tripé Decorativo Pequeno Dourado', 'tp_decorativo'),
-        new item(0, 'Tripé Decorativo Pequeno Preto', 'tp_decorativo'),
+        new item(10, 'Tripé Decorativo Pequeno Preto', 'tp_decorativo'),
 
-        new item(5, 'Tripé Suspenso 01 20x40cm', 'tp_suspenso'),
-        new item(5, 'Tripé Suspenso 01 25x40cm', 'tp_suspenso'),
-        new item(10, 'Tripé Suspenso 01 30x40cm', 'tp_suspenso'),
+        new item(10, 'Tripé Suspenso 01 20x40cm', 'tp_suspenso'),
+        new item(10, 'Tripé Suspenso 01 25x40cm', 'tp_suspenso'),
+        new item(20, 'Tripé Suspenso 01 30x40cm', 'tp_suspenso'),
 
         new item(8, 'Violeteiro Com Corrente - 2 Vasos', 'violeteiro'),
         new item(8, 'Violeteiro Com Corrente - 3 Vasos', 'violeteiro'),
@@ -191,7 +195,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '17/08/2023',
+    '29/08/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -339,10 +343,10 @@ var rischioto = new Inventario(
         new item(5, 'Vaso Redondo Floratta n19 Rosa', 'redondo_floratta_19'),
         new item(9, 'Vaso Redondo Floratta n19 Verde', 'redondo_floratta_19'),
 
-        new item(18, 'Vaso Redondo Floratta n26 Areia', 'redondo_floratta_26'),
-        new item(33, 'Vaso Redondo Floratta n26 Azul', 'redondo_floratta_26'),
-        new item(34, 'Vaso Redondo Floratta n26 Rosa', 'redondo_floratta_26'),
-        new item(39, 'Vaso Redondo Floratta n26 Verde', 'redondo_floratta_26'),
+        new item(15, 'Vaso Redondo Floratta n26 Areia', 'redondo_floratta_26'),
+        new item(30, 'Vaso Redondo Floratta n26 Azul', 'redondo_floratta_26'),
+        new item(31, 'Vaso Redondo Floratta n26 Rosa', 'redondo_floratta_26'),
+        new item(37, 'Vaso Redondo Floratta n26 Verde', 'redondo_floratta_26'),
 
         new item(45, 'Vaso Redondo Floratta n33 Areia', 'redondo_floratta_33'),
         new item(45, 'Vaso Redondo Floratta n33 Azul', 'redondo_floratta_33'),
@@ -410,14 +414,34 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '25/08/2023',
+    '29/08/2023',
     [
         new item(209, 'Alça Universal Branca', 'alça_universal'),
         new item(54, 'Alça Universal Café', 'alça_universal'),
-        new item(161, 'Alça Universal Cerâmica', 'alça_universal'),
+        new item(137, 'Alça Universal Cerâmica', 'alça_universal'),
         new item(85, 'Alça Universal Marfim', 'alça_universal'),
-        new item(154, 'Alça Universal Preta', 'alça_universal'),
+        new item(130, 'Alça Universal Preta', 'alça_universal'),
         new item(31, 'Alça Universal Verde', 'alça_universal'),
+
+        new item(15, 'Cachepot Floreira Luxury Bege', 'floreira_luxyry'),
+        new item(15, 'Cachepot Floreira Luxury Branco', 'floreira_luxyry'),
+        new item(15, 'Cachepot Floreira Luxury Branco Carrara', 'floreira_luxyry'),
+        new item(15, 'Cachepot Floreira Luxury Cafe', 'floreira_luxyry'),
+        new item(15, 'Cachepot Floreira Luxury Verde Caribe', 'floreira_luxyry'),
+
+        new item(15, 'Cachepot Luxury 11 Bege', 'luxyry_11'),
+        new item(15, 'Cachepot Luxury 11 Branco', 'luxyry_11'),
+        new item(15, 'Cachepot Luxury 11 Branco Carrara', 'luxyry_11'),
+        new item(15, 'Cachepot Luxury 11 Cafe', 'luxyry_11'),
+        new item(15, 'Cachepot Luxury 11 Diamante Negro', 'luxyry_11'),
+        new item(15, 'Cachepot Luxury 11 Verde Caribe', 'luxyry_11'),
+
+        new item(15, 'Cachepot Luxury 15 Bege', 'luxyry_15'),
+        new item(15, 'Cachepot Luxury 15 Branco', 'luxyry_15'),
+        new item(15, 'Cachepot Luxury 15 Branco Carrara', 'luxyry_15'),
+        new item(15, 'Cachepot Luxury 15 Cafe', 'luxyry_15'),
+        new item(15, 'Cachepot Luxury 15 Diamante Negro', 'luxyry_15'),
+        new item(15, 'Cachepot Luxury 15 Verde Caribe', 'luxyry_15'),
 
         new item(58, 'Cuia CB 13 Branca', 'cuia_cb_13'),
         new item(0, 'Cuia CB 13 Café', 'cuia_cb_13'),
@@ -449,17 +473,17 @@ var emeAeme = new Inventario(
 
         new item(34, 'Cuia CBB 25 Com Base Branca', 'cuia_cbb_25'),
         new item(48, 'Cuia CBB 25 Com Base Café', 'cuia_cbb_25'),
-        new item(16, 'Cuia CBB 25 Com Base Cerâmica', 'cuia_cbb_25'),
+        new item(36, 'Cuia CBB 25 Com Base Cerâmica', 'cuia_cbb_25'),
         new item(47, 'Cuia CBB 25 Com Base Marfim', 'cuia_cbb_25'),
-        new item(21, 'Cuia CBB 25 Com Base Preta', 'cuia_cbb_25'),
+        new item(51, 'Cuia CBB 25 Com Base Preta', 'cuia_cbb_25'),
         new item(36, 'Cuia CBB 25 Com Base Verde', 'cuia_cbb_25'),
 
         new item(45, 'Cuia CBB 30 Com Base Branca', 'cuia_cbb_30'),
-        new item(27, 'Cuia CBB 30 Com Base Café', 'cuia_cbb_30'),
-        new item(15, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
-        new item(35, 'Cuia CBB 30 Com Base Marfim', 'cuia_cbb_30'),
-        new item(5, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
-        new item(20, 'Cuia CBB 30 Com Base Verde', 'cuia_cbb_30'),
+        new item(67, 'Cuia CBB 30 Com Base Café', 'cuia_cbb_30'),
+        new item(35, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
+        new item(50, 'Cuia CBB 30 Com Base Marfim', 'cuia_cbb_30'),
+        new item(23, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
+        new item(40, 'Cuia CBB 30 Com Base Verde', 'cuia_cbb_30'),
 
         new item(27, 'Cuia Gran Imperial CBB 40 Com Base Cerâmica', 'cuia_cbb_40'),
         new item(18, 'Cuia Gran Imperial CBB 40 Com Base Preta', 'cuia_cbb_40'),
@@ -469,7 +493,7 @@ var emeAeme = new Inventario(
         new item(0, 'Etiqueta E08', 'etiqueta'),
         new item(2, 'Etiqueta E09', 'etiqueta'),
         new item(0, 'Etiqueta E11', 'etiqueta'),
-        new item(500, 'Etiqueta E16', 'etiqueta'),
+        new item(1500, 'Etiqueta E16', 'etiqueta'),
         new item(727, 'Etiqueta E30', 'etiqueta'),
         new item(1000, 'Etiqueta E40', 'etiqueta'),
         new item(0,  'Etiqueta EP22', 'etiqueta'),
@@ -478,87 +502,89 @@ var emeAeme = new Inventario(
         new item(43, 'Floreira FCB 30 Com Base Cerâmica', 'floreira_fcb_30'),
         new item(32, 'Floreira FCB 30 Com Base Cimento', 'floreira_fcb_30'),
         new item(32, 'Floreira FCB 30 Com Base Preta', 'floreira_fcb_30'),
-        new item(21, 'Floreira FCB 30 Com Base Verde', 'floreira_fcb_30'),
+        new item(31, 'Floreira FCB 30 Com Base Verde', 'floreira_fcb_30'),
 
-        new item(5, 'Floreira FCB 40 Com Base Café', 'floreira_fcb_40'),
+        new item(35, 'Floreira FCB 40 Com Base Café', 'floreira_fcb_40'),
         new item(36, 'Floreira FCB 40 Com Base Cerâmica', 'floreira_fcb_40'),
-        new item(21, 'Floreira FCB 40 Com Base Cimento', 'floreira_fcb_40'),
-        new item(36, 'Floreira FCB 40 Com Base Preta', 'floreira_fcb_40'),
-        new item(8, 'Floreira FCB 40 Com Base Verde', 'floreira_fcb_40'),
+        new item(31, 'Floreira FCB 40 Com Base Cimento', 'floreira_fcb_40'),
+        new item(46, 'Floreira FCB 40 Com Base Preta', 'floreira_fcb_40'),
+        new item(28, 'Floreira FCB 40 Com Base Verde', 'floreira_fcb_40'),
 
-        new item(13, 'Floreira FCB 60 Com Base Café', 'floreira_fcb_60'),
-        new item(19, 'Floreira FCB 60 Com Base Cerâmica', 'floreira_fcb_60'),
-        new item(21, 'Floreira FCB 60 Com Base Cimento', 'floreira_fcb_60'),
-        new item(17, 'Floreira FCB 60 Com Base Preta', 'floreira_fcb_60'),
-        new item(8, 'Floreira FCB 60 Com Base Verde', 'floreira_fcb_60'),
+        new item(23, 'Floreira FCB 60 Com Base Café', 'floreira_fcb_60'),
+        new item(29, 'Floreira FCB 60 Com Base Cerâmica', 'floreira_fcb_60'),
+        new item(31, 'Floreira FCB 60 Com Base Cimento', 'floreira_fcb_60'),
+        new item(37, 'Floreira FCB 60 Com Base Preta', 'floreira_fcb_60'),
+        new item(18, 'Floreira FCB 60 Com Base Verde', 'floreira_fcb_60'),
 
         new item(87, 'Prato B006 6cm Cerâmica', 'prato_b006'),
         new item(135, 'Prato B006 6cm Preto', 'prato_b006'),
 
-        new item(50, 'Prato B00 9.5cm Cerâmica', 'prato_b00'),
-        new item(0, 'Prato B00 9.5cm Preto', 'prato_b00'),
+        new item(68, 'Prato B00 9.5cm Cerâmica', 'prato_b00'),
+        new item(50, 'Prato B00 9.5cm Cimento', 'prato_b00'),
+        new item(50, 'Prato B00 9.5cm Marfim', 'prato_b00'),
+        new item(52, 'Prato B00 9.5cm Preto', 'prato_b00'),
 
         new item(81, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
-        new item(30, 'Prato B01 11.5cm Cimento', 'prato_b01'),
-        new item(29, 'Prato B01 11.5cm Marfim', 'prato_b01'),
-        new item(62, 'Prato B01 11.5cm Preto', 'prato_b01'),
+        new item(60, 'Prato B01 11.5cm Cimento', 'prato_b01'),
+        new item(59, 'Prato B01 11.5cm Marfim', 'prato_b01'),
+        new item(102, 'Prato B01 11.5cm Preto', 'prato_b01'),
 
-        new item(14, 'Prato B02 13cm Cerâmica', 'prato_b02'),
-        new item(0, 'Prato B02 13cm Cimento', 'prato_b02'),
-        new item(0, 'Prato B02 13cm Marfim', 'prato_b02'),
-        new item(0, 'Prato B02 13cm Preto', 'prato_b02'),
+        new item(84, 'Prato B02 13cm Cerâmica', 'prato_b02'),
+        new item(50, 'Prato B02 13cm Cimento', 'prato_b02'),
+        new item(50, 'Prato B02 13cm Marfim', 'prato_b02'),
+        new item(84, 'Prato B02 13cm Preto', 'prato_b02'),
 
-        new item(18, 'Prato B03 16cm Cerâmica', 'prato_b03'),
-        new item(15, 'Prato B03 16cm Cimento', 'prato_b03'),
-        new item(28, 'Prato B03 16cm Marfim', 'prato_b03'),
-        new item(0, 'Prato B03 16cm Preto', 'prato_b03'),
+        new item(78, 'Prato B03 16cm Cerâmica', 'prato_b03'),
+        new item(65, 'Prato B03 16cm Cimento', 'prato_b03'),
+        new item(58, 'Prato B03 16cm Marfim', 'prato_b03'),
+        new item(120, 'Prato B03 16cm Preto', 'prato_b03'),
 
-        new item(53, 'Prato B04 21cm Cerâmica', 'prato_b04'),
-        new item(29, 'Prato B04 21cm Cimento', 'prato_b04'),
-        new item(30, 'Prato B04 21cm Marfim', 'prato_b04'),
-        new item(18, 'Prato B04 21cm Preto', 'prato_b04'),
+        new item(83, 'Prato B04 21cm Cerâmica', 'prato_b04'),
+        new item(49, 'Prato B04 21cm Cimento', 'prato_b04'),
+        new item(50, 'Prato B04 21cm Marfim', 'prato_b04'),
+        new item(107, 'Prato B04 21cm Preto', 'prato_b04'),
 
-        new item(73, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
+        new item(83, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
         new item(30, 'Prato B04.5 22cm Cimento', 'prato_b4.5'),
         new item(26, 'Prato B04.5 22cm Marfim', 'prato_b4.5'),
-        new item(70, 'Prato B04.5 22cm Preto', 'prato_b4.5'),
+        new item(90, 'Prato B04.5 22cm Preto', 'prato_b4.5'),
 
-        new item(47, 'Prato B05 24cm Cerâmica', 'prato_b05'),
-        new item(20, 'Prato B05 24cm Cimento', 'prato_b05'),
-        new item(16, 'Prato B05 24cm Marfim', 'prato_b05'),
-        new item(41, 'Prato B05 24cm Preto', 'prato_b05'),
+        new item(65, 'Prato B05 24cm Cerâmica', 'prato_b05'),
+        new item(40, 'Prato B05 24cm Cimento', 'prato_b05'),
+        new item(46, 'Prato B05 24cm Marfim', 'prato_b05'),
+        new item(71, 'Prato B05 24cm Preto', 'prato_b05'),
 
-        new item(47, 'Prato B06 27cm Cerâmica', 'prato_b06'),
-        new item(17, 'Prato B06 27cm Cimento', 'prato_b06'),
-        new item(19, 'Prato B06 27cm Marfim', 'prato_b06'),
-        new item(41, 'Prato B06 27cm Preto', 'prato_b06'),
+        new item(57, 'Prato B06 27cm Cerâmica', 'prato_b06'),
+        new item(47, 'Prato B06 27cm Cimento', 'prato_b06'),
+        new item(49, 'Prato B06 27cm Marfim', 'prato_b06'),
+        new item(61, 'Prato B06 27cm Preto', 'prato_b06'),
 
-        new item(60, 'Prato B07 30cm Cerâmica', 'prato_b07'),
-        new item(23, 'Prato B07 30cm Cimento', 'prato_b07'),
-        new item(21, 'Prato B07 30cm Marfim', 'prato_b07'),
+        new item(80, 'Prato B07 30cm Cerâmica', 'prato_b07'),
+        new item(53, 'Prato B07 30cm Cimento', 'prato_b07'),
+        new item(51, 'Prato B07 30cm Marfim', 'prato_b07'),
         new item(84, 'Prato B07 30cm Preto', 'prato_b07'),
 
         new item(37, 'Prato B08 33cm Cerâmica', 'prato_b08'),
-        new item(12, 'Prato B08 33cm Cimento', 'prato_b08'),
-        new item(10, 'Prato B08 33cm Marfim', 'prato_b08'),
-        new item(15, 'Prato B08 33cm Preto', 'prato_b08'),
+        new item(42, 'Prato B08 33cm Cimento', 'prato_b08'),
+        new item(40, 'Prato B08 33cm Marfim', 'prato_b08'),
+        new item(56, 'Prato B08 33cm Preto', 'prato_b08'),
 
         new item(40, 'Prato B09 38cm Cerâmica', 'prato_b09'),
-        new item(8, 'Prato B09 38cm Cimento', 'prato_b09'),
-        new item(9, 'Prato B09 38cm Marfim', 'prato_b09'),
+        new item(38, 'Prato B09 38cm Cimento', 'prato_b09'),
+        new item(39, 'Prato B09 38cm Marfim', 'prato_b09'),
         new item(66, 'Prato B09 38cm Preto', 'prato_b09'),
 
         new item(46, 'Prato B10 42cm Cerâmica', 'prato_b10'),
-        new item(0, 'Prato B10 42cm Cimento', 'prato_b10'),
-        new item(0, 'Prato B10 42cm Marfim', 'prato_b10'),
-        new item(28, 'Prato B10 42cm Preto', 'prato_b10'),
+        new item(20, 'Prato B10 42cm Cimento', 'prato_b10'),
+        new item(20, 'Prato B10 42cm Marfim', 'prato_b10'),
+        new item(58, 'Prato B10 42cm Preto', 'prato_b10'),
 
         new item(57, 'Vaso De Parede VP 14 Branco', 'vp_14'),
-        new item(29, 'Vaso De Parede VP 14 Cerâmica', 'vp_14'),
+        new item(39, 'Vaso De Parede VP 14 Cerâmica', 'vp_14'),
         new item(73, 'Vaso De Parede VP 14 Preto', 'vp_14'),
         new item(75, 'Vaso De Parede VP 14 Verde', 'vp_14'),
 
-        new item(44, 'Vaso De Parede VP 20 Branco', 'vp_20'),
+        new item(54, 'Vaso De Parede VP 20 Branco', 'vp_20'),
         new item(43, 'Vaso De Parede VP 20 Cerâmica', 'vp_20'),
         new item(56, 'Vaso De Parede VP 20 Preto', 'vp_20'),
         new item(56, 'Vaso De Parede VP 20 Verde', 'vp_20'),
@@ -578,56 +604,56 @@ var emeAeme = new Inventario(
         new item(36, 'Vaso Imperial V20 Marfim', 'v_imperial_20'),
         new item(41, 'Vaso Imperial V20 Preto', 'v_imperial_20'),
 
-        new item(2, 'Vaso Imperial V25 Cerâmica', 'v_imperial_25'),
-        new item(3, 'Vaso Imperial V25 Cimento', 'v_imperial_25'),
-        new item(3, 'Vaso Imperial V25 Marfim', 'v_imperial_25'),
-        new item(2, 'Vaso Imperial V25 Preto', 'v_imperial_25'),
+        new item(17, 'Vaso Imperial V25 Cerâmica', 'v_imperial_25'),
+        new item(18, 'Vaso Imperial V25 Cimento', 'v_imperial_25'),
+        new item(18, 'Vaso Imperial V25 Marfim', 'v_imperial_25'),
+        new item(17, 'Vaso Imperial V25 Preto', 'v_imperial_25'),
 
-        new item(1, 'Vaso Imperial V30 Cerâmica', 'v_imperial_30'),
-        new item(3, 'Vaso Imperial V30 Cimento', 'v_imperial_30'),
-        new item(5, 'Vaso Imperial V30 Marfim', 'v_imperial_30'),
-        new item(3, 'Vaso Imperial V30 Preto', 'v_imperial_30'),
+        new item(11, 'Vaso Imperial V30 Cerâmica', 'v_imperial_30'),
+        new item(13, 'Vaso Imperial V30 Cimento', 'v_imperial_30'),
+        new item(15, 'Vaso Imperial V30 Marfim', 'v_imperial_30'),
+        new item(13, 'Vaso Imperial V30 Preto', 'v_imperial_30'),
 
-        new item(0, 'Vaso Imperial V40 Cerâmica', 'v_imperial_40'),
-        new item(0, 'Vaso Imperial V40 Cimento', 'v_imperial_40'),
-        new item(0, 'Vaso Imperial V40 Marfim', 'v_imperial_40'),
-        new item(0, 'Vaso Imperial V40 Preto', 'v_imperial_40'),
+        new item(10, 'Vaso Imperial V40 Cerâmica', 'v_imperial_40'),
+        new item(10, 'Vaso Imperial V40 Cimento', 'v_imperial_40'),
+        new item(10, 'Vaso Imperial V40 Marfim', 'v_imperial_40'),
+        new item(10, 'Vaso Imperial V40 Preto', 'v_imperial_40'),
 
-        new item(27, 'Vaso T 07 Cerâmica', 'vaso_t_07'),
-        new item(24, 'Vaso T 07 Preto', 'vaso_t_07'),
+        new item(58, 'Vaso T 07 Cerâmica', 'vaso_t_07'),
+        new item(54, 'Vaso T 07 Preto', 'vaso_t_07'),
 
         new item(106, 'Vaso T 09 Cerâmica', 'vaso_t_09'),
         new item(105, 'Vaso T 09 Preto', 'vaso_t_09'),
 
-        new item(21, 'Vaso T 10 Cerâmica', 'vaso_t_10'),
-        new item(20, 'Vaso T 10 Preto', 'vaso_t_10'),
+        new item(51, 'Vaso T 10 Cerâmica', 'vaso_t_10'),
+        new item(50, 'Vaso T 10 Preto', 'vaso_t_10'),
 
-        new item(0, 'Vaso T 12 Cerâmica', 'vaso_t_12'),
-        new item(0, 'Vaso T 12 Preto', 'vaso_t_12'),
+        new item(50, 'Vaso T 12 Cerâmica', 'vaso_t_12'),
+        new item(50, 'Vaso T 12 Preto', 'vaso_t_12'),
 
-        new item(8, 'Vaso T 14 Cerâmica', 'vaso_t_14'),
-        new item(7, 'Vaso T 14 Preto', 'vaso_t_14'),
+        new item(58, 'Vaso T 14 Cerâmica', 'vaso_t_14'),
+        new item(57, 'Vaso T 14 Preto', 'vaso_t_14'),
 
-        new item(13, 'Vaso T 16 Cerâmica', 'vaso_t_16'),
-        new item(1, 'Vaso T 16 Preto', 'vaso_t_16'),
+        new item(33, 'Vaso T 16 Cerâmica', 'vaso_t_16'),
+        new item(31, 'Vaso T 16 Preto', 'vaso_t_16'),
 
-        new item(6, 'Vaso T 18 Cerâmica', 'vaso_t_18'),
-        new item(0, 'Vaso T 18 Preto', 'vaso_t_18'),
+        new item(36, 'Vaso T 18 Cerâmica', 'vaso_t_18'),
+        new item(30, 'Vaso T 18 Preto', 'vaso_t_18'),
 
-        new item(4, 'Vaso T 20 Cerâmica', 'vaso_t_20'),
-        new item(11, 'Vaso T 20 Preto', 'vaso_t_20'),
+        new item(34, 'Vaso T 20 Cerâmica', 'vaso_t_20'),
+        new item(31, 'Vaso T 20 Preto', 'vaso_t_20'),
 
-        new item(8, 'Vaso T 25 Cerâmica', 'vaso_t_25'),
-        new item(0, 'Vaso T 25 Preto', 'vaso_t_25'),
+        new item(38, 'Vaso T 25 Cerâmica', 'vaso_t_25'),
+        new item(30, 'Vaso T 25 Preto', 'vaso_t_25'),
 
-        new item(12, 'Vaso T 27 Cerâmica', 'vaso_t_27'),
-        new item(0, 'Vaso T 27 Preto', 'vaso_t_27'),
+        new item(22, 'Vaso T 27 Cerâmica', 'vaso_t_27'),
+        new item(30, 'Vaso T 27 Preto', 'vaso_t_27'),
 
-        new item(11, 'Vaso T 30 Cerâmica', 'vaso_t_30'),
-        new item(0, 'Vaso T 30 Preto', 'vaso_t_30'),
+        new item(31, 'Vaso T 30 Cerâmica', 'vaso_t_30'),
+        new item(18, 'Vaso T 30 Preto', 'vaso_t_30'),
 
-        new item(9, 'Vaso T 35 Cerâmica', 'vaso_t_35'),
-        new item(10, 'Vaso T 35 Preto', 'vaso_t_35')
+        new item(29, 'Vaso T 35 Cerâmica', 'vaso_t_35'),
+        new item(30, 'Vaso T 35 Preto', 'vaso_t_35')
     ]
 )
 var forth = new Inventario(
@@ -745,8 +771,8 @@ var forth = new Inventario(
         new item(10, 'Violetas Concentrado - 60ml', 'v'),
     ]
 )
-var alfa = new Inventario(
-    'Alfa',
+var alfa_polietileno = new Inventario(
+    'Alfa Polietileno',
     '22/08/2023',
     [
         new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
@@ -996,6 +1022,86 @@ var alfa = new Inventario(
         new item(1, 'Vaso Cone Polido C/Prato nº 4 Preto', 'vaso_cone_4')
     ]
 )
+var alfa_fibraSintetica = new Inventario(
+    'Alfa Fibra Sintetica',
+    '29/08/2023',
+    [
+        new item(14, "Cuia Sem Borda nº 1 Argila", 'cuia_1'),
+        new item(1, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
+        new item(10, "Cuia Sem Borda nº 1 Capuccino", 'cuia_1'),
+        new item(15, "Cuia Sem Borda nº 1 Envelhecido", 'cuia_1'),
+        new item(1, "Cuia Sem Borda nº 1 Palha", 'cuia_1'),
+
+        new item(12, "Cuia Sem Borda nº 2 Argila", 'cuia_2'),
+        new item(0, "Cuia Sem Borda nº 2 Branco", 'cuia_2'),
+        new item(10, "Cuia Sem Borda nº 2 Capuccino", 'cuia_2'),
+        new item(15, "Cuia Sem Borda nº 2 Envelhecido", 'cuia_2'),
+        new item(5, "Cuia Sem Borda nº 2 Palha", 'cuia_2'),
+
+        new item(20, "Cuia Sem Borda nº 3 Argila", 'cuia_3'),
+        new item(0, "Cuia Sem Borda nº 3 Branco", 'cuia_3'),
+        new item(15, "Cuia Sem Borda nº 3 Capuccino", 'cuia_3'),
+        new item(12, "Cuia Sem Borda nº 3 Envelhecido", 'cuia_3'),
+        new item(13, "Cuia Sem Borda nº 3 Palha", 'cuia_3'),
+
+        new item(10, "Cuia Sem Borda nº 4 Argila", 'cuia_4'),
+        new item(0, "Cuia Sem Borda nº 4 Branco", 'cuia_4'),
+        new item(10, "Cuia Sem Borda nº 4 Capuccino", 'cuia_4'),
+        new item(12, "Cuia Sem Borda nº 4 Envelhecido", 'cuia_4'),
+        new item(6, "Cuia Sem Borda nº 4 Palha", 'cuia_4'),
+
+        new item(8, "Cachepot Cactos nº 1 Argila", 'cactus_1'),
+        new item(13, "Cachepot Cactos nº 1 Capuccino", 'cactus_1'),
+        new item(13, "Cachepot Cactos nº 1 Envelhecido", 'cactus_1'),
+
+        new item(8, "Cachepot Cactos nº 2 Argila", 'cactus_2'),
+        new item(8, "Cachepot Cactos nº 2 Capuccino", 'cactus_2'),
+        new item(12, "Cachepot Cactos nº 2 Envelhecido", 'cactus_2'),
+
+        new item(10, "Cachepot Cactos nº 3 Argila", 'cactus_3'),
+        new item(15, "Cachepot Cactos nº 3 Capuccino", 'cactus_3'),
+        new item(16, "Cachepot Cactos nº 3 Envelhecido", 'cactus_3'),
+            
+        new item(15 , "Cachepot Sem Borda nº 1 Argile", 'cachepot_1'),
+        new item(11, "Cachepot Sem Borda nº 1 Capuccino", 'cachepot_1'),
+        new item(9,  "Cachepot Sem Borda nº 1 Envelhecido", 'cachepot_1'),
+
+        new item(10, "Cachepot Sem Borda nº 2 Argile", 'cachepot_2'),
+        new item(11, "Cachepot Sem Borda nº 2 Capuccino", 'cachepot_2'),
+        new item(9, "Cachepot Sem Borda nº 2 Envelhecido", 'cachepot_2'),
+        new item(10, "Cachepot Sem Borda nº 2 Palha", 'cachepot_2'),
+
+        new item(9, "Cachepot Sem Borda nº 3 Argile", 'cachepot_3'),
+        new item(14, "Cachepot Sem Borda nº 3 Capuccino", 'cachepot_3'),
+        new item(16, "Cachepot Sem Borda nº 3 Envelhecido", 'cachepot_3'),
+        new item(9, "Cachepot Sem Borda nº 3 Palha", 'cachepot_3'),
+
+        new item(11, "Cachepot Sem Borda nº 4 Argile", 'cachepot_4'),
+        new item(14, "Cachepot Sem Borda nº 4 Capuccino", 'cachepot_4'),
+        new item(16, "Cachepot Sem Borda nº 4 Envelhecido", 'cachepot_4'),
+        new item(5, "Cachepot Sem Borda nº 4 Palha", 'cachepot_4'),
+
+        new item(3, "Coluna Quadrada nº 2 Argile", 'coluna_2'),
+        new item(3, "Coluna Quadrada nº 2 Capuccino", 'coluna_2'),
+        new item(3, "Coluna Quadrada nº 2 Envelhecido", 'coluna_2'),
+
+        new item(3, "Coluna Quadrada nº 3 Argile", 'coluna_3'),
+        new item(3, "Coluna Quadrada nº 3 Capuccino", 'coluna_3'),
+        new item(3, "Coluna Quadrada nº 3 Envelhecido", 'coluna_3'),
+
+        new item(6, "Vaso Red. Sem Borda nº 1 Capuccino", 'vaso_1'),
+        new item(6, "Vaso Red. Sem Borda nº 1 Envelhecido", 'vaso_1'),
+
+        new item(6, "Vaso Red. Sem Borda nº 2 Capuccino", 'vaso_2'),
+        new item(6, "Vaso Red. Sem Borda nº 2 Envelhecido", 'vaso_2'),
+
+        new item(6, "Vaso Red. Sem Borda nº 3 Capuccino", 'vaso_3'),
+        new item(6, "Vaso Red. Sem Borda nº 3 Envelhecido", 'vaso_3'),
+
+        new item(6, "Vaso Red. Sem Borda nº 4 Capuccino", 'vaso_4'),
+        new item(6, "Vaso Red. Sem Borda nº 4 Envelhecido", 'vaso_4')
+    ]
+)
 var policamp = new Inventario(
     'Policamp',
     '19/08/2023',
@@ -1024,22 +1130,57 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '10/08/2023',
+    '29/08/2023',
     [
         new item(29, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
         new item(33, 'Formicida Insetimaster - 100ml', 'formicida'),
         new item(3, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
-        new item(9, 'Inseticom Jardim - Caixa', 'inseticom'),
+        new item(8, 'Inseticom Jardim - Caixa', 'inseticom'),
 
         new item(45, 'Malathion 500CE - 100ml', 'malathion')
     ]   
+)
+var madeiras = new Inventario(
+    'Madeiras',
+    '29/08/2023',
+    [
+        new item(1, 'Treliça 50x50cm Simples', 'treliça'),
+        new item(1, 'Treliça 40x100cm Simples', 'treliça'),
+        new item(2, 'Treliça 40x100cm Pintada', 'treliça'),
+        new item(1, 'Treliça 60x100cm Simples', 'treliça'),
+        new item(2, 'Treliça 60x100cm Pintada', 'treliça'),
+
+        new item(15, 'Cachepo Madeira 20 Simples', 'cachepo'),
+        new item(10, 'Cachepo Madeira 20 Pintado', 'cachepo'),
+        new item(7, 'Cachepo Madeira 40 Simples', 'cachepo'),
+        new item(10, 'Cachepo Madeira 40 Pintado', 'cachepo'),
+
+        new item(6, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
+        new item(6, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
+        new item(13, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
+        new item(7, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
+        new item(1, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
+        new item(1, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
+
+        new item(14, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
+        new item(16, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
+        new item(10, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
+        new item(11, 'Rodízio Quadrado 35cm', 'rodízio_quadrado'),
+        new item(10, 'Rodízio Quadrado 40cm', 'rodízio_quadrado'),
+        new item(5, 'Rodízio Quadrado 45cm', 'rodízio_quadrado'),
+        new item(1, 'Rodízio Quadrado 50cm', 'rodízio_quadrado'),
+    ]
 )
 var nutriplan = new Inventario(
     'Nutriplan',
     '21/08/2023',
     [
+        new item(50, 'Pote de Muda - 25 litros', 'pote'),
+        new item(30, 'Pote de Muda - 33 litros', 'pote'),
+        new item(10, 'Pote de Muda - 40 litros', 'pote'),
+
         new item(1, 'Vaso Classic Cilindrico 55 cobre', 'cilindrico_55'),
 
         new item(1, 'Vaso Classic Cônico 46 - Areia', 'conico_46'),
@@ -1061,7 +1202,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '22/08/2023',
+    '29/08/2023',
     [
         new item(15, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(11, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1084,7 +1225,7 @@ var coquim = new Inventario(
         new item(5, '2002 - Placa Coquim 20x40', 'placa_coquim'),
         new item(13, '2003 - Placa Coquim 20x60', 'placa_coquim'),
         new item(16, '2004 - Placa Coquim 20x80', 'placa_coquim'),
-        new item(3, '2005 - Placa Coquim 40x40', 'placa_coquim'),
+        new item(2, '2005 - Placa Coquim 40x40', 'placa_coquim'),
         new item(4, '2006 - Placa Coquim 40x80', 'placa_coquim'),
 
         new item(0, '2007 - Placa Redonda Coquim 20cm', 'placa_redonda'),
@@ -1427,14 +1568,18 @@ function buscadorDeInventario(nome) {
             return emeAeme
         case 'forth':
             return forth
-        case 'alfa':
-            return alfa
+        case 'alfa_polietileno':
+            return alfa_polietileno
+        case 'alfa_fibraSintetica':
+            return alfa_fibraSintetica
         case 'jel_plast':
             return jel_plast
         case 'policamp':
             return policamp
         case 'insetimax':
             return insetimax
+        case 'madeiras':
+            return madeiras
         case 'nutriplan':
             return nutriplan
         case 'coquim':
@@ -1549,10 +1694,12 @@ function editorDeOrdem(index, identidade) {
 impreção(articleRegaplan, regaplan, 'regaplan')
 impreção(articleEmeAEme, emeAeme, 'emeAeme')
 impreção(articleForth, forth, 'forth')
-impreção(articleAlfa, alfa, 'alfa')
+impreção(articleAlfa_polietileno, alfa_polietileno, 'alfa_polietileno')
+impreção(articleAlfa_fibraSintetica, alfa_fibraSintetica, 'alfa_fibraSintetica')
 impreção(articleRischioto, rischioto, 'rischioto')
 impreção(articleJelPlast, jel_plast, 'jel_plast')
 impreção(articlePolicamp, policamp, 'policamp')
 impreção(articleInsetimax, insetimax, 'insetimax')
+impreção(articleMadeiras, madeiras, 'madeiras')
 impreção(articleNutriplan, nutriplan, 'nutriplan')
 impreção(articleCoquim, coquim, 'coquim')
