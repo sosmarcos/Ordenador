@@ -1028,77 +1028,77 @@ var alfa_fibraSintetica = new Inventario(
     [
         new item(14, "Cuia Sem Borda nº 1 Argila", 'cuia_1'),
         new item(1, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
-        new item(10, "Cuia Sem Borda nº 1 Capuccino", 'cuia_1'),
+        new item(10, "Cuia Sem Borda nº 1 Cappuccino", 'cuia_1'),
         new item(15, "Cuia Sem Borda nº 1 Envelhecido", 'cuia_1'),
         new item(1, "Cuia Sem Borda nº 1 Palha", 'cuia_1'),
 
         new item(12, "Cuia Sem Borda nº 2 Argila", 'cuia_2'),
         new item(0, "Cuia Sem Borda nº 2 Branco", 'cuia_2'),
-        new item(10, "Cuia Sem Borda nº 2 Capuccino", 'cuia_2'),
+        new item(10, "Cuia Sem Borda nº 2 Cappuccino", 'cuia_2'),
         new item(15, "Cuia Sem Borda nº 2 Envelhecido", 'cuia_2'),
         new item(5, "Cuia Sem Borda nº 2 Palha", 'cuia_2'),
 
         new item(20, "Cuia Sem Borda nº 3 Argila", 'cuia_3'),
         new item(0, "Cuia Sem Borda nº 3 Branco", 'cuia_3'),
-        new item(15, "Cuia Sem Borda nº 3 Capuccino", 'cuia_3'),
+        new item(15, "Cuia Sem Borda nº 3 Cappuccino", 'cuia_3'),
         new item(12, "Cuia Sem Borda nº 3 Envelhecido", 'cuia_3'),
         new item(13, "Cuia Sem Borda nº 3 Palha", 'cuia_3'),
 
         new item(10, "Cuia Sem Borda nº 4 Argila", 'cuia_4'),
         new item(0, "Cuia Sem Borda nº 4 Branco", 'cuia_4'),
-        new item(10, "Cuia Sem Borda nº 4 Capuccino", 'cuia_4'),
+        new item(10, "Cuia Sem Borda nº 4 Cappuccino", 'cuia_4'),
         new item(12, "Cuia Sem Borda nº 4 Envelhecido", 'cuia_4'),
         new item(6, "Cuia Sem Borda nº 4 Palha", 'cuia_4'),
 
         new item(8, "Cachepot Cactos nº 1 Argila", 'cactus_1'),
-        new item(13, "Cachepot Cactos nº 1 Capuccino", 'cactus_1'),
+        new item(13, "Cachepot Cactos nº 1 Cappuccino", 'cactus_1'),
         new item(13, "Cachepot Cactos nº 1 Envelhecido", 'cactus_1'),
 
         new item(8, "Cachepot Cactos nº 2 Argila", 'cactus_2'),
-        new item(8, "Cachepot Cactos nº 2 Capuccino", 'cactus_2'),
+        new item(8, "Cachepot Cactos nº 2 Cappuccino", 'cactus_2'),
         new item(12, "Cachepot Cactos nº 2 Envelhecido", 'cactus_2'),
 
         new item(10, "Cachepot Cactos nº 3 Argila", 'cactus_3'),
-        new item(15, "Cachepot Cactos nº 3 Capuccino", 'cactus_3'),
+        new item(15, "Cachepot Cactos nº 3 Cappuccino", 'cactus_3'),
         new item(16, "Cachepot Cactos nº 3 Envelhecido", 'cactus_3'),
             
         new item(15 , "Cachepot Sem Borda nº 1 Argile", 'cachepot_1'),
-        new item(11, "Cachepot Sem Borda nº 1 Capuccino", 'cachepot_1'),
+        new item(11, "Cachepot Sem Borda nº 1 Cappuccino", 'cachepot_1'),
         new item(9,  "Cachepot Sem Borda nº 1 Envelhecido", 'cachepot_1'),
 
         new item(10, "Cachepot Sem Borda nº 2 Argile", 'cachepot_2'),
-        new item(11, "Cachepot Sem Borda nº 2 Capuccino", 'cachepot_2'),
+        new item(11, "Cachepot Sem Borda nº 2 Cappuccino", 'cachepot_2'),
         new item(9, "Cachepot Sem Borda nº 2 Envelhecido", 'cachepot_2'),
         new item(10, "Cachepot Sem Borda nº 2 Palha", 'cachepot_2'),
 
         new item(9, "Cachepot Sem Borda nº 3 Argile", 'cachepot_3'),
-        new item(14, "Cachepot Sem Borda nº 3 Capuccino", 'cachepot_3'),
+        new item(14, "Cachepot Sem Borda nº 3 Cappuccino", 'cachepot_3'),
         new item(16, "Cachepot Sem Borda nº 3 Envelhecido", 'cachepot_3'),
         new item(9, "Cachepot Sem Borda nº 3 Palha", 'cachepot_3'),
 
         new item(11, "Cachepot Sem Borda nº 4 Argile", 'cachepot_4'),
-        new item(14, "Cachepot Sem Borda nº 4 Capuccino", 'cachepot_4'),
+        new item(14, "Cachepot Sem Borda nº 4 Cappuccino", 'cachepot_4'),
         new item(16, "Cachepot Sem Borda nº 4 Envelhecido", 'cachepot_4'),
         new item(5, "Cachepot Sem Borda nº 4 Palha", 'cachepot_4'),
 
         new item(3, "Coluna Quadrada nº 2 Argile", 'coluna_2'),
-        new item(3, "Coluna Quadrada nº 2 Capuccino", 'coluna_2'),
+        new item(3, "Coluna Quadrada nº 2 Cappuccino", 'coluna_2'),
         new item(3, "Coluna Quadrada nº 2 Envelhecido", 'coluna_2'),
 
         new item(3, "Coluna Quadrada nº 3 Argile", 'coluna_3'),
-        new item(3, "Coluna Quadrada nº 3 Capuccino", 'coluna_3'),
+        new item(3, "Coluna Quadrada nº 3 Cappuccino", 'coluna_3'),
         new item(3, "Coluna Quadrada nº 3 Envelhecido", 'coluna_3'),
 
-        new item(6, "Vaso Red. Sem Borda nº 1 Capuccino", 'vaso_1'),
+        new item(6, "Vaso Red. Sem Borda nº 1 Cappuccino", 'vaso_1'),
         new item(6, "Vaso Red. Sem Borda nº 1 Envelhecido", 'vaso_1'),
 
-        new item(6, "Vaso Red. Sem Borda nº 2 Capuccino", 'vaso_2'),
+        new item(6, "Vaso Red. Sem Borda nº 2 Cappuccino", 'vaso_2'),
         new item(6, "Vaso Red. Sem Borda nº 2 Envelhecido", 'vaso_2'),
 
-        new item(6, "Vaso Red. Sem Borda nº 3 Capuccino", 'vaso_3'),
+        new item(6, "Vaso Red. Sem Borda nº 3 Cappuccino", 'vaso_3'),
         new item(6, "Vaso Red. Sem Borda nº 3 Envelhecido", 'vaso_3'),
 
-        new item(6, "Vaso Red. Sem Borda nº 4 Capuccino", 'vaso_4'),
+        new item(6, "Vaso Red. Sem Borda nº 4 Cappuccino", 'vaso_4'),
         new item(6, "Vaso Red. Sem Borda nº 4 Envelhecido", 'vaso_4')
     ]
 )
