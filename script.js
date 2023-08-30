@@ -106,11 +106,11 @@ var regaplan = new Inventario(
     'Regaplan',
     '29/08/2023',
     [
-        new item(108, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(96, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(108, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(108, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(108, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(96, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(84, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(96, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(96, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(96, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
 
         new item(108, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
         new item(108, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
@@ -123,8 +123,8 @@ var regaplan = new Inventario(
 
         new item(80, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
         new item(80, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
-        new item(90, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
-        new item(40, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
+        new item(80, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
+        new item(29, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
 
         new item(90, 'Suporte Artístico 00 - 19cm Dourado', 'sp_artistico'),
         new item(100, 'Suporte Artístico 01 - 26cm Dourado', 'sp_artistico'),
@@ -255,10 +255,10 @@ var rischioto = new Inventario(
 
         new item(0, 'Forma de Gelo 2 Peças', 'forma_gelo'),
 
-        new item(38, 'Floreira Floratta n30 Areia', 'floreira_30'),
-        new item(54, 'Floreira Floratta n30 Azul', 'floreira_30'),
-        new item(36, 'Floreira Floratta n30 Rosa', 'floreira_30'),
-        new item(45, 'Floreira Floratta n30 Verde', 'floreira_30'),
+        new item(35, 'Floreira Floratta n30 Areia', 'floreira_30'),
+        new item(51, 'Floreira Floratta n30 Azul', 'floreira_30'),
+        new item(33, 'Floreira Floratta n30 Rosa', 'floreira_30'),
+        new item(42, 'Floreira Floratta n30 Verde', 'floreira_30'),
 
         new item(19, 'Jarra Quadrada - 2 litros', 'jarra'),
         new item(19, 'Jarra Redonda - 1.5 litros', 'jarra'),
@@ -466,23 +466,23 @@ var emeAeme = new Inventario(
 
         new item(34, 'Cuia CBB 21 Com Base Branca', 'cuia_cbb_21'),
         new item(48, 'Cuia CBB 21 Com Base Café', 'cuia_cbb_21'),
-        new item(67, 'Cuia CBB 21 Com Base Cerâmica', 'cuia_cbb_21'),
+        new item(55, 'Cuia CBB 21 Com Base Cerâmica', 'cuia_cbb_21'),
         new item(51, 'Cuia CBB 21 Com Base Marfim', 'cuia_cbb_21'),
-        new item(99, 'Cuia CBB 21 Com Base Preta', 'cuia_cbb_21'),
+        new item(87, 'Cuia CBB 21 Com Base Preta', 'cuia_cbb_21'),
         new item(56, 'Cuia CBB 21 Com Base Verde', 'cuia_cbb_21'),
 
         new item(34, 'Cuia CBB 25 Com Base Branca', 'cuia_cbb_25'),
         new item(48, 'Cuia CBB 25 Com Base Café', 'cuia_cbb_25'),
-        new item(36, 'Cuia CBB 25 Com Base Cerâmica', 'cuia_cbb_25'),
+        new item(24, 'Cuia CBB 25 Com Base Cerâmica', 'cuia_cbb_25'),
         new item(47, 'Cuia CBB 25 Com Base Marfim', 'cuia_cbb_25'),
-        new item(51, 'Cuia CBB 25 Com Base Preta', 'cuia_cbb_25'),
+        new item(27, 'Cuia CBB 25 Com Base Preta', 'cuia_cbb_25'),
         new item(36, 'Cuia CBB 25 Com Base Verde', 'cuia_cbb_25'),
 
         new item(45, 'Cuia CBB 30 Com Base Branca', 'cuia_cbb_30'),
         new item(67, 'Cuia CBB 30 Com Base Café', 'cuia_cbb_30'),
         new item(35, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
         new item(50, 'Cuia CBB 30 Com Base Marfim', 'cuia_cbb_30'),
-        new item(23, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
+        new item(11, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
         new item(40, 'Cuia CBB 30 Com Base Verde', 'cuia_cbb_30'),
 
         new item(27, 'Cuia Gran Imperial CBB 40 Com Base Cerâmica', 'cuia_cbb_40'),
@@ -519,50 +519,50 @@ var emeAeme = new Inventario(
         new item(87, 'Prato B006 6cm Cerâmica', 'prato_b006'),
         new item(135, 'Prato B006 6cm Preto', 'prato_b006'),
 
-        new item(68, 'Prato B00 9.5cm Cerâmica', 'prato_b00'),
+        new item(44, 'Prato B00 9.5cm Cerâmica', 'prato_b00'),
         new item(50, 'Prato B00 9.5cm Cimento', 'prato_b00'),
         new item(50, 'Prato B00 9.5cm Marfim', 'prato_b00'),
         new item(52, 'Prato B00 9.5cm Preto', 'prato_b00'),
 
-        new item(81, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
+        new item(69, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
         new item(60, 'Prato B01 11.5cm Cimento', 'prato_b01'),
         new item(59, 'Prato B01 11.5cm Marfim', 'prato_b01'),
-        new item(102, 'Prato B01 11.5cm Preto', 'prato_b01'),
+        new item(66, 'Prato B01 11.5cm Preto', 'prato_b01'),
 
-        new item(84, 'Prato B02 13cm Cerâmica', 'prato_b02'),
+        new item(72, 'Prato B02 13cm Cerâmica', 'prato_b02'),
         new item(50, 'Prato B02 13cm Cimento', 'prato_b02'),
         new item(50, 'Prato B02 13cm Marfim', 'prato_b02'),
         new item(84, 'Prato B02 13cm Preto', 'prato_b02'),
 
-        new item(78, 'Prato B03 16cm Cerâmica', 'prato_b03'),
+        new item(66, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(65, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(58, 'Prato B03 16cm Marfim', 'prato_b03'),
-        new item(120, 'Prato B03 16cm Preto', 'prato_b03'),
+        new item(108, 'Prato B03 16cm Preto', 'prato_b03'),
 
-        new item(83, 'Prato B04 21cm Cerâmica', 'prato_b04'),
+        new item(59, 'Prato B04 21cm Cerâmica', 'prato_b04'),
         new item(49, 'Prato B04 21cm Cimento', 'prato_b04'),
         new item(50, 'Prato B04 21cm Marfim', 'prato_b04'),
-        new item(107, 'Prato B04 21cm Preto', 'prato_b04'),
+        new item(71, 'Prato B04 21cm Preto', 'prato_b04'),
 
-        new item(83, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
+        new item(71, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
         new item(30, 'Prato B04.5 22cm Cimento', 'prato_b4.5'),
         new item(26, 'Prato B04.5 22cm Marfim', 'prato_b4.5'),
-        new item(90, 'Prato B04.5 22cm Preto', 'prato_b4.5'),
+        new item(78, 'Prato B04.5 22cm Preto', 'prato_b4.5'),
 
-        new item(65, 'Prato B05 24cm Cerâmica', 'prato_b05'),
+        new item(53, 'Prato B05 24cm Cerâmica', 'prato_b05'),
         new item(40, 'Prato B05 24cm Cimento', 'prato_b05'),
         new item(46, 'Prato B05 24cm Marfim', 'prato_b05'),
-        new item(71, 'Prato B05 24cm Preto', 'prato_b05'),
+        new item(0, 'Prato B05 24cm Preto', 'prato_b05'),
 
-        new item(57, 'Prato B06 27cm Cerâmica', 'prato_b06'),
+        new item(45, 'Prato B06 27cm Cerâmica', 'prato_b06'),
         new item(47, 'Prato B06 27cm Cimento', 'prato_b06'),
         new item(49, 'Prato B06 27cm Marfim', 'prato_b06'),
-        new item(61, 'Prato B06 27cm Preto', 'prato_b06'),
+        new item(0, 'Prato B06 27cm Preto', 'prato_b06'),
 
-        new item(80, 'Prato B07 30cm Cerâmica', 'prato_b07'),
+        new item(68, 'Prato B07 30cm Cerâmica', 'prato_b07'),
         new item(53, 'Prato B07 30cm Cimento', 'prato_b07'),
         new item(51, 'Prato B07 30cm Marfim', 'prato_b07'),
-        new item(84, 'Prato B07 30cm Preto', 'prato_b07'),
+        new item(72, 'Prato B07 30cm Preto', 'prato_b07'),
 
         new item(37, 'Prato B08 33cm Cerâmica', 'prato_b08'),
         new item(42, 'Prato B08 33cm Cimento', 'prato_b08'),
@@ -1106,14 +1106,14 @@ var policamp = new Inventario(
     'Policamp',
     '19/08/2023',
     [
-        new item(120, 'Pulverizador 500ml', 'pulverizador'),
-        new item(113, 'Pulverizador 1 litro', 'pulverizador'),
+        new item(119, 'Pulverizador 500ml', 'pulverizador'),
+        new item(112, 'Pulverizador 1 litro', 'pulverizador'),
         new item(38, 'Regador Com Cabo - Bico', 'Regador_cabo'),
         new item(30, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
         new item(120, 'Regador - 2 litros', 'Regador'),
         new item(118, 'Regador - 4 litros', 'Regador'),
-        new item(107, 'Regador - 5 litros', 'Regador'),
-        new item(75, 'Regador - 10 litros', 'Regador')
+        new item(101, 'Regador - 5 litros', 'Regador'),
+        new item(69, 'Regador - 10 litros', 'Regador')
     ]
 )
 var jel_plast = new Inventario(
