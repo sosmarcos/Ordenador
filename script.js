@@ -195,7 +195,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '29/08/2023',
+    '31/08/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -246,7 +246,7 @@ var rischioto = new Inventario(
 
         new item(42, 'Cuia Bella Fiore 7.5 litros Areia', 'cuia_bf_7.5'),
         new item(0, 'Cuia Bella Fiore 7.5 litros Cerâmica', 'cuia_bf_7.5'),
-        new item(11, 'Cuia Bella Fiore 7.5 litros Preto', 'cuia_bf_7.5'),
+        new item(10, 'Cuia Bella Fiore 7.5 litros Preto', 'cuia_bf_7.5'),
 
         new item(9, 'Escorredor de Pratos Supreme', 'escorredor'),
         new item(19, 'Escorredor de Talheres', 'escorredor'),
@@ -414,7 +414,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '29/08/2023',
+    '31/08/2023',
     [
         new item(209, 'Alça Universal Branca', 'alça_universal'),
         new item(54, 'Alça Universal Café', 'alça_universal'),
@@ -537,7 +537,7 @@ var emeAeme = new Inventario(
         new item(66, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(65, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(58, 'Prato B03 16cm Marfim', 'prato_b03'),
-        new item(108, 'Prato B03 16cm Preto', 'prato_b03'),
+        new item(107, 'Prato B03 16cm Preto', 'prato_b03'),
 
         new item(59, 'Prato B04 21cm Cerâmica', 'prato_b04'),
         new item(49, 'Prato B04 21cm Cimento', 'prato_b04'),
@@ -552,12 +552,12 @@ var emeAeme = new Inventario(
         new item(53, 'Prato B05 24cm Cerâmica', 'prato_b05'),
         new item(40, 'Prato B05 24cm Cimento', 'prato_b05'),
         new item(46, 'Prato B05 24cm Marfim', 'prato_b05'),
-        new item(0, 'Prato B05 24cm Preto', 'prato_b05'),
+        new item(14, 'Prato B05 24cm Preto', 'prato_b05'),
 
         new item(45, 'Prato B06 27cm Cerâmica', 'prato_b06'),
         new item(47, 'Prato B06 27cm Cimento', 'prato_b06'),
         new item(49, 'Prato B06 27cm Marfim', 'prato_b06'),
-        new item(0, 'Prato B06 27cm Preto', 'prato_b06'),
+        new item(25, 'Prato B06 27cm Preto', 'prato_b06'),
 
         new item(68, 'Prato B07 30cm Cerâmica', 'prato_b07'),
         new item(53, 'Prato B07 30cm Cimento', 'prato_b07'),
