@@ -104,25 +104,25 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '29/08/2023',
+    '31/08/2023',
     [
-        new item(96, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(84, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(102, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(78, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(96, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(96, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(96, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
 
-        new item(108, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(108, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(108, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(108, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(114, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(114, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(114, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(102, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
         new item(40, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
         new item(40, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
         new item(40, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
 
         new item(80, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
-        new item(80, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
+        new item(70, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
         new item(80, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
         new item(29, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
 
@@ -137,20 +137,20 @@ var regaplan = new Inventario(
         new item(2, 'Suporte Arvore - 5 Vasos Dourado', 'sp_arvore'),
         new item(4, 'Suporte Arvore - 5 Vasos Preto', 'sp_arvore'),
 
-        new item(8, 'Suporte Coador 26cm Preto', 'sp_coador'),
-        new item(6, 'Suporte Coador 28cm Preto', 'sp_coador'),
-        new item(11, 'Suporte Coador 30cm Preto', 'sp_coador'),
-        new item(5, 'Suporte Coador 32cm Preto', 'sp_coador'),
+        new item(4, 'Suporte Coador 26cm Preto', 'sp_coador'),
+        new item(2, 'Suporte Coador 28cm Preto', 'sp_coador'),
+        new item(7, 'Suporte Coador 30cm Preto', 'sp_coador'),
+        new item(1, 'Suporte Coador 32cm Preto', 'sp_coador'),
 
-        new item(20, 'Suporte de Canto Dourado'),
+        new item(17, 'Suporte de Canto Dourado'),
 
-        new item(30, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
-        new item(30, 'Suporte Margarida 02 - 21 cm Dourado', 'sp_margarida'),
+        new item(25, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
+        new item(25, 'Suporte Margarida 02 - 21 cm Dourado', 'sp_margarida'),
         new item(30, 'Suporte Margarida 03 - 23 cm Dourado', 'sp_margarida'),
-        new item(30, 'Suporte Margarida 04 - 26 cm Dourado', 'sp_margarida'),
+        new item(25, 'Suporte Margarida 04 - 26 cm Dourado', 'sp_margarida'),
 
         new item(25, 'Suporte Rasteiro Chapa 01 - 18cm Dourado', 'sp_rasteiro'),
-        new item(30, 'Suporte Rasteiro Chapa 02 - 21cm Dourado', 'sp_rasteiro'),
+        new item(25, 'Suporte Rasteiro Chapa 02 - 21cm Dourado', 'sp_rasteiro'),
         new item(30, 'Suporte Rasteiro Chapa 03 - 24cm Dourado', 'sp_rasteiro'),
         new item(30, 'Suporte Rasteiro Chapa 04 - 27cm Dourado', 'sp_rasteiro'),
         new item(20, 'Suporte Rasteiro Chapa 05 - 30cm Dourado', 'sp_rasteiro'),
@@ -159,18 +159,18 @@ var regaplan = new Inventario(
         new item(20, 'Suporte Rasteiro Chapa 08 - 40cm Dourado', 'sp_rasteiro'),
 
         new item(0, 'Suporte Torre 40cm Dourado', 'sp_torre'),
-        new item(9, 'Suporte Torre 40cm Preto', 'sp_torre'),
+        new item(6, 'Suporte Torre 40cm Preto', 'sp_torre'),
         new item(0, 'Suporte Torre 60cm Dourado', 'sp_torre'),
-        new item(9, 'Suporte Torre 60cm Preto', 'sp_torre'),
+        new item(7, 'Suporte Torre 60cm Preto', 'sp_torre'),
         new item(1, 'Suporte Torre 80cm Dourado', 'sp_torre'),
-        new item(14, 'Suporte Torre 80cm Preto', 'sp_torre'),
+        new item(12, 'Suporte Torre 80cm Preto', 'sp_torre'),
         new item(4, 'Suporte Torre 110cm Dourado', 'sp_torre'),
         new item(10, 'Suporte Torre 110cm Preto', 'sp_torre'),
 
         new item(0, 'Tripé Decorativo Grande Dourado', 'tp_decorativo'),
-        new item(10, 'Tripé Decorativo Grande Preto', 'tp_decorativo'),
+        new item(5, 'Tripé Decorativo Grande Preto', 'tp_decorativo'),
         new item(0, 'Tripé Decorativo Médio Dourado', 'tp_decorativo'),
-        new item(10, 'Tripé Decorativo Médio Preto', 'tp_decorativo'),
+        new item(5, 'Tripé Decorativo Médio Preto', 'tp_decorativo'),
         new item(0, 'Tripé Decorativo Pequeno Dourado', 'tp_decorativo'),
         new item(10, 'Tripé Decorativo Pequeno Preto', 'tp_decorativo'),
 
@@ -178,10 +178,10 @@ var regaplan = new Inventario(
         new item(10, 'Tripé Suspenso 01 25x40cm', 'tp_suspenso'),
         new item(20, 'Tripé Suspenso 01 30x40cm', 'tp_suspenso'),
 
-        new item(8, 'Violeteiro Com Corrente - 2 Vasos', 'violeteiro'),
-        new item(8, 'Violeteiro Com Corrente - 3 Vasos', 'violeteiro'),
-        new item(9, 'Violeteiro Com Corrente - 4 Vasos', 'violeteiro'),
-        new item(10, 'Violeteiro Com Corrente - 5 Vasos', 'violeteiro'),
+        new item(5, 'Violeteiro Com Corrente - 2 Vasos', 'violeteiro'),
+        new item(5, 'Violeteiro Com Corrente - 3 Vasos', 'violeteiro'),
+        new item(6, 'Violeteiro Com Corrente - 4 Vasos', 'violeteiro'),
+        new item(7, 'Violeteiro Com Corrente - 5 Vasos', 'violeteiro'),
 
         new item(0, 'Violeteiro Pedestal - 3 Vasos Dourado', 'sp_violeteiro'),
         new item(1, 'Violeteiro Pedestal - 3 Vasos Preto', 'sp_violeteiro'),
@@ -190,7 +190,7 @@ var regaplan = new Inventario(
         new item(0, 'Violeteiro Pedestal - 7 Vasos Dourado', 'sp_violeteiro'),
         new item(2, 'Violeteiro Pedestal - 7 Vasos Preto', 'sp_violeteiro'),
         new item(2, 'Violeteiro Pedestal - 9 Vasos Dourado', 'sp_violeteiro'),
-        new item(2, 'Violeteiro Pedestal - 9 Vasos Preto', 'sp_violeteiro'),
+        new item(1, 'Violeteiro Pedestal - 9 Vasos Preto', 'sp_violeteiro'),
     ]
 )
 var rischioto = new Inventario(
@@ -1023,83 +1023,83 @@ var alfa_polietileno = new Inventario(
     ]
 )
 var alfa_fibraSintetica = new Inventario(
-    'Alfa Fibra Sintetica',
-    '29/08/2023',
+    'Alfa Fibra Sintética',
+    '31/08/2023',
     [
-        new item(14, "Cuia Sem Borda nº 1 Argila", 'cuia_1'),
-        new item(1, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
+        new item(18, "Cuia Sem Borda nº 1 Argila", 'cuia_1'),
+        new item(4, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
         new item(10, "Cuia Sem Borda nº 1 Cappuccino", 'cuia_1'),
         new item(15, "Cuia Sem Borda nº 1 Envelhecido", 'cuia_1'),
-        new item(1, "Cuia Sem Borda nº 1 Palha", 'cuia_1'),
+        new item(5, "Cuia Sem Borda nº 1 Palha", 'cuia_1'),
 
-        new item(12, "Cuia Sem Borda nº 2 Argila", 'cuia_2'),
+        new item(10, "Cuia Sem Borda nº 2 Argila", 'cuia_2'),
         new item(0, "Cuia Sem Borda nº 2 Branco", 'cuia_2'),
         new item(10, "Cuia Sem Borda nº 2 Cappuccino", 'cuia_2'),
-        new item(15, "Cuia Sem Borda nº 2 Envelhecido", 'cuia_2'),
+        new item(10, "Cuia Sem Borda nº 2 Envelhecido", 'cuia_2'),
         new item(5, "Cuia Sem Borda nº 2 Palha", 'cuia_2'),
 
-        new item(20, "Cuia Sem Borda nº 3 Argila", 'cuia_3'),
+        new item(17, "Cuia Sem Borda nº 3 Argila", 'cuia_3'),
         new item(0, "Cuia Sem Borda nº 3 Branco", 'cuia_3'),
-        new item(15, "Cuia Sem Borda nº 3 Cappuccino", 'cuia_3'),
-        new item(12, "Cuia Sem Borda nº 3 Envelhecido", 'cuia_3'),
-        new item(13, "Cuia Sem Borda nº 3 Palha", 'cuia_3'),
+        new item(12, "Cuia Sem Borda nº 3 Cappuccino", 'cuia_3'),
+        new item(9, "Cuia Sem Borda nº 3 Envelhecido", 'cuia_3'),
+        new item(16, "Cuia Sem Borda nº 3 Palha", 'cuia_3'),
 
-        new item(10, "Cuia Sem Borda nº 4 Argila", 'cuia_4'),
+        new item(9, "Cuia Sem Borda nº 4 Argila", 'cuia_4'),
         new item(0, "Cuia Sem Borda nº 4 Branco", 'cuia_4'),
-        new item(10, "Cuia Sem Borda nº 4 Cappuccino", 'cuia_4'),
-        new item(12, "Cuia Sem Borda nº 4 Envelhecido", 'cuia_4'),
-        new item(6, "Cuia Sem Borda nº 4 Palha", 'cuia_4'),
+        new item(8, "Cuia Sem Borda nº 4 Cappuccino", 'cuia_4'),
+        new item(9, "Cuia Sem Borda nº 4 Envelhecido", 'cuia_4'),
+        new item(7, "Cuia Sem Borda nº 4 Palha", 'cuia_4'),
 
-        new item(8, "Cachepot Cactos nº 1 Argila", 'cactus_1'),
-        new item(13, "Cachepot Cactos nº 1 Cappuccino", 'cactus_1'),
-        new item(13, "Cachepot Cactos nº 1 Envelhecido", 'cactus_1'),
+        new item(3, "Cachepot Cactos nº 1 Argila", 'cactus_1'),
+        new item(8, "Cachepot Cactos nº 1 Cappuccino", 'cactus_1'),
+        new item(8, "Cachepot Cactos nº 1 Envelhecido", 'cactus_1'),
 
         new item(8, "Cachepot Cactos nº 2 Argila", 'cactus_2'),
         new item(8, "Cachepot Cactos nº 2 Cappuccino", 'cactus_2'),
-        new item(12, "Cachepot Cactos nº 2 Envelhecido", 'cactus_2'),
+        new item(7, "Cachepot Cactos nº 2 Envelhecido", 'cactus_2'),
 
         new item(10, "Cachepot Cactos nº 3 Argila", 'cactus_3'),
-        new item(15, "Cachepot Cactos nº 3 Cappuccino", 'cactus_3'),
+        new item(8, "Cachepot Cactos nº 3 Cappuccino", 'cactus_3'),
         new item(16, "Cachepot Cactos nº 3 Envelhecido", 'cactus_3'),
             
-        new item(15 , "Cachepot Sem Borda nº 1 Argile", 'cachepot_1'),
-        new item(11, "Cachepot Sem Borda nº 1 Cappuccino", 'cachepot_1'),
-        new item(9,  "Cachepot Sem Borda nº 1 Envelhecido", 'cachepot_1'),
+        new item(13 , "Cachepot Sem Borda nº 1 Argile", 'cachepot_1'),
+        new item(7, "Cachepot Sem Borda nº 1 Cappuccino", 'cachepot_1'),
+        new item(8,  "Cachepot Sem Borda nº 1 Envelhecido", 'cachepot_1'),
 
-        new item(10, "Cachepot Sem Borda nº 2 Argile", 'cachepot_2'),
-        new item(11, "Cachepot Sem Borda nº 2 Cappuccino", 'cachepot_2'),
+        new item(5, "Cachepot Sem Borda nº 2 Argile", 'cachepot_2'),
+        new item(7, "Cachepot Sem Borda nº 2 Cappuccino", 'cachepot_2'),
         new item(9, "Cachepot Sem Borda nº 2 Envelhecido", 'cachepot_2'),
-        new item(10, "Cachepot Sem Borda nº 2 Palha", 'cachepot_2'),
+        new item(5, "Cachepot Sem Borda nº 2 Palha", 'cachepot_2'),
 
-        new item(9, "Cachepot Sem Borda nº 3 Argile", 'cachepot_3'),
-        new item(14, "Cachepot Sem Borda nº 3 Cappuccino", 'cachepot_3'),
-        new item(16, "Cachepot Sem Borda nº 3 Envelhecido", 'cachepot_3'),
-        new item(9, "Cachepot Sem Borda nº 3 Palha", 'cachepot_3'),
+        new item(12, "Cachepot Sem Borda nº 3 Argile", 'cachepot_3'),
+        new item(10, "Cachepot Sem Borda nº 3 Cappuccino", 'cachepot_3'),
+        new item(13, "Cachepot Sem Borda nº 3 Envelhecido", 'cachepot_3'),
+        new item(8, "Cachepot Sem Borda nº 3 Palha", 'cachepot_3'),
 
-        new item(11, "Cachepot Sem Borda nº 4 Argile", 'cachepot_4'),
-        new item(14, "Cachepot Sem Borda nº 4 Cappuccino", 'cachepot_4'),
-        new item(16, "Cachepot Sem Borda nº 4 Envelhecido", 'cachepot_4'),
-        new item(5, "Cachepot Sem Borda nº 4 Palha", 'cachepot_4'),
+        new item(9, "Cachepot Sem Borda nº 4 Argile", 'cachepot_4'),
+        new item(11, "Cachepot Sem Borda nº 4 Cappuccino", 'cachepot_4'),
+        new item(12, "Cachepot Sem Borda nº 4 Envelhecido", 'cachepot_4'),
+        new item(3, "Cachepot Sem Borda nº 4 Palha", 'cachepot_4'),
 
-        new item(3, "Coluna Quadrada nº 2 Argile", 'coluna_2'),
-        new item(3, "Coluna Quadrada nº 2 Cappuccino", 'coluna_2'),
-        new item(3, "Coluna Quadrada nº 2 Envelhecido", 'coluna_2'),
+        new item(2, "Coluna Quadrada nº 2 Argile", 'coluna_2'),
+        new item(2, "Coluna Quadrada nº 2 Cappuccino", 'coluna_2'),
+        new item(2, "Coluna Quadrada nº 2 Envelhecido", 'coluna_2'),
 
         new item(3, "Coluna Quadrada nº 3 Argile", 'coluna_3'),
-        new item(3, "Coluna Quadrada nº 3 Cappuccino", 'coluna_3'),
-        new item(3, "Coluna Quadrada nº 3 Envelhecido", 'coluna_3'),
+        new item(2, "Coluna Quadrada nº 3 Cappuccino", 'coluna_3'),
+        new item(2, "Coluna Quadrada nº 3 Envelhecido", 'coluna_3'),
 
-        new item(6, "Vaso Red. Sem Borda nº 1 Cappuccino", 'vaso_1'),
-        new item(6, "Vaso Red. Sem Borda nº 1 Envelhecido", 'vaso_1'),
+        new item(4, "Vaso Red. Sem Borda nº 1 Cappuccino", 'vaso_1'),
+        new item(4, "Vaso Red. Sem Borda nº 1 Envelhecido", 'vaso_1'),
 
-        new item(6, "Vaso Red. Sem Borda nº 2 Cappuccino", 'vaso_2'),
-        new item(6, "Vaso Red. Sem Borda nº 2 Envelhecido", 'vaso_2'),
+        new item(4, "Vaso Red. Sem Borda nº 2 Cappuccino", 'vaso_2'),
+        new item(4, "Vaso Red. Sem Borda nº 2 Envelhecido", 'vaso_2'),
 
-        new item(6, "Vaso Red. Sem Borda nº 3 Cappuccino", 'vaso_3'),
-        new item(6, "Vaso Red. Sem Borda nº 3 Envelhecido", 'vaso_3'),
+        new item(4, "Vaso Red. Sem Borda nº 3 Cappuccino", 'vaso_3'),
+        new item(4, "Vaso Red. Sem Borda nº 3 Envelhecido", 'vaso_3'),
 
-        new item(6, "Vaso Red. Sem Borda nº 4 Cappuccino", 'vaso_4'),
-        new item(6, "Vaso Red. Sem Borda nº 4 Envelhecido", 'vaso_4')
+        new item(4, "Vaso Red. Sem Borda nº 4 Cappuccino", 'vaso_4'),
+        new item(4, "Vaso Red. Sem Borda nº 4 Envelhecido", 'vaso_4')
     ]
 )
 var policamp = new Inventario(
@@ -1175,11 +1175,14 @@ var madeiras = new Inventario(
 )
 var nutriplan = new Inventario(
     'Nutriplan',
-    '21/08/2023',
+    '31/08/2023',
     [
-        new item(50, 'Pote de Muda - 25 litros', 'pote'),
-        new item(30, 'Pote de Muda - 33 litros', 'pote'),
-        new item(10, 'Pote de Muda - 40 litros', 'pote'),
+        new item(51, 'Pote de Muda - 25 litros', 'pote'),
+        new item(31, 'Pote de Muda - 33 litros', 'pote'),
+        new item(26, 'Pote de Muda - 40 litros', 'pote'),
+        new item(0, 'Pote de Muda - 50 litros', 'pote'),
+        new item(1, 'Pote de Muda - 60 litros', 'pote'),
+        new item(8, 'Pote de Muda - 85 litros', 'pote'),
 
         new item(1, 'Vaso Classic Cilindrico 55 cobre', 'cilindrico_55'),
 
