@@ -104,7 +104,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '31/08/2023',
+    '01/09/2023',
     [
         new item(102, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(78, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -118,7 +118,7 @@ var regaplan = new Inventario(
         new item(102, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
         new item(40, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
-        new item(40, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
+        new item(30, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
         new item(40, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
 
         new item(80, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
@@ -130,7 +130,7 @@ var regaplan = new Inventario(
         new item(100, 'Suporte Artístico 01 - 26cm Dourado', 'sp_artistico'),
         new item(60, 'Suporte Artístico 02 - 31cm Dourado', 'sp_artistico'),
         new item(80, 'Suporte Artístico 03 - 37cm Dourado', 'sp_artistico'),
-        new item(95, 'Suporte Artístico 04 - 43cm Dourado', 'sp_artistico'),
+        new item(93, 'Suporte Artístico 04 - 43cm Dourado', 'sp_artistico'),
 
         new item(3, 'Suporte Arvore - 3 Vasos Dourado', 'sp_arvore'),
         new item(3, 'Suporte Arvore - 3 Vasos Preto', 'sp_arvore'),
@@ -414,11 +414,11 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '31/08/2023',
+    '01/09/2023',
     [
         new item(209, 'Alça Universal Branca', 'alça_universal'),
         new item(54, 'Alça Universal Café', 'alça_universal'),
-        new item(137, 'Alça Universal Cerâmica', 'alça_universal'),
+        new item(134, 'Alça Universal Cerâmica', 'alça_universal'),
         new item(85, 'Alça Universal Marfim', 'alça_universal'),
         new item(130, 'Alça Universal Preta', 'alça_universal'),
         new item(31, 'Alça Universal Verde', 'alça_universal'),
@@ -1607,10 +1607,12 @@ function validação(identidade) {
     }
     let quadroDeEntrada = document.getElementById('divDeEntrada')
     let quadroDeSaida = document.getElementById('divDeSaida')
-    let reposição = document.getElementById('entradaDoRepositor').value
     let item = buscadorDeInventario(identidade).inventario[indiceRepositor]
-
-    if ((item.quantidade - reposição) < 0) {
+    let numeroDeEntrada = document.getElementById('entradaDoRepositor').value
+    let reposição = numeroDeEntrada - numeroDeEntrada*2
+    
+    if (reposição > 0) {reposição = `+${reposição}`}
+    if ((item.quantidade - (reposição - reposição*2)) < 0) {
         if (!document.getElementsByClassName('menssagem_de_erro')[0]) {
             quadroDeEntrada.innerHTML += '<p class="menssagem_de_erro">Quantidade não disponivel</p>'
         }
@@ -1657,11 +1659,14 @@ function repositor(identidade) {
 
 function validaçãoDaEdção(identidade, index) {
     let quadroDeEntrada = document.getElementById('divDeEntrada')
-    let reposição = document.getElementById('entradaDoRepositor').value
     let item = buscadorDeInventario(identidade).inventario[index]
     let retorno = document.getElementById(`ordem${index}`)
+    let numeroDeEntrada = document.getElementById('entradaDoRepositor').value
+    let reposição = numeroDeEntrada - numeroDeEntrada*2
+    
+    if (reposição > 0) {reposição = `+${reposição}`}
 
-    if ((item.quantidade - reposição) < 0) {
+    if ((item.quantidade - (reposição - reposição*2)) < 0) {
         if (!document.getElementsByClassName('menssagem_de_erro')[0]) {
             quadroDeEntrada.innerHTML += '<p class="menssagem_de_erro">Quantidado não disponivel</p>'
         }
