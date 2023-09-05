@@ -534,7 +534,7 @@ var emeAeme = new Inventario(
         new item(50, 'Prato B02 13cm Marfim', 'prato_b02'),
         new item(84, 'Prato B02 13cm Preto', 'prato_b02'),
 
-        new item(66, 'Prato B03 16cm Cerâmica', 'prato_b03'),
+        new item(65, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(65, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(58, 'Prato B03 16cm Marfim', 'prato_b03'),
         new item(107, 'Prato B03 16cm Preto', 'prato_b03'),
@@ -664,7 +664,7 @@ var forth = new Inventario(
         new item(12, 'Acaricida p/uso - 500ml', 'a'),
 
         new item(33, 'Baraticida Gel', 'b'),
-        new item(24, 'Bokashi - 250g', 'b'),
+        new item(17, 'Bokashi - 250g', 'b'),
         new item(0, 'Bonsai Concentrado - 60ml', 'b'),
         new item(6, 'Bonsai p/uso - 500ml', 'b'),
         new item(0, 'Brilha folha Concentrado - 60ml', 'b'),
@@ -829,7 +829,7 @@ var alfa_polietileno = new Inventario(
         new item(1, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Preto', 'coluna_degrau_1'),
 
         new item(0, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Bege', 'coluna_degrau_2'),
-        new item(2, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Cimento', 'coluna_degrau_2'),
+        new item(1, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Cimento', 'coluna_degrau_2'),
         new item(2, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Marrom', 'coluna_degrau_2'),
         new item(2, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Preto', 'coluna_degrau_2'),
 
