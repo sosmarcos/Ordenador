@@ -1348,9 +1348,13 @@ function soma() {
 }
 
 function isentarDeDesconto() {
-    isençãoDeDesconto = true
-    document.getElementById('botaoIsento').style.backgroundColor = '#c33636'
-
+    if (isençãoDeDesconto) {
+        isençãoDeDesconto = false
+        document.getElementById('botaoIsento').style.backgroundColor = '#94be7ce0'
+    } else {
+        isençãoDeDesconto = true
+        document.getElementById('botaoIsento').style.backgroundColor = '#c33636'
+    }
     try {document.getElementById(`entrada`).select()}
         catch {null}
 }
@@ -1379,7 +1383,7 @@ function validaçãoPorcento() {
 
     var num = window.document.getElementById('descontoN').value
     if (num > 100) {
-        document.getElementById('descontoN').reset()
+        document.getElementById('descontoN').value = ''
     }
     else {porcentoN(num)}
 }
@@ -1582,6 +1586,7 @@ function sectionExpand(section, identidade='', menu='') {
         sectRepositor.style.display = 'none'
     } else if (section == 'calculadora'){
         sectCalculo.style.display = 'block'
+        document.getElementById('entrada').select()
 
         document.getElementById('navMenuInventarios').style.display = 'none'
         document.getElementById('navMenuPlantas').style.display = 'none'
