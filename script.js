@@ -104,7 +104,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '01/09/2023',
+    '06/09/2023',
     [
         new item(102, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(78, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -121,8 +121,8 @@ var regaplan = new Inventario(
         new item(30, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
         new item(40, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
 
-        new item(80, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
-        new item(70, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
+        new item(70, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
+        new item(60, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
         new item(80, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
         new item(29, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
 
@@ -195,7 +195,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '31/08/2023',
+    '06/09/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -326,11 +326,11 @@ var rischioto = new Inventario(
         new item(18, 'Vaso Parede Floratta 6 litros Verde', 'vp_floratta_6'),
 
         new item(20, 'Vaso Parede Florença 1.7 litros Areia', 'vp_florença_1.7'),
-        new item(25, 'Vaso Parede Florença 1.7 litros Cerâmica', 'vp_florença_1.7'),
+        new item(19, 'Vaso Parede Florença 1.7 litros Cerâmica', 'vp_florença_1.7'),
         new item(27, 'Vaso Parede Florença 1.7 litros Preto', 'vp_florença_1.7'),
 
         new item(10, 'Vaso Parede Florença 3.3 litros Areia', 'vp_florença_3.3'),
-        new item(14, 'Vaso Parede Florença 3.3 litros Cerâmica', 'vp_florença_3.3'),
+        new item(0, 'Vaso Parede Florença 3.3 litros Cerâmica', 'vp_florença_3.3'),
         new item(21, 'Vaso Parede Florença 3.3 litros Preto', 'vp_florença_3.3'),
 
         new item(13, 'Vaso Redondo Floratta n15 Areia', 'redondo_floratta_15'),
@@ -658,13 +658,13 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '05/09/2023',
+    '06/09/2023',
     [
         new item(7, 'Acaricida Concentrado - 60ml', 'a'),
         new item(12, 'Acaricida p/uso - 500ml', 'a'),
 
         new item(33, 'Baraticida Gel', 'b'),
-        new item(17, 'Bokashi - 250g', 'b'),
+        new item(14, 'Bokashi - 250g', 'b'),
         new item(0, 'Bonsai Concentrado - 60ml', 'b'),
         new item(6, 'Bonsai p/uso - 500ml', 'b'),
         new item(0, 'Brilha folha Concentrado - 60ml', 'b'),
@@ -773,7 +773,7 @@ var forth = new Inventario(
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '05/09/2023',
+    '06/09/2023',
     [
         new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(0, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -787,9 +787,9 @@ var alfa_polietileno = new Inventario(
         new item(1, 'Bacia Diamante nº 3 Cimento', 'bacia_diamante_3'),
         new item(2, 'Bacia Diamante nº 3 Marrom', 'bacia_diamante_3'),
 
-        new item(11, 'Bacia Grafiato C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
+        new item(9, 'Bacia Grafiato C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
         new item(11, 'Bacia Grafiato C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
-        new item(12, 'Bacia Grafiato C/ Prato nº 1 Marrom', 'bacia_grafiato_1'),
+        new item(10, 'Bacia Grafiato C/ Prato nº 1 Marrom', 'bacia_grafiato_1'),
         new item(12, 'Bacia Grafiato C/ Prato nº 1 Preto', 'bacia_grafiato_1'),
 
         new item(6, 'Bacia Grafiato C/Prato nº 2 Bege', 'bacia_grafiato_2'),
@@ -892,7 +892,7 @@ var alfa_polietileno = new Inventario(
         new item(4, 'Coluna Red. Grafiato C/Prato nº 4 Preto', 'coluna_grafiato_4'),
 
         new item(4, 'Coluna Red. Marmorizada C/Prato nº 1 Azul', 'coluna_marmorizada_1'),
-        new item(3, 'Coluna Red. Marmorizada C/Prato nº 1 Vermelho', 'coluna_marmorizada_1'),
+        new item(2, 'Coluna Red. Marmorizada C/Prato nº 1 Vermelho', 'coluna_marmorizada_1'),
 
         new item(2, 'Coluna Red. Marmorizada C/Prato nº 2 Azul', 'coluna_marmorizada_2'),
         new item(3, 'Coluna Red. Marmorizada C/Prato nº 2 Vermelho', 'coluna_marmorizada_2'),
@@ -906,7 +906,7 @@ var alfa_polietileno = new Inventario(
         new item(3, 'Coluna Red. Polida C/Prato nº 1 Bege', 'coluna_polida_1'),
         new item(3, 'Coluna Red. Polida C/Prato nº 1 Cimento', 'coluna_polida_1'),
         new item(4, 'Coluna Red. Polida C/Prato nº 1 Marrom', 'coluna_polida_1'),
-        new item(3, 'Coluna Red. Polida C/Prato nº 1 Preto', 'coluna_polida_1'),
+        new item(2, 'Coluna Red. Polida C/Prato nº 1 Preto', 'coluna_polida_1'),
 
         new item(3, 'Coluna Red. Polida C/Prato nº 2 Bege', 'coluna_polida_2'),
         new item(3, 'Coluna Red. Polida C/Prato nº 2 Cimento', 'coluna_polida_2'),
@@ -972,9 +972,9 @@ var alfa_polietileno = new Inventario(
         new item(5, 'Vaso Bojo Frisado C/Prato nº 4 Marrom', 'vaso_frisado_4'),
         new item(7, 'Vaso Bojo Frisado C/Prato nº 4 Preto', 'vaso_frisado_4'),
 
-        new item(7, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Bege', 'vaso_grafiato_1'),
+        new item(5, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Bege', 'vaso_grafiato_1'),
         new item(7, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Cimento', 'vaso_grafiato_1'),
-        new item(9, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Marrom', 'vaso_grafiato_1'),
+        new item(8, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Marrom', 'vaso_grafiato_1'),
         new item(8, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Preto', 'vaso_grafiato_1'),
 
         new item(5, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Bege', 'vaso_grafiato_2'),
@@ -992,8 +992,8 @@ var alfa_polietileno = new Inventario(
         new item(0, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Marrom', 'vaso_grafiato_4'),
         new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Preto', 'vaso_grafiato_4'),
 
-        new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
-        new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
+        new item(4, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
+        new item(4, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
 
         new item(3, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
         new item(6, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Vermelho', 'vaso_marmorizado_2'),
@@ -1004,7 +1004,7 @@ var alfa_polietileno = new Inventario(
         new item(7, 'Vaso Bojo Red. Polido C/Prato nº 1 Bege', 'vaso_polido_1'),
         new item(7, 'Vaso Bojo Red. Polido C/Prato nº 1 Cimento', 'vaso_polido_1'),
         new item(5, 'Vaso Bojo Red. Polido C/Prato nº 1 Marrom', 'vaso_polido_1'),
-        new item(7, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
+        new item(6, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
 
         new item(1, 'Vaso Bojo Red. Polido C/Prato nº 2 Bege', 'vaso_polido_2'),
         new item(4, 'Vaso Bojo Red. Polido C/Prato nº 2 Cimento', 'vaso_polido_2'),
@@ -1144,7 +1144,7 @@ var insetimax = new Inventario(
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '05/09/2023',
+    '06/09/2023',
     [
         new item(1, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 40x100cm Simples', 'treliça'),
@@ -1165,7 +1165,7 @@ var madeiras = new Inventario(
         new item(1, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
 
         new item(14, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
-        new item(16, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
+        new item(15, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
         new item(10, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
         new item(11, 'Rodízio Quadrado 35cm', 'rodízio_quadrado'),
         new item(10, 'Rodízio Quadrado 40cm', 'rodízio_quadrado'),
