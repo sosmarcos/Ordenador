@@ -18,9 +18,10 @@ class Inventario {
 }
 
 class ValorUnitario {
-    constructor(valor_especifico, texto, index) {
+    constructor(valor_especifico, texto, index, isenção=false) {
         this.valor = valor_especifico
         this.texto = texto
+        this.isento = isenção
         this.codigo = `
             <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
                 ${this.texto}
@@ -49,9 +50,12 @@ class ItemEspecifico {
 var total = 0
 var registroDaCalculadora = []
 var registroDoRepositor = []
+var valorIsentoDeDesconto = 0
+var isençãoDeDesconto = false
 var porcento3On = false
 var porcento5On = false
 var menuEspecificOn = false
+var menuDescontoOn = false
 var linhaDestacadaOn = false
 var alternador = ''
 var indiceRepositor = 0
@@ -1318,20 +1322,71 @@ function soma() {
     var valor = parseFloat(entrada.value)
 
     total += valor
-    registroDaCalculadora.push(new ValorUnitario(valor, `R&#36; ${valor.toFixed(2)}`, registroDaCalculadora.length))
+    if (isençãoDeDesconto) {
+        registroDaCalculadora.push(new ValorUnitario(valor, `&Oslash;&#36; ${valor.toFixed(2)}`, registroDaCalculadora.length, true))
+        valorIsentoDeDesconto += valor
+
+        document.getElementById('botaoIsento').style.backgroundColor = '#94be7ce0'
+        isençãoDeDesconto = false
+    } else {
+        registroDaCalculadora.push(new ValorUnitario(valor, `R&#36; ${valor.toFixed(2)}`, registroDaCalculadora.length))
+    }
     
     retorno.innerText = ''
     for (let index in registroDaCalculadora) {
         retorno.innerHTML += registroDaCalculadora[index].codigo
     }
-    retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
+    retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                            Total: R&#36 ${total.toFixed(2)}</label>
+                        <div id='funçoesDoTotal' class="menuEspecifico">
+                            <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                        </div><br>`
     entrada.value = ''
     porcento3On = false
     porcento5On = false
+    console.log(valorIsentoDeDesconto)
+}
+
+function isentarDeDesconto() {
+    isençãoDeDesconto = true
+    document.getElementById('botaoIsento').style.backgroundColor = '#c33636'
+
+    try {document.getElementById(`entrada`).select()}
+        catch {null}
+}
+
+function funçoesDoTotal() {
+    var menuDesconto = window.document.getElementById('funçoesDoTotal')
+    for (let index in registroDaCalculadora) {
+        window.document.getElementById(`funçoes${index}`).style.display = 'none'
+        menuEspecificOn = false
+    }
+    if (!menuDescontoOn) {
+        menuDesconto.style.display = 'inline-block'
+        try {document.getElementById('descontoN').select()}
+        catch {null}
+        menuDescontoOn = true
+    }
+    else {
+        menuDesconto.style.display = 'none'
+        menuDescontoOn = false
+    }
+}
+
+function validaçãoPorcento() {
+    window.document.getElementById('funçoesDoTotal').style.display = 'none'
+    menuDescontoOn = false
+
+    var num = window.document.getElementById('descontoN').value
+    if (num > 100) {
+        document.getElementById('descontoN').reset()
+    }
+    else {porcentoN(num)}
 }
 
 function porcento5() {
-    var total5 = total - (total*5/100)
+    var parcial = total - valorIsentoDeDesconto
+    var total5 = (parcial - (parcial*5/100)) + valorIsentoDeDesconto
     var retorno = window.document.getElementById('retorno')
     if (!porcento5On) {
         porcento5On = true
@@ -1341,8 +1396,12 @@ function porcento5() {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `R&#36; -${(total*5/100).toFixed(2)}<br>`
-        retorno.innerHTML += `Total: R&#36 ${total5.toFixed(2)}<br>`
+        retorno.innerHTML += `R&#36; -${(parcial*5/100).toFixed(2)}<br>`
+        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                                Total: R&#36 ${total5.toFixed(2)}</label>
+                            <div id='funçoesDoTotal' class="menuEspecifico">
+                                <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                            </div><br>`
     } else {
         porcento5On = false
 
@@ -1350,12 +1409,17 @@ function porcento5() {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
+        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                                Total: R&#36 ${total.toFixed(2)}</label>
+                            <div id='funçoesDoTotal' class="menuEspecifico">
+                                <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                            </div><br>`
     }
 }
 
 function porcento3() {
-    var total3 = total - (total*3/100)
+    var parcial = total - valorIsentoDeDesconto
+    var total3 = (parcial - (parcial*3/100)) + valorIsentoDeDesconto
     var retorno = window.document.getElementById('retorno')
     if (!porcento3On) {
         porcento3On = true
@@ -1365,8 +1429,12 @@ function porcento3() {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `R&#36; -${(total*3/100).toFixed(2)}<br>`
-        retorno.innerHTML += `Total: R&#36 ${total3.toFixed(2)}<br>`
+        retorno.innerHTML += `R&#36; -${(parcial*3/100).toFixed(2)}<br>`
+        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                                Total: R&#36 ${total3.toFixed(2)}</label>
+                            <div id='funçoesDoTotal' class="menuEspecifico">
+                                <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                            </div><br>`
     } else {
         porcento3On = false
 
@@ -1374,12 +1442,51 @@ function porcento3() {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
+        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                                Total: R&#36 ${total.toFixed(2)}</label>
+                            <div id='funçoesDoTotal' class="menuEspecifico">
+                                <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                            </div><br>`
     }
+}
+
+function porcentoN(num) {
+    var retorno = window.document.getElementById('retorno')
+    var porcentoN = num
+    var parcial = total - valorIsentoDeDesconto
+    var totalN = (parcial - (parcial*porcentoN/100)) + valorIsentoDeDesconto
+
+    if (porcentoN > 0) {
+        porcento3On = false
+        porcento5On = false
+        retorno.innerText = ''
+        for (let index in registroDaCalculadora) {
+            retorno.innerHTML += registroDaCalculadora[index].codigo
+        }
+        retorno.innerHTML += `R&#36; -${(parcial*porcentoN/100).toFixed(2)}<br>`
+        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                                Total: R&#36 ${totalN.toFixed(2)}</label>
+                            <div id='funçoesDoTotal' class="menuEspecifico">
+                                <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                            </div><br>`
+    } else {
+        retorno.innerText = ''
+        for (let index in registroDaCalculadora) {
+            retorno.innerHTML += registroDaCalculadora[index].codigo
+        }
+        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                                Total: R&#36 ${total.toFixed(2)}</label>
+                            <div id='funçoesDoTotal' class="menuEspecifico">
+                                <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                            </div><br>`
+    }
+    
 }
 
 function funçoesDoValor(index) {
     var menuEspecifico = window.document.getElementById(`funçoes${index}`)
+    window.document.getElementById('funçoesDoTotal').style.display = 'none'
+    menuDescontoOn = false
 
     for (let index in registroDaCalculadora) {
         let menu = window.document.getElementById(`funçoes${index}`)
@@ -1419,28 +1526,38 @@ function multiplicação(index) {
 
         retorno.innerText = ''
         total = 0
+        valorIsentoDeDesconto = 0
         for (let valores in registroDaCalculadora) {
             total += registroDaCalculadora[valores].valor
+            if (registroDaCalculadora[valores].isento) {valorIsentoDeDesconto += registroDaCalculadora[valores].valor}
             retorno.innerHTML += registroDaCalculadora[valores].codigo
         }
-        retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
+        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                            Total: R&#36 ${total.toFixed(2)}</label>
+                        <div id='funçoesDoTotal' class="menuEspecifico">
+                            <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                        </div><br>`
         menuEspecificOn = false
     } else {
         window.document.getElementById(`entrada${index}`).style.display = 'none'
         registroDaCalculadora[index].multiplicado = 0
     }
-    console.log(multiplicador)
 }
 
 function deletar(index) {
     total -= registroDaCalculadora[index].valor
+    if (registroDaCalculadora[index].isento) {valorIsentoDeDesconto -= registroDaCalculadora[index].valor}
 
     delete registroDaCalculadora[index]
     retorno.innerText = ''
     for (let index in registroDaCalculadora) {
         retorno.innerHTML += registroDaCalculadora[index].codigo
     }
-    retorno.innerHTML += `Total: R&#36 ${total.toFixed(2)}<br>`
+    retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                            Total: R&#36 ${total.toFixed(2)}</label>
+                        <div id='funçoesDoTotal' class="menuEspecifico">
+                            <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                        </div><br>`
     menuEspecificOn = false
 }
 
