@@ -1148,7 +1148,7 @@ var insetimax = new Inventario(
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '06/09/2023',
+    '10/09/2023',
     [
         new item(1, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 40x100cm Simples', 'treliça'),
@@ -1161,17 +1161,17 @@ var madeiras = new Inventario(
         new item(7, 'Cachepo Madeira 40 Simples', 'cachepo'),
         new item(10, 'Cachepo Madeira 40 Pintado', 'cachepo'),
 
-        new item(6, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
-        new item(6, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
-        new item(13, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
-        new item(7, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
+        new item(5, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
+        new item(0, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
+        new item(7, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
+        new item(3, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
         new item(1, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
-        new item(1, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
+        new item(0, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
 
-        new item(14, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
-        new item(15, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
-        new item(10, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
-        new item(11, 'Rodízio Quadrado 35cm', 'rodízio_quadrado'),
+        new item(12, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
+        new item(11, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
+        new item(6, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
+        new item(8, 'Rodízio Quadrado 35cm', 'rodízio_quadrado'),
         new item(10, 'Rodízio Quadrado 40cm', 'rodízio_quadrado'),
         new item(5, 'Rodízio Quadrado 45cm', 'rodízio_quadrado'),
         new item(1, 'Rodízio Quadrado 50cm', 'rodízio_quadrado'),
