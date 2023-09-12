@@ -22,12 +22,16 @@ class ValorUnitario {
         this.valor = valor_especifico
         this.texto = texto
         this.isento = isenção
+        this.multiplicado = false
+        this.descontado = false
         this.codigo = `
             <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
                 ${this.texto}
             </label>
             <div id='funçoes${index}' class="menuEspecifico">
-            <input type="number" id="entrada${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
+            <input type="number" id="entradaM${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
+            <input type="number" id="entrada%${index}" class='entradaDesconto' onchange="desconto(${index})">
+            <input type="button" class="funçoes" value="%" onclick="alternarEntrada(${index})">
             <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
         </div><br>`
     } 
@@ -54,6 +58,7 @@ var valorIsentoDeDesconto = 0
 var isençãoDeDesconto = false
 var porcento3On = false
 var porcento5On = false
+var entradaMultiploOn = true
 var menuEspecificOn = false
 var menuDescontoOn = false
 var linhaDestacadaOn = false
@@ -1505,7 +1510,7 @@ function funçoesDoValor(index) {
         menuEspecificOn = true
         
         menuEspecifico.style.display = 'inline-block'   
-        try {document.getElementById(`entrada${index}`).select()}
+        try {document.getElementById(`entradaM${index}`).select()}
         catch {null}
     } else {
         menuEspecificOn = false
@@ -1513,21 +1518,63 @@ function funçoesDoValor(index) {
     }
 }
 
+function alternarEntrada(index) {
+    let entradaM = window.document.getElementById(`entradaM${index}`)
+    let entradaP = window.document.getElementById(`entrada%${index}`)
+    let fundo = window.document.getElementById(`funçoes${index}`)
+
+    if (entradaMultiploOn) {
+        try {entradaM.style.display = 'none'} catch {null}
+        try {
+            entradaP.style.display = 'inline'
+            entradaP.select()
+        } catch {null}
+        fundo.style.backgroundImage = 'linear-gradient(90deg, #27bd64e1, #2681bda2)'
+
+        entradaMultiploOn = false
+    } else {
+        try {
+            entradaM.style.display = 'inline'
+            entradaM.select()
+        } catch {null}
+        try {entradaP.style.display = 'none'} catch {null}
+        fundo.style.backgroundImage = 'linear-gradient(90deg, #2775bde1, #2681bda2)'
+        
+        entradaMultiploOn = true
+    }
+}
+
 function multiplicação(index) {
     var multiplicando = registroDaCalculadora[index].valor
-    var multiplicador = window.document.getElementById(`entrada${index}`).value
+    var multiplicador = window.document.getElementById(`entradaM${index}`).value
+    var texto = registroDaCalculadora[index].texto.split(' ')
 
     if (multiplicador) {
         registroDaCalculadora[index].valor = multiplicando * multiplicador
-        registroDaCalculadora[index].texto += `x${multiplicador}`
-        registroDaCalculadora[index].codigo = `
-            <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
-                ${registroDaCalculadora[index].texto}
-            </label>
-            <div id='funçoes${index}' class="menuEspecifico">
-            <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
-            </div><br>`
-
+        registroDaCalculadora[index].multiplicado = true
+        
+        if (registroDaCalculadora[index].descontado) {
+            registroDaCalculadora[index].texto = `${texto[0]} ${texto[1]}x${multiplicador} ${texto[2]}`
+            registroDaCalculadora[index].codigo = `
+                <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
+                    ${registroDaCalculadora[index].texto}
+                </label>
+                <div id='funçoes${index}' class="menuEspecifico">
+                <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
+                </div><br>`
+        } else {
+            registroDaCalculadora[index].texto = `${texto[0]} ${texto[1]}x${multiplicador}`
+            registroDaCalculadora[index].codigo = `
+                <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
+                    ${registroDaCalculadora[index].texto}
+                </label>
+                <div id='funçoes${index}' class="menuEspecifico">
+                <input type="number" id="entrada%${index}" class='entradaDesconto' onchange="desconto(${index})">
+                <input type="button" class="funçoes" value="%" onclick="alternarEntrada(${index})">
+                <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
+                </div><br>`
+        }
+        
         retorno.innerText = ''
         total = 0
         valorIsentoDeDesconto = 0
@@ -1543,9 +1590,54 @@ function multiplicação(index) {
                         </div><br>`
         menuEspecificOn = false
     } else {
-        window.document.getElementById(`entrada${index}`).style.display = 'none'
+        window.document.getElementById(`entradaM${index}`).style.display = 'none'
         registroDaCalculadora[index].multiplicado = 0
     }
+}
+
+function desconto(index) {
+    let valor = registroDaCalculadora[index].valor
+    let entradaP = window.document.getElementById(`entrada%${index}`)
+    let texto = registroDaCalculadora[index].texto
+
+    registroDaCalculadora[index].isento = true
+    registroDaCalculadora[index].valor = valor - (valor*entradaP.value/100)
+    registroDaCalculadora[index].descontado = true
+    registroDaCalculadora[index].texto = `${texto} -${entradaP.value}%`
+    if (registroDaCalculadora[index].multiplicado) {
+        registroDaCalculadora[index].codigo = `
+            <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
+                ${registroDaCalculadora[index].texto}
+            </label>
+            <div id='funçoes${index}' class="menuEspecifico">
+            <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
+            </div><br>`
+    } else {
+        registroDaCalculadora[index].codigo = `
+            <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
+                ${registroDaCalculadora[index].texto}
+            </label>
+            <div id='funçoes${index}' class="menuEspecifico">
+            <input type="number" id="entradaM${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
+            <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
+            </div><br>`
+    }
+    
+    console.log(registroDaCalculadora)
+
+    retorno.innerText = ''
+    total = 0
+    valorIsentoDeDesconto = 0
+    for (let valores in registroDaCalculadora) {
+        total += registroDaCalculadora[valores].valor
+        if (registroDaCalculadora[valores].isento) {valorIsentoDeDesconto += registroDaCalculadora[valores].valor}
+        retorno.innerHTML += registroDaCalculadora[valores].codigo
+    }
+    retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
+                            Total: R&#36 ${total.toFixed(2)}</label>
+                        <div id='funçoesDoTotal' class="menuEspecifico">
+                            <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                        </div><br>`
 }
 
 function deletar(index) {

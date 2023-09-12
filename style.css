@@ -229,7 +229,7 @@ input::-webkit-inner-spin-button {
     transition-duration: 0.5s;
 }
 
-.entradaMultiplo {
+.entradaMultiplo , .entradaDesconto {
     margin-left: 10px;
     height: 21px;
     font: normal 0.9em 'hina';
@@ -240,6 +240,10 @@ input::-webkit-inner-spin-button {
     border-color: white;
     border-width: 0px 0px 2px 0px;
     border-style: groove;
+}
+
+.entradaDesconto {
+    display: none;
 }
 
 .entradaDeOrdem {
