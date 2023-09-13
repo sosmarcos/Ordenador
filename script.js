@@ -1705,6 +1705,19 @@ function deletar(index) {
     menuEspecificOn = false
 }
 
+function calculoReset() {
+    total = 0
+    registroDaCalculadora = []
+    valorIsentoDeDesconto = 0
+    isençãoDeDesconto = false
+    porcento3On = false
+    porcento5On = false
+    entradaMultiploOn = true
+    menuEspecificOn = false
+    menuDescontoOn = false
+    window.document.getElementById('retorno').innerHTML = 'Total: R$ 0.00'
+}
+
 function menuExpand(menu) {
     var menu = window.document.getElementById(`${menu}`)
     

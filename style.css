@@ -168,6 +168,16 @@ label {
     background-color: #94be7ce0;
     color: white;
     border-style: hidden;
+    box-shadow: 1px 1px 1px 0px #0000006b;
+    border-radius: 2px;
+}
+
+#botaoReset {
+    background-color: #c33636;
+    font-size: 1.19em;
+    font-weight: bold;
+    font-family: arial;
+    text-shadow: 3px 2px 3px #15151554;
 }
 
 .botao:active {
