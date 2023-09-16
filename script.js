@@ -715,7 +715,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '13/09/2023',
+    '16/09/2023',
     [
         new item(7, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -727,11 +727,11 @@ var forth = new Inventario(
         new item(0, 'Brilha folha Concentrado - 60ml', 'b'),
         new item(21, 'Brilha folha p/uso - 500ml', 'b'),
 
-        new item(7, 'Cactos Concentrado - 60ml', 'c'),
+        new item(2, 'Cactos Concentrado - 60ml', 'c'),
         new item(14, 'Cactos Concentrado - 500m', 'c'),
-        new item(9, 'Cobre Concentrado - 60ml', 'c'),
+        new item(7, 'Cobre Concentrado - 60ml', 'c'),
         new item(12, 'Cobre Concentrado - 500m', 'c'),
-        new item(26, 'Coqueiros - 400g', 'c'),
+        new item(22, 'Coqueiros - 400g', 'c'),
         new item(3, 'Coqueiros - 3kg', 'c'),
         new item(1, 'Coqueiros - 10Kg', 'c'),
         new item(11, 'Cote 14.14.14 - 150g', 'c'),
@@ -1262,7 +1262,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '29/08/2023',
+    '16/09/2023',
     [
         new item(15, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(15, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1313,7 +1313,7 @@ var coquim = new Inventario(
         new item(40, '2999 - Estaca Coquim 30cm', 'estaca_coquim'),
         new item(43, '3000 - Estaca Coquim 40cm', 'estaca_coquim'),
         new item(41, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
-        new item(44, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
+        new item(40, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
 
         new item(25, '4000 - Mix Coquim 1kg', 'adubos'),
         new item(27, '4001 - Pó de Coco 1kg', 'adubos'),
@@ -1321,7 +1321,7 @@ var coquim = new Inventario(
         new item(5, '4003 - Pó de Coco Magico 400g', 'adubos'),
         new item(3, '4004 - Fibra de Coco Curta 1kg', 'adubos'),
         new item(25, '4005 - Chips de Coco 200g', 'adubos'),
-        new item(30, '4006 - Fibra de Coco Protein', 'adubos'),
+        new item(26, '4006 - Fibra de Coco Protein', 'adubos'),
         new item(25, '4007 - Chips de Mix Protem 1kg', 'adubos'),
         new item(0, '4008 - Chips de Coco 3kg', 'adubos'),
         new item(0, '4009 - Fibra de Coco 1.5kg', 'adubos'),
