@@ -25,15 +25,13 @@ class ValorUnitario {
         this.multiplicado = false
         this.descontado = false
         this.codigo = `
-            <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
-                ${this.texto}
-            </label>
+            <input type='button' value='${this.texto}' id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
             <div id='funçoes${index}' class="menuEspecifico">
-            <input type="number" id="entradaM${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
-            <input type="number" id="entrada%${index}" class='entradaDesconto' onchange="desconto(${index})">
-            <input type="button" class="funçoes" value="%" onclick="alternarEntrada(${index})">
-            <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
-        </div><br>`
+                <input type="number" id="entradaM${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
+                <input type="number" id="entrada%${index}" class='entradaDesconto' onchange="desconto(${index})">
+                <input type="button" class="funçoes" value="%" onclick="alternarEntrada(${index})">
+                <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
+            </div><br>`
     } 
 }
 
@@ -1408,7 +1406,7 @@ function soma() {
         registroDaCalculadora.push(new ValorUnitario(valor, `&Oslash;&#36; ${valor.toFixed(2)}`, registroDaCalculadora.length, true))
         valorIsentoDeDesconto += valor
 
-        document.getElementById('botaoIsento').style.backgroundColor = '#94be7ce0'
+        document.getElementById('botaoIsento').style.backgroundColor = '#68a844e0'
         isençãoDeDesconto = false
     } else {
         registroDaCalculadora.push(new ValorUnitario(valor, `R&#36; ${valor.toFixed(2)}`, registroDaCalculadora.length))
@@ -1418,14 +1416,14 @@ function soma() {
     for (let index in registroDaCalculadora) {
         retorno.innerHTML += registroDaCalculadora[index].codigo
     }
-    retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                            Total: R&#36 ${total.toFixed(2)}</label>
+    retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                         <div id='funçoesDoTotal' class="menuEspecifico">
                             <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                         </div><br>`
     entrada.value = ''
     porcento3On = false
     porcento5On = false
+    menuEspecificOn = false
 
     retorno.select()
 }
@@ -1433,7 +1431,7 @@ function soma() {
 function isentarDeDesconto() {
     if (isençãoDeDesconto) {
         isençãoDeDesconto = false
-        document.getElementById('botaoIsento').style.backgroundColor = '#94be7ce0'
+        document.getElementById('botaoIsento').style.backgroundColor = '#68a844e0'
         document.getElementById('botaoIsento').title = 'Isentar de desconto: Desativado'
     } else {
         isençãoDeDesconto = true
@@ -1485,9 +1483,8 @@ function porcento5() {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `R&#36; -${(parcial*5/100).toFixed(2)}<br>`
-        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                                Total: R&#36 ${total5.toFixed(2)}</label>
+        retorno.innerHTML += `<label class='linhaRetorno'>R&#36; -${(parcial*5/100).toFixed(2)}</label><br>`
+        retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total5.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                             <div id='funçoesDoTotal' class="menuEspecifico">
                                 <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                             </div><br>`
@@ -1498,8 +1495,7 @@ function porcento5() {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                                Total: R&#36 ${total.toFixed(2)}</label>
+        retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                             <div id='funçoesDoTotal' class="menuEspecifico">
                                 <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                             </div><br>`
@@ -1518,9 +1514,8 @@ function porcento3() {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `R&#36; -${(parcial*3/100).toFixed(2)}<br>`
-        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                                Total: R&#36 ${total3.toFixed(2)}</label>
+        retorno.innerHTML += `<label class='linhaRetorno'>R&#36; -${(parcial*3/100).toFixed(2)}</label><br>`
+        retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total3.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                             <div id='funçoesDoTotal' class="menuEspecifico">
                                 <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                             </div><br>`
@@ -1531,8 +1526,7 @@ function porcento3() {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                                Total: R&#36 ${total.toFixed(2)}</label>
+        retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                             <div id='funçoesDoTotal' class="menuEspecifico">
                                 <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                             </div><br>`
@@ -1552,9 +1546,8 @@ function porcentoN(num) {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `R&#36; -${(parcial*porcentoN/100).toFixed(2)}<br>`
-        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                                Total: R&#36 ${totalN.toFixed(2)}</label>
+        retorno.innerHTML += `<label class='linhaRetorno'>R&#36; -${(parcial*porcentoN/100).toFixed(2)}</label><br>`
+        retorno.innerHTML += `<input type='button' value='Total: R&#36 ${totalN.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                             <div id='funçoesDoTotal' class="menuEspecifico">
                                 <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                             </div><br>`
@@ -1563,8 +1556,7 @@ function porcentoN(num) {
         for (let index in registroDaCalculadora) {
             retorno.innerHTML += registroDaCalculadora[index].codigo
         }
-        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                                Total: R&#36 ${total.toFixed(2)}</label>
+        retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                             <div id='funçoesDoTotal' class="menuEspecifico">
                                 <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                             </div><br>`
@@ -1636,18 +1628,14 @@ function multiplicação(index) {
         if (registroDaCalculadora[index].descontado) {
             registroDaCalculadora[index].texto = `${texto[0]} ${texto[1]}x${multiplicador} ${texto[2]}`
             registroDaCalculadora[index].codigo = `
-                <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
-                    ${registroDaCalculadora[index].texto}
-                </label>
+                <input type='button' value='${registroDaCalculadora[index].texto}' id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
                 <div id='funçoes${index}' class="menuEspecifico">
                 <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
                 </div><br>`
         } else {
             registroDaCalculadora[index].texto = `${texto[0]} ${texto[1]}x${multiplicador}`
             registroDaCalculadora[index].codigo = `
-                <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
-                    ${registroDaCalculadora[index].texto}
-                </label>
+                <input type='button' value='${registroDaCalculadora[index].texto}' id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
                 <div id='funçoes${index}' class="menuEspecifico">
                 <input type="number" id="entrada%${index}" class='entradaDesconto' onchange="desconto(${index})">
                 <input type="button" class="funçoes" value="%" onclick="alternarEntrada(${index})">
@@ -1663,8 +1651,7 @@ function multiplicação(index) {
             if (registroDaCalculadora[valores].isento) {valorIsentoDeDesconto += registroDaCalculadora[valores].valor}
             retorno.innerHTML += registroDaCalculadora[valores].codigo
         }
-        retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                            Total: R&#36 ${total.toFixed(2)}</label>
+        retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                         <div id='funçoesDoTotal' class="menuEspecifico">
                             <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                         </div><br>`
@@ -1686,17 +1673,13 @@ function desconto(index) {
     registroDaCalculadora[index].texto = `${texto} -${entradaP.value}%`
     if (registroDaCalculadora[index].multiplicado) {
         registroDaCalculadora[index].codigo = `
-            <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
-                ${registroDaCalculadora[index].texto}
-            </label>
+            <input type='button' value='${registroDaCalculadora[index].texto}' id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
             <div id='funçoes${index}' class="menuEspecifico">
             <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
             </div><br>`
     } else {
         registroDaCalculadora[index].codigo = `
-            <label id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
-                ${registroDaCalculadora[index].texto}
-            </label>
+            <input type='button' value='${registroDaCalculadora[index].texto}' id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
             <div id='funçoes${index}' class="menuEspecifico">
             <input type="number" id="entradaM${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
             <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
@@ -1713,8 +1696,7 @@ function desconto(index) {
         if (registroDaCalculadora[valores].isento) {valorIsentoDeDesconto += registroDaCalculadora[valores].valor}
         retorno.innerHTML += registroDaCalculadora[valores].codigo
     }
-    retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                            Total: R&#36 ${total.toFixed(2)}</label>
+    retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                         <div id='funçoesDoTotal' class="menuEspecifico">
                             <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                         </div><br>`
@@ -1729,8 +1711,7 @@ function deletar(index) {
     for (let index in registroDaCalculadora) {
         retorno.innerHTML += registroDaCalculadora[index].codigo
     }
-    retorno.innerHTML += `<label class='linhaRetorno' onclick='funçoesDoTotal()'>
-                            Total: R&#36 ${total.toFixed(2)}</label>
+    retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
                         <div id='funçoesDoTotal' class="menuEspecifico">
                             <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                         </div><br>`
@@ -1738,16 +1719,19 @@ function deletar(index) {
 }
 
 function calculoReset() {
-    total = 0
-    registroDaCalculadora = []
-    valorIsentoDeDesconto = 0
-    isençãoDeDesconto = false
-    porcento3On = false
-    porcento5On = false
-    entradaMultiploOn = true
-    menuEspecificOn = false
-    menuDescontoOn = false
-    window.document.getElementById('retorno').innerHTML = 'Total: R$ 0.00'
+    if (window.confirm('Você realmente deseja encerrar esta operação?')) {
+        total = 0
+        registroDaCalculadora = []
+        valorIsentoDeDesconto = 0
+        isençãoDeDesconto = false
+        porcento3On = false
+        porcento5On = false
+        entradaMultiploOn = true
+        menuEspecificOn = false
+        menuDescontoOn = false
+        window.document.getElementById('retorno').innerHTML = 'Total: R$ 0.00'
+    }
+    
 }
 
 function menuExpand(menu) {
@@ -1759,7 +1743,8 @@ function menuExpand(menu) {
         window.document.getElementById('navMenuPlantas').style.display = 'none'
         window.document.getElementById('navMenuRepositorios').style.display = 'none'
 
-        menu.style.display = 'block'}
+        menu.style.display = 'block'
+    }
 }
 
 function sectionExpand(section, identidade='', menu='') {
