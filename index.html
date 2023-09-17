@@ -60,10 +60,10 @@
     <main id="principal">
         <!--<========================================|Seção da Calculadora|==========================================================>-->
         <section id="calculadora">
-            <input type="button" class="botao" value="5%" onclick="porcento5()">
-            <input type="button" class="botao" value="3%" onclick="porcento3()">
-            <input type="button" id="botaoIsento" class="botao" value="&Oslash;" onclick="isentarDeDesconto()">
-            <input type="button" id="botaoReset" class="botao" value="&#x2672;" onclick="calculoReset()">
+            <input type="button" class="botao" title="5% de desconto" value="5%" onclick="porcento5()">
+            <input type="button" class="botao" title="3% de desconto" value="3%" onclick="porcento3()">
+            <input type="button" id="botaoIsento" title="Isentar de desconto: Desativado" class="botao" value="&Oslash;" onclick="isentarDeDesconto()">
+            <input type="button" id="botaoReset" title="Zerar o Cálculo" class="botao" value="&#x2672;" onclick="calculoReset()">
             <label for="entrada">Valor:</label>
             <input type="number" id="entrada" onchange="soma()">
             <p id="retorno"></p>

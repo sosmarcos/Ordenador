@@ -1426,16 +1426,19 @@ function soma() {
     entrada.value = ''
     porcento3On = false
     porcento5On = false
-    console.log(valorIsentoDeDesconto)
+
+    retorno.select()
 }
 
 function isentarDeDesconto() {
     if (isençãoDeDesconto) {
         isençãoDeDesconto = false
         document.getElementById('botaoIsento').style.backgroundColor = '#94be7ce0'
+        document.getElementById('botaoIsento').title = 'Isentar de desconto: Desativado'
     } else {
         isençãoDeDesconto = true
         document.getElementById('botaoIsento').style.backgroundColor = '#c33636'
+        document.getElementById('botaoIsento').title = 'Isentar de desconto: Ativado'
     }
     try {document.getElementById(`entrada`).select()}
         catch {null}
