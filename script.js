@@ -202,7 +202,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '12/09/2023',
+    '17/09/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -354,7 +354,7 @@ var rischioto = new Inventario(
         new item(24, 'Vaso de Parede Bella Fiore 3.3 litros Cerâmica', 'vp_florença_3.3'),
         new item(45, 'Vaso de Parede Bella Fiore 3.3 litros Preto', 'vp_florença_3.3'),
 
-        new item(12, 'Vaso de Parede Floratta 3 litros Areia', 'vp_floratta_3'),
+        new item(7, 'Vaso de Parede Floratta 3 litros Areia', 'vp_floratta_3'),
         new item(25, 'Vaso de Parede Floratta 3 litros Azul', 'vp_floratta_3'),
         new item(30, 'Vaso de Parede Floratta 3 litros cinza', 'vp_floratta_3'),
         new item(12, 'Vaso de Parede Floratta 3 litros Preto', 'vp_floratta_3'),
@@ -387,7 +387,7 @@ var rischioto = new Inventario(
         new item(36, 'Vaso Quadrado Bella Fiore n35 Preta', 'quadrado_n35'),
 
         new item(24, 'Vaso Quadrado Bella Fiore n42 Areia', 'quadrado_n42'),
-        new item(24, 'Vaso Quadrado Bella Fiore n42 Cerâmica', 'quadrado_n42'),
+        new item(23, 'Vaso Quadrado Bella Fiore n42 Cerâmica', 'quadrado_n42'),
         new item(30, 'Vaso Quadrado Bella Fiore n42 Preta', 'quadrado_n42'),
         
         new item(48, 'Vaso Redondo Bella Fiore n13 Areia', 'redondo_n13'),
@@ -469,7 +469,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '11/09/2023',
+    '17/09/2023',
     [
         new item(199, 'Alça Universal Branca', 'alça_universal'),
         new item(44, 'Alça Universal Café', 'alça_universal'),
@@ -579,25 +579,25 @@ var emeAeme = new Inventario(
         new item(40, 'Prato B00 9.5cm Marfim', 'prato_b00'),
         new item(42, 'Prato B00 9.5cm Preto', 'prato_b00'),
 
-        new item(75, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
+        new item(51, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
         new item(58, 'Prato B01 11.5cm Cimento', 'prato_b01'),
         new item(55, 'Prato B01 11.5cm Marfim', 'prato_b01'),
-        new item(63, 'Prato B01 11.5cm Preto', 'prato_b01'),
+        new item(39, 'Prato B01 11.5cm Preto', 'prato_b01'),
 
-        new item(63, 'Prato B02 13cm Cerâmica', 'prato_b02'),
+        new item(39, 'Prato B02 13cm Cerâmica', 'prato_b02'),
         new item(40, 'Prato B02 13cm Cimento', 'prato_b02'),
         new item(40, 'Prato B02 13cm Marfim', 'prato_b02'),
-        new item(68, 'Prato B02 13cm Preto', 'prato_b02'),
+        new item(44, 'Prato B02 13cm Preto', 'prato_b02'),
 
-        new item(55, 'Prato B03 16cm Cerâmica', 'prato_b03'),
+        new item(31, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(65, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(54, 'Prato B03 16cm Marfim', 'prato_b03'),
-        new item(95, 'Prato B03 16cm Preto', 'prato_b03'),
+        new item(71, 'Prato B03 16cm Preto', 'prato_b03'),
 
-        new item(50, 'Prato B04 21cm Cerâmica', 'prato_b04'),
+        new item(38, 'Prato B04 21cm Cerâmica', 'prato_b04'),
         new item(48, 'Prato B04 21cm Cimento', 'prato_b04'),
         new item(50, 'Prato B04 21cm Marfim', 'prato_b04'),
-        new item(65, 'Prato B04 21cm Preto', 'prato_b04'),
+        new item(53, 'Prato B04 21cm Preto', 'prato_b04'),
 
         new item(67, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
         new item(29, 'Prato B04.5 22cm Cimento', 'prato_b4.5'),
@@ -713,7 +713,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '16/09/2023',
+    '17/09/2023',
     [
         new item(7, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -723,7 +723,7 @@ var forth = new Inventario(
         new item(0, 'Bonsai Concentrado - 60ml', 'b'),
         new item(6, 'Bonsai p/uso - 500ml', 'b'),
         new item(0, 'Brilha folha Concentrado - 60ml', 'b'),
-        new item(21, 'Brilha folha p/uso - 500ml', 'b'),
+        new item(19, 'Brilha folha p/uso - 500ml', 'b'),
 
         new item(2, 'Cactos Concentrado - 60ml', 'c'),
         new item(14, 'Cactos Concentrado - 500m', 'c'),
@@ -732,8 +732,8 @@ var forth = new Inventario(
         new item(22, 'Coqueiros - 400g', 'c'),
         new item(3, 'Coqueiros - 3kg', 'c'),
         new item(1, 'Coqueiros - 10Kg', 'c'),
-        new item(11, 'Cote 14.14.14 - 150g', 'c'),
-        new item(5, 'Cote 15.09.12 - 150g', 'c'),
+        new item(9, 'Cote 14.14.14 - 150g', 'c'),
+        new item(3, 'Cote 15.09.12 - 150g', 'c'),
         new item(5, 'Cote 14.14.14 - 400g', 'c'),
         new item(4, 'Cote 15.09.12 - 400g', 'c'),
         new item(0, 'Cupinicida Concentrado - 60ml', 'c'),
@@ -774,7 +774,7 @@ var forth = new Inventario(
         new item(0, 'Hortaliças - 10Kg', 'h'),
 
         new item(23, 'Inseticida Concentrado - 30ml', 'i'),
-        new item(9, 'Inseticida p/uso - 500ml', 'i'),
+        new item(7, 'Inseticida p/uso - 500ml', 'i'),
 
         new item(0, 'Jabuticabeiras Concentrado - 60ml', 'j'),
         new item(0, 'Jabuticabeiras - 400g', 'j'),
@@ -786,11 +786,11 @@ var forth = new Inventario(
 
         new item(5, 'Lesmicida isca granulada', 'l'),
 
-        new item(10, 'Mata cochonilha p/uso - 500ml', 'm'),
+        new item(8, 'Mata cochonilha p/uso - 500ml', 'm'),
         new item(12, 'Mata lagarta p/uso - 500ml', 'm'),
         new item(0, 'Mata mato Concentrado - 30ml', 'm'),
         new item(5, 'Mata mato p/uso - 500ml', 'm'),
-        new item(6, 'Mata pulgão p/uso - 500ml', 'm'),
+        new item(4, 'Mata pulgão p/uso - 500ml', 'm'),
 
         new item(23, 'Óleo Concentrado - 60ml', 'o'),
         new item(0, 'Orquídeas Floração Concentrado - 60ml', 'o'),
@@ -798,8 +798,8 @@ var forth = new Inventario(
         new item(29, 'Orquídeas Manutenção Concentrado - 60ml', 'o'),
         new item(25, 'Orquídeas Manutenção p/uso - 500ml', 'o'),
         new item(14, 'Orquídeas 09.45.15 - 100g', 'o'),
-        new item(41, 'Orquídeas 20.20.20 - 100g', 'o'),
-        new item(9, 'Orquídeas 30.10.10 - 100g', 'o'),
+        new item(39, 'Orquídeas 20.20.20 - 100g', 'o'),
+        new item(7, 'Orquídeas 30.10.10 - 100g', 'o'),
         new item(1, 'Orquídeas 09.45.15 - 400g', 'o'),
         new item(4, 'Orquídeas 20.20.20 - 400g', 'o'),
         new item(0, 'Orquídeas 30.10.10 - 400g', 'o'),
@@ -1260,7 +1260,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '16/09/2023',
+    '17/09/2023',
     [
         new item(15, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(15, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1358,7 +1358,10 @@ var coquim = new Inventario(
         new item(5, '5203 - 1/2 Vaso nº 17 C/Placa', '1/2_vaso_placa'),
         new item(4, '5204 - 1/2 Vaso nº 13 C/Placa', '1/2_vaso_placa'),
         
-        new item(6, '6007 - Manta Calandrada', 'manta'),
+        new item(6, '6007 - Manta Calandrada 4mm', 'manta'),
+        new item(20, '6008 - Manta 1mm 0.5x2m', 'manta'),
+        new item(20, '6009 - Manta 1mm 1x1m', 'manta'),
+        new item(10, '6011 - Manta Microverdes 1x1m', 'manta'),
         new item(6, '6015 - Manta Refil 25cm', 'manta'),
         new item(2, '6016 - Manta Refil 30cm', 'manta'),
         new item(6, '6017 - Manta Refil 35cm', 'manta'),
