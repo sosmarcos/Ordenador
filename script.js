@@ -202,7 +202,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '17/09/2023',
+    '18/09/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -356,7 +356,7 @@ var rischioto = new Inventario(
 
         new item(7, 'Vaso de Parede Floratta 3 litros Areia', 'vp_floratta_3'),
         new item(25, 'Vaso de Parede Floratta 3 litros Azul', 'vp_floratta_3'),
-        new item(30, 'Vaso de Parede Floratta 3 litros cinza', 'vp_floratta_3'),
+        new item(27, 'Vaso de Parede Floratta 3 litros cinza', 'vp_floratta_3'),
         new item(12, 'Vaso de Parede Floratta 3 litros Preto', 'vp_floratta_3'),
         new item(21, 'Vaso de Parede Floratta 3 litros Rosa', 'vp_floratta_3'),
         new item(19, 'Vaso de Parede Floratta 3 litros Verde', 'vp_floratta_3'),
@@ -1230,7 +1230,7 @@ var madeiras = new Inventario(
 )
 var nutriplan = new Inventario(
     'Nutriplan',
-    '31/08/2023',
+    '18/09/2023', 
     [
         new item(51, 'Pote de Muda - 25 litros', 'pote'),
         new item(31, 'Pote de Muda - 33 litros', 'pote'),
@@ -1241,7 +1241,6 @@ var nutriplan = new Inventario(
 
         new item(1, 'Vaso Classic Cilindrico 55 cobre', 'cilindrico_55'),
 
-        new item(1, 'Vaso Classic Cônico 46 - Areia', 'conico_46'),
         new item(1, 'Vaso Classic Cônico 46 - Azul Cobalto', 'conico_46'),
         new item(1, 'Vaso Classic Cônico 46 - Ferrugem', 'conico_46') ,
         new item(1, 'Vaso Classic Cônico 46 - Grafite', 'conico_46'),
