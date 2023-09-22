@@ -64,6 +64,7 @@ var alternador = ''
 var indiceRepositor = 0
 
 //=======================||Seções||=========================//
+var sectHomepage = window.document.getElementById('home_page')
 var sectPlantas = window.document.getElementById('plantas')
 var sectCalculo = window.document.getElementById('calculadora')
 var sectInventarios = window.document.getElementById('inventarios')
@@ -202,7 +203,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '18/09/2023',
+    '22/09/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -372,7 +373,7 @@ var rischioto = new Inventario(
 
         new item(61, 'Vaso Quadrado Bella Fiore n17 Areia', 'quadrado_n17'),
         new item(54, 'Vaso Quadrado Bella Fiore n17 Cerâmica', 'quadrado_n17'),
-        new item(60, 'Vaso Quadrado Bella Fiore n17 Preta', 'quadrado_n17'),
+        new item(58, 'Vaso Quadrado Bella Fiore n17 Preta', 'quadrado_n17'),
 
         new item(61, 'Vaso Quadrado Bella Fiore n22 Areia', 'quadrado_n22'),
         new item(28, 'Vaso Quadrado Bella Fiore n22 Cerâmica', 'quadrado_n22'),
@@ -1230,14 +1231,14 @@ var madeiras = new Inventario(
 )
 var nutriplan = new Inventario(
     'Nutriplan',
-    '18/09/2023', 
+    '22/09/2023', 
     [
         new item(51, 'Pote de Muda - 25 litros', 'pote'),
         new item(31, 'Pote de Muda - 33 litros', 'pote'),
         new item(26, 'Pote de Muda - 40 litros', 'pote'),
         new item(0, 'Pote de Muda - 50 litros', 'pote'),
         new item(1, 'Pote de Muda - 60 litros', 'pote'),
-        new item(8, 'Pote de Muda - 85 litros', 'pote'),
+        new item(7, 'Pote de Muda - 85 litros', 'pote'),
 
         new item(1, 'Vaso Classic Cilindrico 55 cobre', 'cilindrico_55'),
 
@@ -1750,9 +1751,20 @@ function menuExpand(menu) {
 }
 
 function sectionExpand(section, identidade='', menu='') {
-    if (section == 'plantas') {
+    if (section == 'home_page') {
+        sectHomepage.style.display = 'block'
+        document.getElementById('navMenuInventarios').style.display = 'none'
+        document.getElementById('navMenuPlantas').style.display = 'none'
+        document.getElementById('navMenuRepositorios').style.display = 'none'
+        
+        sectPlantas.style.display = 'none'
+        sectCalculo.style.display = 'none'
+        sectInventarios.style.display = 'none'
+        sectRepositor.style.display = 'none'
+    } else if (section == 'plantas') {
         sectPlantas.style.display = 'block'
 
+        sectHomepage.style.display = 'none'
         sectCalculo.style.display = 'none'
         sectInventarios.style.display = 'none'
         sectRepositor.style.display = 'none'
@@ -1764,18 +1776,21 @@ function sectionExpand(section, identidade='', menu='') {
         document.getElementById('navMenuPlantas').style.display = 'none'
         document.getElementById('navMenuRepositorios').style.display = 'none'
 
+        sectHomepage.style.display = 'none'
         sectPlantas.style.display = 'none'
         sectInventarios.style.display = 'none'
         sectRepositor.style.display = 'none'
     } else if (section == 'inventarios') {
         sectInventarios.style.display = 'block'
         
+        sectHomepage.style.display = 'none'
         sectPlantas.style.display = 'none'
         sectCalculo.style.display = 'none'
         sectRepositor.style.display = 'none'
     } else if (section == 'repositor') {
         sectRepositor.style.display = 'block'
 
+        sectHomepage.style.display = 'none'
         sectPlantas.style.display = 'none'
         sectCalculo.style.display = 'none'
         sectInventarios.style.display = 'none'
