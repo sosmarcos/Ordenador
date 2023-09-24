@@ -75,6 +75,7 @@ var articleRegaplan = window.document.getElementById('regaplan')
 var articleRischioto = window.document.getElementById('rischioto')
 var articleEmeAEme = window.document.getElementById('eme_a_eme')
 var articleForth = window.document.getElementById('forth')
+var articleFuzil = window.document.getElementById('fuzil')
 var articleAlfa_polietileno = window.document.getElementById('alfa_polietileno')
 var articleAlfa_fibraSintetica = window.document.getElementById('alfa_fibraSintetica')
 var articleJelPlast = window.document.getElementById('jel_plast')
@@ -101,6 +102,7 @@ var inventorios = [
     'rischioto',
     'eme_a_eme',
     'forth',
+    'fuzil',
     'alfa_polietileno',
     'alfa_fibraSintetica',
     'jel_plast',
@@ -112,7 +114,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '12/09/2023',
+    '24/09/2023',
     [
         new item(102, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(78, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -125,9 +127,9 @@ var regaplan = new Inventario(
         new item(114, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
         new item(102, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
-        new item(40, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
-        new item(30, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
-        new item(40, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
+        new item(30, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
+        new item(20, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
+        new item(30, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
 
         new item(70, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
         new item(60, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
@@ -389,7 +391,7 @@ var rischioto = new Inventario(
 
         new item(24, 'Vaso Quadrado Bella Fiore n42 Areia', 'quadrado_n42'),
         new item(23, 'Vaso Quadrado Bella Fiore n42 Cerâmica', 'quadrado_n42'),
-        new item(30, 'Vaso Quadrado Bella Fiore n42 Preta', 'quadrado_n42'),
+        new item(29, 'Vaso Quadrado Bella Fiore n42 Preta', 'quadrado_n42'),
         
         new item(48, 'Vaso Redondo Bella Fiore n13 Areia', 'redondo_n13'),
         new item(51, 'Vaso Redondo Bella Fiore n13 Cerâmica', 'redondo_n13'),
@@ -470,7 +472,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '17/09/2023',
+    '24/09/2023',
     [
         new item(199, 'Alça Universal Branca', 'alça_universal'),
         new item(44, 'Alça Universal Café', 'alça_universal'),
@@ -679,7 +681,7 @@ var emeAeme = new Inventario(
         new item(48, 'Vaso T 07 Preto', 'vaso_t_07'),
 
         new item(105, 'Vaso T 09 Cerâmica', 'vaso_t_09'),
-        new item(95, 'Vaso T 09 Preto', 'vaso_t_09'),
+        new item(58, 'Vaso T 09 Preto', 'vaso_t_09'),
 
         new item(45, 'Vaso T 10 Cerâmica', 'vaso_t_10'),
         new item(42, 'Vaso T 10 Preto', 'vaso_t_10'),
@@ -714,7 +716,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '17/09/2023',
+    '24/09/2023',
     [
         new item(7, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -755,7 +757,7 @@ var forth = new Inventario(
         new item(13, 'Flores - 3kg', 'f'),
         new item(0, 'Flores - 10Kg', 'f'),
         new item(45, 'Formicida Gel', 'f'),
-        new item(6, 'Formicida isca granulada', 'f'), 
+        new item(5, 'Formicida isca granulada', 'f'), 
         new item(16, 'Formicida Mata no ninho p/uso - 500ml', 'f'),
         new item(0, 'Frutas Concentrado - 60ml', 'f'),
         new item(18, 'Frutas p/uso - 500ml', 'f'),
@@ -827,9 +829,21 @@ var forth = new Inventario(
         new item(10, 'Violetas Concentrado - 60ml', 'v'),
     ]
 )
+var fuzil = new Inventario(
+    'Fuzil',
+    '24/09/2023',
+    [
+        new item(11, 'Ancinho p/Jardim 3 dentes', 'fuzil'),
+        new item(1, 'Arrancador de Inço', 'fuzil'),
+        new item(7, 'Aspersor c/adaptador', 'fuzil'),
+        new item(3, 'Pazinha p/jardim Larga', 'fuzil'),
+        new item(1, 'Pazinha p/jardim Estreita', 'fuzil'),
+        new item(2, 'Sacho 2P CB Madeira', 'fuzil')
+    ]
+)
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '06/09/2023',
+    '24/09/2023',
     [
         new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(0, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -1044,7 +1058,7 @@ var alfa_polietileno = new Inventario(
         new item(3, 'Vaso Bojo Red. Grafiato C/Prato nº 3 Preto', 'vaso_grafiato_3'),
 
         new item(3, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Bege', 'vaso_grafiato_4'),
-        new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Cimento', 'vaso_grafiato_4'),
+        new item(2, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Cimento', 'vaso_grafiato_4'),
         new item(0, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Marrom', 'vaso_grafiato_4'),
         new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 4 Preto', 'vaso_grafiato_4'),
 
@@ -1052,7 +1066,7 @@ var alfa_polietileno = new Inventario(
         new item(4, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
 
         new item(3, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
-        new item(6, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Vermelho', 'vaso_marmorizado_2'),
+        new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Vermelho', 'vaso_marmorizado_2'),
 
         new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Azul', 'vaso_marmorizado_3'),
         new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Vermelho', 'vaso_marmorizado_3'),
@@ -1186,21 +1200,21 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '29/08/2023',
+    '24/09/2023',
     [
         new item(29, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
         new item(33, 'Formicida Insetimaster - 100ml', 'formicida'),
         new item(3, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
-        new item(8, 'Inseticom Jardim - Caixa', 'inseticom'),
+        new item(7, 'Inseticom Jardim - Caixa', 'inseticom'),
 
         new item(45, 'Malathion 500CE - 100ml', 'malathion')
     ]   
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '12/09/2023',
+    '24/09/2023',
     [
         new item(1, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 40x100cm Simples', 'treliça'),
@@ -1213,16 +1227,16 @@ var madeiras = new Inventario(
         new item(7, 'Cachepo Madeira 40 Simples', 'cachepo'),
         new item(10, 'Cachepo Madeira 40 Pintado', 'cachepo'),
 
-        new item(5, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
-        new item(0, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
-        new item(7, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
-        new item(3, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
-        new item(1, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
-        new item(0, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
+        new item(20, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
+        new item(20, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
+        new item(15, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
+        new item(13, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
+        new item(2, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
+        new item(1, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
 
         new item(12, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
         new item(11, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
-        new item(6, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
+        new item(10, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
         new item(8, 'Rodízio Quadrado 35cm', 'rodízio_quadrado'),
         new item(10, 'Rodízio Quadrado 40cm', 'rodízio_quadrado'),
         new item(5, 'Rodízio Quadrado 45cm', 'rodízio_quadrado'),
@@ -1231,10 +1245,10 @@ var madeiras = new Inventario(
 )
 var nutriplan = new Inventario(
     'Nutriplan',
-    '22/09/2023', 
+    '24/09/2023', 
     [
         new item(51, 'Pote de Muda - 25 litros', 'pote'),
-        new item(31, 'Pote de Muda - 33 litros', 'pote'),
+        new item(32, 'Pote de Muda - 33 litros', 'pote'),
         new item(26, 'Pote de Muda - 40 litros', 'pote'),
         new item(0, 'Pote de Muda - 50 litros', 'pote'),
         new item(1, 'Pote de Muda - 60 litros', 'pote'),
@@ -1260,79 +1274,79 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '17/09/2023',
+    '24/09/2023',
     [
-        new item(15, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
-        new item(15, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
+        new item(12, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
+        new item(14, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
         new item(15, '1001 - Vaso Coquim nº 5', 'vaso_coquim'),
-        new item(11, '1002 - Vaso Coquim nº 8', 'vaso_coquim'),
-        new item(11, '1003 - Vaso Coquim nº 10', 'vaso_coquim'),
-        new item(15, '1004 - Vaso Coquim nº 12', 'vaso_coquim'),
-        new item(8, '1005 - Vaso Coquim nº 14', 'vaso_coquim'),
+        new item(6, '1002 - Vaso Coquim nº 8', 'vaso_coquim'),
+        new item(6, '1003 - Vaso Coquim nº 10', 'vaso_coquim'),
+        new item(11, '1004 - Vaso Coquim nº 12', 'vaso_coquim'),
+        new item(5, '1005 - Vaso Coquim nº 14', 'vaso_coquim'),
 
         new item(0, '1006 - Vaso Coquim nº 5 Virola', 'vaso_virola'),
         new item(0, '1007 - Vaso Coquim nº 10 Virola', 'vaso_virola'),
         new item(0, '1008 - Vaso Coquim nº 12 Virola', 'vaso_virola'),
         new item(0, '1009 - Vaso Coquim nº 14 Virola', 'vaso_virola'),
 
-        new item(15, '1010 - Vaso Coquim nº 17', 'vaso_coquim'),
-        new item(14, '1011 - Vaso Coquim nº 13', 'vaso_coquim'),
-        new item(8, '1012 - Vaso Coquim nº 15', 'vaso_coquim'),
+        new item(11, '1010 - Vaso Coquim nº 17', 'vaso_coquim'),
+        new item(8, '1011 - Vaso Coquim nº 13', 'vaso_coquim'),
+        new item(5, '1012 - Vaso Coquim nº 15', 'vaso_coquim'),
 
-        new item(6, '1021 - Vaso Coquim nº 10 C/Furos', 'vaso_furos'),
-        new item(4, '1022 - Vaso Coquim nº 12 C/Furos', 'vaso_furos'),
-        new item(6, '1023 - Vaso Coquim nº 13 C/Furos', 'vaso_furos'),
-        new item(4, '1024 - Vaso Coquim nº 15 C/Furos', 'vaso_furos'),
+        new item(3, '1021 - Vaso Coquim nº 10 C/Furos', 'vaso_furos'),
+        new item(2, '1022 - Vaso Coquim nº 12 C/Furos', 'vaso_furos'),
+        new item(3, '1023 - Vaso Coquim nº 13 C/Furos', 'vaso_furos'),
+        new item(2, '1024 - Vaso Coquim nº 15 C/Furos', 'vaso_furos'),
 
-        new item(6, '1025 - Vaso Coquim nº 10 C/Furos e Suporte', 'vaso_furos_suporte'),
-        new item(4, '1026 - Vaso Coquim nº 12 C/Furos e Suporte', 'vaso_furos_suporte'),
-        new item(6, '1027 - Vaso Coquim nº 13 C/Furos e Suporte', 'vaso_furos_suporte'),
-        new item(4, '1028 - Vaso Coquim nº 15 C/Furos e Suporte', 'vaso_furos_suporte'),
+        new item(3, '1025 - Vaso Coquim nº 10 C/Furos e Suporte', 'vaso_furos_suporte'),
+        new item(2, '1026 - Vaso Coquim nº 12 C/Furos e Suporte', 'vaso_furos_suporte'),
+        new item(3, '1027 - Vaso Coquim nº 13 C/Furos e Suporte', 'vaso_furos_suporte'),
+        new item(2, '1028 - Vaso Coquim nº 15 C/Furos e Suporte', 'vaso_furos_suporte'),
         
-        new item(6, '1029 - 1/2 Vaso nº 10 C/Furos', '1/2_vaso_furos'),
-        new item(4, '1030 - 1/2 Vaso nº 12 C/Furos', '1/2_vaso_furos'),
+        new item(3, '1029 - 1/2 Vaso nº 10 C/Furos', '1/2_vaso_furos'),
+        new item(2, '1030 - 1/2 Vaso nº 12 C/Furos', '1/2_vaso_furos'),
 
-        new item(7, '2001 - Placa Coquim 20x20', 'placa_coquim'),
-        new item(11, '2002 - Placa Coquim 20x40', 'placa_coquim'),
-        new item(15, '2003 - Placa Coquim 20x60', 'placa_coquim'),
-        new item(16, '2004 - Placa Coquim 20x80', 'placa_coquim'),
-        new item(8, '2005 - Placa Coquim 40x40', 'placa_coquim'),
-        new item(10, '2006 - Placa Coquim 40x80', 'placa_coquim'),
+        new item(2, '2001 - Placa Coquim 20x20', 'placa_coquim'),
+        new item(5, '2002 - Placa Coquim 20x40', 'placa_coquim'),
+        new item(9, '2003 - Placa Coquim 20x60', 'placa_coquim'),
+        new item(10, '2004 - Placa Coquim 20x80', 'placa_coquim'),
+        new item(3, '2005 - Placa Coquim 40x40', 'placa_coquim'),
+        new item(6, '2006 - Placa Coquim 40x80', 'placa_coquim'),
 
-        new item(0, '2007 - Placa Redonda Coquim 20cm', 'placa_redonda'),
-        new item(6, '2008 - Placa Redonda Coquim 25cm', 'placa_redonda'),
-        new item(6, '2009 - Placa Redonda Coquim 30cm', 'placa_redonda'),
-        new item(4, '2010 - Placa Redonda Coquim 35cm', 'placa_redonda'),
-        new item(4, '2011 - Placa Redonda Coquim 40cm', 'placa_redonda'),
-        new item(4, '2012 - Placa Redonda Coquim 50cm', 'placa_redonda'),
+        new item(3, '2007 - Placa Redonda Coquim 20cm', 'placa_redonda'),
+        new item(5, '2008 - Placa Redonda Coquim 25cm', 'placa_redonda'),
+        new item(3, '2009 - Placa Redonda Coquim 30cm', 'placa_redonda'),
+        new item(1, '2010 - Placa Redonda Coquim 35cm', 'placa_redonda'),
+        new item(1, '2011 - Placa Redonda Coquim 40cm', 'placa_redonda'),
+        new item(2, '2012 - Placa Redonda Coquim 50cm', 'placa_redonda'),
 
-        new item(6, '2013 - Placa Colmeia Coquim 30cm', 'placa_colmeia'),
+        new item(3, '2013 - Placa Colmeia Coquim 30cm', 'placa_colmeia'),
 
-        new item(40, '2999 - Estaca Coquim 30cm', 'estaca_coquim'),
-        new item(43, '3000 - Estaca Coquim 40cm', 'estaca_coquim'),
-        new item(41, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
-        new item(40, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
+        new item(35, '2999 - Estaca Coquim 30cm', 'estaca_coquim'),
+        new item(40, '3000 - Estaca Coquim 40cm', 'estaca_coquim'),
+        new item(35, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
+        new item(33, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
 
-        new item(25, '4000 - Mix Coquim 1kg', 'adubos'),
-        new item(27, '4001 - Pó de Coco 1kg', 'adubos'),
+        new item(23, '4000 - Mix Coquim 1kg', 'adubos'),
+        new item(25, '4001 - Pó de Coco 1kg', 'adubos'),
         new item(35, '4002 - Fibra de Coco 200g', 'adubos'),
-        new item(5, '4003 - Pó de Coco Magico 400g', 'adubos'),
+        new item(3, '4003 - Pó de Coco Magico 400g', 'adubos'),
         new item(3, '4004 - Fibra de Coco Curta 1kg', 'adubos'),
-        new item(25, '4005 - Chips de Coco 200g', 'adubos'),
+        new item(20, '4005 - Chips de Coco 200g', 'adubos'),
         new item(26, '4006 - Fibra de Coco Protein', 'adubos'),
-        new item(25, '4007 - Chips de Mix Protem 1kg', 'adubos'),
+        new item(20, '4007 - Chips de Mix Protem 1kg', 'adubos'),
         new item(0, '4008 - Chips de Coco 3kg', 'adubos'),
         new item(0, '4009 - Fibra de Coco 1.5kg', 'adubos'),
         new item(0, '4010 - Musgo Esfagno 5kg', 'adubos'),
         new item(0, '4011 - Musgo Esfagno 100g', 'adubos'),
         new item(0, '4012 - Fibra Curta 250g', 'adubos'),
 
-        new item(3, '5000 - Placa 20x20cm Com 1 Meio Vaso nº 5', 'placa_com_vaso'),
-        new item(2, '5001 - Placa 20x40cm Com 1 Meio Vaso nº 10', 'placa_com_vaso'),
+        new item(2, '5000 - Placa 20x20cm Com 1 Meio Vaso nº 5', 'placa_com_vaso'),
+        new item(1, '5001 - Placa 20x40cm Com 1 Meio Vaso nº 10', 'placa_com_vaso'),
         new item(2, '5002 - Placa 40x40cm Com 1 Meio Vaso nº 12', 'placa_com_vaso'),
         new item(3, '5003 - Placa 20x60cm Com 2 Meio Vasos nº 8', 'placa_com_vaso'),
         new item(2, '5007 - Placa 30x40cm Com 1 Meio Vaso nº 12', 'placa_com_vaso'),
-        new item(2, '5008 - Placa 20x30cm Com 1 Meio Vaso nº 10', 'placa_com_vaso'),
+        new item(1, '5008 - Placa 20x30cm Com 1 Meio Vaso nº 10', 'placa_com_vaso'),
         new item(1, '5013 - Placa 40x80cm Com 2 Meio Vasos nº 14', 'placa_com_vaso'),
         new item(0, '5014 - Painel 1.00x1.00m Com 8 Meio Vasos nº 12', 'placa_com_vaso'),
         new item(3, '5015 - Placa 30x40cm Com 2 Meio Vasos nº 10', 'placa_com_vaso'),
@@ -1341,56 +1355,57 @@ var coquim = new Inventario(
         new item(0, '5018 - Placa 60x60cm Com 5 Meio Vasos nº 10', 'placa_com_vaso'),
         new item(0, '5019 - Placa 80x80cm Com 5 Meio Vasos nº 12', 'placa_com_vaso'),
 
-        new item(5, '5020 - 1/2 Vaso nº 13 Com Placa Redonda 25cm', 'meio_vaso'),
-        new item(5, '5021 - 1/2 Vaso nº 15 Com Placa Redonda 30cm', 'meio_vaso'),
-        new item(5, '5022 - 1/2 Vaso nº 17 Com Placa Redonda 35cm', 'meio_vaso'),
+        new item(4, '5020 - 1/2 Vaso nº 13 Com Placa Redonda 25cm', 'meio_vaso'),
+        new item(4, '5021 - 1/2 Vaso nº 15 Com Placa Redonda 30cm', 'meio_vaso'),
+        new item(4, '5022 - 1/2 Vaso nº 17 Com Placa Redonda 35cm', 'meio_vaso'),
         new item(0, '5023 - 1/2 Vaso Virola nº 5 Com Placa Redonda 25cm', 'meio_vaso'),
         new item(0, '5024 - 1/2 Vaso Virola nº 10 Com Placa Redonda 30cm', 'meio_vaso'),
         new item(0, '5025 - 1/2 Vaso Virola nº 12 Com Placa Redonda 35cm', 'meio_vaso'),
         new item(0, '5026 - 1/2 Vaso Virola nº 14 Com Placa Redonda 40cm', 'meio_vaso'),
         new item(6, '5027 - 1/2 Vaso nº 10 Com Placa Colmeia 30cm', 'meio_vaso'),
         new item(0, '5028 - 1/2 Vaso Virola nº 10 Com Placa Colmeia 30cm', 'meio_vaso'),
-        new item(6, '5029 - 1/2 Vaso nº 13 Com Placa Colmeia 30cm', 'meio_vaso'),
+        new item(5, '5029 - 1/2 Vaso nº 13 Com Placa Colmeia 30cm', 'meio_vaso'),
 
         new item(5, '5200 - 1/2 Vaso nº 10 C/Placa', '1/2_vaso_placa'),
         new item(3, '5201 - 1/2 Vaso nº 12 C/Placa', '1/2_vaso_placa'),
         new item(4, '5202 - 1/2 Vaso nº 14 C/Placa', '1/2_vaso_placa'),
         new item(5, '5203 - 1/2 Vaso nº 17 C/Placa', '1/2_vaso_placa'),
         new item(4, '5204 - 1/2 Vaso nº 13 C/Placa', '1/2_vaso_placa'),
+        new item(5, '5205 - 1/2 Vaso n° 15 C/Placa', '1/2_vaso_placa'),
         
-        new item(6, '6007 - Manta Calandrada 4mm', 'manta'),
-        new item(20, '6008 - Manta 1mm 0.5x2m', 'manta'),
-        new item(20, '6009 - Manta 1mm 1x1m', 'manta'),
-        new item(10, '6011 - Manta Microverdes 1x1m', 'manta'),
+        new item(0, '6007 - Manta Calandrada 4mm', 'manta'),
+        new item(14, '6008 - Manta 1mm 0.5x2m', 'manta'),
+        new item(17, '6009 - Manta 1mm 1x1m', 'manta'),
+        new item(4, '6011 - Manta Microverdes 1x1m', 'manta'),
         new item(6, '6015 - Manta Refil 25cm', 'manta'),
         new item(2, '6016 - Manta Refil 30cm', 'manta'),
         new item(6, '6017 - Manta Refil 35cm', 'manta'),
 
-        new item(6, '7000 - 1/2 Vaso nº 13 C/Placa Media 19x18cm', '1/2_vaso_placa'),
-        new item(6, '7001 - 1/2 Vaso nº 15 C/Placa Media 24x20cm', '1/2_vaso_placa'),
-        new item(10, '7002 - 1/2 Vaso nº 17 C/Placa Media 29x26cm', '1/2_vaso_placa'),
+        new item(4, '7000 - 1/2 Vaso nº 13 C/Placa Media 19x18cm', '1/2_vaso_placa'),
+        new item(2, '7001 - 1/2 Vaso nº 15 C/Placa Media 24x20cm', '1/2_vaso_placa'),
+        new item(0, '7002 - 1/2 Vaso nº 17 C/Placa Media 29x26cm', '1/2_vaso_placa'),
         
-        new item(10, '8005 - Vaso Coquim 05 Com Suporte', 'vaso_cordeinha'),
-        new item(13, '8006 - Vaso Coquim 08 Com Suporte', 'vaso_cordeinha'),
-        new item(12, '8007 - Vaso Coquim 10 Com Suporte', 'vaso_cordeinha'),
+        new item(5, '8005 - Vaso Coquim 05 Com Suporte', 'vaso_cordeinha'),
+        new item(10, '8006 - Vaso Coquim 08 Com Suporte', 'vaso_cordeinha'),
+        new item(8, '8007 - Vaso Coquim 10 Com Suporte', 'vaso_cordeinha'),
 
-        new item(10, '8013 - Kopin Coquim', 'kopin'),
+        new item(8, '8013 - Kopin Coquim', 'kopin'),
 
         new item(0, '9014 - Cachepot Onda 13x12cm', 'cahepot'),
         new item(0, '9015 - Cachepot Onda 15x15cm', 'cahepot'),
         new item(0, '9016 - Cachepot Quadrado 15x15cm', 'cahepot'),
         new item(0, '9017 - Cachepot Quadrado 13x12cm', 'cahepot'),
 
-        new item(8, '9022 - Kokindama', 'coquidama'),
-        new item(17, '9023 - Cestindama', 'coquidama'),
-        new item(12, '9024 - Kokindama P', 'coquidama'),
-        new item(14, '9025 - Cestindama P', 'coquidama'),
+        new item(5, '9022 - Kokindama', 'coquidama'),
+        new item(14, '9023 - Cestindama', 'coquidama'),
+        new item(10, '9024 - Kokindama P', 'coquidama'),
+        new item(10, '9025 - Cestindama P', 'coquidama'),
 
-        new item(15, '9028 - Coquim Orquidea de Parede Mini', 'cone'),
-        new item(15, '9029 - Coquim Orquidea de Parede P', 'cone'),
-        new item(13, '8000 - Coquim Orquidea de Parede M', 'cone'),
-        new item(7, '9030 - Coquim Orquidea de Parede G', 'cone'),
-        new item(9, '9031 - Coquim Orquidea de Parede GG', 'cone'),
+        new item(14, '9028 - Coquim Orquidea de Parede Mini', 'cone'),
+        new item(13, '9029 - Coquim Orquidea de Parede P', 'cone'),
+        new item(10, '8000 - Coquim Orquidea de Parede M', 'cone'),
+        new item(5, '9030 - Coquim Orquidea de Parede G', 'cone'),
+        new item(7, '9031 - Coquim Orquidea de Parede GG', 'cone'),
 
         new item(10, '9040 - Cesto Aramado Coquim 25cm com Manta e Corrente', 'cesto_aramado'),
         new item(12, '9041 - Cesto Aramado Coquim 30cm com Manta e Corrente', 'cesto_aramado'),
@@ -1880,6 +1895,8 @@ function buscadorDeInventario(nome) {
             return emeAeme
         case 'forth':
             return forth
+        case 'fuzil':
+            return fuzil
         case 'alfa_polietileno':
             return alfa_polietileno
         case 'alfa_fibraSintetica':
@@ -2011,6 +2028,7 @@ function editorDeOrdem(index, identidade) {
 impreção(articleRegaplan, regaplan, 'regaplan')
 impreção(articleEmeAEme, emeAeme, 'emeAeme')
 impreção(articleForth, forth, 'forth')
+impreção(articleFuzil, fuzil, 'fuzil')
 impreção(articleAlfa_polietileno, alfa_polietileno, 'alfa_polietileno')
 impreção(articleAlfa_fibraSintetica, alfa_fibraSintetica, 'alfa_fibraSintetica')
 impreção(articleRischioto, rischioto, 'rischioto')
