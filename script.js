@@ -831,14 +831,16 @@ var forth = new Inventario(
 )
 var fuzil = new Inventario(
     'Fuzil',
-    '24/09/2023',
+    '25/09/2023',
     [
         new item(11, 'Ancinho p/Jardim 3 dentes', 'fuzil'),
         new item(1, 'Arrancador de Inço', 'fuzil'),
         new item(7, 'Aspersor c/adaptador', 'fuzil'),
         new item(3, 'Pazinha p/jardim Larga', 'fuzil'),
         new item(1, 'Pazinha p/jardim Estreita', 'fuzil'),
-        new item(2, 'Sacho 2P CB Madeira', 'fuzil')
+        new item(2, 'Sacho 2P CB Madeira', 'fuzil'),
+        new item(4, 'Tesoura de poda Palisad', 'fusil'),
+        new item(2, 'Tesoura de poda Tramontina', 'fusil')
     ]
 )
 var alfa_polietileno = new Inventario(
@@ -1252,7 +1254,7 @@ var nutriplan = new Inventario(
         new item(26, 'Pote de Muda - 40 litros', 'pote'),
         new item(0, 'Pote de Muda - 50 litros', 'pote'),
         new item(1, 'Pote de Muda - 60 litros', 'pote'),
-        new item(7, 'Pote de Muda - 85 litros', 'pote'),
+        new item(6, 'Pote de Muda - 85 litros', 'pote'),
 
         new item(1, 'Vaso Classic Cilindrico 55 cobre', 'cilindrico_55'),
 
@@ -1274,7 +1276,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '24/09/2023',
+    '25/09/2023',
     [
         new item(12, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(14, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1366,23 +1368,23 @@ var coquim = new Inventario(
         new item(0, '5028 - 1/2 Vaso Virola nº 10 Com Placa Colmeia 30cm', 'meio_vaso'),
         new item(5, '5029 - 1/2 Vaso nº 13 Com Placa Colmeia 30cm', 'meio_vaso'),
 
-        new item(5, '5200 - 1/2 Vaso nº 10 C/Placa', '1/2_vaso_placa'),
-        new item(3, '5201 - 1/2 Vaso nº 12 C/Placa', '1/2_vaso_placa'),
-        new item(4, '5202 - 1/2 Vaso nº 14 C/Placa', '1/2_vaso_placa'),
-        new item(5, '5203 - 1/2 Vaso nº 17 C/Placa', '1/2_vaso_placa'),
-        new item(4, '5204 - 1/2 Vaso nº 13 C/Placa', '1/2_vaso_placa'),
+        new item(4, '5200 - 1/2 Vaso nº 10 C/Placa', '1/2_vaso_placa'),
+        new item(4, '5201 - 1/2 Vaso nº 12 C/Placa', '1/2_vaso_placa'),
+        new item(8, '5202 - 1/2 Vaso nº 14 C/Placa', '1/2_vaso_placa'),
+        new item(6, '5203 - 1/2 Vaso nº 17 C/Placa', '1/2_vaso_placa'),
+        new item(5, '5204 - 1/2 Vaso nº 13 C/Placa', '1/2_vaso_placa'),
         new item(5, '5205 - 1/2 Vaso n° 15 C/Placa', '1/2_vaso_placa'),
         
         new item(0, '6007 - Manta Calandrada 4mm', 'manta'),
         new item(14, '6008 - Manta 1mm 0.5x2m', 'manta'),
         new item(17, '6009 - Manta 1mm 1x1m', 'manta'),
         new item(4, '6011 - Manta Microverdes 1x1m', 'manta'),
-        new item(6, '6015 - Manta Refil 25cm', 'manta'),
-        new item(2, '6016 - Manta Refil 30cm', 'manta'),
-        new item(6, '6017 - Manta Refil 35cm', 'manta'),
+        new item(5, '6015 - Manta Refil 25cm', 'manta'),
+        new item(6, '6016 - Manta Refil 30cm', 'manta'),
+        new item(3, '6017 - Manta Refil 35cm', 'manta'),
 
-        new item(4, '7000 - 1/2 Vaso nº 13 C/Placa Media 19x18cm', '1/2_vaso_placa'),
-        new item(2, '7001 - 1/2 Vaso nº 15 C/Placa Media 24x20cm', '1/2_vaso_placa'),
+        new item(7, '7000 - 1/2 Vaso nº 13 C/Placa Media 19x18cm', '1/2_vaso_placa'),
+        new item(7, '7001 - 1/2 Vaso nº 15 C/Placa Media 24x20cm', '1/2_vaso_placa'),
         new item(0, '7002 - 1/2 Vaso nº 17 C/Placa Media 29x26cm', '1/2_vaso_placa'),
         
         new item(5, '8005 - Vaso Coquim 05 Com Suporte', 'vaso_cordeinha'),
