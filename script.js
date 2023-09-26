@@ -2076,7 +2076,6 @@ function inputToLabel() {
 }
 
 function orçamento(index, ediçao=null) {
-    
     if (ediçao) {
         let corretor = window.document.getElementById(`${ediçao}_orçamento_edit_${index}`)
 
