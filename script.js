@@ -2059,7 +2059,24 @@ function editorDeOrdem(index, identidade) {
     document.getElementById('entradaDoRepositor').select()
 }
 
+function inputToLabel() {
+    for (let index in comanda) {
+        document.getElementById(`quantidade_orçamento_${index}`).style.display = 'inline-block'
+        document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`descrição_orçamento_${index}`).style.display = 'inline-block'
+        document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`unitario_orçamento_${index}`).style.display = 'inline-block'
+        document.getElementById(`unitario_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`total_orçamento_${index}`).style.display = 'inline-block'
+        document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
+    }
+}
+
 function orçamento(index, ediçao=null) {
+    
     if (ediçao) {
         let corretor = window.document.getElementById(`${ediçao}_orçamento_edit_${index}`)
 
@@ -2096,12 +2113,20 @@ function orçamento(index, ediçao=null) {
             document.getElementById(`${ediçao}_orçamento_${index}`).style.display = 'inline-block'
             document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'none'
         }
+        let adiçao = 0
+        for (index in comanda) {
+            adiçao += parseFloat(comanda[index].total)
+        }
+
+        document.getElementById('total_total').innerText = `Total: R$ ${(adiçao.toFixed(2)).replace('.', ',')}`
     }
     else {
         var quantidade = window.document.getElementById(`quantidade_orçamento_${index}`)
         var descrição = window.document.getElementById(`descrição_orçamento_${index}`)
         var valorUnitario = window.document.getElementById(`unitario_orçamento_${index}`)
         var valorTotal = window.document.getElementById(`total_orçamento_${index}`)
+
+        inputToLabel()
     
         // pulando as entradas
         if (quantidade.value == 0) {quantidade.value = 1} 
@@ -2114,6 +2139,7 @@ function orçamento(index, ediçao=null) {
         // registro dos valores
         if (!comanda[index]) {
             if (valorUnitario.value != 0) {comanda.push(new registroDeComanda(quantidade.value, descrição.value, valorUnitario.value))}
+
         }
         
         console.log(`Registro de Comanda acionado pela linha ${index}`)
@@ -2172,6 +2198,13 @@ function orçamento(index, ediçao=null) {
         <input type="number" id="total_orçamento_${indiceOrçamento}" value="0.00" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
         </div>`
 
+        let adiçao = 0
+        for (index in comanda) {
+            adiçao += parseFloat(comanda[index].total)
+        }
+
+        sectComanda.innerHTML += `<label id="total_total">Total: R$ ${(adiçao.toFixed(2)).replace('.', ',')}</label>`
+
         window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '8%'
         window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
 
@@ -2187,19 +2220,7 @@ function orçamento(index, ediçao=null) {
 }
 
 function ediçaoDeTabela(index, ediçao) {
-    for (let index in comanda) {
-        document.getElementById(`quantidade_orçamento_${index}`).style.display = 'inline-block'
-        document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
-
-        document.getElementById(`descrição_orçamento_${index}`).style.display = 'inline-block'
-        document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
-
-        document.getElementById(`unitario_orçamento_${index}`).style.display = 'inline-block'
-        document.getElementById(`unitario_orçamento_edit_${index}`).style.display = 'none'
-
-        document.getElementById(`total_orçamento_${index}`).style.display = 'inline-block'
-        document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
-    }
+    inputToLabel()
 
     document.getElementById(`${ediçao}_orçamento_${index}`).style.display = 'none'
     document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'inline-block'
