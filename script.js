@@ -2079,7 +2079,12 @@ function orçamento(index, ediçao=null) {
     if (ediçao) {
         let corretor = window.document.getElementById(`${ediçao}_orçamento_edit_${index}`)
 
-        if (corretor.value != '') {
+        if (ediçao == 'quantidade' && corretor.value == 0) {
+            comanda.splice(index, 1)
+            novaLinha(index)
+            indiceOrçamento--
+
+        } else if (corretor.value != '') {
             switch (ediçao) {
             case 'quantidade':
                 comanda[index].quantidade = corretor.value
@@ -2145,77 +2150,80 @@ function orçamento(index, ediçao=null) {
         console.log(`quantidade: ${quantidade.value}\ndescrição: ${descrição.value}\nvalorUnitario: ${valorUnitario.value}\nvalorTotal: ${valorTotal.value}\n`)    
         console.log(comanda)
     }
-
-    // criaçao de uma nova linha
+    
     if (indiceOrçamento == comanda.length) {
-        sectComanda.innerHTML = `
-            <div id="legenda_do_orçamento">
-                <label id="label_quantidade" class="orçamento">Quant.</label>
-                <label id="label_descrição" class="orçamento">Descrição</label>
-                <label id="label_unitario" class="orçamento">Unitario</label>
-                <label id="label_total" class="orçamento">Total</label>
-            </div>`
-        for (let index in comanda) {
-            sectComanda.innerHTML += `
-                <div id="linha_do_orçamento">
-                    <label id="quantidade_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'quantidade')">${comanda[index].quantidade}</label>
-                    <input type="number" id="quantidade_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'quantidade')">
-
-                    <label id="descrição_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'descrição')">${comanda[index].descrição}</label>
-                    <input type="text" id="descrição_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'descrição')">
-
-                    <label id="unitario_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'unitario')">R$ ${(parseFloat(comanda[index].unitario).toFixed(2)).replace('.', ',')}</label>
-                    <input type="number" id="unitario_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'unitario')">
-
-                    <label id="total_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'total')">R$ ${(comanda[index].total).replace('.', ',')}</label>
-                    <input type="number" id="total_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'total')">
-                </div>`
-
-            document.getElementById(`quantidade_orçamento_${index}`).style.width = '8%'
-            document.getElementById(`quantidade_orçamento_${index}`).style.textAlign = 'center'
-            document.getElementById(`quantidade_orçamento_edit_${index}`).style.width = '8%'
-            document.getElementById(`quantidade_orçamento_edit_${index}`).style.textAlign = 'center'
-            document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
-
-            document.getElementById(`descrição_orçamento_${index}`).style.width = '50%'
-            document.getElementById(`descrição_orçamento_edit_${index}`).style.width = '50%'
-            document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
-
-            document.getElementById(`unitario_orçamento_${index}`).style.width = '15%'
-            document.getElementById(`unitario_orçamento_edit_${index}`).style.width = '15%'
-            document.getElementById(`unitario_orçamento_edit_${index}`).style.display = 'none'
-
-            document.getElementById(`total_orçamento_${index}`).style.width = '15%'
-            document.getElementById(`total_orçamento_edit_${index}`).style.width = '15%'
-            document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
-        }
-        sectComanda.innerHTML += `
-        <div class="linha_do_orçamento">
-        <input type="number" id="quantidade_orçamento_${indiceOrçamento}" value="0" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
-        <input type="text" id="descrição_orçamento_${indiceOrçamento}" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
-        <input type="number" id="unitario_orçamento_${indiceOrçamento}" value="0.00" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
-        <input type="number" id="total_orçamento_${indiceOrçamento}" value="0.00" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
-        </div>`
-
-        let adiçao = 0
-        for (index in comanda) {
-            adiçao += parseFloat(comanda[index].total)
-        }
-
-        sectComanda.innerHTML += `<label id="total_total">Total: R$ ${(adiçao.toFixed(2)).replace('.', ',')}</label>`
-
-        window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '8%'
-        window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
-
-        window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).style.width = '50%'
-        window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).select()
-
-        window.document.getElementById(`unitario_orçamento_${indiceOrçamento}`).style.width = '15%'
-
-        window.document.getElementById(`total_orçamento_${indiceOrçamento}`).style.width = '15%'
-
+        novaLinha(index)
         indiceOrçamento++
-    } 
+    }
+}
+
+function novaLinha(index) {
+    // criaçao de uma nova linha
+    sectComanda.innerHTML = `
+        <div id="legenda_do_orçamento">
+            <label id="label_quantidade" class="orçamento">Quant.</label>
+            <label id="label_descrição" class="orçamento">Descrição</label>
+            <label id="label_unitario" class="orçamento">Unitario</label>
+            <label id="label_total" class="orçamento">Total</label>
+        </div>`
+    for (let index in comanda) {
+        sectComanda.innerHTML += `
+            <div id="linha_do_orçamento">
+                <label id="quantidade_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'quantidade')">${comanda[index].quantidade}</label>
+                <input type="number" id="quantidade_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'quantidade')">
+
+                <label id="descrição_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'descrição')">${comanda[index].descrição}</label>
+                <input type="text" id="descrição_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'descrição')">
+
+                <label id="unitario_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'unitario')">R$ ${(parseFloat(comanda[index].unitario).toFixed(2)).replace('.', ',')}</label>
+                <input type="number" id="unitario_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'unitario')">
+
+                <label id="total_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'total')">R$ ${(comanda[index].total).replace('.', ',')}</label>
+                <input type="number" id="total_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'total')">
+            </div>`
+
+        document.getElementById(`quantidade_orçamento_${index}`).style.width = '8%'
+        document.getElementById(`quantidade_orçamento_${index}`).style.textAlign = 'center'
+        document.getElementById(`quantidade_orçamento_edit_${index}`).style.width = '8%'
+        document.getElementById(`quantidade_orçamento_edit_${index}`).style.textAlign = 'center'
+        document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`descrição_orçamento_${index}`).style.width = '50%'
+        document.getElementById(`descrição_orçamento_edit_${index}`).style.width = '50%'
+        document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`unitario_orçamento_${index}`).style.width = '15%'
+        document.getElementById(`unitario_orçamento_edit_${index}`).style.width = '15%'
+        document.getElementById(`unitario_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`total_orçamento_${index}`).style.width = '15%'
+        document.getElementById(`total_orçamento_edit_${index}`).style.width = '15%'
+        document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
+    }
+    sectComanda.innerHTML += `
+    <div class="linha_do_orçamento">
+    <input type="number" id="quantidade_orçamento_${indiceOrçamento}" value="" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
+    <input type="text" id="descrição_orçamento_${indiceOrçamento}" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
+    <input type="number" id="unitario_orçamento_${indiceOrçamento}" value="" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
+    <input type="number" id="total_orçamento_${indiceOrçamento}" value="" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
+    </div>`
+
+    let adiçao = 0
+    for (index in comanda) {
+        adiçao += parseFloat(comanda[index].total)
+    }
+
+    sectComanda.innerHTML += `<label id="total_total">Total: R$ ${(adiçao.toFixed(2)).replace('.', ',')}</label>`
+
+    window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '8%'
+    window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
+
+    window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).style.width = '50%'
+    window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).select()
+
+    window.document.getElementById(`unitario_orçamento_${indiceOrçamento}`).style.width = '15%'
+
+    window.document.getElementById(`total_orçamento_${indiceOrçamento}`).style.width = '15%'  
 }
 
 function ediçaoDeTabela(index, ediçao) {
