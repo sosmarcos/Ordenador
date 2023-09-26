@@ -47,12 +47,12 @@ class ItemEspecifico {
     }
 } 
 
-class Comanda {
+class registroDeComanda {
     constructor(quantidade, descrição, unitario) {
         this.quantidade = quantidade
-        this.descrição = descrição
         this.unitario = unitario
         this.total = (unitario*quantidade).toFixed(2)
+        if (descrição == '') {this.descrição = 'Sem Descrição'} else {this.descrição = descrição}
     }
 }
 
@@ -61,7 +61,7 @@ class Comanda {
 var total = 0
 var registroDaCalculadora = []
 var registroDoRepositor = []
-var registroDaComanda = []
+var comanda = []
 var valorIsentoDeDesconto = 0
 var isençãoDeDesconto = false
 var porcento3On = false
@@ -1815,8 +1815,8 @@ function sectionExpand(section, identidade='', menu='') {
         sectRepositor.style.display = 'none'
     } else if (section =='orçamento') {
         sectComanda.style.display = 'block'
-        document.getElementById(`descrição_orçamento_${registroDaComanda.length}`).select()
-        console.log(registroDaComanda)
+        document.getElementById(`descrição_orçamento_${comanda.length}`).select()
+        console.log(comanda)
 
         document.getElementById('navMenuInventarios').style.display = 'none'
         document.getElementById('navMenuPlantas').style.display = 'none'
@@ -2059,36 +2059,70 @@ function editorDeOrdem(index, identidade) {
     document.getElementById('entradaDoRepositor').select()
 }
 
-function comanda(index) {
+function orçamento(index, ediçao=null) {
+    if (ediçao) {
+        let corretor = window.document.getElementById(`${ediçao}_orçamento_edit_${index}`)
 
-    var quantidade = window.document.getElementById(`quantidade_orçamento_${index}`)
-    var descrição = window.document.getElementById(`descrição_orçamento_${index}`)
-    var valorUnitario = window.document.getElementById(`unitario_orçamento_${index}`)
-    var valorTotal = window.document.getElementById(`total_orçamento_${index}`)
+        if (corretor.value != '') {
+            switch (ediçao) {
+            case 'quantidade':
+                comanda[index].quantidade = corretor.value
+                comanda[index].total = (comanda[index].unitario * comanda[index].quantidade).toFixed(2)
 
-    // pulando as entradas
-    if (quantidade.value == 0) {quantidade.value = 1} 
-    if (valorUnitario.value == 0) {
-        valorUnitario.value = null
-        valorUnitario.select()
-    }
-    
-    // registro dos valores
-    if (!registroDaComanda[index]) {
-        if (valorUnitario.value > 0) {registroDaComanda.push(new Comanda(quantidade.value, descrição.value, valorUnitario.value))}
+                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = comanda[index].quantidade
+                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda[index].total).replace('.', ',')}`
+                break
+            case 'descrição':
+                comanda[index].descrição = window.document.getElementById(`descrição_orçamento_edit_${index}`).value
+
+                document.getElementById(`descrição_orçamento_${index}`).innerText = comanda[index].descrição
+                break
+            case 'unitario':
+                comanda[index].unitario = window.document.getElementById(`unitario_orçamento_edit_${index}`).value
+                comanda[index].total = (comanda[index].unitario * comanda[index].quantidade).toFixed(2)
+
+                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = `R$ ${(parseFloat(comanda[index].unitario).toFixed(2)).replace('.', ',')}`
+                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda[index].total).replace('.', ',')}`
+                break
+            case 'total':
+                comanda[index].total = window.document.getElementById(`total_orçamento_edit_${index}`).value
+                break
+            }
+            console.log(`valor ${corretor.value} editado com susseso`)
+            
+            document.getElementById(`${ediçao}_orçamento_${index}`).style.display = 'inline-block'
+            document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'none'
+        } else {
+            document.getElementById(`${ediçao}_orçamento_${index}`).style.display = 'inline-block'
+            document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'none'
+        }
     }
     else {
-        registroDaComanda[index].quantidade = parseInt(quantidade.value)
-        registroDaComanda[index].descrição = descrição.value
-        registroDaComanda[index].unitario = parseFloat(valorUnitario.value).toFixed(2)
-        registroDaComanda[index].total = parseFloat(valorUnitario.value * quantidade.value).toFixed(2)
-    } 
-    console.log(`Registro de Comanda acionado pela linha ${index}`)
-    console.log(`quantidade: ${quantidade.value}\ndescrição: ${descrição.value}\nvalorUnitario: ${valorUnitario.value}\nvalorTotal: ${valorTotal.value}\n`)    
-    console.log(registroDaComanda)
+        var quantidade = window.document.getElementById(`quantidade_orçamento_${index}`)
+        var descrição = window.document.getElementById(`descrição_orçamento_${index}`)
+        var valorUnitario = window.document.getElementById(`unitario_orçamento_${index}`)
+        var valorTotal = window.document.getElementById(`total_orçamento_${index}`)
+    
+        // pulando as entradas
+        if (quantidade.value == 0) {quantidade.value = 1} 
+        if (descrição.value == '') {descrição.select()}
+        else if (valorUnitario.value == 0) {
+            valorUnitario.value = null
+            valorUnitario.select()
+        }
+
+        // registro dos valores
+        if (!comanda[index]) {
+            if (valorUnitario.value != 0) {comanda.push(new registroDeComanda(quantidade.value, descrição.value, valorUnitario.value))}
+        }
         
+        console.log(`Registro de Comanda acionado pela linha ${index}`)
+        console.log(`quantidade: ${quantidade.value}\ndescrição: ${descrição.value}\nvalorUnitario: ${valorUnitario.value}\nvalorTotal: ${valorTotal.value}\n`)    
+        console.log(comanda)
+    }
+
     // criaçao de uma nova linha
-    if (indiceOrçamento == registroDaComanda.length) {
+    if (indiceOrçamento == comanda.length) {
         sectComanda.innerHTML = `
             <div id="legenda_do_orçamento">
                 <label id="label_quantidade" class="orçamento">Quant.</label>
@@ -2096,48 +2130,80 @@ function comanda(index) {
                 <label id="label_unitario" class="orçamento">Unitario</label>
                 <label id="label_total" class="orçamento">Total</label>
             </div>`
-        for (let index in registroDaComanda) {
+        for (let index in comanda) {
             sectComanda.innerHTML += `
-            <div id="linha_do_orçamento">
-                <label id="quantidade_orçamento_${index}" class="entradaOrçamento">${registroDaComanda[index].quantidade}</label>
-                <label id="descrição_orçamento_${index}" class="entradaOrçamento">${registroDaComanda[index].descrição}</label>
-                <label id="unitario_orçamento_${index}" class="entradaOrçamento">${parseFloat(registroDaComanda[index].unitario).toFixed(2)}</label>
-                <label id="total_orçamento_${index}" class="entradaOrçamento">${registroDaComanda[index].total}</label>
-            </div>`
+                <div id="linha_do_orçamento">
+                    <label id="quantidade_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'quantidade')">${comanda[index].quantidade}</label>
+                    <input type="number" id="quantidade_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'quantidade')">
 
-            document.getElementById(`quantidade_orçamento_${index}`).style.width = '10%'
+                    <label id="descrição_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'descrição')">${comanda[index].descrição}</label>
+                    <input type="text" id="descrição_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'descrição')">
+
+                    <label id="unitario_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'unitario')">R$ ${(parseFloat(comanda[index].unitario).toFixed(2)).replace('.', ',')}</label>
+                    <input type="number" id="unitario_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'unitario')">
+
+                    <label id="total_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'total')">R$ ${(comanda[index].total).replace('.', ',')}</label>
+                    <input type="number" id="total_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'total')">
+                </div>`
+
+            document.getElementById(`quantidade_orçamento_${index}`).style.width = '8%'
             document.getElementById(`quantidade_orçamento_${index}`).style.textAlign = 'center'
+            document.getElementById(`quantidade_orçamento_edit_${index}`).style.width = '8%'
+            document.getElementById(`quantidade_orçamento_edit_${index}`).style.textAlign = 'center'
+            document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
 
             document.getElementById(`descrição_orçamento_${index}`).style.width = '50%'
+            document.getElementById(`descrição_orçamento_edit_${index}`).style.width = '50%'
+            document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
 
-            document.getElementById(`unitario_orçamento_${index}`).style.width = '10%'
-            document.getElementById(`unitario_orçamento_${index}`).style.textAlign = 'center'
+            document.getElementById(`unitario_orçamento_${index}`).style.width = '15%'
+            document.getElementById(`unitario_orçamento_edit_${index}`).style.width = '15%'
+            document.getElementById(`unitario_orçamento_edit_${index}`).style.display = 'none'
 
-            document.getElementById(`total_orçamento_${index}`).style.width = '10%'
-            document.getElementById(`total_orçamento_${index}`).style.textAlign = 'center'
+            document.getElementById(`total_orçamento_${index}`).style.width = '15%'
+            document.getElementById(`total_orçamento_edit_${index}`).style.width = '15%'
+            document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
         }
         sectComanda.innerHTML += `
         <div class="linha_do_orçamento">
-        <input type="number" id="quantidade_orçamento_${indiceOrçamento}" value="0" class="entradaOrçamento" onchange="comanda(${indiceOrçamento})">
-        <input type="text" id="descrição_orçamento_${indiceOrçamento}" class="entradaOrçamento" onchange="comanda(${indiceOrçamento})">
-        <input type="number" id="unitario_orçamento_${indiceOrçamento}" value="0.00" class="entradaOrçamento" onchange="comanda(${indiceOrçamento})">
-        <input type="number" id="total_orçamento_${indiceOrçamento}" value="0.00" class="entradaOrçamento" onchange="comanda(${indiceOrçamento})">
+        <input type="number" id="quantidade_orçamento_${indiceOrçamento}" value="0" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
+        <input type="text" id="descrição_orçamento_${indiceOrçamento}" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
+        <input type="number" id="unitario_orçamento_${indiceOrçamento}" value="0.00" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
+        <input type="number" id="total_orçamento_${indiceOrçamento}" value="0.00" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
         </div>`
 
-        window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '10%'
+        window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '8%'
         window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
 
         window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).style.width = '50%'
         window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).select()
 
-        window.document.getElementById(`unitario_orçamento_${indiceOrçamento}`).style.width = '10%'
-        window.document.getElementById(`unitario_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
+        window.document.getElementById(`unitario_orçamento_${indiceOrçamento}`).style.width = '15%'
 
-        window.document.getElementById(`total_orçamento_${indiceOrçamento}`).style.width = '10%'
-        window.document.getElementById(`total_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
+        window.document.getElementById(`total_orçamento_${indiceOrçamento}`).style.width = '15%'
 
         indiceOrçamento++
     } 
+}
+
+function ediçaoDeTabela(index, ediçao) {
+    for (let index in comanda) {
+        document.getElementById(`quantidade_orçamento_${index}`).style.display = 'inline-block'
+        document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`descrição_orçamento_${index}`).style.display = 'inline-block'
+        document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`unitario_orçamento_${index}`).style.display = 'inline-block'
+        document.getElementById(`unitario_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`total_orçamento_${index}`).style.display = 'inline-block'
+        document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
+    }
+
+    document.getElementById(`${ediçao}_orçamento_${index}`).style.display = 'none'
+    document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'inline-block'
+    document.getElementById(`${ediçao}_orçamento_edit_${index}`).select()
 }
 
 //====================================================||Comandos||================================================
@@ -2155,13 +2221,11 @@ impreção(articleMadeiras, madeiras, 'madeiras')
 impreção(articleNutriplan, nutriplan, 'nutriplan')
 impreção(articleCoquim, coquim, 'coquim')
 
-window.document.getElementById(`quantidade_orçamento_0`).style.width = '10%'
+window.document.getElementById(`quantidade_orçamento_0`).style.width = '8%'
 window.document.getElementById(`quantidade_orçamento_0`).style.textAlign = 'center'
 
 window.document.getElementById(`descrição_orçamento_0`).style.width = '50%'
 
-window.document.getElementById(`unitario_orçamento_0`).style.width = '10%'
-window.document.getElementById(`unitario_orçamento_0`).style.textAlign = 'center'
+window.document.getElementById(`unitario_orçamento_0`).style.width = '15%'
 
-window.document.getElementById(`total_orçamento_0`).style.width = '10%'
-window.document.getElementById(`total_orçamento_0`).style.textAlign = 'center'
+window.document.getElementById(`total_orçamento_0`).style.width = '15%'

@@ -381,7 +381,7 @@ label.orçamento {
 }
 
 #label_quantidade {
-    width: 10%;
+    width: 8%;
 }
 
 #label_descrição {
@@ -389,11 +389,11 @@ label.orçamento {
 }
 
 #label_unitario {
-    width: 10%;
+    width: 15%;
 }
 
 #label_total {
-    width: 10%;
+    width: 15%;
 }
 
 .entradaOrçamento {
