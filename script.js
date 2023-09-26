@@ -47,11 +47,21 @@ class ItemEspecifico {
     }
 } 
 
+class Comanda {
+    constructor(quantidade, descrição, unitario) {
+        this.quantidade = quantidade
+        this.descrição = descrição
+        this.unitario = unitario
+        this.total = (unitario*quantidade).toFixed(2)
+    }
+}
+
 //=============================================||Variaveis||======================================================
 
 var total = 0
 var registroDaCalculadora = []
 var registroDoRepositor = []
+var registroDaComanda = []
 var valorIsentoDeDesconto = 0
 var isençãoDeDesconto = false
 var porcento3On = false
@@ -62,11 +72,13 @@ var menuDescontoOn = false
 var linhaDestacadaOn = false
 var alternador = ''
 var indiceRepositor = 0
+var indiceOrçamento = 1
 
 //=======================||Seções||=========================//
 var sectHomepage = window.document.getElementById('home_page')
 var sectPlantas = window.document.getElementById('plantas')
 var sectCalculo = window.document.getElementById('calculadora')
+var sectComanda = window.document.getElementById('orçamento')
 var sectInventarios = window.document.getElementById('inventarios')
 var sectRepositor = window.document.getElementById('repositor')
 
@@ -1776,6 +1788,7 @@ function sectionExpand(section, identidade='', menu='') {
         
         sectPlantas.style.display = 'none'
         sectCalculo.style.display = 'none'
+        sectComanda.style.display = 'none'
         sectInventarios.style.display = 'none'
         sectRepositor.style.display = 'none'
     } else if (section == 'plantas') {
@@ -1783,6 +1796,7 @@ function sectionExpand(section, identidade='', menu='') {
 
         sectHomepage.style.display = 'none'
         sectCalculo.style.display = 'none'
+        sectComanda.style.display = 'none'
         sectInventarios.style.display = 'none'
         sectRepositor.style.display = 'none'
     } else if (section == 'calculadora'){
@@ -1791,8 +1805,25 @@ function sectionExpand(section, identidade='', menu='') {
 
         document.getElementById('navMenuInventarios').style.display = 'none'
         document.getElementById('navMenuPlantas').style.display = 'none'
+        document.getElementById('navMenuCalculadora').style.display = 'none'
         document.getElementById('navMenuRepositorios').style.display = 'none'
 
+        sectComanda.style.display = 'none'
+        sectHomepage.style.display = 'none'
+        sectPlantas.style.display = 'none'
+        sectInventarios.style.display = 'none'
+        sectRepositor.style.display = 'none'
+    } else if (section =='orçamento') {
+        sectComanda.style.display = 'block'
+        document.getElementById(`descrição_orçamento_${registroDaComanda.length}`).select()
+        console.log(registroDaComanda)
+
+        document.getElementById('navMenuInventarios').style.display = 'none'
+        document.getElementById('navMenuPlantas').style.display = 'none'
+        document.getElementById('navMenuCalculadora').style.display = 'none'
+        document.getElementById('navMenuRepositorios').style.display = 'none'
+
+        sectCalculo.style.display = 'none'
         sectHomepage.style.display = 'none'
         sectPlantas.style.display = 'none'
         sectInventarios.style.display = 'none'
@@ -1803,6 +1834,7 @@ function sectionExpand(section, identidade='', menu='') {
         sectHomepage.style.display = 'none'
         sectPlantas.style.display = 'none'
         sectCalculo.style.display = 'none'
+        sectComanda.style.display = 'none'
         sectRepositor.style.display = 'none'
     } else if (section == 'repositor') {
         sectRepositor.style.display = 'block'
@@ -1810,6 +1842,7 @@ function sectionExpand(section, identidade='', menu='') {
         sectHomepage.style.display = 'none'
         sectPlantas.style.display = 'none'
         sectCalculo.style.display = 'none'
+        sectComanda.style.display = 'none'
         sectInventarios.style.display = 'none'
     }
 
@@ -2026,6 +2059,87 @@ function editorDeOrdem(index, identidade) {
     document.getElementById('entradaDoRepositor').select()
 }
 
+function comanda(index) {
+
+    var quantidade = window.document.getElementById(`quantidade_orçamento_${index}`)
+    var descrição = window.document.getElementById(`descrição_orçamento_${index}`)
+    var valorUnitario = window.document.getElementById(`unitario_orçamento_${index}`)
+    var valorTotal = window.document.getElementById(`total_orçamento_${index}`)
+
+    // pulando as entradas
+    if (quantidade.value == 0) {quantidade.value = 1} 
+    if (valorUnitario.value == 0) {
+        valorUnitario.value = null
+        valorUnitario.select()
+    }
+    
+    // registro dos valores
+    if (!registroDaComanda[index]) {
+        if (valorUnitario.value > 0) {registroDaComanda.push(new Comanda(quantidade.value, descrição.value, valorUnitario.value))}
+    }
+    else {
+        registroDaComanda[index].quantidade = parseInt(quantidade.value)
+        registroDaComanda[index].descrição = descrição.value
+        registroDaComanda[index].unitario = parseFloat(valorUnitario.value).toFixed(2)
+        registroDaComanda[index].total = parseFloat(valorUnitario.value * quantidade.value).toFixed(2)
+    } 
+    console.log(`Registro de Comanda acionado pela linha ${index}`)
+    console.log(`quantidade: ${quantidade.value}\ndescrição: ${descrição.value}\nvalorUnitario: ${valorUnitario.value}\nvalorTotal: ${valorTotal.value}\n`)    
+    console.log(registroDaComanda)
+        
+    // criaçao de uma nova linha
+    if (indiceOrçamento == registroDaComanda.length) {
+        sectComanda.innerHTML = `
+            <div id="legenda_do_orçamento">
+                <label id="label_quantidade" class="orçamento">Quant.</label>
+                <label id="label_descrição" class="orçamento">Descrição</label>
+                <label id="label_unitario" class="orçamento">Unitario</label>
+                <label id="label_total" class="orçamento">Total</label>
+            </div>`
+        for (let index in registroDaComanda) {
+            sectComanda.innerHTML += `
+            <div id="linha_do_orçamento">
+                <label id="quantidade_orçamento_${index}" class="entradaOrçamento">${registroDaComanda[index].quantidade}</label>
+                <label id="descrição_orçamento_${index}" class="entradaOrçamento">${registroDaComanda[index].descrição}</label>
+                <label id="unitario_orçamento_${index}" class="entradaOrçamento">${parseFloat(registroDaComanda[index].unitario).toFixed(2)}</label>
+                <label id="total_orçamento_${index}" class="entradaOrçamento">${registroDaComanda[index].total}</label>
+            </div>`
+
+            document.getElementById(`quantidade_orçamento_${index}`).style.width = '10%'
+            document.getElementById(`quantidade_orçamento_${index}`).style.textAlign = 'center'
+
+            document.getElementById(`descrição_orçamento_${index}`).style.width = '50%'
+
+            document.getElementById(`unitario_orçamento_${index}`).style.width = '10%'
+            document.getElementById(`unitario_orçamento_${index}`).style.textAlign = 'center'
+
+            document.getElementById(`total_orçamento_${index}`).style.width = '10%'
+            document.getElementById(`total_orçamento_${index}`).style.textAlign = 'center'
+        }
+        sectComanda.innerHTML += `
+        <div class="linha_do_orçamento">
+        <input type="number" id="quantidade_orçamento_${indiceOrçamento}" value="0" class="entradaOrçamento" onchange="comanda(${indiceOrçamento})">
+        <input type="text" id="descrição_orçamento_${indiceOrçamento}" class="entradaOrçamento" onchange="comanda(${indiceOrçamento})">
+        <input type="number" id="unitario_orçamento_${indiceOrçamento}" value="0.00" class="entradaOrçamento" onchange="comanda(${indiceOrçamento})">
+        <input type="number" id="total_orçamento_${indiceOrçamento}" value="0.00" class="entradaOrçamento" onchange="comanda(${indiceOrçamento})">
+        </div>`
+
+        window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '10%'
+        window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
+
+        window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).style.width = '50%'
+        window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).select()
+
+        window.document.getElementById(`unitario_orçamento_${indiceOrçamento}`).style.width = '10%'
+        window.document.getElementById(`unitario_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
+
+        window.document.getElementById(`total_orçamento_${indiceOrçamento}`).style.width = '10%'
+        window.document.getElementById(`total_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
+
+        indiceOrçamento++
+    } 
+}
+
 //====================================================||Comandos||================================================
 impreção(articleRegaplan, regaplan, 'regaplan')
 impreção(articleEmeAEme, emeAeme, 'emeAeme')
@@ -2040,3 +2154,14 @@ impreção(articleInsetimax, insetimax, 'insetimax')
 impreção(articleMadeiras, madeiras, 'madeiras')
 impreção(articleNutriplan, nutriplan, 'nutriplan')
 impreção(articleCoquim, coquim, 'coquim')
+
+window.document.getElementById(`quantidade_orçamento_0`).style.width = '10%'
+window.document.getElementById(`quantidade_orçamento_0`).style.textAlign = 'center'
+
+window.document.getElementById(`descrição_orçamento_0`).style.width = '50%'
+
+window.document.getElementById(`unitario_orçamento_0`).style.width = '10%'
+window.document.getElementById(`unitario_orçamento_0`).style.textAlign = 'center'
+
+window.document.getElementById(`total_orçamento_0`).style.width = '10%'
+window.document.getElementById(`total_orçamento_0`).style.textAlign = 'center'
