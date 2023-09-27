@@ -217,7 +217,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '22/09/2023',
+    '27/09/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -307,7 +307,7 @@ var rischioto = new Inventario(
         new item(12, 'Jardineira Floratta n80 Areia', 'jardineira_floratta_80'),
         new item(0, 'Jardineira Floratta n80 cinza', 'jardineira_floratta_80'),
         new item(33, 'Jardineira Floratta n80 Azul', 'jardineira_floratta_80'),
-        new item(18, 'Jardineira Floratta n80 Preta', 'jardineira_floratta_80'),
+        new item(14, 'Jardineira Floratta n80 Preta', 'jardineira_floratta_80'),
         new item(4, 'Jardineira Floratta n80 Rosa', 'jardineira_floratta_80'),
         new item(24, 'Jardineira Floratta n80 Verde', 'jardineira_floratta_80'),
         new item(18, 'Jardineira Floratta n80 Verde Escuro', 'jardineira_floratta_80'),
@@ -2233,6 +2233,25 @@ function ediçaoDeTabela(index, ediçao) {
     document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'inline-block'
     document.getElementById(`${ediçao}_orçamento_edit_${index}`).select()
 }
+
+const btn_imp=document.getElementById("btn_imp")
+
+btn_imp.addEventListener("click",(evt)=>{
+    const conteudo = document.getElementById('orçamento').innerHTML;
+
+    const win = window.open('', '', 'height=700,width=700');
+
+    win.document.write('<html>');
+    win.document.write('<head>');
+    win.document.write('<title>Plantas</title>');
+    win.document.write('</head>');
+    win.document.write('<body>');
+    win.document.write(conteudo);
+    win.document.write('</body><html>');
+
+    win.print()
+    win.close()
+})
 
 //====================================================||Comandos||================================================
 impreção(articleRegaplan, regaplan, 'regaplan')
