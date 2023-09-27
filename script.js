@@ -126,7 +126,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '24/09/2023',
+    '27/09/2023',
     [
         new item(102, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(78, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -143,7 +143,7 @@ var regaplan = new Inventario(
         new item(20, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
         new item(30, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
 
-        new item(70, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
+        new item(60, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
         new item(60, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
         new item(80, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
         new item(29, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
@@ -310,7 +310,7 @@ var rischioto = new Inventario(
         new item(14, 'Jardineira Floratta n80 Preta', 'jardineira_floratta_80'),
         new item(4, 'Jardineira Floratta n80 Rosa', 'jardineira_floratta_80'),
         new item(24, 'Jardineira Floratta n80 Verde', 'jardineira_floratta_80'),
-        new item(18, 'Jardineira Floratta n80 Verde Escuro', 'jardineira_floratta_80'),
+        new item(16, 'Jardineira Floratta n80 Verde Escuro', 'jardineira_floratta_80'),
 
         new item(0, 'Lixeira Basculante - 3.6 litros', 'lixeira_basculante'),
 
@@ -346,10 +346,10 @@ var rischioto = new Inventario(
         new item(0, 'Pote Volare - 2 Litros', 'pote_volare'),
         new item(0, 'Pote Volare - 3 Litros', 'pote_volare'),
 
-        new item(6, 'Vaso Coluna Floratta P Areia', 'vaso_coluna_p'),
+        new item(2, 'Vaso Coluna Floratta P Areia', 'vaso_coluna_p'),
         new item(6, 'Vaso Coluna Floratta P Preto', 'vaso_coluna_p'),
         new item(6, 'Vaso Coluna Floratta P Rosa', 'vaso_coluna_p'),
-        new item(6, 'Vaso Coluna Floratta P Verde Escuro', 'vaso_coluna_p'),
+        new item(2, 'Vaso Coluna Floratta P Verde Escuro', 'vaso_coluna_p'),
 
         new item(6, 'Vaso Coluna Floratta M Areia', 'vaso_coluna_m'),
         new item(6, 'Vaso Coluna Floratta M Preto', 'vaso_coluna_m'),
@@ -463,7 +463,7 @@ var rischioto = new Inventario(
         new item(24, 'Vaso Redondo Floratta n33 Preto', 'redondo_floratta_33'),
         new item(42, 'Vaso Redondo Floratta n33 Rosa', 'redondo_floratta_33'),
         new item(48, 'Vaso Redondo Floratta n33 Verde', 'redondo_floratta_33'),
-        new item(12, 'Vaso Redondo Floratta n33 Verde Escuro', 'redondo_floratta_33'),
+        new item(7, 'Vaso Redondo Floratta n33 Verde Escuro', 'redondo_floratta_33'),
 
         new item(0, 'Vaso Redondo Floratta n40 Areia', 'redondo_floratta_40'),
         new item(33, 'Vaso Redondo Floratta n40 Azul', 'redondo_floratta_40'),
@@ -1108,7 +1108,7 @@ var alfa_polietileno = new Inventario(
 )
 var alfa_fibraSintetica = new Inventario(
     'Alfa Fibra Sintética',
-    '31/08/2023',
+    '27/09/2023',
     [
         new item(18, "Cuia Sem Borda nº 1 Argila", 'cuia_1'),
         new item(4, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
@@ -1177,7 +1177,7 @@ var alfa_fibraSintetica = new Inventario(
         new item(4, "Vaso Red. Sem Borda nº 1 Envelhecido", 'vaso_1'),
 
         new item(4, "Vaso Red. Sem Borda nº 2 Cappuccino", 'vaso_2'),
-        new item(4, "Vaso Red. Sem Borda nº 2 Envelhecido", 'vaso_2'),
+        new item(1, "Vaso Red. Sem Borda nº 2 Envelhecido", 'vaso_2'),
 
         new item(4, "Vaso Red. Sem Borda nº 3 Cappuccino", 'vaso_3'),
         new item(4, "Vaso Red. Sem Borda nº 3 Envelhecido", 'vaso_3'),
@@ -1188,10 +1188,10 @@ var alfa_fibraSintetica = new Inventario(
 )
 var policamp = new Inventario(
     'Policamp',
-    '19/08/2023',
+    '27/09/2023',
     [
         new item(119, 'Pulverizador 500ml', 'pulverizador'),
-        new item(112, 'Pulverizador 1 litro', 'pulverizador'),
+        new item(100, 'Pulverizador 1 litro', 'pulverizador'),
         new item(38, 'Regador Com Cabo - Bico', 'Regador_cabo'),
         new item(30, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
         new item(120, 'Regador - 2 litros', 'Regador'),
@@ -1214,12 +1214,12 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '24/09/2023',
+    '27/09/2023',
     [
         new item(29, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
         new item(33, 'Formicida Insetimaster - 100ml', 'formicida'),
-        new item(3, 'Formicida Insetimaster - 1 litro', 'formicida'),
+        new item(0, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
         new item(7, 'Inseticom Jardim - Caixa', 'inseticom'),
 
@@ -1228,7 +1228,7 @@ var insetimax = new Inventario(
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '24/09/2023',
+    '27/09/2023',
     [
         new item(1, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 40x100cm Simples', 'treliça'),
@@ -1243,14 +1243,14 @@ var madeiras = new Inventario(
 
         new item(20, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
         new item(20, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
-        new item(15, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
+        new item(12, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
         new item(13, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
         new item(2, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
         new item(1, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
 
-        new item(12, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
-        new item(11, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
-        new item(10, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
+        new item(11, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
+        new item(10, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
+        new item(8, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
         new item(8, 'Rodízio Quadrado 35cm', 'rodízio_quadrado'),
         new item(10, 'Rodízio Quadrado 40cm', 'rodízio_quadrado'),
         new item(5, 'Rodízio Quadrado 45cm', 'rodízio_quadrado'),
@@ -1288,7 +1288,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '25/09/2023',
+    '27/09/2023',
     [
         new item(12, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(14, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1304,7 +1304,7 @@ var coquim = new Inventario(
         new item(0, '1009 - Vaso Coquim nº 14 Virola', 'vaso_virola'),
 
         new item(11, '1010 - Vaso Coquim nº 17', 'vaso_coquim'),
-        new item(8, '1011 - Vaso Coquim nº 13', 'vaso_coquim'),
+        new item(6, '1011 - Vaso Coquim nº 13', 'vaso_coquim'),
         new item(5, '1012 - Vaso Coquim nº 15', 'vaso_coquim'),
 
         new item(3, '1021 - Vaso Coquim nº 10 C/Furos', 'vaso_furos'),
@@ -1370,7 +1370,7 @@ var coquim = new Inventario(
         new item(0, '5019 - Placa 80x80cm Com 5 Meio Vasos nº 12', 'placa_com_vaso'),
 
         new item(4, '5020 - 1/2 Vaso nº 13 Com Placa Redonda 25cm', 'meio_vaso'),
-        new item(4, '5021 - 1/2 Vaso nº 15 Com Placa Redonda 30cm', 'meio_vaso'),
+        new item(3, '5021 - 1/2 Vaso nº 15 Com Placa Redonda 30cm', 'meio_vaso'),
         new item(4, '5022 - 1/2 Vaso nº 17 Com Placa Redonda 35cm', 'meio_vaso'),
         new item(0, '5023 - 1/2 Vaso Virola nº 5 Com Placa Redonda 25cm', 'meio_vaso'),
         new item(0, '5024 - 1/2 Vaso Virola nº 10 Com Placa Redonda 30cm', 'meio_vaso'),
