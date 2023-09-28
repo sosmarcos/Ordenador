@@ -2213,7 +2213,9 @@ function novaLinha(index) {
         adiçao += parseFloat(comanda[index].total)
     }
 
-    sectComanda.innerHTML += `<label id="total_total">Total: R$ ${(adiçao.toFixed(2)).replace('.', ',')}</label>`
+    sectComanda.innerHTML += `
+    <label id="total_total">Total: R$ ${(adiçao.toFixed(2)).replace('.', ',')}</label>
+    <input type="button" value="Print" id="carimbo" onclick="printPdf()">`
 
     window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '8%'
     window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
@@ -2233,6 +2235,69 @@ function ediçaoDeTabela(index, ediçao) {
     document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'inline-block'
     document.getElementById(`${ediçao}_orçamento_edit_${index}`).select()
 }
+
+function printPdf() {
+    let repeatNumber = 0
+    for (let index in comanda) {
+        if (comanda[index].descrição.length > repeatNumber) {repeatNumber = comanda[index].descrição.length}
+    }
+
+    let tabela = '<table>'
+    for (let index in comanda) {
+        console.log(comanda[index])
+        tabela += `<p style="font-size: 1.2em; font-weight: bold; font-family: gc16-Mono; padding-top: 3pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">${comanda[index].descrição}${'.'.repeat((repeatNumber - (comanda[index].descrição.length)) + 40)}${comanda[index].unitario}</p>`
+    } 
+
+    const conteudo = `
+                    <!DOCTYPE  html>
+                    <html lang="pt-br">
+                    <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+                    <title>Arquivo PDF</title>
+                    <link href="https://db.onlinewebfonts.com/c/5d581e5a140723d14358ddbf1b0d15ee?family=gc16-Mono" rel="stylesheet">
+                    <link href="https://db.onlinewebfonts.com/c/51eab992a8b6cf5094d8aada3ee52856?family=Society" rel="stylesheet">
+                    <style type="text/css"> @font-face {font-family: 'luxi';src: url(fonts/Luxi-Mono/luximr.ttf) format('TrueType');}
+                    * {margin:0; padding:0; text-indent:0; }
+                    p { color: black; font-family:georgia; font-style: normal; font-weight: normal; text-decoration: none; font-size: 1em; margin:0pt; }
+                    h1 { color: black; font-family:gc16-Mono; font-style: normal; font-weight: bold; text-decoration: none; font-size: 1.2em; }
+                    .s1 { color: #e4e6db; font-family: georgia; font-style: normal; font-weight: normal; text-decoration: none; font-size: 1em; }
+                    </style></head>
+                    <body>
+                    <div style="background-color: #3e7222;">
+                    <p style="padding-top: 11pt;padding-bottom: 11pt;padding-left: 14pt;text-indent: 0pt;text-align: left;">
+                    <span style="text-shadow: -1px 3px 0px #00000057;color: #f0c300; font-family: Society; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5.1em;">André Garden</span></p>
+                    <p class="s1" style="padding-top: 1pt;padding-left: 14pt;text-indent: 0pt;text-align: left;">ANDRÉ DE ASSIS PEREIRA JARDINAGEM EIRELI</p>
+                    <p class="s1" style="padding-top: 2pt;padding-left: 14pt;text-indent: 0pt;line-height: 130%;text-align: left;">Av. João Batista leal - 523, Centro Itanhaém SP</p>
+                    <p class="s1" style="padding-bottom: 12pt; padding-top: 1pt;padding-left: 14pt;text-indent: 0pt;text-align: left;">Contato: (13) 97408-6628</p></div>
+                    <p style="padding-top: 20pt;padding-left: 20pt;text-indent: 0pt;line-height: 130%;text-align: left;">Cliente: ${null}<br>Contato: ${null}<br>Endereço: ${null}<br></p>
+                    <p style="font-family:Arial, sans-serif; color: #545353;padding-right: 14pt; padding-bottom: 6pt;padding-left: 14pt;text-indent: 0pt;line-height: 130%;text-align: left;">________________________________________________________________________________</p>  
+                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
+                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
+                    <h1 style="padding-top: 4pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">Descrição:</h1>
+                    ${tabela}
+                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
+                    <p style="padding-top: 6pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">Total: ${null}</p>
+                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
+                    <h1 style="padding-top: 6pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">Observações:</h1>
+                    <p style="padding-top: 2pt;padding-left: 20pt;text-indent: 0pt;line-height: 130%;text-align: left;"></p>
+                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                    <p style="padding-left: 20pt;text-indent: 0pt;text-align: left;"></p>
+                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
+                    <p style="padding-left: 4pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
+                    <p style="padding-top: 4pt;text-indent: 0pt;text-align: right;">${null}</p>
+                    </body>
+                    </html>`
+
+    const win = window.open('', '', 'height=700,width=700');
+    win.document.write(conteudo);
+
+    win.print()
+}
+
 
 const btn_imp=document.getElementById("btn_imp")
 
