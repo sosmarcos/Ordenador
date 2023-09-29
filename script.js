@@ -56,12 +56,27 @@ class registroDeComanda {
     }
 }
 
+class Comanda {
+    constructor() {
+        this.registro = []
+        this.valor = 0
+    }
+}
+
+class Cliente {
+    constructor(nome='', contato='', endereço='') {
+        this.nome = nome
+        this.contato = contato
+        this.endereço = endereço
+    }
+}
+
 //=============================================||Variaveis||======================================================
 
 var total = 0
 var registroDaCalculadora = []
 var registroDoRepositor = []
-var comanda = []
+var comanda = new Comanda()
 var valorIsentoDeDesconto = 0
 var isençãoDeDesconto = false
 var porcento3On = false
@@ -1457,7 +1472,7 @@ function soma() {
     porcento5On = false
     menuEspecificOn = false
 
-    retorno.select()
+    entrada.select()
 }
 
 function isentarDeDesconto() {
@@ -1815,7 +1830,7 @@ function sectionExpand(section, identidade='', menu='') {
         sectRepositor.style.display = 'none'
     } else if (section =='orçamento') {
         sectComanda.style.display = 'block'
-        document.getElementById(`descrição_orçamento_${comanda.length}`).select()
+        document.getElementById(`quantidade_orçamento_${comanda.registro.length}`).select()
         console.log(comanda)
 
         document.getElementById('navMenuInventarios').style.display = 'none'
@@ -2060,7 +2075,7 @@ function editorDeOrdem(index, identidade) {
 }
 
 function inputToLabel() {
-    for (let index in comanda) {
+    for (let index in comanda.registro) {
         document.getElementById(`quantidade_orçamento_${index}`).style.display = 'inline-block'
         document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
 
@@ -2080,33 +2095,33 @@ function orçamento(index, ediçao=null) {
         let corretor = window.document.getElementById(`${ediçao}_orçamento_edit_${index}`)
 
         if (ediçao == 'quantidade' && corretor.value == 0) {
-            comanda.splice(index, 1)
+            comanda.registro.splice(index, 1)
+            indiceOrçamento -= 2
             novaLinha(index)
-            indiceOrçamento--
 
         } else if (corretor.value != '') {
             switch (ediçao) {
             case 'quantidade':
-                comanda[index].quantidade = corretor.value
-                comanda[index].total = (comanda[index].unitario * comanda[index].quantidade).toFixed(2)
+                comanda.registro[index].quantidade = corretor.value
+                comanda.registro[index].total = (comanda.registro[index].unitario * comanda.registro[index].quantidade).toFixed(2)
 
-                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = comanda[index].quantidade
-                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda[index].total).replace('.', ',')}`
+                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = comanda.registro[index].quantidade
+                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
                 break
             case 'descrição':
-                comanda[index].descrição = window.document.getElementById(`descrição_orçamento_edit_${index}`).value
+                comanda.registro[index].descrição = window.document.getElementById(`descrição_orçamento_edit_${index}`).value
 
-                document.getElementById(`descrição_orçamento_${index}`).innerText = comanda[index].descrição
+                document.getElementById(`descrição_orçamento_${index}`).innerText = comanda.registro[index].descrição
                 break
             case 'unitario':
-                comanda[index].unitario = window.document.getElementById(`unitario_orçamento_edit_${index}`).value
-                comanda[index].total = (comanda[index].unitario * comanda[index].quantidade).toFixed(2)
+                comanda.registro[index].unitario = window.document.getElementById(`unitario_orçamento_edit_${index}`).value
+                comanda.registro[index].total = (comanda.registro[index].unitario * comanda.registro[index].quantidade).toFixed(2)
 
-                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = `R$ ${(parseFloat(comanda[index].unitario).toFixed(2)).replace('.', ',')}`
-                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda[index].total).replace('.', ',')}`
+                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = `R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}`
+                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
                 break
             case 'total':
-                comanda[index].total = window.document.getElementById(`total_orçamento_edit_${index}`).value
+                comanda.registro[index].total = window.document.getElementById(`total_orçamento_edit_${index}`).value
                 break
             }
             console.log(`valor ${corretor.value} editado com susseso`)
@@ -2117,12 +2132,13 @@ function orçamento(index, ediçao=null) {
             document.getElementById(`${ediçao}_orçamento_${index}`).style.display = 'inline-block'
             document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'none'
         }
-        let adiçao = 0
-        for (index in comanda) {
-            adiçao += parseFloat(comanda[index].total)
-        }
 
-        document.getElementById('total_total').innerText = `Total: R$ ${(adiçao.toFixed(2)).replace('.', ',')}`
+        comanda.valor = 0
+        for (let index in comanda.registro) {
+            comanda.valor += parseFloat(comanda.registro[index].total)
+        }
+        
+        document.getElementById('total_total').innerText = `Total: R$ ${(comanda.valor.toFixed(2)).replace('.', ',')}`
     }
     else {
         var quantidade = window.document.getElementById(`quantidade_orçamento_${index}`)
@@ -2141,17 +2157,20 @@ function orçamento(index, ediçao=null) {
         }
 
         // registro dos valores
-        if (!comanda[index]) {
-            if (valorUnitario.value != 0) {comanda.push(new registroDeComanda(quantidade.value, descrição.value, valorUnitario.value))}
-
+        if (!comanda.registro[index]) {
+            if (valorUnitario.value != 0) {
+                comanda.registro.push(new registroDeComanda(quantidade.value, descrição.value, valorUnitario.value))
+                comanda.valor += parseFloat(comanda.registro[index].total)
+                window.document.getElementById('total_total').innerText = `Total: R$ ${(comanda.valor.toFixed(2)).replace('.', ',')}`
+            }
         }
         
-        console.log(`Registro de Comanda acionado pela linha ${index}`)
-        console.log(`quantidade: ${quantidade.value}\ndescrição: ${descrição.value}\nvalorUnitario: ${valorUnitario.value}\nvalorTotal: ${valorTotal.value}\n`)    
-        console.log(comanda)
+        console.log(`Registro de Comanda.registro acionado pela linha ${index}`)
+        console.log(`quantidade: ${quantidade.value} descrição: ${descrição.value} valorUnitario: ${valorUnitario.value} valorTotal: ${valorTotal.value}\n`)    
+        console.log(comanda.registro)
     }
     
-    if (indiceOrçamento == comanda.length) {
+    if (indiceOrçamento == comanda.registro.length) {
         novaLinha(index)
         indiceOrçamento++
     }
@@ -2159,26 +2178,22 @@ function orçamento(index, ediçao=null) {
 
 function novaLinha(index) {
     // criaçao de uma nova linha
-    sectComanda.innerHTML = `
-        <div id="legenda_do_orçamento">
-            <label id="label_quantidade" class="orçamento">Quant.</label>
-            <label id="label_descrição" class="orçamento">Descrição</label>
-            <label id="label_unitario" class="orçamento">Unitario</label>
-            <label id="label_total" class="orçamento">Total</label>
-        </div>`
-    for (let index in comanda) {
-        sectComanda.innerHTML += `
+    var grade = window.document.getElementById('grade_de_entrada')
+
+    grade.innerHTML = ''
+    for (let index in comanda.registro) {
+        grade.innerHTML += `
             <div id="linha_do_orçamento">
-                <label id="quantidade_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'quantidade')">${comanda[index].quantidade}</label>
+                <label id="quantidade_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'quantidade')">${comanda.registro[index].quantidade}</label>
                 <input type="number" id="quantidade_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'quantidade')">
 
-                <label id="descrição_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'descrição')">${comanda[index].descrição}</label>
+                <label id="descrição_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'descrição')">${comanda.registro[index].descrição}</label>
                 <input type="text" id="descrição_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'descrição')">
 
-                <label id="unitario_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'unitario')">R$ ${(parseFloat(comanda[index].unitario).toFixed(2)).replace('.', ',')}</label>
+                <label id="unitario_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'unitario')">R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}</label>
                 <input type="number" id="unitario_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'unitario')">
 
-                <label id="total_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'total')">R$ ${(comanda[index].total).replace('.', ',')}</label>
+                <label id="total_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'total')">R$ ${(comanda.registro[index].total).replace('.', ',')}</label>
                 <input type="number" id="total_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'total')">
             </div>`
 
@@ -2200,7 +2215,7 @@ function novaLinha(index) {
         document.getElementById(`total_orçamento_edit_${index}`).style.width = '15%'
         document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
     }
-    sectComanda.innerHTML += `
+    grade.innerHTML += `
     <div class="linha_do_orçamento">
     <input type="number" id="quantidade_orçamento_${indiceOrçamento}" value="" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
     <input type="text" id="descrição_orçamento_${indiceOrçamento}" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
@@ -2208,20 +2223,11 @@ function novaLinha(index) {
     <input type="number" id="total_orçamento_${indiceOrçamento}" value="" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
     </div>`
 
-    let adiçao = 0
-    for (index in comanda) {
-        adiçao += parseFloat(comanda[index].total)
-    }
-
-    sectComanda.innerHTML += `
-    <label id="total_total">Total: R$ ${(adiçao.toFixed(2)).replace('.', ',')}</label>
-    <input type="button" value="Print" id="carimbo" onclick="printPdf()">`
-
     window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '8%'
     window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
+    window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).select()
 
     window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).style.width = '50%'
-    window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).select()
 
     window.document.getElementById(`unitario_orçamento_${indiceOrçamento}`).style.width = '15%'
 
@@ -2237,15 +2243,21 @@ function ediçaoDeTabela(index, ediçao) {
 }
 
 function printPdf() {
-    let repeatNumber = 0
-    for (let index in comanda) {
-        if (comanda[index].descrição.length > repeatNumber) {repeatNumber = comanda[index].descrição.length}
-    }
+    var cliente = new Cliente(
+        window.document.getElementById('nome').value, 
+        window.document.getElementById('contato').value, 
+        window.document.getElementById('endereço').value
+        )
 
-    let tabela = '<table>'
-    for (let index in comanda) {
-        console.log(comanda[index])
-        tabela += `<p style="font-size: 1.2em; font-weight: bold; font-family: gc16-Mono; padding-top: 3pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">${comanda[index].descrição}${'.'.repeat((repeatNumber - (comanda[index].descrição.length)) + 40)}${comanda[index].unitario}</p>`
+    let tabela = ''
+    for (let index in comanda.registro) {
+        console.log(comanda.registro[index])
+        tabela += `<tr id="legenda_do_orçamento">
+                <td id="var_quantidade" class="orçamento" style="text-align: center;">${comanda.registro[index].quantidade}</td>
+                <td id="var_descrição" class="orçamento">${comanda.registro[index].descrição}</td>
+                <td id="var_unitario" class="orçamento">R$ ${((parseFloat(comanda.registro[index].unitario)).toFixed(2)).replace('.', ',')}</td>
+                <td id="var_total" class="orçamento">R$ ${((parseFloat(comanda.registro[index].total)).toFixed(2)).replace('.', ',')}</td>
+            </tr>`
     } 
 
     const conteudo = `
@@ -2258,19 +2270,19 @@ function printPdf() {
                     <link href="https://db.onlinewebfonts.com/c/51eab992a8b6cf5094d8aada3ee52856?family=Society" rel="stylesheet">
                     <style type="text/css"> @font-face {font-family: 'luxi';src: url(fonts/Luxi-Mono/luximr.ttf) format('TrueType');}
                     * {margin:0; padding:0; text-indent:0; }
-                    p { color: black; font-family:georgia; font-style: normal; font-weight: normal; text-decoration: none; font-size: 1em; margin:0pt; }
-                    h1 { color: black; font-family:gc16-Mono; font-style: normal; font-weight: bold; text-decoration: none; font-size: 1.2em; }
-                    .s1 { color: #e4e6db; font-family: georgia; font-style: normal; font-weight: normal; text-decoration: none; font-size: 1em; }
+                    p { color: black; font-family:Georgia, 'Times New Roman', Times, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 1.1em; margin:0pt; }
+                    h1 { color: black; font-family:Georgia, 'Times New Roman', Times, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 1.2em; }
+                    .s1 { color: #ffffff; text-shadow: 1px 1px 1px #000000ba; font-family: georgia; font-style: normal; font-weight: normal; text-decoration: none; font-size: 1em; }
                     </style></head>
-                    <body>
-                    <div style="background-color: #3e7222;">
-                    <p style="padding-top: 11pt;padding-bottom: 11pt;padding-left: 14pt;text-indent: 0pt;text-align: left;">
+                    <body onclick="imprimir()">
+                    <div style="background-color: #446b2f; background-image: linear-gradient(90deg, #325121 5%, transparent);">
+                    <p style="padding-top: 11pt;padding-bottom: 11pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">
                     <span style="text-shadow: -1px 3px 0px #00000057;color: #f0c300; font-family: Society; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5.1em;">André Garden</span></p>
-                    <p class="s1" style="padding-top: 1pt;padding-left: 14pt;text-indent: 0pt;text-align: left;">ANDRÉ DE ASSIS PEREIRA JARDINAGEM EIRELI</p>
-                    <p class="s1" style="padding-top: 2pt;padding-left: 14pt;text-indent: 0pt;line-height: 130%;text-align: left;">Av. João Batista leal - 523, Centro Itanhaém SP</p>
-                    <p class="s1" style="padding-bottom: 12pt; padding-top: 1pt;padding-left: 14pt;text-indent: 0pt;text-align: left;">Contato: (13) 97408-6628</p></div>
+                    <p class="s1" style="padding-top: 1pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">ANDRÉ DE ASSIS PEREIRA JARDINAGEM EIRELI</p>
+                    <p class="s1" style="padding-top: 2pt;padding-left: 20pt;text-indent: 0pt;line-height: 130%;text-align: left;">Av. João Batista leal - 523, Centro Itanhaém SP</p>
+                    <p class="s1" style="padding-bottom: 12pt; padding-top: 1pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">Contato: (13) 97408-6628</p></div>
                     <p style="padding-top: 20pt;padding-left: 20pt;text-indent: 0pt;line-height: 130%;text-align: left;">Cliente: ${null}<br>Contato: ${null}<br>Endereço: ${null}<br></p>
-                    <p style="font-family:Arial, sans-serif; color: #545353;padding-right: 14pt; padding-bottom: 6pt;padding-left: 14pt;text-indent: 0pt;line-height: 130%;text-align: left;">________________________________________________________________________________</p>  
+                    <p style="font-family:Arial, sans-serif; color: #545353;padding-right: 20pt; padding-bottom: 6pt;padding-left: 20pt;text-indent: 0pt;line-height: 130%;text-align: left;">_____________________________________________________________________________</p>  
                     <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
                     <p style="text-indent: 0pt;text-align: left;"><br/></p>
                     <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
@@ -2279,7 +2291,7 @@ function printPdf() {
                     <p style="text-indent: 0pt;text-align: left;"><br/></p>
                     <p style="text-indent: 0pt;text-align: left;"><br/></p>
                     <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
-                    <p style="padding-top: 6pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">Total: ${null}</p>
+                    <p style="padding-top: 6pt; font-size: 1.5em; padding-left: 20pt;text-indent: 0pt;text-align: left;">Total: ${((parseFloat(comanda.valor)).toFixed(2)).replace('.', ',')}</p>
                     <p style="text-indent: 0pt;text-align: left;"><br/></p>
                     <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
                     <h1 style="padding-top: 6pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">Observações:</h1>
@@ -2289,37 +2301,157 @@ function printPdf() {
                     <p style="text-indent: 0pt;text-align: left;"><br/></p>
                     <p style="padding-left: 4pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
                     <p style="padding-top: 4pt;text-indent: 0pt;text-align: right;">${null}</p>
+                    <script>function imprimir() {window.print()}</script>
                     </body>
                     </html>`
 
-    const win = window.open('', '', 'height=700,width=700');
-    win.document.write(conteudo);
+    const rascunho = `<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>orçamento_${cliente.nome}</title>
+        <link href="https://db.onlinewebfonts.com/c/5d581e5a140723d14358ddbf1b0d15ee?family=gc16-Mono" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/51eab992a8b6cf5094d8aada3ee52856?family=Society" rel="stylesheet">
+        <style type="text/css"> 
+            @font-face {font-family: 'luxi';src: url(fonts/Luxi-Mono/luximr.ttf) format('TrueType');}
+            
+            * {
+                margin: 0; 
+                padding: 0;
+                text-indent: 0; 
+            }
+    
+            p { 
+                font-family:Georgia, 'Times New Roman', Times, serif; 
+                font-size: 1.2em;
+            }
+            
+            header {
+                background-color: #446b2f;
+                background-image: linear-gradient(90deg, #325121 5%, transparent);
+                padding: 20px 0px;
+            }
+    
+            h1 {
+                text-shadow: -1px 3px 0px #00000057;
+                padding: 0px 0px 15px 20px;
+                color: #f0c300; 
+                font-family: Society; 
+                font-style: normal; 
+                font-weight: normal; 
+                text-decoration: none; 
+                font-size: 5.1em;
+            }
+        
+            h2 {
+                color: black; 
+                font-family: 'Times New Roman', Times, serif; 
+                font-style: normal; font-weight: bold; 
+                text-decoration: none; 
+                font-size: 1.5em; 
+            }
+    
+            table {
+                border-collapse: collapse;
+            }
+        
+            .cabeçalio {
+                color: #ffffff;
+                text-shadow: 1px 1px 1px #000000ba;
+                font-family: georgia;
+                font-size: 1em;
+                padding: 0px 0px 0px 20px;
+            }
+    
+            .cliente {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding: 20px;
+                margin: 20px;
+                border-bottom: 2px dashed #9e9c9c;
+            }
+    
+            .total {
+                padding-top: 6pt;
+                font-size: 1.5em;
+                padding-left: 20pt;
+                text-indent: 0pt;
+                text-align: left;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+    
+            #orçamento {
+                margin: 20px;
+            }
+            
+            .orçamento {
+                padding: 2px 5px;
+                font-size: 1.1em;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                border-width: 2px;
+                border-color: black;
+                border-style: solid;
+                text-align: left;
+            }
+    
+            #legenda_do_orçamento {
+                margin-top: 5px;
+            }
+    
+            #label_quantidade, #var_quantidade {
+                width: 8%;
+            }
+    
+            #label_descrição, #var_descrição {
+                width: 50%;
+                
+            }
+    
+            #label_unitario, #var_unitario {
+                width: 15%;
+            }
+    
+            #label_total, #var_total {
+                width: 15%;
+            }
+    
+        </style>
+    </head>
+    <body onclick="imprimir()">
+        <header>
+            <h1>André Garden</h1>
+            <p class="cabeçalio">ANDRÉ DE ASSIS PEREIRA JARDINAGEM EIRELI</p>
+            <p class="cabeçalio">Av. João Batista leal - 523, Centro Itanhaém SP</p>
+            <p class="cabeçalio">Contato: (13) 97408-6628</p>
+        </header>
+        <p class="cliente">Cliente: ${cliente.nome}<br>Contato: ${cliente.contato}<br>Endereço: ${cliente.endereço}<br></p>
+        <table id="orçamento">
+            <tr id="legenda_do_orçamento">
+                <th id="label_quantidade" class="orçamento">Quant.</th>
+                <th id="label_descrição" class="orçamento">Descrição</th>
+                <th id="label_unitario" class="orçamento">Unitario</th>
+                <th id="label_total" class="orçamento">Total</th>
+            </tr>
+            ${tabela}
+        </table>     
+        <label class="total">Total: R$ ${((comanda.valor).toFixed(2)).replace('.', ',')}</label>
+        
+        <script>
+        function imprimir() {
+            window.print()
+            }
+        </script>
+    </body>
+    </html>`
 
-    win.print()
+    const win = window.open('', '', 'height=700,width=700');
+    win.document.write(rascunho);
+    
+    //win.print()
 }
 
-
-const btn_imp=document.getElementById("btn_imp")
-
-btn_imp.addEventListener("click",(evt)=>{
-    const conteudo = document.getElementById('orçamento').innerHTML;
-
-    const win = window.open('', '', 'height=700,width=700');
-
-    win.document.write('<html>');
-    win.document.write('<head>');
-    win.document.write('<meta charset="UTF-8">')
-    win.document.write('<meta http-equiv="X-UA-Compatible" content="IE=edge">')
-    win.document.write('<meta name="viewport" content="width=device-width, initial-scale=1.0">')
-    win.document.write('<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">')
-    win.document.write('<link rel="stylesheet" href="style.css">')
-    win.document.write('</head>');
-    win.document.write('<body>');
-    win.document.write(conteudo);
-    win.document.write('</body><html>');
-
-    win.print()
-})
+function teste() {
+    
+}
 
 //====================================================||Comandos||================================================
 impreção(articleRegaplan, regaplan, 'regaplan')

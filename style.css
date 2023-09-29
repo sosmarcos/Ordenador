@@ -466,3 +466,42 @@ input#carimbo:active {
 input#carimbo:hover {
     background-image: linear-gradient(90deg, #1279d9fa, #2b75bbc9);
 }
+
+label.cliente {
+    display: inline-block;
+    margin: 2px 0px;
+    padding: 3px 5px;
+    font-size: 1.1em;
+    font-family: 'syne';
+    font-weight: bold;
+    border-radius: 6px 6px 6px 6px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-left: 2px solid #226fb6;
+    border-bottom: 2px solid #226fb6;
+    background-image: linear-gradient(90deg, #226fb6, #2b75bbe6);
+    color: white;
+    text-shadow: 0px 1px 1px #000000a8;
+}
+
+input.cliente {
+    display: inline-block;
+    width: 70%;
+    padding: 2px 5px;
+    border-radius: 5px;
+    border-top-width: 0px;
+    border-right-width: 0px;
+    border-bottom: 2px dashed #226fb6;
+    font-size: 1.2em;
+    font-family: 'syne';
+    border-left: 0px;
+}
+
+input.cliente:focus {
+    background-image: linear-gradient(90deg, #48911f9c, #48911f85);
+    border-left-color: #3b751b;
+    border-bottom-color: #3b751b;
+    color: white;
+    text-shadow: 0px 1px 1px #000000a8;
+    transition-duration: 0.2s;
+}
