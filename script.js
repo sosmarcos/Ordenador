@@ -30,6 +30,7 @@ class ValorUnitario {
                 <input type="number" id="entradaM${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
                 <input type="number" id="entrada%${index}" class='entradaDesconto' onchange="desconto(${index})">
                 <input type="button" class="funçoes" value="%" onclick="alternarEntrada(${index})">
+                <input type="button" class="funçoes" value="&Oslash;" onclick="alternarIsenção(${index})">
                 <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
             </div><br>`
     } 
@@ -48,8 +49,9 @@ class ItemEspecifico {
 } 
 
 class registroDeComanda {
-    constructor(quantidade, descrição, unitario) {
+    constructor(quantidade, grandeza, descrição, unitario) {
         this.quantidade = quantidade
+        this.grandeza = grandeza
         this.unitario = unitario
         this.total = (unitario*quantidade).toFixed(2)
         if (descrição == '') {this.descrição = 'Sem Descrição'} else {this.descrição = descrição}
@@ -232,7 +234,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '27/09/2023',
+    '30/09/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -252,9 +254,9 @@ var rischioto = new Inventario(
 
         new item(0, 'Caixa Organizadora - 3.5 litros', 'conteiner'),
         new item(0, 'Caixa Organizadora - 7 litros', 'conteiner'),
-        new item(20, 'Caixa Organizadora - 10 litros', 'conteiner'),
+        new item(19, 'Caixa Organizadora - 10 litros', 'conteiner'),
         new item(0, 'Caixa Organizadora - 12 litros', 'conteiner'),
-        new item(25, 'Caixa Organizadora - 20 litros', 'conteiner'),
+        new item(24, 'Caixa Organizadora - 20 litros', 'conteiner'),
         new item(9, 'Caixa Organizadora - 50 litros', 'conteiner'),
         new item(5, 'Caixa Organizadora - 80 litros', 'conteiner'),
 
@@ -499,7 +501,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '24/09/2023',
+    '30/09/2023',
     [
         new item(199, 'Alça Universal Branca', 'alça_universal'),
         new item(44, 'Alça Universal Café', 'alça_universal'),
@@ -612,7 +614,7 @@ var emeAeme = new Inventario(
         new item(51, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
         new item(58, 'Prato B01 11.5cm Cimento', 'prato_b01'),
         new item(55, 'Prato B01 11.5cm Marfim', 'prato_b01'),
-        new item(39, 'Prato B01 11.5cm Preto', 'prato_b01'),
+        new item(36, 'Prato B01 11.5cm Preto', 'prato_b01'),
 
         new item(39, 'Prato B02 13cm Cerâmica', 'prato_b02'),
         new item(40, 'Prato B02 13cm Cimento', 'prato_b02'),
@@ -676,7 +678,7 @@ var emeAeme = new Inventario(
 
         new item(51, 'Vaso De Parede VP 30 Branco', 'vp_30'),
         new item(62, 'Vaso De Parede VP 30 Cerâmica', 'vp_30'),
-        new item(87, 'Vaso De Parede VP 30 Preto', 'vp_30'),
+        new item(75, 'Vaso De Parede VP 30 Preto', 'vp_30'),
         new item(48, 'Vaso De Parede VP 30 Verde', 'vp_30'),
 
         new item(32, 'Vaso Imperial V15 Cerâmica', 'v_imperial_15'),
@@ -858,11 +860,12 @@ var forth = new Inventario(
 )
 var fuzil = new Inventario(
     'Fuzil',
-    '25/09/2023',
+    '30/09/2023',
     [
         new item(11, 'Ancinho p/Jardim 3 dentes', 'fuzil'),
         new item(1, 'Arrancador de Inço', 'fuzil'),
         new item(7, 'Aspersor c/adaptador', 'fuzil'),
+        new item(4, 'Facão mato 20', 'fusil'),
         new item(3, 'Pazinha p/jardim Larga', 'fuzil'),
         new item(1, 'Pazinha p/jardim Estreita', 'fuzil'),
         new item(2, 'Sacho 2P CB Madeira', 'fuzil'),
@@ -1274,11 +1277,11 @@ var madeiras = new Inventario(
 )
 var nutriplan = new Inventario(
     'Nutriplan',
-    '24/09/2023', 
+    '30/09/2023', 
     [
         new item(51, 'Pote de Muda - 25 litros', 'pote'),
         new item(32, 'Pote de Muda - 33 litros', 'pote'),
-        new item(26, 'Pote de Muda - 40 litros', 'pote'),
+        new item(24, 'Pote de Muda - 40 litros', 'pote'),
         new item(0, 'Pote de Muda - 50 litros', 'pote'),
         new item(1, 'Pote de Muda - 60 litros', 'pote'),
         new item(6, 'Pote de Muda - 85 litros', 'pote'),
@@ -1547,6 +1550,7 @@ function porcento5() {
                                 <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                             </div><br>`
     }
+    menuEspecificOn = false
 }
 
 function porcento3() {
@@ -1578,6 +1582,7 @@ function porcento3() {
                                 <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                             </div><br>`
     }
+    menuEspecificOn = false
 }
 
 function porcentoN(num) {
@@ -1608,7 +1613,7 @@ function porcentoN(num) {
                                 <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                             </div><br>`
     }
-    
+    menuEspecificOn = false
 }
 
 function funçoesDoValor(index) {
@@ -1648,7 +1653,7 @@ function alternarEntrada(index) {
             entradaP.style.display = 'inline'
             entradaP.select()
         } catch {null}
-        fundo.style.backgroundImage = 'linear-gradient(90deg, #27bd64e1, #2681bda2)'
+        fundo.style.backgroundImage = 'linear-gradient(90deg, rgb(0 255 222), #226fb6f2 95%)'
 
         entradaMultiploOn = false
     } else {
@@ -1657,10 +1662,51 @@ function alternarEntrada(index) {
             entradaM.select()
         } catch {null}
         try {entradaP.style.display = 'none'} catch {null}
-        fundo.style.backgroundImage = 'linear-gradient(90deg, #2775bde1, #2681bda2)'
+        fundo.style.backgroundImage = 'linear-gradient(90deg, #1f4a71fc , #226fb6f2 )'
         
         entradaMultiploOn = true
     }
+}
+
+function alternarIsenção(index) {
+    var retorno = window.document.getElementById('retorno')
+
+    console.log(registroDaCalculadora[index])
+    console.log(`Isento: ${registroDaCalculadora[index].isento}\nTexto: ${registroDaCalculadora[index].texto}`)
+
+    if (registroDaCalculadora[index].isento) {
+        registroDaCalculadora[index].isento = false
+        registroDaCalculadora[index].texto = `${(registroDaCalculadora[index].texto).replace('&Oslash;', 'R')}`
+        valorIsentoDeDesconto -= registroDaCalculadora[index].valor
+    } else {
+        registroDaCalculadora[index].isento = true
+        registroDaCalculadora[index].texto = `${(registroDaCalculadora[index].texto).replace('R', '&Oslash;')}`
+        valorIsentoDeDesconto += registroDaCalculadora[index].valor
+    }
+    console.log(`Isento: ${registroDaCalculadora[index].isento}\nTexto: ${registroDaCalculadora[index].texto}`)
+
+    registroDaCalculadora[index].codigo = `
+        <input type='button' value='${registroDaCalculadora[index].texto}' id='linha${index}' class='linhaRetorno' onclick='funçoesDoValor(${index})'>
+        <div id='funçoes${index}' class="menuEspecifico">
+        <input type="number" id="entradaM${index}" class='entradaMultiplo' onchange="multiplicação(${index})">
+        <input type="number" id="entrada%${index}" class='entradaDesconto' onchange="desconto(${index})">
+        <input type="button" class="funçoes" value="%" onclick="alternarEntrada(${index})">
+        <input type="button" class="funçoes" value="&Oslash;" onclick="alternarIsenção(${index})">
+        <input type="button" class="funçoes" value="D" onclick="deletar(${index})">
+        </div><br>`
+
+    retorno.innerText = ''
+    for (let index in registroDaCalculadora) {
+        retorno.innerHTML += registroDaCalculadora[index].codigo
+    }
+    retorno.innerHTML += `<input type='button' value='Total: R&#36 ${total.toFixed(2)}' class='linhaRetorno' onclick='funçoesDoTotal()'>
+                        <div id='funçoesDoTotal' class="menuEspecifico">
+                            <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
+                        </div><br>`
+                        
+    porcento3On = false
+    porcento5On = false
+    menuEspecificOn = false
 }
 
 function multiplicação(index) {
@@ -1702,6 +1748,9 @@ function multiplicação(index) {
                         <div id='funçoesDoTotal' class="menuEspecifico">
                             <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                         </div><br>`
+
+        porcento3On = false
+        porcento5On = false
         menuEspecificOn = false
     } else {
         window.document.getElementById(`entradaM${index}`).style.display = 'none'
@@ -1747,9 +1796,14 @@ function desconto(index) {
                         <div id='funçoesDoTotal' class="menuEspecifico">
                             <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                         </div><br>`
+
+    porcento3On = false
+    porcento5On = false
+    menuEspecificOn = false
 }
 
 function deletar(index) {
+    var retorno = window.document.getElementById('retorno')
     total -= registroDaCalculadora[index].valor
     if (registroDaCalculadora[index].isento) {valorIsentoDeDesconto -= registroDaCalculadora[index].valor}
 
@@ -1762,6 +1816,9 @@ function deletar(index) {
                         <div id='funçoesDoTotal' class="menuEspecifico">
                             <input type="number" id='descontoN' class='entradaMultiplo' onchange='validaçãoPorcento()'> %
                         </div><br>`
+         
+    porcento3On = false
+    porcento5On = false
     menuEspecificOn = false
 }
 
@@ -1776,9 +1833,8 @@ function calculoReset() {
         entradaMultiploOn = true
         menuEspecificOn = false
         menuDescontoOn = false
-        window.document.getElementById('retorno').innerHTML = 'Total: R$ 0.00'
-    }
-    
+        window.document.getElementById('retorno').innerHTML = ''
+    }   
 }
 
 function menuExpand(menu) {
@@ -1788,6 +1844,7 @@ function menuExpand(menu) {
     else {
         window.document.getElementById('navMenuInventarios').style.display = 'none'
         window.document.getElementById('navMenuPlantas').style.display = 'none'
+        window.document.getElementById('navMenuCalculadora').style.display = 'none'
         window.document.getElementById('navMenuRepositorios').style.display = 'none'
 
         menu.style.display = 'block'
@@ -1823,11 +1880,7 @@ function sectionExpand(section, identidade='', menu='') {
         document.getElementById('navMenuCalculadora').style.display = 'none'
         document.getElementById('navMenuRepositorios').style.display = 'none'
 
-        sectComanda.style.display = 'none'
-        sectHomepage.style.display = 'none'
-        sectPlantas.style.display = 'none'
-        sectInventarios.style.display = 'none'
-        sectRepositor.style.display = 'none'
+        
     } else if (section =='orçamento') {
         sectComanda.style.display = 'block'
         document.getElementById(`quantidade_orçamento_${comanda.registro.length}`).select()
@@ -2108,6 +2161,11 @@ function orçamento(index, ediçao=null) {
                 document.getElementById(`${ediçao}_orçamento_${index}`).innerText = comanda.registro[index].quantidade
                 document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
                 break
+            case 'grandeza':
+                comanda.registro[index].grandeza = window.document.getElementById(`grandeza_orçamento_edit_${index}`).value
+
+                document.getElementById(`grandeza_orçamento_${index}`).innerText = comanda.registro[index].grandeza
+                break
             case 'descrição':
                 comanda.registro[index].descrição = window.document.getElementById(`descrição_orçamento_edit_${index}`).value
 
@@ -2142,6 +2200,7 @@ function orçamento(index, ediçao=null) {
     }
     else {
         var quantidade = window.document.getElementById(`quantidade_orçamento_${index}`)
+        var grandeza = window.document.getElementById(`grandeza_orçamento_${index}`)
         var descrição = window.document.getElementById(`descrição_orçamento_${index}`)
         var valorUnitario = window.document.getElementById(`unitario_orçamento_${index}`)
         var valorTotal = window.document.getElementById(`total_orçamento_${index}`)
@@ -2149,8 +2208,9 @@ function orçamento(index, ediçao=null) {
         inputToLabel()
     
         // pulando as entradas
-        if (quantidade.value == 0) {quantidade.value = 1} 
-        if (descrição.value == '') {descrição.select()}
+        if (quantidade.value == 0) {quantidade.value = 1}
+        if (grandeza.value == '') {grandeza.select()}
+        else if (descrição.value == '') {descrição.select()}
         else if (valorUnitario.value == 0) {
             valorUnitario.value = null
             valorUnitario.select()
@@ -2159,14 +2219,14 @@ function orçamento(index, ediçao=null) {
         // registro dos valores
         if (!comanda.registro[index]) {
             if (valorUnitario.value != 0) {
-                comanda.registro.push(new registroDeComanda(quantidade.value, descrição.value, valorUnitario.value))
+                comanda.registro.push(new registroDeComanda(quantidade.value, grandeza.value, descrição.value, valorUnitario.value))
                 comanda.valor += parseFloat(comanda.registro[index].total)
                 window.document.getElementById('total_total').innerText = `Total: R$ ${(comanda.valor.toFixed(2)).replace('.', ',')}`
             }
         }
         
         console.log(`Registro de Comanda.registro acionado pela linha ${index}`)
-        console.log(`quantidade: ${quantidade.value} descrição: ${descrição.value} valorUnitario: ${valorUnitario.value} valorTotal: ${valorTotal.value}\n`)    
+        console.log(`quantidade: ${quantidade.value} descrição: ${descrição.value} valorUnitario: ${valorUnitario.value} valorTotal: ${valorTotal.value}\n\n`)    
         console.log(comanda.registro)
     }
     
@@ -2185,26 +2245,35 @@ function novaLinha(index) {
         grade.innerHTML += `
             <div id="linha_do_orçamento">
                 <label id="quantidade_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'quantidade')">${comanda.registro[index].quantidade}</label>
-                <input type="number" id="quantidade_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'quantidade')">
+                <input type="number" value="${comanda.registro[index].quantidade}" id="quantidade_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'quantidade')">
+
+                <label id="grandeza_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'grandeza')">${comanda.registro[index].grandeza}</label>
+                <input type="text" value="${comanda.registro[index].grandeza}" id="grandeza_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'grandeza')">
 
                 <label id="descrição_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'descrição')">${comanda.registro[index].descrição}</label>
-                <input type="text" id="descrição_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'descrição')">
+                <input type="text" value="${comanda.registro[index].descrição}" id="descrição_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'descrição')">
 
                 <label id="unitario_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'unitario')">R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}</label>
-                <input type="number" id="unitario_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'unitario')">
+                <input type="number" value="${(parseFloat(comanda.registro[index].unitario)).toFixed(2)}" id="unitario_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'unitario')">
 
                 <label id="total_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'total')">R$ ${(comanda.registro[index].total).replace('.', ',')}</label>
-                <input type="number" id="total_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'total')">
+                <input type="number" value="${comanda.registro[index].total}" id="total_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'total')">
             </div>`
 
-        document.getElementById(`quantidade_orçamento_${index}`).style.width = '8%'
+        document.getElementById(`quantidade_orçamento_${index}`).style.width = '6%'
         document.getElementById(`quantidade_orçamento_${index}`).style.textAlign = 'center'
-        document.getElementById(`quantidade_orçamento_edit_${index}`).style.width = '8%'
+        document.getElementById(`quantidade_orçamento_edit_${index}`).style.width = '6%'
         document.getElementById(`quantidade_orçamento_edit_${index}`).style.textAlign = 'center'
         document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
 
-        document.getElementById(`descrição_orçamento_${index}`).style.width = '50%'
-        document.getElementById(`descrição_orçamento_edit_${index}`).style.width = '50%'
+        document.getElementById(`grandeza_orçamento_${index}`).style.width = '5%'
+        document.getElementById(`grandeza_orçamento_${index}`).style.textAlign = 'center'
+        document.getElementById(`grandeza_orçamento_edit_${index}`).style.width = '5%'
+        document.getElementById(`grandeza_orçamento_edit_${index}`).style.textAlign = 'center'
+        document.getElementById(`grandeza_orçamento_edit_${index}`).style.display = 'none'
+
+        document.getElementById(`descrição_orçamento_${index}`).style.width = '48%'
+        document.getElementById(`descrição_orçamento_edit_${index}`).style.width = '48%'
         document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
 
         document.getElementById(`unitario_orçamento_${index}`).style.width = '15%'
@@ -2218,16 +2287,20 @@ function novaLinha(index) {
     grade.innerHTML += `
     <div class="linha_do_orçamento">
     <input type="number" id="quantidade_orçamento_${indiceOrçamento}" value="" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
+    <input type="text" id="grandeza_orçamento_${indiceOrçamento}" value="" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
     <input type="text" id="descrição_orçamento_${indiceOrçamento}" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
     <input type="number" id="unitario_orçamento_${indiceOrçamento}" value="" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
     <input type="number" id="total_orçamento_${indiceOrçamento}" value="" class="entradaOrçamento" onchange="orçamento(${indiceOrçamento})">
     </div>`
 
-    window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '8%'
+    window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.width = '6%'
     window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
     window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).select()
 
-    window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).style.width = '50%'
+    window.document.getElementById(`grandeza_orçamento_${indiceOrçamento}`).style.width = '5%'
+    window.document.getElementById(`grandeza_orçamento_${indiceOrçamento}`).style.textAlign = 'center'
+
+    window.document.getElementById(`descrição_orçamento_${indiceOrçamento}`).style.width = '48%'
 
     window.document.getElementById(`unitario_orçamento_${indiceOrçamento}`).style.width = '15%'
 
@@ -2254,56 +2327,12 @@ function printPdf() {
         console.log(comanda.registro[index])
         tabela += `<tr id="legenda_do_orçamento">
                 <td id="var_quantidade" class="orçamento" style="text-align: center;">${comanda.registro[index].quantidade}</td>
+                <td id="var_grandeza" class="orçamento" style="text-align: center;">${comanda.registro[index].grandeza}</td>
                 <td id="var_descrição" class="orçamento">${comanda.registro[index].descrição}</td>
                 <td id="var_unitario" class="orçamento">R$ ${((parseFloat(comanda.registro[index].unitario)).toFixed(2)).replace('.', ',')}</td>
                 <td id="var_total" class="orçamento">R$ ${((parseFloat(comanda.registro[index].total)).toFixed(2)).replace('.', ',')}</td>
             </tr>`
     } 
-
-    const conteudo = `
-                    <!DOCTYPE  html>
-                    <html lang="pt-br">
-                    <head>
-                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-                    <title>Arquivo PDF</title>
-                    <link href="https://db.onlinewebfonts.com/c/5d581e5a140723d14358ddbf1b0d15ee?family=gc16-Mono" rel="stylesheet">
-                    <link href="https://db.onlinewebfonts.com/c/51eab992a8b6cf5094d8aada3ee52856?family=Society" rel="stylesheet">
-                    <style type="text/css"> @font-face {font-family: 'luxi';src: url(fonts/Luxi-Mono/luximr.ttf) format('TrueType');}
-                    * {margin:0; padding:0; text-indent:0; }
-                    p { color: black; font-family:Georgia, 'Times New Roman', Times, serif; font-style: normal; font-weight: normal; text-decoration: none; font-size: 1.1em; margin:0pt; }
-                    h1 { color: black; font-family:Georgia, 'Times New Roman', Times, serif; font-style: normal; font-weight: bold; text-decoration: none; font-size: 1.2em; }
-                    .s1 { color: #ffffff; text-shadow: 1px 1px 1px #000000ba; font-family: georgia; font-style: normal; font-weight: normal; text-decoration: none; font-size: 1em; }
-                    </style></head>
-                    <body onclick="imprimir()">
-                    <div style="background-color: #446b2f; background-image: linear-gradient(90deg, #325121 5%, transparent);">
-                    <p style="padding-top: 11pt;padding-bottom: 11pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">
-                    <span style="text-shadow: -1px 3px 0px #00000057;color: #f0c300; font-family: Society; font-style: normal; font-weight: normal; text-decoration: none; font-size: 5.1em;">André Garden</span></p>
-                    <p class="s1" style="padding-top: 1pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">ANDRÉ DE ASSIS PEREIRA JARDINAGEM EIRELI</p>
-                    <p class="s1" style="padding-top: 2pt;padding-left: 20pt;text-indent: 0pt;line-height: 130%;text-align: left;">Av. João Batista leal - 523, Centro Itanhaém SP</p>
-                    <p class="s1" style="padding-bottom: 12pt; padding-top: 1pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">Contato: (13) 97408-6628</p></div>
-                    <p style="padding-top: 20pt;padding-left: 20pt;text-indent: 0pt;line-height: 130%;text-align: left;">Cliente: ${null}<br>Contato: ${null}<br>Endereço: ${null}<br></p>
-                    <p style="font-family:Arial, sans-serif; color: #545353;padding-right: 20pt; padding-bottom: 6pt;padding-left: 20pt;text-indent: 0pt;line-height: 130%;text-align: left;">_____________________________________________________________________________</p>  
-                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
-                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
-                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
-                    <h1 style="padding-top: 4pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">Descrição:</h1>
-                    ${tabela}
-                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
-                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
-                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
-                    <p style="padding-top: 6pt; font-size: 1.5em; padding-left: 20pt;text-indent: 0pt;text-align: left;">Total: ${((parseFloat(comanda.valor)).toFixed(2)).replace('.', ',')}</p>
-                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
-                    <p style="padding-left: 5pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
-                    <h1 style="padding-top: 6pt;padding-left: 20pt;text-indent: 0pt;text-align: left;">Observações:</h1>
-                    <p style="padding-top: 2pt;padding-left: 20pt;text-indent: 0pt;line-height: 130%;text-align: left;"></p>
-                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
-                    <p style="padding-left: 20pt;text-indent: 0pt;text-align: left;"></p>
-                    <p style="text-indent: 0pt;text-align: left;"><br/></p>
-                    <p style="padding-left: 4pt;text-indent: 0pt;line-height: 1pt;text-align: left;">
-                    <p style="padding-top: 4pt;text-indent: 0pt;text-align: right;">${null}</p>
-                    <script>function imprimir() {window.print()}</script>
-                    </body>
-                    </html>`
 
     const rascunho = `<!DOCTYPE html>
     <html lang="pt-br">
@@ -2385,7 +2414,7 @@ function printPdf() {
             
             .orçamento {
                 padding: 2px 5px;
-                font-size: 1.1em;
+                font-size: 1em;
                 font-family: Georgia, 'Times New Roman', Times, serif;
                 border-width: 2px;
                 border-color: black;
@@ -2398,20 +2427,24 @@ function printPdf() {
             }
     
             #label_quantidade, #var_quantidade {
-                width: 8%;
+                width: 5%;
+            }
+
+            #label_grandeza, #var_grandeza{
+                width: 5%
             }
     
             #label_descrição, #var_descrição {
-                width: 50%;
+                width: 45%;
                 
             }
     
             #label_unitario, #var_unitario {
-                width: 15%;
+                width: 14%;
             }
     
             #label_total, #var_total {
-                width: 15%;
+                width: 14%;
             }
     
         </style>
@@ -2427,6 +2460,7 @@ function printPdf() {
         <table id="orçamento">
             <tr id="legenda_do_orçamento">
                 <th id="label_quantidade" class="orçamento">Quant.</th>
+                <th id="label_grandeza" class="orçamento">Uni.</th>
                 <th id="label_descrição" class="orçamento">Descrição</th>
                 <th id="label_unitario" class="orçamento">Unitario</th>
                 <th id="label_total" class="orçamento">Total</th>
@@ -2438,6 +2472,7 @@ function printPdf() {
         <script>
         function imprimir() {
             window.print()
+            window.close()
             }
         </script>
     </body>
@@ -2445,15 +2480,22 @@ function printPdf() {
 
     const win = window.open('', '', 'height=700,width=700');
     win.document.write(rascunho);
-    
-    //win.print()
-}
-
-function teste() {
-    
 }
 
 //====================================================||Comandos||================================================
+
+window.document.getElementById(`quantidade_orçamento_0`).style.width = '6%'
+window.document.getElementById(`quantidade_orçamento_0`).style.textAlign = 'center'
+
+window.document.getElementById(`grandeza_orçamento_0`).style.width = '5%'
+window.document.getElementById(`grandeza_orçamento_0`).style.textAlign = 'center'
+
+window.document.getElementById(`descrição_orçamento_0`).style.width = '48%'
+
+window.document.getElementById(`unitario_orçamento_0`).style.width = '15%'
+
+window.document.getElementById(`total_orçamento_0`).style.width = '15%'
+
 impreção(articleRegaplan, regaplan, 'regaplan')
 impreção(articleEmeAEme, emeAeme, 'emeAeme')
 impreção(articleForth, forth, 'forth')
@@ -2468,11 +2510,6 @@ impreção(articleMadeiras, madeiras, 'madeiras')
 impreção(articleNutriplan, nutriplan, 'nutriplan')
 impreção(articleCoquim, coquim, 'coquim')
 
-window.document.getElementById(`quantidade_orçamento_0`).style.width = '8%'
-window.document.getElementById(`quantidade_orçamento_0`).style.textAlign = 'center'
-
-window.document.getElementById(`descrição_orçamento_0`).style.width = '50%'
-
-window.document.getElementById(`unitario_orçamento_0`).style.width = '15%'
-
-window.document.getElementById(`total_orçamento_0`).style.width = '15%'
+function go() {
+    window.location.href = "https://web.whatsapp.com/"
+}

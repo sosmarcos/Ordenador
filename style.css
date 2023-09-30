@@ -37,6 +37,9 @@ body > label, input, #retorno {
 }
 
 header {
+    position: fixed;
+    top: -1px;
+    width: -webkit-fill-available;
     margin: 0px;
     background-image: linear-gradient(90deg, #609541, #60a433);
     box-shadow: 0px 1px 1px #00000045;
@@ -48,9 +51,9 @@ nav {
 }
 
 main {
-    max-width: 900px;
-    min-height: 500px;
-    margin: 2px auto;
+    max-width: 860px;
+    min-height: 530px;
+    margin: 140px auto 0px auto;
     padding: 20px;
     background-color: white;
 }
@@ -182,13 +185,17 @@ label {
 }
 
 .botao {
-    width: 40px;
-    height: 40px;
-    background-color: #68a844e0;
+    width: 43px;
+    height: 44px;
+    background-color: #649c45e0;
     color: white;
     border-style: hidden;
     box-shadow: 1px 1px 1px 0px #0000006b;
     border-radius: 2px;
+    border: 1px solid white;
+    border-radius: 7px;
+    font-family: georgia;
+    text-shadow: 1px 1px 0px BLACK;
 }
 
 .botao:hover {
@@ -214,19 +221,46 @@ p {
     text-align: justify;
 }
 
+p#retorno {
+    background: white;
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+
+#label_for_entrada {
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    font-family: 'gc16-Mono';
+}
+
+#entrada {
+    width: 105px;
+    height: 26px;
+    padding: 6px;
+    border: 4px inset white;
+    border-radius: 10px;
+    font-family: georgia;
+}
+
 .linhaRetorno {
+    margin-left: 3px;
     padding: 0px 5px;
     background-color: transparent;
     border: none;
     font: 1em normal;
-    border-radius: 7px;
+    font-family: georgia;
+    border-radius: 5px;
+    color: black;
 }
 
 input.linhaRetorno:hover {
-    background-image: linear-gradient(28deg, #2585ded1, #2585de70);
+    background-image: linear-gradient(28deg, #60993fe0, #62a53ce0);
+    color: #fffffffc;
     padding-left: 7px;
     text-align: left;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
+    text-shadow: 1px 1px 0px black;
 }
 
 input.linhaRetorno:active {
@@ -237,16 +271,48 @@ input.linhaRetorno:active {
     padding: 3px;
     display: none;
     position: absolute;
+    left: 137px;
     color: white;
-    background-image: linear-gradient(90deg, #2775bde1, #2681bda2);
-    border-radius: 5px;
-    box-shadow: 2px 3px 4px 0px #00000033;
+    background-image: linear-gradient(90deg, #1f4a71fc , #226fb6f2 );
+    border-radius: 10px;
+    border: 2px inset white;
+    box-shadow: 2px 3px 4px 0px #000000a3;
 }
 
 input {
     outline: none;
 }
 
+section#calculadora {
+    display: none;
+    padding: 10px;
+    border-radius: 7px;
+    box-shadow: 1px 1px 3px 1px #000000a8;
+    border: 2px solid;
+    position: absolute;
+    background-image: linear-gradient(90deg, #226fb6f2 5%, #3b81c2db);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+    
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
@@ -386,11 +452,15 @@ label.orçamento {
 }
 
 #label_quantidade {
-    width: 8%;
+    width: 6%;
+}
+
+#label_grandeza {
+    width: 5%;
 }
 
 #label_descrição {
-    width: 50%;
+    width: 48%;
 }
 
 #label_unitario {

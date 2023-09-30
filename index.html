@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link href="https://db.onlinewebfonts.com/c/5d581e5a140723d14358ddbf1b0d15ee?family=gc16-Mono" rel="stylesheet">
+    <link href="https://db.onlinewebfonts.com/c/51eab992a8b6cf5094d8aada3ee52856?family=Society" rel="stylesheet">
     <title>Ordenador</title>
 </head>
 <body>
@@ -63,6 +65,7 @@
             </ul>
         </nav>
     </header>
+
     <main id="principal">
         <section id="home_page">
         
@@ -74,34 +77,32 @@
             <input type="button" class="botao" title="3% de desconto" value="3%" onclick="porcento3()">
             <input type="button" id="botaoIsento" title="Isentar de desconto: Desativado" class="botao" value="&Oslash;" onclick="isentarDeDesconto()">
             <input type="button" id="botaoReset" title="Zerar o Cálculo" class="botao" value="&#x2672;" onclick="calculoReset()">
-            <label for="entrada">Valor:</label>
-            <input type="number" id="entrada" onchange="soma()">
-            
+            <!--<label for="entrada" id="label_for_entrada">Valor: </label>--><input type="number" id="entrada" onchange="soma()">
             <p id="retorno"></p>
         </section>
-
         <!--<========================================|Seção de Orçamento|==========================================================>-->
         <section id="orçamento">
             <div style="margin: 0px 0px 30px 0px;">
                 <label for="nome" class="cliente">Cliente:</label><input type="text" id="nome" class="cliente"><br>
                 <label for="contato" class="cliente">Contato:</label><input type="text" id="contato" class="cliente"><br>
-                <label for="endereço" class="cliente">Endereço</label><input type="text" id="endereço" class="cliente">
+                <label for="endereço" class="cliente">Endereço:</label><input type="text" id="endereço" class="cliente">
             </div>
             <div id="legenda_do_orçamento">
                 <label id="label_quantidade" class="orçamento">Quant.</label>
+                <label id="label_grandeza" class="orçamento">Uni.</label>
                 <label id="label_descrição" class="orçamento">Descrição</label>
-                <label id="label_unitario" class="orçamento">Unitario</label>
+                <label id="label_unitario" class="orçamento">Valor</label>
                 <label id="label_total" class="orçamento">Total</label>
             </div>
             <div id="grade_de_entrada">
                 <div class="linha_do_orçamento">
                     <input type="number" id="quantidade_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
+                    <input type="text" id="grandeza_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
                     <input type="text" id="descrição_orçamento_0" class="entradaOrçamento" onchange="orçamento(0)">
                     <input type="number" id="unitario_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
                     <input type="number" id="total_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
                 </div>
             </div>
-            
             <label id="total_total">Total</label><input type="button" value="Print" id="carimbo" onclick="printPdf()">
         </section>
         
@@ -273,7 +274,6 @@
             <div id="divDeEntrada"></div>
             <div id="divDeSaida"></div>
         </section>
-    </main>
     <script src="script.js"></script>
 </body>
 </html>
