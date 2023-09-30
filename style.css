@@ -283,10 +283,6 @@ input {
     outline: none;
 }
 
-section#home_page {
-    font-family: 'syne';
-}
-
 section#calculadora {
     display: none;
     padding: 10px;
