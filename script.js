@@ -745,7 +745,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '24/09/2023',
+    '30/09/2023',
     [
         new item(7, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -762,7 +762,7 @@ var forth = new Inventario(
         new item(7, 'Cobre Concentrado - 60ml', 'c'),
         new item(12, 'Cobre Concentrado - 500m', 'c'),
         new item(22, 'Coqueiros - 400g', 'c'),
-        new item(3, 'Coqueiros - 3kg', 'c'),
+        new item(0, 'Coqueiros - 3kg', 'c'),
         new item(1, 'Coqueiros - 10Kg', 'c'),
         new item(9, 'Cote 14.14.14 - 150g', 'c'),
         new item(3, 'Cote 15.09.12 - 150g', 'c'),
