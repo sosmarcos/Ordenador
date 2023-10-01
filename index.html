@@ -12,12 +12,12 @@
 </head>
 <body>
     <header>
-        <h1 class="cabeça" onclick="sectionExpand('home_page')">Ordenador</h1>
+        <h1 class="cabeça" onclick="sectionExpand('home_page')"><strong style="font: normal 1.5em ctrl;">O</strong>rdenador</h1>
         <nav>
-            <input type="button" value="Plantas" class="navButton" onclick="menuExpand('navMenuPlantas')">
-            <input type="button" value="Caixa" class="navButton" onclick="menuExpand('navMenuCalculadora')">
-            <input type="button" value="Inventários" class="navButton" onclick="menuExpand('navMenuInventarios')">
-            <input type="button" value="Repositórios" class="navButton" onclick="menuExpand('navMenuRepositorios')">
+            <input type="button" value="Y" class="navButton" onclick="menuExpand('navMenuPlantas')" style="font: normal 2.9em leaf;">
+            <input type="button" value="s" class="navButton" onclick="menuExpand('navMenuCalculadora')" style="font: normal 2.9em bank;">
+            <input type="button" value="c" class="navButton" onclick="menuExpand('navMenuInventarios')" style="font: normal 2.9em bank;">
+            <input type="button" value="\" class="navButton" onclick="menuExpand('navMenuRepositorios')" style="font: normal 2.9em trans;">
             <ul id="navMenuPlantas">
                 <li class="navItem"><input type="button" value="Internas" class="navItem" onclick="sectionExpand('plantas', 'internas', 'navMenuPlantas')"></li>
                 <li class="navItem"><input type="button" value="Jardins" class="navItem" onclick="sectionExpand('plantas', 'jardins', 'navMenuPlantas')"></li>
@@ -65,49 +65,21 @@
             </ul>
         </nav>
     </header>
-
+    <section id="calculadora">
+        <input type="button" class="botao" title="5% de desconto" value="5%" onclick="porcento5()">
+        <input type="button" class="botao" title="3% de desconto" value="3%" onclick="porcento3()">
+        <input type="button" id="botaoIsento" title="Isentar de desconto: Desativado" class="botao" value="&Oslash;" onclick="isentarDeDesconto()">
+        <input type="button" id="botaoReset" title="Zerar o Cálculo" class="botao" value="&#x2672;" onclick="calculoReset()">
+        <!--<label for="entrada" id="label_for_entrada">Valor: </label>--><input type="number" id="entrada" onchange="soma()">
+        <p id="retorno"></p>
+    </section>
     <main id="principal">
         <section id="home_page">
-            Abacate manteiga.......1<br>
-            Ameixa roxa............4<br>
-            Azeitona do ceilão.....4<br>
-            Carambola..............1<br>
-            Cereja.................5<br>
-            Cerejeira flor.........2<br>
-            Coqueiros.............22<br>
-            Cravo da índia.........1<br>
-            Figo...................1<br>
-            Goiaba roxa............1<br>
-            Goiaba T...............4<br>
-            Graviola...............2<br>
-            Jabuticabeira..........7<br>
-            L. Bahia..............15<br>
-            L. Taiti...............2<br>
-            lixia..................6<br>
-            Loro...................4<br>
-            Macadamea..............3<br>
-            Manga borbom...........4<br>
-            Manga palmer...........4<br>
-            mirtilo................4<br>
-            Nêspera................5<br>
-            Oliveira...............1<br>
-            Pal-brasil.............2<br>
-            Pêra...................1<br>
-            Pinha..................4<br>
-            Pitanga................5<br>
-            Pokan..................6<br>
-            Rambutam...............2<br>
+            
         </section>
 
         <!--<========================================|Seção da Calculadora|==========================================================>-->
-        <section id="calculadora">
-            <input type="button" class="botao" title="5% de desconto" value="5%" onclick="porcento5()">
-            <input type="button" class="botao" title="3% de desconto" value="3%" onclick="porcento3()">
-            <input type="button" id="botaoIsento" title="Isentar de desconto: Desativado" class="botao" value="&Oslash;" onclick="isentarDeDesconto()">
-            <input type="button" id="botaoReset" title="Zerar o Cálculo" class="botao" value="&#x2672;" onclick="calculoReset()">
-            <!--<label for="entrada" id="label_for_entrada">Valor: </label>--><input type="number" id="entrada" onchange="soma()">
-            <p id="retorno"></p>
-        </section>
+
         <!--<========================================|Seção de Orçamento|==========================================================>-->
         <section id="orçamento">
             <div style="margin: 0px 0px 30px 0px;">
@@ -302,6 +274,10 @@
             <div id="divDeEntrada"></div>
             <div id="divDeSaida"></div>
         </section>
+    </main>
+    <!--<footer id="barra_de_funçoes">
+        <div><strong style="font-family: ctrl;">O</strong>rdenador</div>
+    </footer>-->
     <script src="script.js"></script>
 </body>
 </html>

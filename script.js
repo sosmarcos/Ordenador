@@ -2484,6 +2484,7 @@ function printPdf() {
 
 //====================================================||Comandos||================================================
 
+
 window.document.getElementById(`quantidade_orçamento_0`).style.width = '6%'
 window.document.getElementById(`quantidade_orçamento_0`).style.textAlign = 'center'
 
