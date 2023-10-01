@@ -11,60 +11,7 @@
     <title>Ordenador</title>
 </head>
 <body>
-    <header>
-        <h1 class="cabeça" onclick="sectionExpand('home_page')"><strong style="font: normal 1.5em ctrl;">O</strong>rdenador</h1>
-        <nav>
-            <input type="button" value="Y" class="navButton" onclick="menuExpand('navMenuPlantas')" style="font: normal 2.9em leaf;">
-            <input type="button" value="s" class="navButton" onclick="menuExpand('navMenuCalculadora')" style="font: normal 2.9em bank;">
-            <input type="button" value="c" class="navButton" onclick="menuExpand('navMenuInventarios')" style="font: normal 2.9em bank;">
-            <input type="button" value="\" class="navButton" onclick="menuExpand('navMenuRepositorios')" style="font: normal 2.9em trans;">
-            <ul id="navMenuPlantas">
-                <li class="navItem"><input type="button" value="Internas" class="navItem" onclick="sectionExpand('plantas', 'internas', 'navMenuPlantas')"></li>
-                <li class="navItem"><input type="button" value="Jardins" class="navItem" onclick="sectionExpand('plantas', 'jardins', 'navMenuPlantas')"></li>
-                <li class="navItem"><input type="button" value="Forração" class="navItem" onclick="sectionExpand('plantas', 'forracao', 'navMenuPlantas')"></li>
-                <li class="navItem"><input type="button" value="Cercas vivas" class="navItem" onclick="sectionExpand('plantas', 'cercas', 'navMenuPlantas')"></li>
-                <li class="navItem"><input type="button" value="Pendentes" class="navItem" onclick="sectionExpand('plantas', 'pendentes', 'navMenuPlantas')"></li>
-                <li class="navItem"><input type="button" value="Calçadas" class="navItem" onclick="sectionExpand('plantas', 'calcadas', 'navMenuPlantas')"></li>
-                <li class="navItem"><input type="button" value="Piscinas" class="navItem" onclick="sectionExpand('plantas', 'piscinas', 'navMenuPlantas')"></li>
-                <li class="navItem"><input type="button" value="Presentes" class="navItem" onclick="sectionExpand('plantas', 'presentes', 'navMenuPlantas')"></li>
-                <li class="navItem"><input type="button" value="Vento" class="navItem" onclick="sectionExpand('plantas', 'vento', 'navMenuPlantas')"></li>
-            </ul>
-            <ul id="navMenuCalculadora">
-                <li class="navitem"><input type="button" value="Calculador" class="navItem" onclick="sectionExpand('calculadora')"></li>
-                <li class="navItem"><input type="button" value="Comanda" class="navItem" onclick="sectionExpand('orçamento')"></li>
-            </ul>
-            <ul id="navMenuInventarios">
-                <li class="navItem"><input type="button" value="Alfa Polietileno" class="navItem" onclick="sectionExpand('inventarios', 'alfa_polietileno', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Alfa Fibra Sintética" class="navItem" onclick="sectionExpand('inventarios', 'alfa_fibraSintetica', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Coquim" class="navItem" onclick="sectionExpand('inventarios', 'coquim', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Eme A Eme" class="navItem" onclick="sectionExpand('inventarios', 'eme_a_eme', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Forth" class="navItem" onclick="sectionExpand('inventarios', 'forth', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Fuzil" class="navItem" onclick="sectionExpand('inventarios', 'fuzil', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Insetimax" class="navItem" onclick="sectionExpand('inventarios', 'insetimax', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Jel Plast" class="navItem" onclick="sectionExpand('inventarios','jel_plast','navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Madeiras" class="navItem" onclick="sectionExpand('inventarios', 'madeiras', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Nutriplan" class="navItem" onclick="sectionExpand('inventarios', 'nutriplan', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Policamp" class="navItem" onclick="sectionExpand('inventarios','policamp','navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Regaplan" class="navItem" onclick="sectionExpand('inventarios', 'regaplan', 'navMenuInventarios')"></li>
-                <li class="navItem"><input type="button" value="Rischioto" class="navItem" onclick="sectionExpand('inventarios', 'rischioto', 'navMenuInventarios')"></li>
-            </ul>
-            <ul id="navMenuRepositorios">
-                <li class="navItem"><input type="button" value="Alfa Polietileno" class="navItem" onclick="sectionExpand('repositor', 'alfa_polietileno', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Alfa Fibra Sintética" class="navItem" onclick="sectionExpand('repositor', 'alfa_fibraSintetica', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Coquim" class="navItem" onclick="sectionExpand('repositor', 'coquim', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Eme A Eme" class="navItem" onclick="sectionExpand('repositor', 'eme_a_eme', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Forth" class="navItem" onclick="sectionExpand('repositor', 'forth', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Fuzil" class="navItem" onclick="sectionExpand('repositor', 'fuzil', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Insetimax" class="navItem" onclick="sectionExpand('repositor', 'insetimax', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Jel Plast" class="navItem" onclick="sectionExpand('repositor','jel_plast','navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Madeiras" class="navItem" onclick="sectionExpand('repositor', 'madeiras', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Nutriplan" class="navItem" onclick="sectionExpand('repositor', 'nutriplan', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Policamp" class="navItem" onclick="sectionExpand('repositor','policamp','navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Regaplan" class="navItem" onclick="sectionExpand('repositor', 'regaplan', 'navMenuRepositorios')"></li>
-                <li class="navItem"><input type="button" value="Rischioto" class="navItem" onclick="sectionExpand('repositor', 'rischioto', 'navMenuRepositorios')"></li>
-            </ul>
-        </nav>
-    </header>
+    
     <section id="calculadora">
         <input type="button" class="botao" title="5% de desconto" value="5%" onclick="porcento5()">
         <input type="button" class="botao" title="3% de desconto" value="3%" onclick="porcento3()">
@@ -275,9 +222,65 @@
             <div id="divDeSaida"></div>
         </section>
     </main>
-    <!--<footer id="barra_de_funçoes">
-        <div><strong style="font-family: ctrl;">O</strong>rdenador</div>
-    </footer>-->
+    <header>
+        <h1 class="cabeça" onclick="sectionExpand('home_page')"><strong style="font: normal 1.5em ctrl;">O</strong>rdenador</h1>
+        <nav>
+            <div id="div_botao_plantas" style="display: inline-block;">
+                <input type="button" id="botao_plantas" title="Plantas" value="Y" class="navButton" style="font: normal 2.9em leaf; top: 0px;">
+                <ul id="navMenuPlantas">
+                    <li class="navItem"><input type="button" value="Internas" class="navItem" onclick="sectionExpand('plantas', 'internas', 'navMenuPlantas')"></li>
+                    <li class="navItem"><input type="button" value="Jardins" class="navItem" onclick="sectionExpand('plantas', 'jardins', 'navMenuPlantas')"></li>
+                    <li class="navItem"><input type="button" value="Forração" class="navItem" onclick="sectionExpand('plantas', 'forracao', 'navMenuPlantas')"></li>
+                    <li class="navItem"><input type="button" value="Cercas vivas" class="navItem" onclick="sectionExpand('plantas', 'cercas', 'navMenuPlantas')"></li>
+                    <li class="navItem"><input type="button" value="Pendentes" class="navItem" onclick="sectionExpand('plantas', 'pendentes', 'navMenuPlantas')"></li>
+                    <li class="navItem"><input type="button" value="Calçadas" class="navItem" onclick="sectionExpand('plantas', 'calcadas', 'navMenuPlantas')"></li>
+                    <li class="navItem"><input type="button" value="Piscinas" class="navItem" onclick="sectionExpand('plantas', 'piscinas', 'navMenuPlantas')"></li>
+                    <li class="navItem"><input type="button" value="Presentes" class="navItem" onclick="sectionExpand('plantas', 'presentes', 'navMenuPlantas')"></li>
+                    <li class="navItem"><input type="button" value="Vento" class="navItem" onclick="sectionExpand('plantas', 'vento', 'navMenuPlantas')"></li>
+                </ul>
+            </div>
+            <div id="div_botao_inventarios" style="display: inline-block;">
+                <input type="button" id="botao_inventarios" title="Inventarios" value="c" class="navButton" style="font: normal 2.9em bank; top: 1px;">
+                <ul id="navMenuInventarios">
+                    <li class="navItem"><input type="button" value="Alfa Polietileno" class="navItem" onclick="sectionExpand('inventarios', 'alfa_polietileno', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Alfa Fibra Sintética" class="navItem" onclick="sectionExpand('inventarios', 'alfa_fibraSintetica', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Coquim" class="navItem" onclick="sectionExpand('inventarios', 'coquim', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Eme A Eme" class="navItem" onclick="sectionExpand('inventarios', 'eme_a_eme', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Forth" class="navItem" onclick="sectionExpand('inventarios', 'forth', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Fuzil" class="navItem" onclick="sectionExpand('inventarios', 'fuzil', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Insetimax" class="navItem" onclick="sectionExpand('inventarios', 'insetimax', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Jel Plast" class="navItem" onclick="sectionExpand('inventarios','jel_plast','navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Madeiras" class="navItem" onclick="sectionExpand('inventarios', 'madeiras', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Nutriplan" class="navItem" onclick="sectionExpand('inventarios', 'nutriplan', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Policamp" class="navItem" onclick="sectionExpand('inventarios','policamp','navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Regaplan" class="navItem" onclick="sectionExpand('inventarios', 'regaplan', 'navMenuInventarios')"></li>
+                    <li class="navItem"><input type="button" value="Rischioto" class="navItem" onclick="sectionExpand('inventarios', 'rischioto', 'navMenuInventarios')"></li>
+                </ul>
+            </div>
+            <div id="div_botao_repositorios" style="display: inline-block;">
+                <input type="button" id="botao_repositorios" title="Repositorios" value="\" class="navButton" style="font: normal 2.7em trans; top: 0px;">
+                <ul id="navMenuRepositorios">
+                    <li class="navItem"><input type="button" value="Alfa Polietileno" class="navItem" onclick="sectionExpand('repositor', 'alfa_polietileno', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Alfa Fibra Sintética" class="navItem" onclick="sectionExpand('repositor', 'alfa_fibraSintetica', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Coquim" class="navItem" onclick="sectionExpand('repositor', 'coquim', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Eme A Eme" class="navItem" onclick="sectionExpand('repositor', 'eme_a_eme', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Forth" class="navItem" onclick="sectionExpand('repositor', 'forth', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Fuzil" class="navItem" onclick="sectionExpand('repositor', 'fuzil', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Insetimax" class="navItem" onclick="sectionExpand('repositor', 'insetimax', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Jel Plast" class="navItem" onclick="sectionExpand('repositor','jel_plast','navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Madeiras" class="navItem" onclick="sectionExpand('repositor', 'madeiras', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Nutriplan" class="navItem" onclick="sectionExpand('repositor', 'nutriplan', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Policamp" class="navItem" onclick="sectionExpand('repositor','policamp','navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Regaplan" class="navItem" onclick="sectionExpand('repositor', 'regaplan', 'navMenuRepositorios')"></li>
+                    <li class="navItem"><input type="button" value="Rischioto" class="navItem" onclick="sectionExpand('repositor', 'rischioto', 'navMenuRepositorios')"></li>
+                </ul>
+            </div>
+            <div style="display: inline-block; border-left: 2px solid #ffffffdb; padding-left: 14px; height: 50px;">
+                <input type="button" value="s" title="Orçamentos" class="navButton" onclick="sectionExpand('orçamento')" style="font: normal 2.9em bank; top: -1px;">
+                <input type="button" value="¥" title="Calculadora" class="navButton" onclick="sectionExpand('calculadora')" style="font: normal 2.9em science; top: -1px;">
+            </div>
+        </nav>
+    </header>"
     <script src="script.js"></script>
 </body>
 </html>

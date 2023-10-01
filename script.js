@@ -1837,9 +1837,10 @@ function calculoReset() {
     }   
 }
 
-function menuExpand(menu) {
+function menuExpand(menu, botao) {
     var menu = window.document.getElementById(`${menu}`)
-    
+    var botao = window.document.getElementById(`${botao}`)
+        
     if (menu.style.display == 'block') {menu.style.display = 'none'}
     else {
         window.document.getElementById('navMenuInventarios').style.display = 'none'
@@ -1848,15 +1849,16 @@ function menuExpand(menu) {
         window.document.getElementById('navMenuRepositorios').style.display = 'none'
 
         menu.style.display = 'block'
+        botao.select()
+        //botao.style.backgroundImage = 'linear-gradient(90deg, #447b26e0, #609e3de0)'
+        //botao.style.border = 'solid white'
+        //botao.style.borderWidth = '2px 2px 0px 2px'
     }
 }
 
 function sectionExpand(section, identidade='', menu='') {
     if (section == 'home_page') {
         sectHomepage.style.display = 'block'
-        document.getElementById('navMenuInventarios').style.display = 'none'
-        document.getElementById('navMenuPlantas').style.display = 'none'
-        document.getElementById('navMenuRepositorios').style.display = 'none'
         
         sectPlantas.style.display = 'none'
         sectCalculo.style.display = 'none'
@@ -1875,21 +1877,10 @@ function sectionExpand(section, identidade='', menu='') {
         sectCalculo.style.display = 'block'
         document.getElementById('entrada').select()
 
-        document.getElementById('navMenuInventarios').style.display = 'none'
-        document.getElementById('navMenuPlantas').style.display = 'none'
-        document.getElementById('navMenuCalculadora').style.display = 'none'
-        document.getElementById('navMenuRepositorios').style.display = 'none'
-
-        
     } else if (section =='orçamento') {
         sectComanda.style.display = 'block'
         document.getElementById(`quantidade_orçamento_${comanda.registro.length}`).select()
         console.log(comanda)
-
-        document.getElementById('navMenuInventarios').style.display = 'none'
-        document.getElementById('navMenuPlantas').style.display = 'none'
-        document.getElementById('navMenuCalculadora').style.display = 'none'
-        document.getElementById('navMenuRepositorios').style.display = 'none'
 
         sectCalculo.style.display = 'none'
         sectHomepage.style.display = 'none'
@@ -1917,7 +1908,7 @@ function sectionExpand(section, identidade='', menu='') {
     if (identidade) {
         var menu = window.document.getElementById(`${menu}`)
         var arct
-        menu.style.display = 'none'
+        
 
         if (section == 'plantas') {
             for (let index in categorias) {
