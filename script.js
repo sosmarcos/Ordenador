@@ -1837,7 +1837,7 @@ function calculoReset() {
     }   
 }
 
-function menuExpand(menu, botao) {
+function menuExpand(menu) {
     var menu = window.document.getElementById(`${menu}`)
     var botao = window.document.getElementById(`${botao}`)
         
@@ -1845,14 +1845,9 @@ function menuExpand(menu, botao) {
     else {
         window.document.getElementById('navMenuInventarios').style.display = 'none'
         window.document.getElementById('navMenuPlantas').style.display = 'none'
-        window.document.getElementById('navMenuCalculadora').style.display = 'none'
         window.document.getElementById('navMenuRepositorios').style.display = 'none'
 
         menu.style.display = 'block'
-        botao.select()
-        //botao.style.backgroundImage = 'linear-gradient(90deg, #447b26e0, #609e3de0)'
-        //botao.style.border = 'solid white'
-        //botao.style.borderWidth = '2px 2px 0px 2px'
     }
 }
 
@@ -1874,9 +1869,10 @@ function sectionExpand(section, identidade='', menu='') {
         sectInventarios.style.display = 'none'
         sectRepositor.style.display = 'none'
     } else if (section == 'calculadora'){
-        sectCalculo.style.display = 'block'
-        document.getElementById('entrada').select()
-
+        if (sectCalculo.style.display == 'block') {sectCalculo.style.display = 'none'} else {
+            sectCalculo.style.display = 'block'
+            document.getElementById('entrada').select()
+        }
     } else if (section =='orçamento') {
         sectComanda.style.display = 'block'
         document.getElementById(`quantidade_orçamento_${comanda.registro.length}`).select()

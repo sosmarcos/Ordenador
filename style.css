@@ -95,8 +95,8 @@ nav {
 
 main {
     max-width: 860px;
-    min-height: 530px;
-    margin: 140px auto 0px auto;
+    min-height: 519px;
+    margin: 70px auto 0px auto;
     padding: 20px;
     background-color: white;
 }
@@ -150,7 +150,7 @@ h2 {
     margin: 0px;
     display: none;
     position: absolute;
-    background-image: linear-gradient(90deg, #447b26e0, #609e3de0);
+    background-image: linear-gradient(90deg, #447b26fa, #619e3df4);
     border: solid white;
     border-width: 0px 2px 2px 2px;
     box-shadow: 2px 3px 4px 0px #00000033;
@@ -179,19 +179,19 @@ h2 {
 }
 
 #div_botao_plantas:hover #botao_plantas {
-    background-image: linear-gradient(90deg, #447b26e0, #609e3de0);
+    background-image: linear-gradient(90deg, #447b26fa, #619e3df4);
     border: solid white;
     border-width: 2px 2px 0px 2px;
 }
 
 #div_botao_inventarios:hover #botao_inventarios {
-    background-image: linear-gradient(90deg, #447b26e0, #609e3de0);
+    background-image: linear-gradient(90deg, #447b26fa, #619e3df4);
     border: solid white;
     border-width: 2px 2px 0px 2px;
 }
 
 #div_botao_repositorios:hover #botao_repositorios {
-    background-image: linear-gradient(90deg, #447b26e0, #609e3de0);
+    background-image: linear-gradient(90deg, #447b26fa, #619e3df4);
     border: solid white;
     border-width: 2px 2px 0px 2px;
 }
