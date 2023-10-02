@@ -23,6 +23,36 @@
     src: url(fonts/SyneMono-Regular.ttf) format('TrueType');
 }
 
+@font-face {
+    font-family: 'ctrl';
+    src: url(fonts/heydings_controls.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'leaf';
+    src: url(fonts/Leafs.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'bank';
+    src: url(fonts/Bankwesen.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'trans';
+    src: url(fonts/Guifx_v2_Transports.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'science';
+    src: url(fonts/Science_Icons.ttf) format('TrueType');
+}
+
+@font-face {
+    font-family: 'berg';
+    src: url(fonts/BergamotOrnaments.ttf) format('TrueType');
+}
+
 * {
     padding: 0px;
 }
@@ -41,19 +71,32 @@ header {
     top: -1px;
     width: -webkit-fill-available;
     margin: 0px;
-    background-image: linear-gradient(90deg, #609541, #60a433);
-    box-shadow: 0px 1px 1px #00000045;
+    background-color: #2d5c96;
+    box-shadow: 3px 2px 4px 0px #000000ba;
+    border-bottom: 3px inset;
+}
+
+footer {
+    font-size: 2em;
+    color: #e7e700;
+    background-color: #446b2f;
+    background-image: linear-gradient(90deg, #325121 5%, transparent);
+    padding: 4px 21px;
+    position: fixed;
+    bottom: 0px;
+    width: -webkit-fill-available;
 }
 
 nav {
+    display: inline-block;
     margin: -1px;
-    background-image: linear-gradient(90deg, #609541, #60a433);
+    background-color: transparent;
 }
 
 main {
     max-width: 860px;
-    min-height: 530px;
-    margin: 140px auto 0px auto;
+    min-height: 519px;
+    margin: 70px auto 0px auto;
     padding: 20px;
     background-color: white;
 }
@@ -77,10 +120,12 @@ article {
 }
 
 h1.cabeça {
+    display: inline;
     margin: 0px;
     padding: 0px 20px;
     color: white;
-    font: normal 5.5em 'island';
+    font: normal 2em 'georgia';
+    border-width: 0px;
 }
 
 h1 {
@@ -105,34 +150,66 @@ h2 {
     margin: 0px;
     display: none;
     position: absolute;
-    background-image: linear-gradient(90deg, #325d85, #3376a4);
+    background-image: linear-gradient(90deg, #447b26fa, #619e3df4);
+    border: solid white;
+    border-width: 0px 2px 2px 2px;
     box-shadow: 2px 3px 4px 0px #00000033;
 }
 
 .navButton {
-    width: 160px;
+    width: 55px;
+    height: 55px;
+    margin-right: 9px;
+    text-align: center;
     background: transparent;
     color: white;
     border: none;
-    padding: 0px 29px 1px 25px;
-    margin: 0px 0px 5px 5px;
-    border-radius: 50px;
-    font: normal 1.5em 'hina';
+    position: relative;
+    left: 0px;
 }
 
 .navButton:hover {
-    background-color: #7db45d;
-    transition-duration: 0.5s;
+    background-color: #265186;
+    border: 2px inset;
 }
 
 .navButton:active {
-    background-color: #cdedba;
-    box-shadow: inset 1px 1px 3px 0px #00000061;
-    transition-duration: 0.2s;
+    background-color: #20457b;
+    box-shadow: inset 1px 1px 3px 1px #00000061;
+}
+
+#div_botao_plantas:hover #botao_plantas {
+    background-image: linear-gradient(90deg, #447b26fa, #619e3df4);
+    border: solid white;
+    border-width: 2px 2px 0px 2px;
+}
+
+#div_botao_inventarios:hover #botao_inventarios {
+    background-image: linear-gradient(90deg, #447b26fa, #619e3df4);
+    border: solid white;
+    border-width: 2px 2px 0px 2px;
+}
+
+#div_botao_repositorios:hover #botao_repositorios {
+    background-image: linear-gradient(90deg, #447b26fa, #619e3df4);
+    border: solid white;
+    border-width: 2px 2px 0px 2px;
+}
+
+#div_botao_plantas:hover #navMenuPlantas{
+    display: block;
+    
+}
+
+#div_botao_inventarios:hover #navMenuInventarios{
+    display: block;
+}
+
+#div_botao_repositorios:hover #navMenuRepositorios {
+    display: block;
 }
 
 li.navItem {
-    
     list-style-type: none;
 }
 
@@ -152,10 +229,11 @@ input.navItem {
 }
 
 input.navItem:hover {
-    background-color: #678ab8;
+    background-color: #e6b92c;
     padding-left: 50px;
     padding-right: 30px;
-    box-shadow: inset 1px -2px 20px 0px #00000033;
+    box-shadow: inset 4px 0px 5px 2px #00000033;
+    text-shadow: 2px 1px 1px #000000cc;
     transition-duration: 0.4s;
 }
 
@@ -281,10 +359,6 @@ input.linhaRetorno:active {
 
 input {
     outline: none;
-}
-
-section#home_page {
-    font-family: 'syne';
 }
 
 section#calculadora {

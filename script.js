@@ -1839,12 +1839,12 @@ function calculoReset() {
 
 function menuExpand(menu) {
     var menu = window.document.getElementById(`${menu}`)
-    
+    var botao = window.document.getElementById(`${botao}`)
+        
     if (menu.style.display == 'block') {menu.style.display = 'none'}
     else {
         window.document.getElementById('navMenuInventarios').style.display = 'none'
         window.document.getElementById('navMenuPlantas').style.display = 'none'
-        window.document.getElementById('navMenuCalculadora').style.display = 'none'
         window.document.getElementById('navMenuRepositorios').style.display = 'none'
 
         menu.style.display = 'block'
@@ -1854,9 +1854,6 @@ function menuExpand(menu) {
 function sectionExpand(section, identidade='', menu='') {
     if (section == 'home_page') {
         sectHomepage.style.display = 'block'
-        document.getElementById('navMenuInventarios').style.display = 'none'
-        document.getElementById('navMenuPlantas').style.display = 'none'
-        document.getElementById('navMenuRepositorios').style.display = 'none'
         
         sectPlantas.style.display = 'none'
         sectCalculo.style.display = 'none'
@@ -1872,24 +1869,14 @@ function sectionExpand(section, identidade='', menu='') {
         sectInventarios.style.display = 'none'
         sectRepositor.style.display = 'none'
     } else if (section == 'calculadora'){
-        sectCalculo.style.display = 'block'
-        document.getElementById('entrada').select()
-
-        document.getElementById('navMenuInventarios').style.display = 'none'
-        document.getElementById('navMenuPlantas').style.display = 'none'
-        document.getElementById('navMenuCalculadora').style.display = 'none'
-        document.getElementById('navMenuRepositorios').style.display = 'none'
-
-        
+        if (sectCalculo.style.display == 'block') {sectCalculo.style.display = 'none'} else {
+            sectCalculo.style.display = 'block'
+            document.getElementById('entrada').select()
+        }
     } else if (section =='orçamento') {
         sectComanda.style.display = 'block'
         document.getElementById(`quantidade_orçamento_${comanda.registro.length}`).select()
         console.log(comanda)
-
-        document.getElementById('navMenuInventarios').style.display = 'none'
-        document.getElementById('navMenuPlantas').style.display = 'none'
-        document.getElementById('navMenuCalculadora').style.display = 'none'
-        document.getElementById('navMenuRepositorios').style.display = 'none'
 
         sectCalculo.style.display = 'none'
         sectHomepage.style.display = 'none'
@@ -1917,7 +1904,7 @@ function sectionExpand(section, identidade='', menu='') {
     if (identidade) {
         var menu = window.document.getElementById(`${menu}`)
         var arct
-        menu.style.display = 'none'
+        
 
         if (section == 'plantas') {
             for (let index in categorias) {
@@ -2483,6 +2470,7 @@ function printPdf() {
 }
 
 //====================================================||Comandos||================================================
+
 
 window.document.getElementById(`quantidade_orçamento_0`).style.width = '6%'
 window.document.getElementById(`quantidade_orçamento_0`).style.textAlign = 'center'
