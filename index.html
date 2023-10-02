@@ -22,35 +22,85 @@
     </section>
     <main id="principal">
         <section id="home_page">
-            
+            <h1>Novas Frutiferas</h1>
+            Abacate manteiga...........1<br>
+            Ameixa roxa................4<br>
+            Azeitona do ceilão.........4<br>
+            Carambola..................1<br>
+            Cereja.....................5<br>
+            Cerejeira flor.............2<br>
+            Coqueiros..................22<br>
+            Cravo da índia.............1<br>
+            Figo.......................1<br>
+            Goiaba roxa................1<br>
+            Goiaba T...................4<br>
+            Graviola...................2<br>
+            Jabuticabeira..............10<br>
+            L. Bahia...................15<br>
+            L. Taiti...................2<br>
+            Lixia......................6<br> 
+            Loro.......................4<br>
+            Macadamea..................3<br>
+            Manga borbom...............4<br>
+            Manga palmer...............4<br>
+            Mirtilo....................4<br> 
+            Nêspera....................5<br>
+            Oliveira...................1<br>
+            Pal-brasil.................2<br>
+            Pêra.......................1<br>
+            Pinha......................4<br>
+            Pitanga....................5<br>
+            Pokan......................6<br>
+            Rambutam...................2<br>
         </section>
 
         <!--<========================================|Seção da Calculadora|==========================================================>-->
 
         <!--<========================================|Seção de Orçamento|==========================================================>-->
-        <section id="orçamento">
-            <div style="margin: 0px 0px 30px 0px;">
-                <label for="nome" class="cliente">Cliente:</label><input type="text" id="nome" class="cliente"><br>
-                <label for="contato" class="cliente">Contato:</label><input type="text" id="contato" class="cliente"><br>
-                <label for="endereço" class="cliente">Endereço:</label><input type="text" id="endereço" class="cliente">
-            </div>
-            <div id="legenda_do_orçamento">
-                <label id="label_quantidade" class="orçamento">Quant.</label>
-                <label id="label_grandeza" class="orçamento">Uni.</label>
-                <label id="label_descrição" class="orçamento">Descrição</label>
-                <label id="label_unitario" class="orçamento">Valor</label>
-                <label id="label_total" class="orçamento">Total</label>
-            </div>
-            <div id="grade_de_entrada">
-                <div class="linha_do_orçamento">
-                    <input type="number" id="quantidade_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
-                    <input type="text" id="grandeza_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
-                    <input type="text" id="descrição_orçamento_0" class="entradaOrçamento" onchange="orçamento(0)">
-                    <input type="number" id="unitario_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
-                    <input type="number" id="total_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
-                </div>
-            </div>
-            <label id="total_total">Total</label><input type="button" value="Print" id="carimbo" onclick="printPdf()">
+        <section id="orçamento" style="margin-top: 25px;">
+            <table>
+                <tr>
+                    <td class="cliente"><label for="nome">Cliente</label></td>
+                    <td style="width: 90%;"><input type="text" id="nome" class="cliente"></td>
+                </tr>
+                <tr>
+                    <td class="cliente"><label for="contato">Contato</label></td>
+                    <td style="width: 90%;"><input type="text" id="contato" class="cliente"></td>
+                </tr>
+                <tr>
+                    <td class="cliente"><label for="endereço">Endereço</label></td>
+                    <td style="width: 90%;"><input type="text" id="endereço" class="cliente"></td>
+                </tr>
+            </table>
+            <table id="grade_de_entrada">
+                <tbody>
+                    <tr id="legenda_do_orçamento">
+                        <th id="label_quantidade" class="coluna_quantidade">Quant.</th>
+                        <th id="label_grandeza" class="coluna_grandeza">Uni.</th>
+                        <th id="label_descrição" class="coluna_descrição">Descrição</th>
+                        <th id="label_unitario" class="coluna_unitario">Valor</th>
+                        <th id="label_total" class="coluna_total">Total</th>
+                    </tr>
+                    <tr>
+                        <td class="coluna_quantidade">
+                            <input type="number" id="quantidade_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
+                        </td>
+                        <td class="coluna_grandeza">
+                            <input type="text" id="grandeza_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
+                        </td>
+                        <td class="coluna_descrição">
+                            <input type="text" id="descrição_orçamento_0" class="entradaOrçamento" onchange="orçamento(0)">
+                        </td>
+                        <td class="coluna_unitario">
+                            <input type="number" id="unitario_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
+                        </td>
+                        <td class="coluna_total">
+                            <input type="number" id="total_orçamento_0" value="" class="entradaOrçamento" onchange="orçamento(0)">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <label id="total_total">Total</label><input type="button" value="U" id="carimbo" onclick="printPdf()" style="font-family: 'tipos';">
         </section>
         
         <!--<==========================================|Seção dos Plantas|==========================================================>-->
