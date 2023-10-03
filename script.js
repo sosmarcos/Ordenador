@@ -144,10 +144,10 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '27/09/2023',
+    '03/10/2023',
     [
         new item(102, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(78, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(66, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(96, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(96, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(96, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -502,7 +502,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '30/09/2023',
+    '03/10/2023',
     [
         new item(199, 'Alça Universal Branca', 'alça_universal'),
         new item(44, 'Alça Universal Café', 'alça_universal'),
@@ -547,9 +547,9 @@ var emeAeme = new Inventario(
 
         new item(43, 'Cuia CBB 18 Com Base Branca', 'cuia_cbb_18'),
         new item(46, 'Cuia CBB 18 Com Base Café', 'cuia_cbb_18'),
-        new item(44, 'Cuia CBB 18 Com Base Cerâmica', 'cuia_cbb_18'),
+        new item(32, 'Cuia CBB 18 Com Base Cerâmica', 'cuia_cbb_18'),
         new item(34, 'Cuia CBB 18 Com Base Marfim', 'cuia_cbb_18'),
-        new item(44, 'Cuia CBB 18 Com Base Preta', 'cuia_cbb_18'),
+        new item(32, 'Cuia CBB 18 Com Base Preta', 'cuia_cbb_18'),
         new item(29, 'Cuia CBB 18 Com Base Verde', 'cuia_cbb_18'),
 
         new item(30, 'Cuia CBB 21 Com Base Branca', 'cuia_cbb_21'),
@@ -568,7 +568,7 @@ var emeAeme = new Inventario(
 
         new item(35, 'Cuia CBB 30 Com Base Branca', 'cuia_cbb_30'),
         new item(57, 'Cuia CBB 30 Com Base Café', 'cuia_cbb_30'),
-        new item(25, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
+        new item(13, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
         new item(41, 'Cuia CBB 30 Com Base Marfim', 'cuia_cbb_30'),
         new item(1, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
         new item(33, 'Cuia CBB 30 Com Base Verde', 'cuia_cbb_30'),
@@ -610,27 +610,27 @@ var emeAeme = new Inventario(
         new item(44, 'Prato B00 9.5cm Cerâmica', 'prato_b00'),
         new item(40, 'Prato B00 9.5cm Cimento', 'prato_b00'),
         new item(40, 'Prato B00 9.5cm Marfim', 'prato_b00'),
-        new item(42, 'Prato B00 9.5cm Preto', 'prato_b00'),
+        new item(30, 'Prato B00 9.5cm Preto', 'prato_b00'),
 
         new item(51, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
         new item(58, 'Prato B01 11.5cm Cimento', 'prato_b01'),
         new item(55, 'Prato B01 11.5cm Marfim', 'prato_b01'),
-        new item(36, 'Prato B01 11.5cm Preto', 'prato_b01'),
+        new item(24, 'Prato B01 11.5cm Preto', 'prato_b01'),
 
         new item(39, 'Prato B02 13cm Cerâmica', 'prato_b02'),
         new item(40, 'Prato B02 13cm Cimento', 'prato_b02'),
         new item(40, 'Prato B02 13cm Marfim', 'prato_b02'),
-        new item(44, 'Prato B02 13cm Preto', 'prato_b02'),
+        new item(32, 'Prato B02 13cm Preto', 'prato_b02'),
 
         new item(31, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(65, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(54, 'Prato B03 16cm Marfim', 'prato_b03'),
-        new item(71, 'Prato B03 16cm Preto', 'prato_b03'),
+        new item(57, 'Prato B03 16cm Preto', 'prato_b03'),
 
         new item(38, 'Prato B04 21cm Cerâmica', 'prato_b04'),
         new item(48, 'Prato B04 21cm Cimento', 'prato_b04'),
         new item(50, 'Prato B04 21cm Marfim', 'prato_b04'),
-        new item(53, 'Prato B04 21cm Preto', 'prato_b04'),
+        new item(41, 'Prato B04 21cm Preto', 'prato_b04'),
 
         new item(67, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
         new item(29, 'Prato B04.5 22cm Cimento', 'prato_b4.5'),
@@ -650,17 +650,17 @@ var emeAeme = new Inventario(
         new item(66, 'Prato B07 30cm Cerâmica', 'prato_b07'),
         new item(50, 'Prato B07 30cm Cimento', 'prato_b07'),
         new item(51, 'Prato B07 30cm Marfim', 'prato_b07'),
-        new item(70, 'Prato B07 30cm Preto', 'prato_b07'),
+        new item(58, 'Prato B07 30cm Preto', 'prato_b07'),
 
         new item(33, 'Prato B08 33cm Cerâmica', 'prato_b08'),
         new item(40, 'Prato B08 33cm Cimento', 'prato_b08'),
         new item(37, 'Prato B08 33cm Marfim', 'prato_b08'),
-        new item(53, 'Prato B08 33cm Preto', 'prato_b08'),
+        new item(41, 'Prato B08 33cm Preto', 'prato_b08'),
 
         new item(38, 'Prato B09 38cm Cerâmica', 'prato_b09'),
         new item(35, 'Prato B09 38cm Cimento', 'prato_b09'),
         new item(35, 'Prato B09 38cm Marfim', 'prato_b09'),
-        new item(63, 'Prato B09 38cm Preto', 'prato_b09'),
+        new item(51, 'Prato B09 38cm Preto', 'prato_b09'),
 
         new item(40, 'Prato B10 42cm Cerâmica', 'prato_b10'),
         new item(15, 'Prato B10 42cm Cimento', 'prato_b10'),
@@ -746,7 +746,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '02/10/2023',
+    '03/10/2023',
     [
         new item(7, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -788,7 +788,7 @@ var forth = new Inventario(
         new item(0, 'Flores - 10Kg', 'f'),
         new item(45, 'Formicida Gel', 'f'),
         new item(5, 'Formicida isca granulada', 'f'), 
-        new item(16, 'Formicida Mata no ninho p/uso - 500ml', 'f'),
+        new item(13, 'Formicida Mata no ninho p/uso - 500ml', 'f'),
         new item(18, 'Fosfito - 60ml', 'f'),
         new item(12, 'Fosfito p/uso - 500ml', 'f'),
         new item(18, 'Frutas Concentrado - 60ml', 'f'),
@@ -820,20 +820,20 @@ var forth = new Inventario(
         new item(48, 'Jardim - 400g', 'j'),
         new item(5, 'Jardim - 3kg', 'j'),
 
-        new item(8, 'Lesmicida isca granulada', 'l'),
+        new item(7, 'Lesmicida isca granulada', 'l'),
 
-        new item(20, 'Mata cochonilha p/uso - 500ml', 'm'),
+        new item(17, 'Mata cochonilha p/uso - 500ml', 'm'),
         new item(24, 'Mata lagarta p/uso - 500ml', 'm'),
         new item(0, 'Mata mato Concentrado - 30ml', 'm'),
         new item(5, 'Mata mato p/uso - 500ml', 'm'),
-        new item(16, 'Mata pulgão p/uso - 500ml', 'm'),
+        new item(13, 'Mata pulgão p/uso - 500ml', 'm'),
 
         new item(23, 'Óleo Concentrado - 60ml', 'o'),
         new item(0, 'Orquídeas Floração Concentrado - 60ml', 'o'),
         new item(23, 'Orquídeas Floração p/uso - 500ml', 'o'),
         new item(47, 'Orquídeas Manutenção Concentrado - 60ml', 'o'),
         new item(25, 'Orquídeas Manutenção p/uso - 500ml', 'o'),
-        new item(14, 'Orquídeas 09.45.15 - 100g', 'o'),
+        new item(12, 'Orquídeas 09.45.15 - 100g', 'o'),
         new item(39, 'Orquídeas 20.20.20 - 100g', 'o'),
         new item(7, 'Orquídeas 30.10.10 - 100g', 'o'),
         new item(13, 'Orquídeas 09.45.15 - 400g', 'o'),
@@ -1314,7 +1314,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '27/09/2023',
+    '03/10/2023',
     [
         new item(12, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(14, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1368,8 +1368,8 @@ var coquim = new Inventario(
         new item(33, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
 
         new item(23, '4000 - Mix Coquim 1kg', 'adubos'),
-        new item(25, '4001 - Pó de Coco 1kg', 'adubos'),
-        new item(35, '4002 - Fibra de Coco 200g', 'adubos'),
+        new item(1, '4001 - Pó de Coco 1kg', 'adubos'),
+        new item(11, '4002 - Fibra de Coco 200g', 'adubos'),
         new item(3, '4003 - Pó de Coco Magico 400g', 'adubos'),
         new item(3, '4004 - Fibra de Coco Curta 1kg', 'adubos'),
         new item(20, '4005 - Chips de Coco 200g', 'adubos'),
