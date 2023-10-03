@@ -57,6 +57,7 @@
     font-family: 'tipos';
     src: url(fonts/File_Types.ttf) format('TrueType');
 }
+
 * {
     padding: 0px;
 }
@@ -155,6 +156,8 @@ h2 {
 }
 
 #navMenuPlantas, #navMenuCalculadora, #navMenuInventarios, #navMenuRepositorios {
+    max-height: 420px;
+    overflow-x: auto;
     margin: 0px;
     display: none;
     position: absolute;
@@ -295,9 +298,15 @@ p {
 }
 
 p#retorno {
+    max-height: 400px;
+    overflow-x: auto;
     background: white;
     margin: 10px 0px;
     border-radius: 5px;
+}
+
+p#retorno::-webkit-scrollbar {
+    width: 3px;
 }
 
 #label_for_entrada {
@@ -374,17 +383,17 @@ section#calculadora {
 
 /* Track */
 ::-webkit-scrollbar-track {
-background: #f1f1f1; 
+    background: #f1f1f1;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-background: #888; 
+    background: #2d5c96; 
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-background: #555; 
+    background: #77ae4e;
 }
     
 input::-webkit-outer-spin-button,
@@ -505,7 +514,6 @@ input.repositor {
 
 #grade_de_entrada {
     border-collapse: collapse;
-    margin-top: 30px;
 }
 
 td {
@@ -593,8 +601,9 @@ table input:focus {
     color: white;
 }
 
-table input::selection {
-    color: rgb(20, 64, 147);
+table input::selection, #observaçao::selection {
+    color: #ffffff;
+    text-shadow: 2px 1px 3px black;
     background: transparent;
   }
 
@@ -608,9 +617,22 @@ table input::selection {
     transition-duration: 0.2s;
 }
 
-#total_total {
+#total_total{
     display: inline-block;
     width: 24%;
+    padding: 6px 10px;
+    margin: 0px 0px;
+    margin-top: 15px;
+    background-color: #2d5c96;
+    border: 2px solid #2d5c96;
+    font: 1.7em normal georgia;
+    color: white;
+}
+
+label#etiqueda_parcela {
+    display: inline;
+    display: inline-block;
+    /* width: 24%; */
     padding: 6px 10px;
     margin: 0px 0px;
     margin-top: 15px;
@@ -639,7 +661,7 @@ input#carimbo:hover {
     transition-duration: 0.5s;
 }
 
-td.cliente {
+td.cliente, label.cliente {
     background-color: #2d5c96;
     color: white;
     font-family: georgia;
@@ -656,4 +678,39 @@ input.cliente {
 
 input.cliente:focus {
     background-image: linear-gradient(90deg, #77ae4e, #77ae4e);
+}
+
+#observaçao {
+    border-width: 0px 2px 2px 2px;
+    border-style: dashed;
+    border-color:  rgb(45, 92, 150);
+    font-size: 1.2em;
+    font-family: syne;
+    width: 39.3%;
+    height: 45px;
+    outline: none;
+    resize: vertical;
+    padding: 9px;
+}
+
+#observaçao:focus {
+    background-image: linear-gradient(90deg, #77ae4e, #77ae4e);
+    border-color: #365122;
+    color: white;
+}
+
+select {
+    background-color: #2d5c96;
+    border: none;
+    font: 1.4em bold georgia;
+    color: white;
+    outline: none;
+}
+
+option {
+    background-color: #77ae4e;
+    border: none;
+    font: 1.2em bold georgia;
+    color: white;
+    text-shadow: 2px 1px 1px #000000ea;
 }

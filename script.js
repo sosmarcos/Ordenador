@@ -66,10 +66,11 @@ class Comanda {
 }
 
 class Cliente {
-    constructor(nome='', contato='', endereço='') {
+    constructor(nome='', contato='', endereço='', observaçao='') {
         this.nome = nome
         this.contato = contato
         this.endereço = endereço
+        this.observaçao = observaçao
     }
 }
 
@@ -2141,6 +2142,8 @@ function inputToLabel() {
 }
 
 function orçamento(index, ediçao=null) {
+    var formaDePagamento = window.document.getElementById('pagamento')
+
     if (ediçao) {
         let corretor = window.document.getElementById(`${ediçao}_orçamento_edit_${index}`)
 
@@ -2219,6 +2222,7 @@ function orçamento(index, ediçao=null) {
                 comanda.registro.push(new registroDeComanda(quantidade.value, grandeza.value, descrição.value, valorUnitario.value))
                 comanda.valor += parseFloat(comanda.registro[index].total)
                 window.document.getElementById('total_total').innerText = `Total: R$ ${(comanda.valor.toFixed(2)).replace('.', ',')}`
+                if (formaDePagamento.value == 'credito') {document.getElementById('etiqueda_parcela').style.display = 'inline'}
             }
         }
         
@@ -2313,6 +2317,7 @@ function ediçaoDeTabela(index, ediçao) {
 }
 
 function printPdf() {
+    console.log(`${window.document.getElementById('observaçao').value}`)
     var cliente = new Cliente(
         window.document.getElementById('nome').value, 
         window.document.getElementById('contato').value, 
@@ -2330,6 +2335,14 @@ function printPdf() {
                 <td id="var_total" class="orçamento">R$ ${((parseFloat(comanda.registro[index].total)).toFixed(2)).replace('.', ',')}</td>
             </tr>`
     } 
+
+    let ob
+    if (window.document.getElementById('observaçao').value == '') {
+        ob = `<p class="observaçao" style="border-bottom: 2px dashed #9e9c9c;"></p>`
+    } else {
+        ob = `<h2>Observação</h2><p class="observaçao" style="border: 2px dashed #9e9c9c;">${window.document.getElementById('observaçao').value}</p>`
+    }
+
 
     const rascunho = `<!DOCTYPE html>
     <html lang="pt-br">
@@ -2370,11 +2383,13 @@ function printPdf() {
             }
         
             h2 {
-                color: black; 
-                font-family: 'Times New Roman', Times, serif; 
-                font-style: normal; font-weight: bold; 
-                text-decoration: none; 
-                font-size: 1.5em; 
+                color: black;
+                font-family: 'Times New Roman', Times, serif;
+                font-style: normal;
+                font-weight: bold;
+                text-decoration: none;
+                font-size: 1.3em;
+                margin-left: 30px;
             }
     
             table {
@@ -2391,9 +2406,15 @@ function printPdf() {
     
             .cliente {
                 font-family: Georgia, 'Times New Roman', Times, serif;
-                padding: 20px;
-                margin: 20px;
-                border-bottom: 2px dashed #9e9c9c;
+                padding: 20px 20px 10px 20px;
+                margin-left: 20px;
+            }
+
+            .observaçao {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                padding: 10px 20px 10px 20px;
+                margin: 0px 20px;
+                white-space: pre-line;
             }
     
             .total {
@@ -2454,6 +2475,7 @@ function printPdf() {
             <p class="cabeçalio">Contato: (13) 97408-6628</p>
         </header>
         <p class="cliente">Cliente: ${cliente.nome}<br>Contato: ${cliente.contato}<br>Endereço: ${cliente.endereço}<br></p>
+        ${ob}
         <table id="orçamento">
             <tr id="legenda_do_orçamento">
                 <th id="label_quantidade" class="orçamento">Quant.</th>

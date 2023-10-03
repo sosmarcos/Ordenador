@@ -58,7 +58,7 @@
 
         <!--<========================================|Seção de Orçamento|==========================================================>-->
         <section id="orçamento" style="margin-top: 25px;">
-            <table>
+            <table style="margin-bottom: 30px;">
                 <tr>
                     <td class="cliente"><label for="nome">Cliente</label></td>
                     <td style="width: 90%;"><input type="text" id="nome" class="cliente"></td>
@@ -72,6 +72,11 @@
                     <td style="width: 90%;"><input type="text" id="endereço" class="cliente"></td>
                 </tr>
             </table>
+            <select name="pagamento" id="pagamento" style="display: none;">
+                <option value="pix">Pix</option>
+                <option value="debito">Débito</option>
+                <option value="credito">Crédito</option>
+            </select>
             <table id="grade_de_entrada">
                 <tbody>
                     <tr id="legenda_do_orçamento">
@@ -100,7 +105,11 @@
                     </tr>
                 </tbody>
             </table>
-            <label id="total_total">Total</label><input type="button" value="U" id="carimbo" onclick="printPdf()" style="font-family: 'tipos';">
+            <label id="total_total">Total</label>
+            <label id="etiqueda_parcela" style="display: none;">Parcelas</label>
+            <input type="button" value="U" id="carimbo" onclick="printPdf()" style="font-family: 'tipos';">
+            <label for="observaçao" class="cliente" style="display: block; width: 40%; margin-top: 15px;">Observação</label>
+            <textarea name="observaçao" id="observaçao" cols="30" rows="10" style="display: block; margin-top: 0px;"></textarea>
         </section>
         
         <!--<==========================================|Seção dos Plantas|==========================================================>-->
