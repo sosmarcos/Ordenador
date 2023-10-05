@@ -2417,7 +2417,7 @@ function printPdf() {
         let valorDeParcela
         if (((comanda.valor/comanda.parcelas).toFixed(2))*comanda.parcelas < comanda.valor) {valorDeParcela = Math.ceil(comanda.valor/comanda.parcelas).toFixed(2)} else {valorDeParcela = (comanda.valor/comanda.parcelas).toFixed(2)}
 
-        formaDePagamento += `Forma de pagamento:<br>${comanda.parcelas}x de R$${(valorDeParcela).replace('.', ',')} s/juros no cartão`
+        formaDePagamento += `Forma de pagamento:<br>Crédito, em ${comanda.parcelas}x de R$${(valorDeParcela).replace('.', ',')} s/juros`
 
     } else {parcelasNoPdf = ''}
 
