@@ -2575,7 +2575,6 @@ function printPdf() {
         <p class="total">Total: R$ ${((comanda.valor).toFixed(2)).replace('.', ',')}</p>
         <p style="margin: 25px;">${formaDePagamento}</p>
         ${ob}
-        <p style="position: absolute; right: 10px; bottom: 10px;">${dataAtual}</p>
         <script>
         function imprimir() {
             window.print()
