@@ -74,6 +74,7 @@ body > label, input, #retorno {
 }
 
 header {
+    z-index: 3;
     position: fixed;
     top: -1px;
     width: -webkit-fill-available;
@@ -720,7 +721,6 @@ select {
     color: white;
     outline: none;
     border-radius: 0px 30px 30px 0px;
-    
 }
 
 #parcelas:hover, #descontos_dinheiro:hover, #descontos_debito:hover {
