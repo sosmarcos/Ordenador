@@ -58,7 +58,7 @@
 
         <!--<========================================|Seção de Orçamento|==========================================================>-->
         <section id="orçamento" style="margin-top: 25px;">
-            <table style="margin-bottom: 30px;">
+            <table id="dados_do_cliente">
                 <tr>
                     <td class="cliente"><label for="nome">Cliente</label></td>
                     <td style="width: 90%;"><input type="text" id="nome" class="cliente"></td>
@@ -72,11 +72,36 @@
                     <td style="width: 90%;"><input type="text" id="endereço" class="cliente"></td>
                 </tr>
             </table>
-            <select name="pagamento" id="pagamento" style="display: none;">
+
+            <select name="descontos_dinheiro" id="descontos_dinheiro" onchange="orçamento('desconto')" style="margin-left: -142px; padding-right: 27px; color: black; background-color: #e8b30f;">
+                <option value="0">Desconto 0%</option>
+                <option value="5">Desconto 5%</option>
+                <option value="n">Desconto n%</option>
+            </select>
+
+            <select name="descontos_debito" id="descontos_debito" onchange="orçamento('desconto')" style="margin-left: -142px; padding-right: 27px; color: black; background-color: #e8b30f; display: none;">
+                <option value="0">Desconto 0%</option>
+                <option value="3">Desconto 3%</option>
+                <option value="n">Desconto n%</option>
+            </select>
+
+            <select name="parcelas" id="parcelas" onchange="orçamento('parcelas')" style="margin-left: -142px; padding-right: 60px; color: black; background-color: #e8b30f; display: none;">
+                <option value="0">A vista</option>
+                <option value="2">2x s/juros</option>
+                <option value="3">3x s/juros</option>
+                <option value="4">4x s/juros</option>
+                <option value="5">5x s/juros</option>
+                <option value="6">6x s/juros</option>
+            </select>
+
+            <select name="pagamento" id="pagamento" onchange="orçamento('pagamento')" style="float: left;">
+                <option value="dinheiro">Dinheiro</option>
                 <option value="pix">Pix</option>
                 <option value="debito">Débito</option>
                 <option value="credito">Crédito</option>
+                
             </select>
+
             <table id="grade_de_entrada">
                 <tbody>
                     <tr id="legenda_do_orçamento">
@@ -105,9 +130,11 @@
                     </tr>
                 </tbody>
             </table>
+
             <label id="total_total">Total</label>
             <label id="etiqueda_parcela" style="display: none;">Parcelas</label>
-            <input type="button" value="U" id="carimbo" onclick="printPdf()" style="font-family: 'tipos';">
+
+            <input type="button" title="transformar em PDF" value="U" id="carimbo" onclick="printPdf()" style="font-family: 'tipos';">
             <label for="observaçao" class="cliente" style="display: block; width: 40%; margin-top: 15px;">Observação</label>
             <textarea name="observaçao" id="observaçao" cols="30" rows="10" style="display: block; margin-top: 0px;"></textarea>
         </section>
@@ -280,9 +307,10 @@
             <div id="divDeEntrada"></div>
             <div id="divDeSaida"></div>
         </section>
+        
     </main>
     <header>
-        <h1 class="cabeça" onclick="sectionExpand('home_page')"><strong style="font: normal 1.5em ctrl;">O</strong>rdenador</h1>
+        <h1 class="cabeça"><strong onclick="sectionExpand('home_page')" style="font: normal 1.5em ctrl;">O</strong>rdenador</h1>
         <nav>
             <div id="div_botao_plantas" style="display: inline-block;">
                 <input type="button" id="botao_plantas" title="Plantas" value="Y" class="navButton" style="font: normal 2.9em leaf; top: 0px;">

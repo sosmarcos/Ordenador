@@ -62,6 +62,8 @@ class Comanda {
     constructor() {
         this.registro = []
         this.valor = 0
+        this.desconto = 0
+        this.parcelas = 0
     }
 }
 
@@ -75,6 +77,14 @@ class Cliente {
 }
 
 //=============================================||Variaveis||======================================================
+
+var data = new Date()
+var dia = String(data.getDate()).padStart(2, '0')
+var mes = String(data.getMonth() + 1).padStart(2, '0')
+var ano = data.getFullYear()
+
+const meses = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro']
+var dataAtual = `${String(data.getDate())} de ${meses[data.getMonth()]} de ${ano}`
 
 var total = 0
 var registroDaCalculadora = []
@@ -2142,9 +2152,73 @@ function inputToLabel() {
 }
 
 function orçamento(index, ediçao=null) {
-    var formaDePagamento = window.document.getElementById('pagamento')
+    function calculoDeParcelas() {
+        // revelaçao da etiqueta de parcelas
+        if (formaDePagamento.value == 'credito' && comanda.parcelas != 0 && comanda.valor != 0) {
+            let valorDeParcela
+            if (((comanda.valor/comanda.parcelas).toFixed(2))*comanda.parcelas < comanda.valor) {valorDeParcela = Math.ceil(comanda.valor/comanda.parcelas).toFixed(2)} else {valorDeParcela = (comanda.valor/comanda.parcelas).toFixed(2)}
 
-    if (ediçao) {
+            etiquetaDeParcelas.style.display = 'inline'
+            etiquetaDeParcelas.innerText = `${comanda.parcelas}x de R$${(valorDeParcela).replace('.', ',')}`
+        }
+    }
+    var formaDePagamento = window.document.getElementById('pagamento')
+    var descontoDoOrçamento = [window.document.getElementById('descontos_debito'), window.document.getElementById('descontos_dinheiro')]
+    var parcelasDoOrçamento = window.document.getElementById('parcelas')
+    var etiquetaDeParcelas = window.document.getElementById('etiqueda_parcela')
+
+    if (index == 'pagamento' || index == 'parcelas' || index == 'desconto') {
+        console.log(`Funçao orçamento acionada pela forma de pagamento ${formaDePagamento.value}`)
+
+        // escolha da forma de pagamento. isso altomaticamente zera o valor dos descontos e das parcelas
+        if (formaDePagamento.value == 'credito') { 
+            
+            // quando a forma de pagamento for credito, troca-se os descontos pelas parcelas
+            document.getElementById('descontos_debito').style.display = 'none'
+            document.getElementById('descontos_dinheiro').style.display = 'none'
+            document.getElementById('parcelas').style.display = 'inline-block'
+
+            if (parcelasDoOrçamento.value == 0) {etiquetaDeParcelas.style.display = 'none'}
+
+            // todos os valores sao redefinidos
+            descontoDoOrçamento[0].value = '0'
+            descontoDoOrçamento[1].value = '0'
+            comanda.desconto = 0
+            comanda.parcelas = parseInt(parcelasDoOrçamento.value)
+            
+            if (comanda.valor > 0 && comanda.parcelas > 0) {calculoDeParcelas()}
+
+        } else if (formaDePagamento.value == 'debito') {
+
+            // quando a forma de pagamento for debito, troca-se as parcelas pelos descontos
+            document.getElementById('descontos_debito').style.display = 'inline-block'
+            document.getElementById('descontos_dinheiro').style.display = 'none'
+            document.getElementById('parcelas').style.display = 'none'
+
+            // todos os valores sao redefinidos
+            etiquetaDeParcelas.style.display = 'none'
+            descontoDoOrçamento[1].value = '0'
+            parcelasDoOrçamento.value = '0'
+            comanda.parcelas = 0
+            comanda.desconto = parseInt(descontoDoOrçamento[0].value)
+
+        } else {
+            document.getElementById('descontos_debito').style.display = 'none'
+            document.getElementById('descontos_dinheiro').style.display = 'inline-block'
+            document.getElementById('parcelas').style.display = 'none'
+
+            // todos os valores sao redefinidos
+            etiquetaDeParcelas.style.display = 'none'
+            descontoDoOrçamento[0].value = '0'
+            parcelasDoOrçamento.value = '0'
+            comanda.parcelas = 0
+            comanda.desconto = parseInt(descontoDoOrçamento[1].value)
+        }
+        console.log(`numero de parcelas: ${comanda.parcelas}x\ndesconto total: ${comanda.desconto}%`)
+
+    }
+
+    else if (ediçao) {
         let corretor = window.document.getElementById(`${ediçao}_orçamento_edit_${index}`)
 
         if (ediçao == 'quantidade' && corretor.value == 0) {
@@ -2222,7 +2296,7 @@ function orçamento(index, ediçao=null) {
                 comanda.registro.push(new registroDeComanda(quantidade.value, grandeza.value, descrição.value, valorUnitario.value))
                 comanda.valor += parseFloat(comanda.registro[index].total)
                 window.document.getElementById('total_total').innerText = `Total: R$ ${(comanda.valor.toFixed(2)).replace('.', ',')}`
-                if (formaDePagamento.value == 'credito') {document.getElementById('etiqueda_parcela').style.display = 'inline'}
+                
             }
         }
         
@@ -2235,6 +2309,8 @@ function orçamento(index, ediçao=null) {
         novaLinha(index)
         indiceOrçamento++
     }
+
+    calculoDeParcelas()
 }
 
 function novaLinha(index) {
@@ -2336,9 +2412,18 @@ function printPdf() {
             </tr>`
     } 
 
+    let formaDePagamento = ``
+    if (comanda.parcelas != 0) {
+        let valorDeParcela
+        if (((comanda.valor/comanda.parcelas).toFixed(2))*comanda.parcelas < comanda.valor) {valorDeParcela = Math.ceil(comanda.valor/comanda.parcelas).toFixed(2)} else {valorDeParcela = (comanda.valor/comanda.parcelas).toFixed(2)}
+
+        formaDePagamento += `Forma de pagamento:<br>${comanda.parcelas}x de R$${(valorDeParcela).replace('.', ',')} s/juros no cartão`
+
+    } else {parcelasNoPdf = ''}
+
     let ob
     if (window.document.getElementById('observaçao').value == '') {
-        ob = `<p class="observaçao" style="border-bottom: 2px dashed #9e9c9c;"></p>`
+        ob = ``
     } else {
         ob = `<h2>Observação</h2><p class="observaçao" style="border: 2px dashed #9e9c9c;">${window.document.getElementById('observaçao').value}</p>`
     }
@@ -2348,7 +2433,7 @@ function printPdf() {
     <html lang="pt-br">
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-        <title>orçamento_${cliente.nome}</title>
+        <title>orçamento_${cliente.nome}_${dataAtual}</title>
         <link href="https://db.onlinewebfonts.com/c/5d581e5a140723d14358ddbf1b0d15ee?family=gc16-Mono" rel="stylesheet">
         <link href="https://db.onlinewebfonts.com/c/51eab992a8b6cf5094d8aada3ee52856?family=Society" rel="stylesheet">
         <style type="text/css"> 
@@ -2361,7 +2446,7 @@ function printPdf() {
             }
     
             p { 
-                font-family:Georgia, 'Times New Roman', Times, serif; 
+                font-family:'Times New Roman', Times, serif; 
                 font-size: 1.2em;
             }
             
@@ -2383,13 +2468,12 @@ function printPdf() {
             }
         
             h2 {
-                color: black;
+                margin: 0px 20px;
                 font-family: 'Times New Roman', Times, serif;
                 font-style: normal;
-                font-weight: bold;
+                font-weight: normal;
                 text-decoration: none;
-                font-size: 1.3em;
-                margin-left: 30px;
+                font-size: 1.4em;
             }
     
             table {
@@ -2399,31 +2483,33 @@ function printPdf() {
             .cabeçalio {
                 color: #ffffff;
                 text-shadow: 1px 1px 1px #000000ba;
-                font-family: georgia;
+                font-family: 'Times New Roman', Times, serif;                
                 font-size: 1em;
                 padding: 0px 0px 0px 20px;
             }
     
             .cliente {
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                padding: 20px 20px 10px 20px;
+                font-family: 'Times New Roman', Times, serif;
+                padding: 20px 20px 10px 0px;
                 margin-left: 20px;
             }
 
             .observaçao {
-                font-family: Georgia, 'Times New Roman', Times, serif;
-                padding: 10px 20px 10px 20px;
-                margin: 0px 20px;
+                font-family: 'Times New Roman', Times, serif;
+                padding: 10px;
+                margin: 0px 20px 20px 20px;
                 white-space: pre-line;
             }
     
             .total {
-                padding-top: 6pt;
+                margin: 0px 20px;
+                padding: 20px 0px 5px 0px;
                 font-size: 1.5em;
-                padding-left: 20pt;
+                /* padding-left: 20pt; */
                 text-indent: 0pt;
                 text-align: left;
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-family: 'Times New Roman', Times, serif;
+                border-bottom: 2px dashed #9e9c9c;
             }
     
             #orçamento {
@@ -2433,7 +2519,7 @@ function printPdf() {
             .orçamento {
                 padding: 2px 5px;
                 font-size: 1em;
-                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-family: 'Times New Roman', Times, serif;
                 border-width: 2px;
                 border-color: black;
                 border-style: solid;
@@ -2475,7 +2561,7 @@ function printPdf() {
             <p class="cabeçalio">Contato: (13) 97408-6628</p>
         </header>
         <p class="cliente">Cliente: ${cliente.nome}<br>Contato: ${cliente.contato}<br>Endereço: ${cliente.endereço}<br></p>
-        ${ob}
+        <p class="observaçao" style="border-bottom: 2px dashed #9e9c9c;"></p>
         <table id="orçamento">
             <tr id="legenda_do_orçamento">
                 <th id="label_quantidade" class="orçamento">Quant.</th>
@@ -2486,8 +2572,10 @@ function printPdf() {
             </tr>
             ${tabela}
         </table>     
-        <label class="total">Total: R$ ${((comanda.valor).toFixed(2)).replace('.', ',')}</label>
-        
+        <p class="total">Total: R$ ${((comanda.valor).toFixed(2)).replace('.', ',')}</p>
+        <p style="margin: 25px;">${formaDePagamento}</p>
+        ${ob}
+        <p style="position: absolute; right: 10px; bottom: 10px;">${dataAtual}</p>
         <script>
         function imprimir() {
             window.print()
@@ -2516,7 +2604,4 @@ impreção(articleInsetimax, insetimax, 'insetimax')
 impreção(articleMadeiras, madeiras, 'madeiras')
 impreção(articleNutriplan, nutriplan, 'nutriplan')
 impreção(articleCoquim, coquim, 'coquim')
-
-function go() {
-    window.location.href = "https://web.whatsapp.com/"
-}
+console.log(dataAtual);
