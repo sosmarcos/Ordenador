@@ -756,7 +756,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '05/10/2023',
+    '06/10/2023',
     [
         new item(12, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -794,7 +794,7 @@ var forth = new Inventario(
         new item(9, 'Flores Concentrado - 60ml', 'f'),
         new item(4, 'Flores p/uso - 500ml', 'f'),
         new item(39, 'Flores - 400g', 'f'),
-        new item(19, 'Flores - 3kg', 'f'),
+        new item(18, 'Flores - 3kg', 'f'),
         new item(0, 'Flores - 10Kg', 'f'),
         new item(45, 'Formicida Gel', 'f'),
         new item(5, 'Formicida isca granulada', 'f'), 
@@ -804,7 +804,7 @@ var forth = new Inventario(
         new item(11, 'Frutas Concentrado - 60ml', 'f'),
         new item(18, 'Frutas p/uso - 500ml', 'f'),
         new item(43, 'Frutas - 400g', 'f'),
-        new item(16, 'Frutas - 3kg', 'f'),
+        new item(14, 'Frutas - 3kg', 'f'),
         new item(0, 'Frutas - 10Kg', 'f'),
         new item(9, 'Fungicida Concentrado - 30ml', 'f'),
         new item(27, 'Fungicida p/uso - 500ml', 'f'),
@@ -828,7 +828,7 @@ var forth = new Inventario(
         new item(6, 'Jardim Concentrado - 500ml', 'j'),
         new item(15, 'Jardim p/uso - 500ml', 'j'),
         new item(40, 'Jardim - 400g', 'j'),
-        new item(5, 'Jardim - 3kg', 'j'),
+        new item(3, 'Jardim - 3kg', 'j'),
 
         new item(6, 'Lesmicida isca granulada', 'l'),
 
@@ -855,8 +855,8 @@ var forth = new Inventario(
         new item(24, 'Palmeiras - 400g', 'p'),
         new item(6, 'Palmeiras - 3kg', 'p'),
         new item(11, 'Pasta selante', 'p'),
-        new item(15, 'Plantio - 400g', 'p'),
-        new item(6, 'Plantio - 3kg', 'p'),
+        new item(17, 'Plantio - 400g', 'p'),
+        new item(2, 'Plantio - 3kg', 'p'),
 
         new item(0, 'Raticida Bloco - 200g', 'r'),
         new item(21, 'Raticida Isca Anticoagulante', 'r'),
@@ -1098,7 +1098,7 @@ var alfa_polietileno = new Inventario(
         new item(8, 'Vaso Bojo Red. Grafiato C/Prato nº 1 Preto', 'vaso_grafiato_1'),
 
         new item(5, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Bege', 'vaso_grafiato_2'),
-        new item(6, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Cimento', 'vaso_grafiato_2'),
+        new item(5, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Cimento', 'vaso_grafiato_2'),
         new item(6, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Marrom', 'vaso_grafiato_2'),
         new item(3, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Preto', 'vaso_grafiato_2'),
 
