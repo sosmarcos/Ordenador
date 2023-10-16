@@ -171,8 +171,8 @@ var regaplan = new Inventario(
         new item(0, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
         new item(18, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
 
-        new item(30, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
-        new item(40, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
+        new item(20, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
+        new item(30, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
         new item(80, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
         new item(19, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
 
@@ -512,7 +512,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '11/10/2023',
+    '16/10/2023',
     [
         new item(199, 'Alça Universal Branca', 'alça_universal'),
         new item(44, 'Alça Universal Café', 'alça_universal'),
@@ -541,23 +541,23 @@ var emeAeme = new Inventario(
         new item(15, 'Cachepot Luxury 15 Diamante Negro', 'luxyry_15'),
         new item(10, 'Cachepot Luxury 15 Verde Caribe', 'luxyry_15'),
 
-        new item(58, 'Cuia CB 13 Branca', 'cuia_cb_13'),
+        new item(52, 'Cuia CB 13 Branca', 'cuia_cb_13'),
         new item(0, 'Cuia CB 13 Café', 'cuia_cb_13'),
-        new item(73, 'Cuia CB 13 Cerâmica', 'cuia_cb_13'),
-        new item(49, 'Cuia CB 13 Marfim', 'cuia_cb_13'),
+        new item(68, 'Cuia CB 13 Cerâmica', 'cuia_cb_13'),
+        new item(44, 'Cuia CB 13 Marfim', 'cuia_cb_13'),
         new item(78, 'Cuia CB 13 Preta', 'cuia_cb_13'),
-        new item(61, 'Cuia CB 13 Verde', 'cuia_cb_13'),
+        new item(56, 'Cuia CB 13 Verde', 'cuia_cb_13'),
 
-        new item(57, 'Cuia CB 15 Branca', 'cuia_cb_15'),
+        new item(52, 'Cuia CB 15 Branca', 'cuia_cb_15'),
         new item(0, 'Cuia CB 15 Café', 'cuia_cb_15'),
-        new item(58, 'Cuia CB 15 Cerâmica', 'cuia_cb_15'),
-        new item(46, 'Cuia CB 15 Marfim', 'cuia_cb_15'),
+        new item(55, 'Cuia CB 15 Cerâmica', 'cuia_cb_15'),
+        new item(41, 'Cuia CB 15 Marfim', 'cuia_cb_15'),
         new item(90, 'Cuia CB 15 Preta', 'cuia_cb_15'),
-        new item(53, 'Cuia CB 15 Verde', 'cuia_cb_15'),
+        new item(48, 'Cuia CB 15 Verde', 'cuia_cb_15'),
 
         new item(43, 'Cuia CBB 18 Com Base Branca', 'cuia_cbb_18'),
         new item(46, 'Cuia CBB 18 Com Base Café', 'cuia_cbb_18'),
-        new item(32, 'Cuia CBB 18 Com Base Cerâmica', 'cuia_cbb_18'),
+        new item(22, 'Cuia CBB 18 Com Base Cerâmica', 'cuia_cbb_18'),
         new item(34, 'Cuia CBB 18 Com Base Marfim', 'cuia_cbb_18'),
         new item(32, 'Cuia CBB 18 Com Base Preta', 'cuia_cbb_18'),
         new item(29, 'Cuia CBB 18 Com Base Verde', 'cuia_cbb_18'),
@@ -571,14 +571,14 @@ var emeAeme = new Inventario(
 
         new item(28, 'Cuia CBB 25 Com Base Branca', 'cuia_cbb_25'),
         new item(38, 'Cuia CBB 25 Com Base Café', 'cuia_cbb_25'),
-        new item(14, 'Cuia CBB 25 Com Base Cerâmica', 'cuia_cbb_25'),
+        new item(4, 'Cuia CBB 25 Com Base Cerâmica', 'cuia_cbb_25'),
         new item(39, 'Cuia CBB 25 Com Base Marfim', 'cuia_cbb_25'),
-        new item(17, 'Cuia CBB 25 Com Base Preta', 'cuia_cbb_25'),
+        new item(11, 'Cuia CBB 25 Com Base Preta', 'cuia_cbb_25'),
         new item(29, 'Cuia CBB 25 Com Base Verde', 'cuia_cbb_25'),
 
         new item(35, 'Cuia CBB 30 Com Base Branca', 'cuia_cbb_30'),
         new item(57, 'Cuia CBB 30 Com Base Café', 'cuia_cbb_30'),
-        new item(13, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
+        new item(3, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
         new item(41, 'Cuia CBB 30 Com Base Marfim', 'cuia_cbb_30'),
         new item(1, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
         new item(33, 'Cuia CBB 30 Com Base Verde', 'cuia_cbb_30'),
@@ -893,7 +893,7 @@ var fuzil = new Inventario(
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '11/10/2023',
+    '16/10/2023',
     [
         new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(0, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -1021,7 +1021,7 @@ var alfa_polietileno = new Inventario(
         new item(4, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
 
         new item(2, 'Coluna Red. Marmorizada C/Prato nº 4 Azul', 'coluna_marmorizada_4'),
-        new item(3, 'Coluna Red. Marmorizada C/Prato nº 4 Vermelho', 'coluna_marmorizada_4'),
+        new item(1, 'Coluna Red. Marmorizada C/Prato nº 4 Vermelho', 'coluna_marmorizada_4'),
 
         new item(2, 'Coluna Red. Polida C/Prato nº 1 Bege', 'coluna_polida_1'),
         new item(2, 'Coluna Red. Polida C/Prato nº 1 Cimento', 'coluna_polida_1'),
@@ -1238,11 +1238,11 @@ var policamp = new Inventario(
 )
 var jel_plast = new Inventario(
     'Jel Plast',
-    '11/10/2023',
+    '16/10/2023',
     [
         new item(36, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
         new item(0, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
-        new item(96, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
+        new item(84, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
         new item(396, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
         new item(0, 'Nectar de Beija Flor Com Corante', 'nectar'),
         new item(0, 'Nectar de Beija Flor Sem Corante', 'nectar')
@@ -1264,7 +1264,7 @@ var insetimax = new Inventario(
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '11/10/2023',
+    '16/10/2023',
     [
         new item(3, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 50x50cm Pintada', 'treliça'),
@@ -1282,8 +1282,8 @@ var madeiras = new Inventario(
         new item(10, 'Cachepo Madeira 40 Pintado', 'cachepo'),
 
         new item(20, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
-        new item(14, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
-        new item(12, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
+        new item(12, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
+        new item(10, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
         new item(13, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
         new item(2, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
         new item(1, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
