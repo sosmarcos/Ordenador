@@ -154,7 +154,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '11/10/2023',
+    '20/10/2023',
     [
         new item(102, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(54, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -168,8 +168,8 @@ var regaplan = new Inventario(
         new item(90, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
         new item(18, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
-        new item(0, 'Gancho S Médio - Dourado 18cm', 'gancho_S'),
-        new item(18, 'Gancho S Pequeno - Dourado 18cm', 'gancho_S'),
+        new item(0, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
+        new item(18, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
 
         new item(20, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
         new item(30, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
@@ -192,9 +192,9 @@ var regaplan = new Inventario(
         new item(7, 'Suporte Coador 30cm Preto', 'sp_coador'),
         new item(1, 'Suporte Coador 32cm Preto', 'sp_coador'),
 
-        new item(17, 'Suporte de Canto Dourado'),
+        new item(17, 'Suporte de Canto 27cm Dourado'),
 
-        new item(15, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
+        new item(12, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
         new item(25, 'Suporte Margarida 02 - 21 cm Dourado', 'sp_margarida'),
         new item(30, 'Suporte Margarida 03 - 23 cm Dourado', 'sp_margarida'),
         new item(25, 'Suporte Margarida 04 - 26 cm Dourado', 'sp_margarida'),
@@ -512,7 +512,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '16/10/2023',
+    '20/10/2023',
     [
         new item(199, 'Alça Universal Branca', 'alça_universal'),
         new item(44, 'Alça Universal Café', 'alça_universal'),
@@ -635,7 +635,7 @@ var emeAeme = new Inventario(
         new item(19, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(65, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(54, 'Prato B03 16cm Marfim', 'prato_b03'),
-        new item(45, 'Prato B03 16cm Preto', 'prato_b03'),
+        new item(44, 'Prato B03 16cm Preto', 'prato_b03'),
 
         new item(26, 'Prato B04 21cm Cerâmica', 'prato_b04'),
         new item(48, 'Prato B04 21cm Cimento', 'prato_b04'),
@@ -878,7 +878,7 @@ var forth = new Inventario(
 )
 var fuzil = new Inventario(
     'Fuzil',
-    '30/09/2023',
+    '20/10/2023',
     [
         new item(11, 'Ancinho p/Jardim 3 dentes', 'fuzil'),
         new item(1, 'Arrancador de Inço', 'fuzil'),
@@ -887,13 +887,14 @@ var fuzil = new Inventario(
         new item(3, 'Pazinha p/jardim Larga', 'fuzil'),
         new item(1, 'Pazinha p/jardim Estreita', 'fuzil'),
         new item(2, 'Sacho 2P CB Madeira', 'fuzil'),
-        new item(4, 'Tesoura de poda Palisad', 'fusil'),
-        new item(2, 'Tesoura de poda Tramontina', 'fusil')
+        new item(4, 'Tesoura de poda Palisad', 'fuzil'),
+        new item(2, 'Tesoura de poda Tramontina', 'fuzil'),
+        new item(2, 'Tesoura Grama', 'fuzil')
     ]
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '16/10/2023',
+    '20/10/2023',
     [
         new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(0, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -1082,7 +1083,7 @@ var alfa_polietileno = new Inventario(
         new item(7, 'Vaso Bojo Frisado C/Prato nº 2 Marrom', 'vaso_frisado_2'),
         new item(7, 'Vaso Bojo Frisado C/Prato nº 2 Preto', 'vaso_frisado_2'),
 
-        new item(9, 'Vaso Bojo Frisado C/Prato nº 3 Bege', 'vaso_frisado_3'),
+        new item(7, 'Vaso Bojo Frisado C/Prato nº 3 Bege', 'vaso_frisado_3'),
         new item(10, 'Vaso Bojo Frisado C/Prato nº 3 Cimento', 'vaso_frisado_3'),
         new item(4, 'Vaso Bojo Frisado C/Prato nº 3 Marrom', 'vaso_frisado_3'),
         new item(6, 'Vaso Bojo Frisado C/Prato nº 3 Preto', 'vaso_frisado_3'),
@@ -1099,7 +1100,7 @@ var alfa_polietileno = new Inventario(
 
         new item(5, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Bege', 'vaso_grafiato_2'),
         new item(5, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Cimento', 'vaso_grafiato_2'),
-        new item(6, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Marrom', 'vaso_grafiato_2'),
+        new item(4, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Marrom', 'vaso_grafiato_2'),
         new item(3, 'Vaso Bojo Red. Grafiato C/Prato nº 2 Preto', 'vaso_grafiato_2'),
 
         new item(6, 'Vaso Bojo Red. Grafiato C/Prato nº 3 Bege', 'vaso_grafiato_3'),
@@ -1144,7 +1145,7 @@ var alfa_polietileno = new Inventario(
 )
 var alfa_fibraSintetica = new Inventario(
     'Alfa Fibra Sintética',
-    '11/10/2023',
+    '20/10/2023',
     [
         new item(18, "Cuia Sem Borda nº 1 Argila", 'cuia_1'),
         new item(4, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
@@ -1184,7 +1185,7 @@ var alfa_fibraSintetica = new Inventario(
             
         new item(11 , "Cachepot Sem Borda nº 1 Argile", 'cachepot_1'),
         new item(7, "Cachepot Sem Borda nº 1 Cappuccino", 'cachepot_1'),
-        new item(8,  "Cachepot Sem Borda nº 1 Envelhecido", 'cachepot_1'),
+        new item(6,  "Cachepot Sem Borda nº 1 Envelhecido", 'cachepot_1'),
 
         new item(0, "Cachepot Sem Borda nº 2 Argile", 'cachepot_2'),
         new item(7, "Cachepot Sem Borda nº 2 Cappuccino", 'cachepot_2'),
@@ -1264,7 +1265,7 @@ var insetimax = new Inventario(
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '16/10/2023',
+    '20/10/2023',
     [
         new item(3, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 50x50cm Pintada', 'treliça'),
@@ -1273,8 +1274,8 @@ var madeiras = new Inventario(
         new item(2, 'Treliça 100x40cm Pintada', 'treliça'),
         new item(1, 'Treliça 70x100cm Simples', 'treliça'),
         new item(3, 'Treliça 70x100cm Pintada', 'treliça'),
-        new item(1, 'Treliça 100x100cm Pintada', 'treliça'),
-        new item(1, 'Treliça 100x100cm Simples', 'treliça'),
+        new item(0, 'Treliça 100x100cm Pintada', 'treliça'),
+        new item(0, 'Treliça 100x100cm Simples', 'treliça'),
 
         new item(15, 'Cachepo Madeira 20 Simples', 'cachepo'),
         new item(10, 'Cachepo Madeira 20 Pintado', 'cachepo'),
@@ -1299,11 +1300,11 @@ var madeiras = new Inventario(
 )
 var nutriplan = new Inventario(
     'Nutriplan',
-    '11/10/2023', 
+    '20/10/2023', 
     [
-        new item(51, 'Pote de Muda - 25 litros', 'pote'),
-        new item(32, 'Pote de Muda - 33 litros', 'pote'),
-        new item(19, 'Pote de Muda - 40 litros', 'pote'),
+        new item(47, 'Pote de Muda - 25 litros', 'pote'),
+        new item(28, 'Pote de Muda - 33 litros', 'pote'),
+        new item(15, 'Pote de Muda - 40 litros', 'pote'),
         new item(0, 'Pote de Muda - 50 litros', 'pote'),
         new item(1, 'Pote de Muda - 60 litros', 'pote'),
         new item(6, 'Pote de Muda - 85 litros', 'pote'),
