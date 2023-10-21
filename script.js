@@ -154,7 +154,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '20/10/2023',
+    '21/10/2023',
     [
         new item(90, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(42, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -167,9 +167,9 @@ var regaplan = new Inventario(
         new item(90, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
         new item(83, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
-        new item(13, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
+        new item(3, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
         new item(0, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
-        new item(18, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
+        new item(8, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
 
         new item(13, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
         new item(20, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
@@ -187,10 +187,10 @@ var regaplan = new Inventario(
         new item(2, 'Suporte Arvore - 5 Vasos Dourado', 'sp_arvore'),
         new item(4, 'Suporte Arvore - 5 Vasos Preto', 'sp_arvore'),
 
-        new item(4, 'Suporte Coador 26cm Preto', 'sp_coador'),
-        new item(1, 'Suporte Coador 28cm Preto', 'sp_coador'),
-        new item(7, 'Suporte Coador 30cm Preto', 'sp_coador'),
-        new item(1, 'Suporte Coador 32cm Preto', 'sp_coador'),
+        new item(3, 'Suporte Coador 26cm Preto', 'sp_coador'),
+        new item(0, 'Suporte Coador 28cm Preto', 'sp_coador'),
+        new item(6, 'Suporte Coador 30cm Preto', 'sp_coador'),
+        new item(0, 'Suporte Coador 32cm Preto', 'sp_coador'),
 
         new item(12, 'Suporte de Canto 27cm Dourado'),
 
@@ -245,7 +245,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '11/10/2023',
+    '21/10/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -303,7 +303,7 @@ var rischioto = new Inventario(
         new item(8, 'Escorredor Lava Tudo', 'escorredor'),
         new item(20, 'Escorredor Multiuso', 'escorredor'),
 
-        new item(48, 'Forma de Gelo 2 Peças', 'forma_gelo'),
+        new item(42, 'Forma de Gelo 2 Peças', 'forma_gelo'),
 
         new item(10, 'Floreira Floratta n30 Areia', 'floreira_30'),
         new item(49, 'Floreira Floratta n30 Azul', 'floreira_30'),
@@ -347,7 +347,7 @@ var rischioto = new Inventario(
         new item(0, 'Lixeira Com Pedal Preta - 34 litros', 'lixeira_pedal'),
 
         new item(0, 'Lixeira de Pia Splendore Com Tampa Basculante', 'lixeira_splendore'),
-        new item(5, 'Lixeira de Pia Splendore Com Tampa Articulável', 'lixeira_splendore'),
+        new item(3, 'Lixeira de Pia Splendore Com Tampa Articulável', 'lixeira_splendore'),
 
         new item(0, 'Lixeira Rattan Com Pedal Areia - 7.5 litros', 'lixeira_rattan'),
         new item(0, 'Lixeira Rattan Com Pedal Areia - 14.5 litros', 'lixeira_rattan'),
@@ -359,7 +359,7 @@ var rischioto = new Inventario(
         new item(22, 'Porta Talheres Com Tampa', 'porta_talheres'),
 
         new item(0, 'Pote Fliplock 400ml', 'fliplock'),
-        new item(19, 'Pote Fliplock 800ml', 'fliplock'),
+        new item(17, 'Pote Fliplock 800ml', 'fliplock'),
         new item(0, 'Pote Fliplock 1.4 Litros', 'fliplock'),
 
         new item(0, 'Pote Premium - 3 Litros', 'pote_premium'),
@@ -442,7 +442,7 @@ var rischioto = new Inventario(
         new item(58, 'Vaso Redondo Bella Fiore n17 Preta', 'redondo_n17'),
 
         new item(49, 'Vaso Redondo Bella Fiore n22 Areia', 'redondo_n22'),
-        new item(44, 'Vaso Redondo Bella Fiore n22 Cerâmica', 'redondo_n22'),
+        new item(43, 'Vaso Redondo Bella Fiore n22 Cerâmica', 'redondo_n22'),
         new item(48, 'Vaso Redondo Bella Fiore n22 Preta', 'redondo_n22'),
 
         new item(47, 'Vaso Redondo Bella Fiore n28 Areia', 'redondo_n28'),
@@ -512,7 +512,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '20/10/2023',
+    '21/10/2023',
     [
         new item(199, 'Alça Universal Branca', 'alça_universal'),
         new item(44, 'Alça Universal Café', 'alça_universal'),
@@ -724,7 +724,7 @@ var emeAeme = new Inventario(
         new item(58, 'Vaso T 09 Preto', 'vaso_t_09'),
 
         new item(45, 'Vaso T 10 Cerâmica', 'vaso_t_10'),
-        new item(42, 'Vaso T 10 Preto', 'vaso_t_10'),
+        new item(39, 'Vaso T 10 Preto', 'vaso_t_10'),
 
         new item(40, 'Vaso T 12 Cerâmica', 'vaso_t_12'),
         new item(40, 'Vaso T 12 Preto', 'vaso_t_12'),
@@ -756,7 +756,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '06/10/2023',
+    '20/10/2023',
     [
         new item(12, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -797,7 +797,7 @@ var forth = new Inventario(
         new item(18, 'Flores - 3kg', 'f'),
         new item(0, 'Flores - 10Kg', 'f'),
         new item(45, 'Formicida Gel', 'f'),
-        new item(5, 'Formicida isca granulada', 'f'), 
+        new item(4, 'Formicida isca granulada', 'f'), 
         new item(13, 'Formicida Mata no ninho p/uso - 500ml', 'f'),
         new item(0, 'Fosfito - 60ml', 'f'),
         new item(8, 'Fosfito p/uso - 500ml', 'f'),
@@ -806,7 +806,7 @@ var forth = new Inventario(
         new item(43, 'Frutas - 400g', 'f'),
         new item(14, 'Frutas - 3kg', 'f'),
         new item(0, 'Frutas - 10Kg', 'f'),
-        new item(9, 'Fungicida Concentrado - 30ml', 'f'),
+        new item(6, 'Fungicida Concentrado - 30ml', 'f'),
         new item(27, 'Fungicida p/uso - 500ml', 'f'),
         new item(7, 'Fungicida cobre p/uso - 500ml', 'f'),
 
@@ -818,7 +818,7 @@ var forth = new Inventario(
         new item(6, 'Hortaliças - 3kg', 'h'),
         new item(0, 'Hortaliças - 10Kg', 'h'),
 
-        new item(17, 'Inseticida Concentrado - 30ml', 'i'),
+        new item(12, 'Inseticida Concentrado - 30ml', 'i'),
         new item(15, 'Inseticida p/uso - 500ml', 'i'),
 
         new item(0, 'Jabuticabeiras Concentrado - 60ml', 'j'),
@@ -1225,13 +1225,13 @@ var alfa_fibraSintetica = new Inventario(
 )
 var policamp = new Inventario(
     'Policamp',
-    '11/10/2023',
+    '21/10/2023',
     [
         new item(94, 'Pulverizador 500ml', 'pulverizador'),
         new item(82, 'Pulverizador 1 litro', 'pulverizador'),
         new item(38, 'Regador Com Cabo - Bico', 'Regador_cabo'),
         new item(30, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
-        new item(120, 'Regador - 2 litros', 'Regador'),
+        new item(108, 'Regador - 2 litros', 'Regador'),
         new item(118, 'Regador - 4 litros', 'Regador'),
         new item(101, 'Regador - 5 litros', 'Regador'),
         new item(69, 'Regador - 10 litros', 'Regador')
@@ -1239,11 +1239,11 @@ var policamp = new Inventario(
 )
 var jel_plast = new Inventario(
     'Jel Plast',
-    '16/10/2023',
+    '21/10/2023',
     [
         new item(36, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
         new item(0, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
-        new item(84, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
+        new item(78, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
         new item(396, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
         new item(0, 'Nectar de Beija Flor Com Corante', 'nectar'),
         new item(0, 'Nectar de Beija Flor Sem Corante', 'nectar')
@@ -1251,12 +1251,12 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '11/10/2023',
+    '21/10/2023',
     [
         new item(53, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
         new item(57, 'Formicida Insetimaster - 100ml', 'formicida'),
-        new item(4, 'Formicida Insetimaster - 1 litro', 'formicida'),
+        new item(3, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
         new item(5, 'Inseticom Jardim - Caixa', 'inseticom'),
 
