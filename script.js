@@ -154,54 +154,54 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '20/10/2023',
+    '21/10/2023',
     [
-        new item(102, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(54, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(84, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(84, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(96, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(90, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(42, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(78, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(73, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(89, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
 
-        new item(114, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(114, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(102, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(90, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(102, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(102, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(90, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(83, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
-        new item(18, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
+        new item(3, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
         new item(0, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
-        new item(18, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
+        new item(8, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
 
-        new item(20, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
-        new item(30, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
-        new item(80, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
-        new item(19, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
+        new item(13, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
+        new item(20, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
+        new item(71, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
+        new item(9, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
 
-        new item(90, 'Suporte Artístico 00 - 19cm Dourado', 'sp_artistico'),
-        new item(100, 'Suporte Artístico 01 - 26cm Dourado', 'sp_artistico'),
-        new item(60, 'Suporte Artístico 02 - 31cm Dourado', 'sp_artistico'),
-        new item(80, 'Suporte Artístico 03 - 37cm Dourado', 'sp_artistico'),
-        new item(93, 'Suporte Artístico 04 - 43cm Dourado', 'sp_artistico'),
+        new item(81, 'Suporte Artístico 00 - 19cm Dourado', 'sp_artistico'),
+        new item(98, 'Suporte Artístico 01 - 26cm Dourado', 'sp_artistico'),
+        new item(59, 'Suporte Artístico 02 - 31cm Dourado', 'sp_artistico'),
+        new item(75, 'Suporte Artístico 03 - 37cm Dourado', 'sp_artistico'),
+        new item(88, 'Suporte Artístico 04 - 43cm Dourado', 'sp_artistico'),
 
         new item(3, 'Suporte Arvore - 3 Vasos Dourado', 'sp_arvore'),
         new item(3, 'Suporte Arvore - 3 Vasos Preto', 'sp_arvore'),
         new item(2, 'Suporte Arvore - 5 Vasos Dourado', 'sp_arvore'),
         new item(4, 'Suporte Arvore - 5 Vasos Preto', 'sp_arvore'),
 
-        new item(4, 'Suporte Coador 26cm Preto', 'sp_coador'),
-        new item(2, 'Suporte Coador 28cm Preto', 'sp_coador'),
-        new item(7, 'Suporte Coador 30cm Preto', 'sp_coador'),
-        new item(1, 'Suporte Coador 32cm Preto', 'sp_coador'),
+        new item(3, 'Suporte Coador 26cm Preto', 'sp_coador'),
+        new item(0, 'Suporte Coador 28cm Preto', 'sp_coador'),
+        new item(6, 'Suporte Coador 30cm Preto', 'sp_coador'),
+        new item(0, 'Suporte Coador 32cm Preto', 'sp_coador'),
 
-        new item(17, 'Suporte de Canto 27cm Dourado'),
+        new item(12, 'Suporte de Canto 27cm Dourado'),
 
-        new item(12, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
-        new item(25, 'Suporte Margarida 02 - 21 cm Dourado', 'sp_margarida'),
-        new item(30, 'Suporte Margarida 03 - 23 cm Dourado', 'sp_margarida'),
-        new item(25, 'Suporte Margarida 04 - 26 cm Dourado', 'sp_margarida'),
+        new item(2, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
+        new item(22, 'Suporte Margarida 02 - 21 cm Dourado', 'sp_margarida'),
+        new item(20, 'Suporte Margarida 03 - 23 cm Dourado', 'sp_margarida'),
+        new item(17, 'Suporte Margarida 04 - 26 cm Dourado', 'sp_margarida'),
 
         new item(19, 'Suporte Rasteiro Chapa 01 - 18cm Dourado', 'sp_rasteiro'),
-        new item(25, 'Suporte Rasteiro Chapa 02 - 21cm Dourado', 'sp_rasteiro'),
-        new item(24, 'Suporte Rasteiro Chapa 03 - 24cm Dourado', 'sp_rasteiro'),
+        new item(15, 'Suporte Rasteiro Chapa 02 - 21cm Dourado', 'sp_rasteiro'),
+        new item(15, 'Suporte Rasteiro Chapa 03 - 24cm Dourado', 'sp_rasteiro'),
         new item(30, 'Suporte Rasteiro Chapa 04 - 27cm Dourado', 'sp_rasteiro'),
         new item(14, 'Suporte Rasteiro Chapa 05 - 30cm Dourado', 'sp_rasteiro'),
         new item(20, 'Suporte Rasteiro Chapa 06 - 33cm Dourado', 'sp_rasteiro'),
@@ -218,20 +218,20 @@ var regaplan = new Inventario(
         new item(10, 'Suporte Torre 110cm Preto', 'sp_torre'),
 
         new item(0, 'Tripé Decorativo Grande Dourado', 'tp_decorativo'),
-        new item(5, 'Tripé Decorativo Grande Preto', 'tp_decorativo'),
+        new item(0, 'Tripé Decorativo Grande Preto', 'tp_decorativo'),
         new item(0, 'Tripé Decorativo Médio Dourado', 'tp_decorativo'),
-        new item(5, 'Tripé Decorativo Médio Preto', 'tp_decorativo'),
+        new item(1, 'Tripé Decorativo Médio Preto', 'tp_decorativo'),
         new item(0, 'Tripé Decorativo Pequeno Dourado', 'tp_decorativo'),
-        new item(10, 'Tripé Decorativo Pequeno Preto', 'tp_decorativo'),
+        new item(8, 'Tripé Decorativo Pequeno Preto', 'tp_decorativo'),
 
-        new item(10, 'Tripé Suspenso 01 20x40cm', 'tp_suspenso'),
-        new item(10, 'Tripé Suspenso 01 25x40cm', 'tp_suspenso'),
-        new item(20, 'Tripé Suspenso 01 30x40cm', 'tp_suspenso'),
+        new item(7, 'Tripé Suspenso 01 20x40cm', 'tp_suspenso'),
+        new item(7, 'Tripé Suspenso 01 25x40cm', 'tp_suspenso'),
+        new item(18, 'Tripé Suspenso 01 30x40cm', 'tp_suspenso'),
 
-        new item(5, 'Violeteiro Com Corrente - 2 Vasos', 'violeteiro'),
+        new item(2, 'Violeteiro Com Corrente - 2 Vasos', 'violeteiro'),
         new item(0, 'Violeteiro Com Corrente - 3 Vasos', 'violeteiro'),
-        new item(6, 'Violeteiro Com Corrente - 4 Vasos', 'violeteiro'),
-        new item(2, 'Violeteiro Com Corrente - 5 Vasos', 'violeteiro'),
+        new item(4, 'Violeteiro Com Corrente - 4 Vasos', 'violeteiro'),
+        new item(0, 'Violeteiro Com Corrente - 5 Vasos', 'violeteiro'),
 
         new item(0, 'Violeteiro Pedestal - 3 Vasos Dourado', 'sp_violeteiro'),
         new item(1, 'Violeteiro Pedestal - 3 Vasos Preto', 'sp_violeteiro'),
@@ -245,7 +245,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '11/10/2023',
+    '21/10/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -303,7 +303,7 @@ var rischioto = new Inventario(
         new item(8, 'Escorredor Lava Tudo', 'escorredor'),
         new item(20, 'Escorredor Multiuso', 'escorredor'),
 
-        new item(48, 'Forma de Gelo 2 Peças', 'forma_gelo'),
+        new item(42, 'Forma de Gelo 2 Peças', 'forma_gelo'),
 
         new item(10, 'Floreira Floratta n30 Areia', 'floreira_30'),
         new item(49, 'Floreira Floratta n30 Azul', 'floreira_30'),
@@ -347,7 +347,7 @@ var rischioto = new Inventario(
         new item(0, 'Lixeira Com Pedal Preta - 34 litros', 'lixeira_pedal'),
 
         new item(0, 'Lixeira de Pia Splendore Com Tampa Basculante', 'lixeira_splendore'),
-        new item(5, 'Lixeira de Pia Splendore Com Tampa Articulável', 'lixeira_splendore'),
+        new item(3, 'Lixeira de Pia Splendore Com Tampa Articulável', 'lixeira_splendore'),
 
         new item(0, 'Lixeira Rattan Com Pedal Areia - 7.5 litros', 'lixeira_rattan'),
         new item(0, 'Lixeira Rattan Com Pedal Areia - 14.5 litros', 'lixeira_rattan'),
@@ -359,7 +359,7 @@ var rischioto = new Inventario(
         new item(22, 'Porta Talheres Com Tampa', 'porta_talheres'),
 
         new item(0, 'Pote Fliplock 400ml', 'fliplock'),
-        new item(19, 'Pote Fliplock 800ml', 'fliplock'),
+        new item(17, 'Pote Fliplock 800ml', 'fliplock'),
         new item(0, 'Pote Fliplock 1.4 Litros', 'fliplock'),
 
         new item(0, 'Pote Premium - 3 Litros', 'pote_premium'),
@@ -442,7 +442,7 @@ var rischioto = new Inventario(
         new item(58, 'Vaso Redondo Bella Fiore n17 Preta', 'redondo_n17'),
 
         new item(49, 'Vaso Redondo Bella Fiore n22 Areia', 'redondo_n22'),
-        new item(44, 'Vaso Redondo Bella Fiore n22 Cerâmica', 'redondo_n22'),
+        new item(43, 'Vaso Redondo Bella Fiore n22 Cerâmica', 'redondo_n22'),
         new item(48, 'Vaso Redondo Bella Fiore n22 Preta', 'redondo_n22'),
 
         new item(47, 'Vaso Redondo Bella Fiore n28 Areia', 'redondo_n28'),
@@ -724,7 +724,7 @@ var emeAeme = new Inventario(
         new item(58, 'Vaso T 09 Preto', 'vaso_t_09'),
 
         new item(45, 'Vaso T 10 Cerâmica', 'vaso_t_10'),
-        new item(42, 'Vaso T 10 Preto', 'vaso_t_10'),
+        new item(39, 'Vaso T 10 Preto', 'vaso_t_10'),
 
         new item(40, 'Vaso T 12 Cerâmica', 'vaso_t_12'),
         new item(40, 'Vaso T 12 Preto', 'vaso_t_12'),
@@ -797,7 +797,7 @@ var forth = new Inventario(
         new item(18, 'Flores - 3kg', 'f'),
         new item(0, 'Flores - 10Kg', 'f'),
         new item(45, 'Formicida Gel', 'f'),
-        new item(5, 'Formicida isca granulada', 'f'), 
+        new item(4, 'Formicida isca granulada', 'f'), 
         new item(13, 'Formicida Mata no ninho p/uso - 500ml', 'f'),
         new item(0, 'Fosfito - 60ml', 'f'),
         new item(8, 'Fosfito p/uso - 500ml', 'f'),
@@ -806,7 +806,7 @@ var forth = new Inventario(
         new item(43, 'Frutas - 400g', 'f'),
         new item(14, 'Frutas - 3kg', 'f'),
         new item(0, 'Frutas - 10Kg', 'f'),
-        new item(9, 'Fungicida Concentrado - 30ml', 'f'),
+        new item(6, 'Fungicida Concentrado - 30ml', 'f'),
         new item(27, 'Fungicida p/uso - 500ml', 'f'),
         new item(7, 'Fungicida cobre p/uso - 500ml', 'f'),
 
@@ -818,7 +818,7 @@ var forth = new Inventario(
         new item(6, 'Hortaliças - 3kg', 'h'),
         new item(0, 'Hortaliças - 10Kg', 'h'),
 
-        new item(17, 'Inseticida Concentrado - 30ml', 'i'),
+        new item(12, 'Inseticida Concentrado - 30ml', 'i'),
         new item(15, 'Inseticida p/uso - 500ml', 'i'),
 
         new item(0, 'Jabuticabeiras Concentrado - 60ml', 'j'),
@@ -1225,13 +1225,13 @@ var alfa_fibraSintetica = new Inventario(
 )
 var policamp = new Inventario(
     'Policamp',
-    '11/10/2023',
+    '21/10/2023',
     [
         new item(94, 'Pulverizador 500ml', 'pulverizador'),
         new item(82, 'Pulverizador 1 litro', 'pulverizador'),
         new item(38, 'Regador Com Cabo - Bico', 'Regador_cabo'),
         new item(30, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
-        new item(120, 'Regador - 2 litros', 'Regador'),
+        new item(108, 'Regador - 2 litros', 'Regador'),
         new item(118, 'Regador - 4 litros', 'Regador'),
         new item(101, 'Regador - 5 litros', 'Regador'),
         new item(69, 'Regador - 10 litros', 'Regador')
@@ -1239,11 +1239,11 @@ var policamp = new Inventario(
 )
 var jel_plast = new Inventario(
     'Jel Plast',
-    '16/10/2023',
+    '21/10/2023',
     [
         new item(36, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
         new item(0, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
-        new item(84, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
+        new item(78, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
         new item(396, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
         new item(0, 'Nectar de Beija Flor Com Corante', 'nectar'),
         new item(0, 'Nectar de Beija Flor Sem Corante', 'nectar')
@@ -1251,12 +1251,12 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '11/10/2023',
+    '21/10/2023',
     [
         new item(53, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
         new item(57, 'Formicida Insetimaster - 100ml', 'formicida'),
-        new item(4, 'Formicida Insetimaster - 1 litro', 'formicida'),
+        new item(3, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
         new item(5, 'Inseticom Jardim - Caixa', 'inseticom'),
 
