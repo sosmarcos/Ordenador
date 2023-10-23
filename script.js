@@ -512,7 +512,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '20/10/2023',
+    '23/10/2023',
     [
         new item(199, 'Alça Universal Branca', 'alça_universal'),
         new item(44, 'Alça Universal Café', 'alça_universal'),
@@ -591,7 +591,7 @@ var emeAeme = new Inventario(
         new item(0, 'Etiqueta E08', 'etiqueta'),
         new item(2, 'Etiqueta E09', 'etiqueta'),
         new item(0, 'Etiqueta E11', 'etiqueta'),
-        new item(1500, 'Etiqueta E16', 'etiqueta'),
+        new item(1440, 'Etiqueta E16', 'etiqueta'),
         new item(727, 'Etiqueta E30', 'etiqueta'),
         new item(1000, 'Etiqueta E40', 'etiqueta'),
         new item(0,  'Etiqueta EP22', 'etiqueta'),
@@ -707,10 +707,10 @@ var emeAeme = new Inventario(
         new item(15, 'Vaso Imperial V25 Marfim', 'v_imperial_25'),
         new item(12, 'Vaso Imperial V25 Preto', 'v_imperial_25'),
 
-        new item(8, 'Vaso Imperial V30 Cerâmica', 'v_imperial_30'),
-        new item(10, 'Vaso Imperial V30 Cimento', 'v_imperial_30'),
-        new item(12, 'Vaso Imperial V30 Marfim', 'v_imperial_30'),
-        new item(12, 'Vaso Imperial V30 Preto', 'v_imperial_30'),
+        new item(6, 'Vaso Imperial V30 Cerâmica', 'v_imperial_30'),
+        new item(8, 'Vaso Imperial V30 Cimento', 'v_imperial_30'),
+        new item(10, 'Vaso Imperial V30 Marfim', 'v_imperial_30'),
+        new item(10, 'Vaso Imperial V30 Preto', 'v_imperial_30'),
 
         new item(6, 'Vaso Imperial V40 Cerâmica', 'v_imperial_40'),
         new item(6, 'Vaso Imperial V40 Cimento', 'v_imperial_40'),
@@ -730,7 +730,7 @@ var emeAeme = new Inventario(
         new item(40, 'Vaso T 12 Preto', 'vaso_t_12'),
 
         new item(43, 'Vaso T 14 Cerâmica', 'vaso_t_14'),
-        new item(52, 'Vaso T 14 Preto', 'vaso_t_14'),
+        new item(22, 'Vaso T 14 Preto', 'vaso_t_14'),
 
         new item(47, 'Vaso T 16 Cerâmica', 'vaso_t_16'),
         new item(25, 'Vaso T 16 Preto', 'vaso_t_16'),
@@ -756,7 +756,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '06/10/2023',
+    '23/10/2023',
     [
         new item(12, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -788,7 +788,7 @@ var forth = new Inventario(
         new item(28, 'Enxofre Concentrado - 60ml', 'e'),
         new item(13, 'Enxofre p/uso - 500ml', 'e'),
         new item(7, 'Equilibrio Concentrado - 60ml', 'e'),
-        new item(8, 'Equilibrio Concentrado - 500ml', 'e'),
+        new item(7, 'Equilibrio Concentrado - 500ml', 'e'),
 
         new item(3, 'Fipronil+imidacloprid Concentrado - 60ml', 'f'),
         new item(9, 'Flores Concentrado - 60ml', 'f'),
@@ -894,7 +894,7 @@ var fuzil = new Inventario(
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '20/10/2023',
+    '23/10/2023',
     [
         new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(0, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -968,9 +968,9 @@ var alfa_polietileno = new Inventario(
         new item(1, 'Coluna Red. Degrau Grafiato C/Prato nº 5 Preto', 'coluna_degrau_5'),
 
         new item(0, 'Coluna Red. Diamante C/Prato nº 1 Bege', 'coluna_diamante_1'),
-        new item(1, 'Coluna Red. Diamante C/Prato nº 1 Cimento', 'coluna_diamante_1'),
+        new item(0, 'Coluna Red. Diamante C/Prato nº 1 Cimento', 'coluna_diamante_1'),
         new item(0, 'Coluna Red. Diamante C/Prato nº 1 Marrom', 'coluna_diamante_1'),
-        new item(1, 'Coluna Red. Diamante C/Prato nº 1 Preta', 'coluna_diamante_1'),
+        new item(0, 'Coluna Red. Diamante C/Prato nº 1 Preta', 'coluna_diamante_1'),
 
         new item(1, 'Coluna Red. Diamante C/Prato nº 2 Bege', 'coluna_diamante_2'),
         new item(1, 'Coluna Red. Diamante C/Prato nº 2 Cimento', 'coluna_diamante_2'),
@@ -1056,7 +1056,7 @@ var alfa_polietileno = new Inventario(
         new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 1 Bege', 'vaso_diamante_1'),
         new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 1 Cimento', 'vaso_diamante_1'),
         new item(7, 'Vaso Bojo Red. Diamante C/Prato nº 1 Marrom', 'vaso_diamante_1'),
-        new item(3, 'Vaso Bojo Red. Diamante C/Prato nº 1 Preto', 'vaso_diamante_1'),
+        new item(1, 'Vaso Bojo Red. Diamante C/Prato nº 1 Preto', 'vaso_diamante_1'),
 
         new item(0, 'Vaso Bojo Red. Diamante C/Prato nº 2 Bege', 'vaso_diamante_2'),
         new item(2, 'Vaso Bojo Red. Diamante C/Prato nº 2 Cimento', 'vaso_diamante_2'),
@@ -1073,10 +1073,10 @@ var alfa_polietileno = new Inventario(
         new item(7, 'Vaso Bojo Red. Diamante C/Prato nº 4 Marrom', 'vaso_diamante_4'),
         new item(7, 'Vaso Bojo Red. Diamante C/Prato nº 4 Preto', 'vaso_diamante_4'),
 
-        new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Bege', 'vaso_frisado_1'),
-        new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Cimento', 'vaso_frisado_1'),
+        new item(13, 'Vaso Bojo Frisado C/Prato nº 1 Bege', 'vaso_frisado_1'),
+        new item(13, 'Vaso Bojo Frisado C/Prato nº 1 Cimento', 'vaso_frisado_1'),
         new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Marrom', 'vaso_frisado_1'),
-        new item(15, 'Vaso Bojo Frisado C/Prato nº 1 Preto', 'vaso_frisado_1'),
+        new item(13, 'Vaso Bojo Frisado C/Prato nº 1 Preto', 'vaso_frisado_1'),
 
         new item(6, 'Vaso Bojo Frisado C/Prato nº 2 Bege', 'vaso_frisado_2'),
         new item(10, 'Vaso Bojo Frisado C/Prato nº 2 Cimento', 'vaso_frisado_2'),
@@ -1145,7 +1145,7 @@ var alfa_polietileno = new Inventario(
 )
 var alfa_fibraSintetica = new Inventario(
     'Alfa Fibra Sintética',
-    '20/10/2023',
+    '23/10/2023',
     [
         new item(18, "Cuia Sem Borda nº 1 Argila", 'cuia_1'),
         new item(4, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
@@ -1165,10 +1165,10 @@ var alfa_fibraSintetica = new Inventario(
         new item(8, "Cuia Sem Borda nº 3 Envelhecido", 'cuia_3'),
         new item(16, "Cuia Sem Borda nº 3 Palha", 'cuia_3'),
 
-        new item(9, "Cuia Sem Borda nº 4 Argila", 'cuia_4'),
+        new item(6, "Cuia Sem Borda nº 4 Argila", 'cuia_4'),
         new item(0, "Cuia Sem Borda nº 4 Branco", 'cuia_4'),
         new item(8, "Cuia Sem Borda nº 4 Cappuccino", 'cuia_4'),
-        new item(9, "Cuia Sem Borda nº 4 Envelhecido", 'cuia_4'),
+        new item(6, "Cuia Sem Borda nº 4 Envelhecido", 'cuia_4'),
         new item(7, "Cuia Sem Borda nº 4 Palha", 'cuia_4'),
 
         new item(3, "Cachepot Cactos nº 1 Argila", 'cactus_1'),
@@ -1265,7 +1265,7 @@ var insetimax = new Inventario(
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '20/10/2023',
+    '23/10/2023',
     [
         new item(3, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 50x50cm Pintada', 'treliça'),
@@ -1285,7 +1285,7 @@ var madeiras = new Inventario(
         new item(20, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
         new item(12, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
         new item(10, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
-        new item(13, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
+        new item(12, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
         new item(2, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
         new item(1, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
 
