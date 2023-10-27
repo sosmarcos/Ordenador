@@ -878,18 +878,18 @@ var forth = new Inventario(
 )
 var fuzil = new Inventario(
     'Fuzil',
-    '20/10/2023',
+    '27/10/2023',
     [
         new item(11, 'Ancinho p/Jardim 3 dentes', 'fuzil'),
         new item(1, 'Arrancador de Inço', 'fuzil'),
         new item(7, 'Aspersor c/adaptador', 'fuzil'),
         new item(4, 'Facão mato 20', 'fusil'),
-        new item(3, 'Pazinha p/jardim Larga', 'fuzil'),
+        new item(9, 'Pazinha p/jardim Larga', 'fuzil'),
         new item(1, 'Pazinha p/jardim Estreita', 'fuzil'),
         new item(2, 'Sacho 2P CB Madeira', 'fuzil'),
-        new item(4, 'Tesoura de poda Palisad', 'fuzil'),
+        new item(16, 'Tesoura de poda Palisad', 'fuzil'),
         new item(2, 'Tesoura de poda Tramontina', 'fuzil'),
-        new item(2, 'Tesoura Grama', 'fuzil')
+        new item(8, 'Tesoura Grama', 'fuzil')
     ]
 )
 var alfa_polietileno = new Inventario(
@@ -1225,11 +1225,11 @@ var alfa_fibraSintetica = new Inventario(
 )
 var policamp = new Inventario(
     'Policamp',
-    '21/10/2023',
+    '27/10/2023',
     [
         new item(94, 'Pulverizador 500ml', 'pulverizador'),
         new item(82, 'Pulverizador 1 litro', 'pulverizador'),
-        new item(38, 'Regador Com Cabo - Bico', 'Regador_cabo'),
+        new item(33, 'Regador Com Cabo - Bico', 'Regador_cabo'),
         new item(30, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
         new item(108, 'Regador - 2 litros', 'Regador'),
         new item(118, 'Regador - 4 litros', 'Regador'),
