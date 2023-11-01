@@ -894,7 +894,7 @@ var fuzil = new Inventario(
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '26/10/2023',
+    '01/11/2023',
     [
         new item(0, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(0, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -1030,7 +1030,7 @@ var alfa_polietileno = new Inventario(
         new item(1, 'Coluna Red. Polida C/Prato nº 1 Preto', 'coluna_polida_1'),
 
         new item(3, 'Coluna Red. Polida C/Prato nº 2 Bege', 'coluna_polida_2'),
-        new item(3, 'Coluna Red. Polida C/Prato nº 2 Cimento', 'coluna_polida_2'),
+        new item(0, 'Coluna Red. Polida C/Prato nº 2 Cimento', 'coluna_polida_2'),
         new item(6, 'Coluna Red. Polida C/Prato nº 2 Marrom', 'coluna_polida_2'),
         new item(3, 'Coluna Red. Polida C/Prato nº 2 Preto', 'coluna_polida_2'),
 
