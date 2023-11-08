@@ -154,7 +154,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '26/10/2023',
+    '08/11/2023',
     [
         new item(90, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(42, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -187,9 +187,9 @@ var regaplan = new Inventario(
         new item(2, 'Suporte Arvore - 5 Vasos Dourado', 'sp_arvore'),
         new item(4, 'Suporte Arvore - 5 Vasos Preto', 'sp_arvore'),
 
-        new item(3, 'Suporte Coador 26cm Preto', 'sp_coador'),
+        new item(0, 'Suporte Coador 26cm Preto', 'sp_coador'),
         new item(0, 'Suporte Coador 28cm Preto', 'sp_coador'),
-        new item(6, 'Suporte Coador 30cm Preto', 'sp_coador'),
+        new item(4, 'Suporte Coador 30cm Preto', 'sp_coador'),
         new item(0, 'Suporte Coador 32cm Preto', 'sp_coador'),
 
         new item(12, 'Suporte de Canto 27cm Dourado'),
@@ -512,7 +512,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '26/10/2023',
+    '08/11/2023',
     [
         new item(196, 'Alça Universal Branca', 'alça_universal'),
         new item(41, 'Alça Universal Café', 'alça_universal'),
@@ -632,24 +632,24 @@ var emeAeme = new Inventario(
         new item(29, 'Prato B02 13cm Marfim', 'prato_b02'),
         new item(5, 'Prato B02 13cm Preto', 'prato_b02'),
 
-        new item(8, 'Prato B03 16cm Cerâmica', 'prato_b03'),
+        new item(0, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(57, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(48, 'Prato B03 16cm Marfim', 'prato_b03'),
         new item(24, 'Prato B03 16cm Preto', 'prato_b03'),
 
         new item(25, 'Prato B04 21cm Cerâmica', 'prato_b04'),
         new item(46, 'Prato B04 21cm Cimento', 'prato_b04'),
-        new item(50, 'Prato B04 21cm Marfim', 'prato_b04'),
+        new item(40, 'Prato B04 21cm Marfim', 'prato_b04'),
         new item(23, 'Prato B04 21cm Preto', 'prato_b04'),
 
-        new item(61, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
+        new item(51, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
         new item(28, 'Prato B04.5 22cm Cimento', 'prato_b4.5'),
         new item(26, 'Prato B04.5 22cm Marfim', 'prato_b4.5'),
         new item(77, 'Prato B04.5 22cm Preto', 'prato_b4.5'),
 
         new item(35, 'Prato B05 24cm Cerâmica', 'prato_b05'),
         new item(36, 'Prato B05 24cm Cimento', 'prato_b05'),
-        new item(44, 'Prato B05 24cm Marfim', 'prato_b05'),
+        new item(34, 'Prato B05 24cm Marfim', 'prato_b05'),
         new item(0, 'Prato B05 24cm Preto', 'prato_b05'),
 
         new item(37, 'Prato B06 27cm Cerâmica', 'prato_b06'),
@@ -756,13 +756,13 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '07/11/2023',
+    '08/11/2023',
     [
         new item(12, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
 
         new item(33, 'Baraticida Gel', 'b'),
-        new item(23, 'Bokashi - 250g', 'b'),
+        new item(12, 'Bokashi - 250g', 'b'),
         new item(18, 'Bonsai Concentrado - 60ml', 'b'),
         new item(18, 'Bonsai p/uso - 500ml', 'b'),
         new item(0, 'Brilha folha Concentrado - 60ml', 'b'),
@@ -772,7 +772,7 @@ var forth = new Inventario(
         new item(14, 'Cactos Concentrado - 500m', 'c'),
         new item(10, 'Cobre Concentrado - 60ml', 'c'),
         new item(12, 'Cobre Concentrado - 500m', 'c'),
-        new item(36, 'Coqueiros - 400g', 'c'),
+        new item(33, 'Coqueiros - 400g', 'c'),
         new item(0, 'Coqueiros - 3kg', 'c'),
         new item(1, 'Coqueiros - 10Kg', 'c'),
         new item(9, 'Cote 14.14.14 - 150g', 'c'),
@@ -782,7 +782,7 @@ var forth = new Inventario(
         new item(8, 'Cupinicida Concentrado - 60ml', 'c'),
 
         new item(22, 'Defende Concentrado - 30ml', 'd'),
-        new item(22, 'Defende p/uso - 500ml', 'd'),
+        new item(15, 'Defende p/uso - 500ml', 'd'),
 
         new item(15, 'Enraizador Concentrado - 60ml', 'e'),
         new item(28, 'Enxofre Concentrado - 60ml', 'e'),
@@ -793,50 +793,50 @@ var forth = new Inventario(
         new item(3, 'Fipronil+imidacloprid Concentrado - 60ml', 'f'),
         new item(9, 'Flores Concentrado - 60ml', 'f'),
         new item(4, 'Flores p/uso - 500ml', 'f'),
-        new item(39, 'Flores - 400g', 'f'),
+        new item(31, 'Flores - 400g', 'f'),
         new item(18, 'Flores - 3kg', 'f'),
         new item(0, 'Flores - 10Kg', 'f'),
         new item(45, 'Formicida Gel', 'f'),
-        new item(4, 'Formicida isca granulada', 'f'), 
+        new item(3, 'Formicida isca granulada', 'f'), 
         new item(13, 'Formicida Mata no ninho p/uso - 500ml', 'f'),
         new item(0, 'Fosfito - 60ml', 'f'),
         new item(8, 'Fosfito p/uso - 500ml', 'f'),
         new item(11, 'Frutas Concentrado - 60ml', 'f'),
         new item(18, 'Frutas p/uso - 500ml', 'f'),
-        new item(43, 'Frutas - 400g', 'f'),
+        new item(32, 'Frutas - 400g', 'f'),
         new item(14, 'Frutas - 3kg', 'f'),
         new item(0, 'Frutas - 10Kg', 'f'),
         new item(6, 'Fungicida Concentrado - 30ml', 'f'),
-        new item(27, 'Fungicida p/uso - 500ml', 'f'),
-        new item(7, 'Fungicida cobre p/uso - 500ml', 'f'),
+        new item(25, 'Fungicida p/uso - 500ml', 'f'),
+        new item(4, 'Fungicida cobre p/uso - 500ml', 'f'),
 
         new item(0, 'Gel para plantio - 100g', 'g'),
 
         new item(16, 'Hortaliças Concentrado - 60ml', 'h'),
         new item(15, 'Hortaliças p/uso - 500ml', 'h'),
-        new item(51, 'Hortaliças - 400g', 'h'),
+        new item(49, 'Hortaliças - 400g', 'h'),
         new item(6, 'Hortaliças - 3kg', 'h'),
         new item(0, 'Hortaliças - 10Kg', 'h'),
 
         new item(12, 'Inseticida Concentrado - 30ml', 'i'),
-        new item(12, 'Inseticida p/uso - 500ml', 'i'),
+        new item(5, 'Inseticida p/uso - 500ml', 'i'),
 
         new item(0, 'Jabuticabeiras Concentrado - 60ml', 'j'),
-        new item(23, 'Jabuticabeiras - 400g', 'j'),
+        new item(6, 'Jabuticabeiras - 400g', 'j'),
         new item(11, 'Jabuticabeiras - 3kg', 'j'),
         new item(18, 'Jardim Concentrado - 60ml', 'j'),
         new item(6, 'Jardim Concentrado - 500ml', 'j'),
         new item(15, 'Jardim p/uso - 500ml', 'j'),
-        new item(40, 'Jardim - 400g', 'j'),
+        new item(26, 'Jardim - 400g', 'j'),
         new item(3, 'Jardim - 3kg', 'j'),
 
-        new item(6, 'Lesmicida isca granulada', 'l'),
+        new item(5, 'Lesmicida isca granulada', 'l'),
 
         new item(14, 'Mata cochonilha p/uso - 500ml', 'm'),
         new item(23, 'Mata lagarta p/uso - 500ml', 'm'),
         new item(0, 'Mata mato Concentrado - 30ml', 'm'),
         new item(5, 'Mata mato p/uso - 500ml', 'm'),
-        new item(11, 'Mata pulgão p/uso - 500ml', 'm'),
+        new item(8, 'Mata pulgão p/uso - 500ml', 'm'),
 
         new item(28, 'Óleo Concentrado - 60ml', 'o'),
         new item(2, 'Orquídeas Floração Concentrado - 60ml', 'o'),
@@ -862,12 +862,12 @@ var forth = new Inventario(
         new item(21, 'Raticida Isca Anticoagulante', 'r'),
         new item(0, 'Rosa do Deserto Concentrado - 60ml', 'r'),
         new item(14, 'Rosa do Deserto p/uso - 500ml', 'r'),
-        new item(17, 'Rosa do Deserto - 400g', 'r'),
+        new item(16, 'Rosa do Deserto - 400g', 'r'),
         new item(2, 'Rosa do Deserto - 3kg', 'r'),
 
         new item(1, 'Samambaias Concentrado - 60ml', 's'),
         new item(12, 'Samambaias p/uso - 500ml', 's'),
-        new item(18, 'Samambaias - 400g', 's'),
+        new item(16, 'Samambaias - 400g', 's'),
         new item(1, 'Suculentas Concentrado - 60ml', 's'),
 
         new item(14, 'Temperos Concentrado - 60ml', 't'),
@@ -878,7 +878,7 @@ var forth = new Inventario(
 )
 var fuzil = new Inventario(
     'Fuzil',
-    '27/10/2023',
+    '08/11/2023',
     [
         new item(11, 'Ancinho p/Jardim 3 dentes', 'fuzil'),
         new item(1, 'Arrancador de Inço', 'fuzil'),
@@ -889,7 +889,8 @@ var fuzil = new Inventario(
         new item(2, 'Sacho 2P CB Madeira', 'fuzil'),
         new item(16, 'Tesoura de poda Palisad', 'fuzil'),
         new item(2, 'Tesoura de poda Tramontina', 'fuzil'),
-        new item(8, 'Tesoura Grama', 'fuzil')
+        new item(8, 'Tesoura Grama', 'fuzil'),
+        new item(6, 'Vasoura palheta s/regulagem', 'fuzil')
     ]
 )
 var alfa_polietileno = new Inventario(
@@ -1228,7 +1229,7 @@ var policamp = new Inventario(
     '27/10/2023',
     [
         new item(94, 'Pulverizador 500ml', 'pulverizador'),
-        new item(82, 'Pulverizador 1 litro', 'pulverizador'),
+        new item(75, 'Pulverizador 1 litro', 'pulverizador'),
         new item(33, 'Regador Com Cabo - Bico', 'Regador_cabo'),
         new item(29, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
         new item(108, 'Regador - 2 litros', 'Regador'),
@@ -1239,28 +1240,28 @@ var policamp = new Inventario(
 )
 var jel_plast = new Inventario(
     'Jel Plast',
-    '21/10/2023',
+    '08/11/2023',
     [
-        new item(36, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
+        new item(12, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
         new item(0, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
-        new item(78, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
-        new item(396, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
+        new item(54, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
+        new item(372, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
         new item(0, 'Nectar de Beija Flor Com Corante', 'nectar'),
         new item(0, 'Nectar de Beija Flor Sem Corante', 'nectar')
     ]
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '21/10/2023',
+    '08/11/2023',
     [
-        new item(53, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
+        new item(51, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
-        new item(57, 'Formicida Insetimaster - 100ml', 'formicida'),
-        new item(3, 'Formicida Insetimaster - 1 litro', 'formicida'),
+        new item(53, 'Formicida Insetimaster - 100ml', 'formicida'),
+        new item(0, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
-        new item(5, 'Inseticom Jardim - Caixa', 'inseticom'),
+        new item(2, 'Inseticom Jardim - Caixa', 'inseticom'),
 
-        new item(45, 'Malathion 500CE - 100ml', 'malathion')
+        new item(41, 'Malathion 500CE - 100ml', 'malathion')
     ]   
 )
 var madeiras = new Inventario(
@@ -1332,7 +1333,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '07/11/2023',
+    '08/11/2023',
     [
         new item(8, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(14, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1385,7 +1386,7 @@ var coquim = new Inventario(
         new item(35, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
         new item(33, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
 
-        new item(16, '4000 - Mix Coquim 1kg', 'adubos'),
+        new item(13, '4000 - Mix Coquim 1kg', 'adubos'),
         new item(1, '4001 - Pó de Coco 1kg', 'adubos'),
         new item(5, '4002 - Fibra de Coco 200g', 'adubos'),
         new item(3, '4003 - Pó de Coco Magico 400g', 'adubos'),
