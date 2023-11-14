@@ -154,7 +154,7 @@ var inventorios = [
 ]
 var regaplan = new Inventario(
     'Regaplan',
-    '08/11/2023',
+    '14/11/2023',
     [
         new item(90, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(42, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -182,10 +182,10 @@ var regaplan = new Inventario(
         new item(75, 'Suporte Artístico 03 - 37cm Dourado', 'sp_artistico'),
         new item(88, 'Suporte Artístico 04 - 43cm Dourado', 'sp_artistico'),
 
-        new item(3, 'Suporte Arvore - 3 Vasos Dourado', 'sp_arvore'),
-        new item(3, 'Suporte Arvore - 3 Vasos Preto', 'sp_arvore'),
+        new item(1, 'Suporte Arvore - 3 Vasos Dourado', 'sp_arvore'),
+        new item(1, 'Suporte Arvore - 3 Vasos Preto', 'sp_arvore'),
         new item(2, 'Suporte Arvore - 5 Vasos Dourado', 'sp_arvore'),
-        new item(4, 'Suporte Arvore - 5 Vasos Preto', 'sp_arvore'),
+        new item(1, 'Suporte Arvore - 5 Vasos Preto', 'sp_arvore'),
 
         new item(0, 'Suporte Coador 26cm Preto', 'sp_coador'),
         new item(0, 'Suporte Coador 28cm Preto', 'sp_coador'),
@@ -234,18 +234,18 @@ var regaplan = new Inventario(
         new item(0, 'Violeteiro Com Corrente - 5 Vasos', 'violeteiro'),
 
         new item(0, 'Violeteiro Pedestal - 3 Vasos Dourado', 'sp_violeteiro'),
-        new item(1, 'Violeteiro Pedestal - 3 Vasos Preto', 'sp_violeteiro'),
+        new item(3, 'Violeteiro Pedestal - 3 Vasos Preto', 'sp_violeteiro'),
         new item(0, 'Violeteiro Pedestal - 5 Vasos Dourado', 'sp_violeteiro'),
-        new item(0, 'Violeteiro Pedestal - 5 Vasos Preto', 'sp_violeteiro'),
+        new item(3, 'Violeteiro Pedestal - 5 Vasos Preto', 'sp_violeteiro'),
         new item(0, 'Violeteiro Pedestal - 7 Vasos Dourado', 'sp_violeteiro'),
-        new item(2, 'Violeteiro Pedestal - 7 Vasos Preto', 'sp_violeteiro'),
-        new item(2, 'Violeteiro Pedestal - 9 Vasos Dourado', 'sp_violeteiro'),
+        new item(3, 'Violeteiro Pedestal - 7 Vasos Preto', 'sp_violeteiro'),
+        new item(6, 'Violeteiro Pedestal - 9 Vasos Dourado', 'sp_violeteiro'),
         new item(1, 'Violeteiro Pedestal - 9 Vasos Preto', 'sp_violeteiro'),
     ]
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '26/10/2023',
+    '14/11/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -280,7 +280,7 @@ var rischioto = new Inventario(
         new item(0, 'Cesto Fechado Cinza - 54 litros', 'cesto'),
         new item(0, 'Cesto Fechado Cinza - 100 litros', 'cesto'),
 
-        new item(0, 'Cesto Telado - 30 litros', 'cesto_telado'),
+        new item(1, 'Cesto Telado - 30 litros', 'cesto_telado'),
         new item(3, 'Cesto Telado - 60 litros', 'cesto_telado'),
 
         new item(5, 'Cesto Telado Rattan Marrom - 12 litros', 'cesto_telado_rattan'),
@@ -756,7 +756,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '08/11/2023',
+    '14/11/2023',
     [
         new item(12, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -794,7 +794,7 @@ var forth = new Inventario(
         new item(9, 'Flores Concentrado - 60ml', 'f'),
         new item(4, 'Flores p/uso - 500ml', 'f'),
         new item(31, 'Flores - 400g', 'f'),
-        new item(18, 'Flores - 3kg', 'f'),
+        new item(17, 'Flores - 3kg', 'f'),
         new item(0, 'Flores - 10Kg', 'f'),
         new item(45, 'Formicida Gel', 'f'),
         new item(3, 'Formicida isca granulada', 'f'), 
@@ -1266,7 +1266,7 @@ var insetimax = new Inventario(
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '23/10/2023',
+    '14/11/2023',
     [
         new item(3, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 50x50cm Pintada', 'treliça'),
@@ -1283,12 +1283,12 @@ var madeiras = new Inventario(
         new item(7, 'Cachepo Madeira 40 Simples', 'cachepo'),
         new item(10, 'Cachepo Madeira 40 Pintado', 'cachepo'),
 
-        new item(20, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
-        new item(12, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
-        new item(10, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
+        new item(16, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
+        new item(8, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
+        new item(9, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
         new item(12, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
         new item(2, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
-        new item(1, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
+        new item(0, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
 
         new item(11, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
         new item(10, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
