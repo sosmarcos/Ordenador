@@ -437,7 +437,7 @@ var rischioto = new Inventario(
         new item(48, 'Vaso Redondo Bella Fiore n13 Cerâmica', 'redondo_n13'),
         new item(39, 'Vaso Redondo Bella Fiore n13 Preto', 'redondo_n13'),
 
-        new item(63, 'Vaso Redondo Bella Fiore n17 Areia', 'redondo_n17'),
+        new item(59, 'Vaso Redondo Bella Fiore n17 Areia', 'redondo_n17'),
         new item(62, 'Vaso Redondo Bella Fiore n17 Cerâmica', 'redondo_n17'),
         new item(48, 'Vaso Redondo Bella Fiore n17 Preto', 'redondo_n17'),
 
@@ -1252,16 +1252,16 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '08/11/2023',
+    '25/11/2023',
     [
         new item(51, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
-        new item(53, 'Formicida Insetimaster - 100ml', 'formicida'),
+        new item(52, 'Formicida Insetimaster - 100ml', 'formicida'),
         new item(0, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
         new item(2, 'Inseticom Jardim - Caixa', 'inseticom'),
 
-        new item(41, 'Malathion 500CE - 100ml', 'malathion')
+        new item(40, 'Malathion 500CE - 100ml', 'malathion')
     ]   
 )
 var madeiras = new Inventario(
