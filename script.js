@@ -111,6 +111,7 @@ var sectInventarios = window.document.getElementById('inventarios')
 var sectRepositor = window.document.getElementById('repositor')
 
 //=======================||Artigos||========================//
+var articleDiversos = window.document.getElementById('diversos')
 var articleRegaplan = window.document.getElementById('regaplan')
 var articleRischioto = window.document.getElementById('rischioto')
 var articleEmeAEme = window.document.getElementById('eme_a_eme')
@@ -138,6 +139,7 @@ var categorias = [
     'vento'
 ]
 var inventorios = [
+    'diversos',
     'regaplan',
     'rischioto',
     'eme_a_eme',
@@ -152,6 +154,158 @@ var inventorios = [
     'nutriplan',
     'coquim'
 ]
+var diversos = new Inventario(
+    'Diversos',
+    '28/11/2023', 
+    [
+        new item(0, 'Baby Ball Amarelo', 'baby_ball'),
+        new item(0, 'Baby Ball Azul Antartica', 'baby_ball'),
+        new item(0, 'Baby Ball Azul Claro', 'baby_ball'),
+        new item(0, 'Baby Ball Bordo', 'baby_ball'),
+        new item(0, 'Baby Ball Branco', 'baby_ball'),
+        new item(0, 'Baby Ball Ceramica', 'baby_ball'),
+        new item(0, 'Baby Ball Cinza Escuro', 'baby_ball'),
+        new item(0, 'Baby Ball Creme', 'baby_ball'),
+        new item(0, 'Baby Ball Laranja', 'baby_ball'),
+        new item(0, 'Baby Ball Lilas', 'baby_ball'),
+        new item(0, 'Baby Ball Marmore', 'baby_ball'),
+        new item(0, 'Baby Ball Marrom Medio', 'baby_ball'),
+        new item(0, 'Baby Ball Preto', 'baby_ball'),
+        new item(0, 'Baby Ball Rosa Bebe', 'baby_ball'),
+        new item(0, 'Baby Ball Roxo', 'baby_ball'),
+        new item(0, 'Baby Ball Salmao Medio', 'baby_ball'),
+        new item(0, 'Baby Ball Verde Maça', 'baby_ball'),
+        new item(0, 'Baby Ball Verde Retro', 'baby_ball'),
+        new item(0, 'Baby Ball Vermelho', 'baby_ball'),
+        new item(0, 'Baby Ball Vinho', 'baby_ball'),
+
+        new item(0, 'Big Ball Amarelo', 'big_ball'),
+        new item(0, 'Big Ball Azul Bandeira', 'big_ball'),
+        new item(0, 'Big Ball Azul Bebe', 'big_ball'),
+        new item(0, 'Big Ball Bege', 'big_ball'),
+        new item(0, 'Big Ball Branco', 'big_ball'),
+        new item(0, 'Big Ball Ceramica', 'big_ball'),
+        new item(0, 'Big Ball Cinza Escuro', 'big_ball'),
+        new item(0, 'Big Ball Laranja', 'big_ball'),
+        new item(0, 'Big Ball Marmore', 'big_ball'),
+        new item(0, 'Big Ball Marrom', 'big_ball'),
+        new item(0, 'Big Ball Preto', 'big_ball'),
+        new item(0, 'Big Ball Rosa Bebe', 'big_ball'),
+        new item(0, 'Big Ball Roxo', 'big_ball'),
+        new item(0, 'Big Ball Verde Bandeira', 'big_ball'),
+        new item(0, 'Big Ball Verde Maça', 'big_ball'),
+        new item(0, 'Big Ball Verde Retro', 'big_ball'),
+        new item(0, 'Big Ball Vermelho', 'big_ball'),
+        new item(0, 'Big Ball Vinho', 'big_ball'),
+
+        new item(0, 'Cachepo Alto Brilho PP Amarelo', 'cachepo_pp'),
+        new item(0, 'Cachepo Alto Brilho PP Azul Marinho', 'cachepo_pp'),
+        new item(0, 'Cachepo Alto Brilho PP Azul Tiffany', 'cachepo_pp'),
+        new item(0, 'Cachepo Alto Brilho PP Branco', 'cachepo_pp'),
+        new item(0, 'Cachepo Alto Brilho PP Cinza', 'cachepo_pp'),
+        new item(0, 'Cachepo Alto Brilho PP Ouro', 'cachepo_pp'),
+        new item(0, 'Cachepo Alto Brilho PP Preto', 'cachepo_pp'),
+        new item(0, 'Cachepo Alto Brilho PP Verde Escuro', 'cachepo_pp'),
+        new item(0, 'Cachepo Alto Brilho PP Vermelho', 'cachepo_pp'),
+        new item(0, 'Cachepo Alto Brilho PP Vinho', 'cachepo_pp'),
+
+        new item(0, 'Cachepo Alto Brilho P Amarelo', 'cachepo_p'),
+        new item(0, 'Cachepo Alto Brilho P Azul Marinho', 'cachepo_p'),
+        new item(0, 'Cachepo Alto Brilho P Azul Tiffany', 'cachepo_p'),
+        new item(0, 'Cachepo Alto Brilho P Branco', 'cachepo_p'),
+        new item(0, 'Cachepo Alto Brilho P Cinza', 'cachepo_p'),
+        new item(0, 'Cachepo Alto Brilho P Ouro', 'cachepo_p'),
+        new item(0, 'Cachepo Alto Brilho P Preto', 'cachepo_p'),
+        new item(0, 'Cachepo Alto Brilho P Verde Escuro', 'cachepo_p'),
+        new item(0, 'Cachepo Alto Brilho P Vermelho', 'cachepo_p'),
+        new item(0, 'Cachepo Alto Brilho P Vinho', 'cachepo_p'),
+
+        new item(0, 'Cachepo Alto Brilho M Amarelo', 'cachepo_m'),
+        new item(0, 'Cachepo Alto Brilho M Azul Marinho', 'cachepo_m'),
+        new item(0, 'Cachepo Alto Brilho M Azul Tiffany', 'cachepo_m'),
+        new item(0, 'Cachepo Alto Brilho M Branco', 'cachepo_m'),
+        new item(0, 'Cachepo Alto Brilho M Cinza', 'cachepo_m'),
+        new item(0, 'Cachepo Alto Brilho M Ouro', 'cachepo_m'),
+        new item(0, 'Cachepo Alto Brilho M Preto', 'cachepo_m'),
+        new item(0, 'Cachepo Alto Brilho M Verde Escuro', 'cachepo_m'),
+        new item(0, 'Cachepo Alto Brilho M Vermelho', 'cachepo_m'),
+        new item(0, 'Cachepo Alto Brilho M Vinho', 'cachepo_m'),
+
+        new item(0, 'Cachepo Alto Brilho G Amarelo', 'cachepo_g'),
+        new item(0, 'Cachepo Alto Brilho G Azul Marinho', 'cachepo_g'),
+        new item(0, 'Cachepo Alto Brilho G Azul Tiffany', 'cachepo_g'),
+        new item(0, 'Cachepo Alto Brilho G Branco', 'cachepo_g'),
+        new item(0, 'Cachepo Alto Brilho G Cinza', 'cachepo_g'),
+        new item(0, 'Cachepo Alto Brilho G Ouro', 'cachepo_g'),
+        new item(0, 'Cachepo Alto Brilho G Preto', 'cachepo_g'),
+        new item(0, 'Cachepo Alto Brilho G Verde Escuro', 'cachepo_g'),
+        new item(0, 'Cachepo Alto Brilho G Vermelho', 'cachepo_g'),
+        new item(0, 'Cachepo Alto Brilho G Vinho', 'cachepo_g'),
+
+        new item(0, 'Cachepo Alto Brilho GG Amarelo', 'cachepo_gg'),
+        new item(0, 'Cachepo Alto Brilho GG Azul Marinho', 'cachepo_gg'),
+        new item(0, 'Cachepo Alto Brilho GG Azul Tiffany', 'cachepo_gg'),
+        new item(0, 'Cachepo Alto Brilho GG Branco', 'cachepo_gg'),
+        new item(0, 'Cachepo Alto Brilho GG Cinza', 'cachepo_gg'),
+        new item(0, 'Cachepo Alto Brilho GG Ouro', 'cachepo_gg'),
+        new item(0, 'Cachepo Alto Brilho GG Preto', 'cachepo_gg'),
+        new item(0, 'Cachepo Alto Brilho GG Verde Escuro', 'cachepo_gg'),
+        new item(0, 'Cachepo Alto Brilho GG Vermelho', 'cachepo_gg'),
+        new item(0, 'Cachepo Alto Brilho GG Vinho', 'cachepo_gg'),
+
+        new item(0, 'Cachepo Tripe Areia', 'cachepo_tripe'),
+        new item(0, 'Cachepo Tripe Azul Escuro', 'cachepo_tripe'),
+        new item(0, 'Cachepo Tripe Branco', 'cachepo_tripe'),
+        new item(0, 'Cachepo Tripe Cinza', 'cachepo_tripe'),
+        new item(0, 'Cachepo Tripe Preto', 'cachepo_tripe'),
+        new item(0, 'Cachepo Tripe Rosa', 'cachepo_tripe'),
+        new item(0, 'Cachepo Tripe Vinho', 'cachepo_tripe'),
+
+        new item(0, 'Cuia GP Amarela', 'cuia_gp'),
+        new item(0, 'Cuia GP Branca', 'cuia_gp'),
+        new item(0, 'Cuia GP Ceramica', 'cuia_gp'),
+        new item(0, 'Cuia GP Preta', 'cuia_gp'),
+        new item(0, 'Cuia GP Vermelha', 'cuia_gp'),
+
+        new item(0, 'Haste GP Amarela', 'haste_gp'),
+        new item(0, 'Haste GP Vermelha', 'haste_gp'),
+
+        new item(0, 'Mini Floreira Branco', 'mini_floreira'),
+        new item(0, 'Mini Floreira Laranja', 'mini_floreira'),
+        new item(0, 'Mini Floreira Marrom', 'mini_floreira'),
+        new item(0, 'Mini Floreira Preto', 'mini_floreira'),
+        new item(0, 'Mini Floreira Rosa', 'mini_floreira'),
+        new item(0, 'Mini Floreira Roxo', 'mini_floreira'),
+        new item(0, 'Mini Floreira Vermelho', 'mini_floreira'),
+
+        new item(0, 'pote de Mudas 1 litro', 'pote_muda'),
+        new item(0, 'pote de Mudas 3 litro', 'pote_muda'),
+        new item(0, 'pote de Mudas 4 litro', 'pote_muda'),
+        new item(0, 'pote de Mudas 4C litro', 'pote_muda'),
+        new item(0, 'pote de Mudas 5 litro', 'pote_muda'),
+        new item(0, 'pote de Mudas 6 litro', 'pote_muda'),
+        new item(0, 'pote de Mudas 8 litro', 'pote_muda'),
+        new item(0, 'pote de Mudas 12 litro', 'pote_muda'),
+        new item(0, 'pote de Mudas 13.6 litro', 'pote_muda'),
+
+        new item(0, 'Saquinho de Mudas 10x15', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 10x20', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 12x12', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 13x13', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 14x14', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 15x25', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 18x25', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 23x26', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 25x25', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 25x30', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 30x30', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 35x35', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 40x40', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 50x50', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 60x60', 'saquinho_muda'),
+        new item(0, 'Saquinho de Mudas 60x70', 'saquinho_muda')
+    ]
+)
 var regaplan = new Inventario(
     'Regaplan',
     '28/11/2023',
@@ -168,7 +322,7 @@ var regaplan = new Inventario(
         new item(95, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
         new item(23, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
-        new item(60, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
+        new item(58, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
         new item(58, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
 
         new item(103, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
@@ -878,7 +1032,7 @@ var forth = new Inventario(
 )
 var fuzil = new Inventario(
     'Fuzil',
-    '08/11/2023',
+    '28/11/2023',
     [
         new item(11, 'Ancinho p/Jardim 3 dentes', 'fuzil'),
         new item(1, 'Arrancador de Inço', 'fuzil'),
@@ -886,9 +1040,9 @@ var fuzil = new Inventario(
         new item(4, 'Facão mato 20', 'fusil'),
         new item(9, 'Pazinha p/jardim Larga', 'fuzil'),
         new item(1, 'Pazinha p/jardim Estreita', 'fuzil'),
-        new item(2, 'Sacho 2P CB Madeira', 'fuzil'),
+        new item(11, 'Sacho 2P CB Madeira', 'fuzil'),
         new item(16, 'Tesoura de poda Palisad', 'fuzil'),
-        new item(2, 'Tesoura de poda Tramontina', 'fuzil'),
+        new item(14, 'Tesoura de poda Tramontina', 'fuzil'),
         new item(8, 'Tesoura Grama', 'fuzil'),
         new item(6, 'Vasoura palheta s/regulagem', 'fuzil')
     ]
@@ -1146,7 +1300,7 @@ var alfa_polietileno = new Inventario(
 )
 var alfa_fibraSintetica = new Inventario(
     'Alfa Fibra Sintética',
-    '07/11/2023',
+    '28/11/2023',
     [
         new item(18, "Cuia Sem Borda nº 1 Argila", 'cuia_1'),
         new item(2, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
@@ -1156,7 +1310,7 @@ var alfa_fibraSintetica = new Inventario(
 
         new item(10, "Cuia Sem Borda nº 2 Argila", 'cuia_2'),
         new item(0, "Cuia Sem Borda nº 2 Branco", 'cuia_2'),
-        new item(8, "Cuia Sem Borda nº 2 Cappuccino", 'cuia_2'),
+        new item(5, "Cuia Sem Borda nº 2 Cappuccino", 'cuia_2'),
         new item(8, "Cuia Sem Borda nº 2 Envelhecido", 'cuia_2'),
         new item(3, "Cuia Sem Borda nº 2 Palha", 'cuia_2'),
 
@@ -1301,9 +1455,9 @@ var madeiras = new Inventario(
 )
 var nutriplan = new Inventario(
     'Nutriplan',
-    '07/11/2023', 
+    '28/11/2023', 
     [
-        new item(47, 'Pote de Muda - 25 litros', 'pote'),
+        new item(36, 'Pote de Muda - 25 litros', 'pote'),
         new item(28, 'Pote de Muda - 33 litros', 'pote'),
         new item(15, 'Pote de Muda - 40 litros', 'pote'),
         new item(0, 'Pote de Muda - 50 litros', 'pote'),
@@ -2004,6 +2158,8 @@ function linhaDestacada(identidade) {
 
 function buscadorDeInventario(nome) {
     switch (nome) {
+        case 'diversos':
+            return diversos
         case 'regaplan':
             return regaplan
         case 'rischioto':
@@ -2599,6 +2755,7 @@ function printPdf() {
 
 //====================================================||Comandos||================================================
 
+impreção(articleDiversos, diversos, 'diversos')
 impreção(articleRegaplan, regaplan, 'regaplan')
 impreção(articleEmeAEme, emeAeme, 'emeAeme')
 impreção(articleForth, forth, 'forth')
