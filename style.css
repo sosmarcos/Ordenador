@@ -383,7 +383,7 @@ section#calculadora {
     position: fixed;
     background-image: linear-gradient(90deg, #226fb6f2 5%, #3b81c2db);
     color: white;
-    margin-top: 35px;
+    margin-top: 82px;
 }
 
 ::-webkit-scrollbar {
