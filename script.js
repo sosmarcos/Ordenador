@@ -1089,7 +1089,7 @@ var alfa_polietileno = new Inventario(
         new item(10, 'Bacia Grafiato C/Prato nº 4 Preto', 'bacia_grafiato_4'),
 
         new item(9, 'Bacia Marmorizada C/Prato nº 1 Azul', 'bacia_marmorizada_1'),
-        new item(10, 'Bacia Marmorizada C/Prato nº 1 Vermelho', 'bacia_marmorizada_1'),0
+        new item(10, 'Bacia Marmorizada C/Prato nº 1 Vermelho', 'bacia_marmorizada_1'),
 
         new item(8, 'Bacia Marmorizada C/Prato nº 2 Azul', 'bacia_marmorizada_2'),
         new item(7, 'Bacia Marmorizada C/Prato nº 2 Vermelho', 'bacia_marmorizada_2'),
