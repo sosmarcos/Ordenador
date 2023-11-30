@@ -1051,7 +1051,7 @@ var fuzil = new Inventario(
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '08/11/2023',
+    '29/11/2023',
     [
         new item(10, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(10, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
