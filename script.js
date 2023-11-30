@@ -1434,14 +1434,14 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '25/11/2023',
+    '30/11/2023',
     [
         new item(51, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
         new item(52, 'Formicida Insetimaster - 100ml', 'formicida'),
-        new item(0, 'Formicida Insetimaster - 1 litro', 'formicida'),
+        new item(12, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
-        new item(2, 'Inseticom Jardim - Caixa', 'inseticom'),
+        new item(8, 'Inseticom Jardim - Caixa', 'inseticom'),
 
         new item(40, 'Malathion 500CE - 100ml', 'malathion')
     ]   
