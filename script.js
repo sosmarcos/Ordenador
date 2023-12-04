@@ -289,6 +289,7 @@ var diversos = new Inventario(
         new item(275, 'pote de Mudas 8 litro', 'pote_muda'),
         new item(78, 'pote de Mudas 12 litro', 'pote_muda'),
         new item(170, 'pote de Mudas 13.6 litro', 'pote_muda'),
+        new item(47, 'pote de Mudas 25 litro', 'pote_muda'),
 
         new item(0, 'Saquinho de Mudas 10x15', 'saquinho_muda'),
         new item(0, 'Saquinho de Mudas 10x20', 'saquinho_muda'),
@@ -395,7 +396,7 @@ var regaplan = new Inventario(
         new item(3, 'Violeteiro Pedestal - 5 Vasos Preto', 'sp_violeteiro'),
         new item(0, 'Violeteiro Pedestal - 7 Vasos Dourado', 'sp_violeteiro'),
         new item(3, 'Violeteiro Pedestal - 7 Vasos Preto', 'sp_violeteiro'),
-        new item(6, 'Violeteiro Pedestal - 9 Vasos Dourado', 'sp_violeteiro'),
+        new item(5, 'Violeteiro Pedestal - 9 Vasos Dourado', 'sp_violeteiro'),
         new item(1, 'Violeteiro Pedestal - 9 Vasos Preto', 'sp_violeteiro'),
     ]
 )
@@ -644,7 +645,7 @@ var rischioto = new Inventario(
         new item(30, 'Vaso Redondo Floratta n33 Areia', 'redondo_floratta_33'),
         new item(42, 'Vaso Redondo Floratta n33 Azul', 'redondo_floratta_33'),
         new item(42, 'Vaso Redondo Floratta n33 cinza', 'redondo_floratta_33'),
-        new item(19, 'Vaso Redondo Floratta n33 Preto', 'redondo_floratta_33'),
+        new item(17, 'Vaso Redondo Floratta n33 Preto', 'redondo_floratta_33'),
         new item(42, 'Vaso Redondo Floratta n33 Rosa', 'redondo_floratta_33'),
         new item(47, 'Vaso Redondo Floratta n33 Verde', 'redondo_floratta_33'),
         new item(2, 'Vaso Redondo Floratta n33 Verde Escuro', 'redondo_floratta_33'),
@@ -1163,7 +1164,7 @@ var alfa_polietileno = new Inventario(
 
         new item(10, 'Coluna Red. Grafiato C/Preto nº 1 Bege', 'coluna_grafiato_1'),
         new item(10, 'Coluna Red. Grafiato C/Preto nº 1 Cimento', 'coluna_grafiato_1'),
-        new item(10, 'Coluna Red. Grafiato C/Preto nº 1 Marrom', 'coluna_grafiato_1'),
+        new item(9, 'Coluna Red. Grafiato C/Preto nº 1 Marrom', 'coluna_grafiato_1'),
         new item(10, 'Coluna Red. Grafiato C/Preto nº 1 Preto', 'coluna_grafiato_1'),
 
         new item(7, 'Coluna Red. Grafiato C/Preto nº 2 Bege', 'coluna_grafiato_2'),
@@ -1185,11 +1186,11 @@ var alfa_polietileno = new Inventario(
         new item(10, 'Coluna Red. Marmorizada C/Prato nº 1 Vermelho', 'coluna_marmorizada_1'),
 
         new item(6, 'Coluna Red. Marmorizada C/Prato nº 2 Azul', 'coluna_marmorizada_2'),
-        new item(10, 'Coluna Red. Marmorizada C/Prato nº 2 verde', 'coluna_marmorizada_2'),
+        new item(9, 'Coluna Red. Marmorizada C/Prato nº 2 verde', 'coluna_marmorizada_2'),
         new item(7, 'Coluna Red. Marmorizada C/Prato nº 2 Vermelho', 'coluna_marmorizada_2'),
 
         new item(9, 'Coluna Red. Marmorizada C/Prato nº 3 Azul', 'coluna_marmorizada_3'),
-        new item(10, 'Coluna Red. Marmorizada C/Prato nº 3 verde', 'coluna_marmorizada_3'),
+        new item(8, 'Coluna Red. Marmorizada C/Prato nº 3 verde', 'coluna_marmorizada_3'),
         new item(9, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
 
         new item(5, 'Coluna Red. Marmorizada C/Prato nº 4 Azul', 'coluna_marmorizada_4'),
@@ -1229,7 +1230,7 @@ var alfa_polietileno = new Inventario(
         new item(3, 'Jardineira Grafiato C/Prato nº 2 Preto', 'jardineira_grafiato_2'),
 
         new item(7, 'Vaso Bojo Red. Diamante C/Prato nº 1 Bege', 'vaso_diamante_1'),
-        new item(9, 'Vaso Bojo Red. Diamante C/Prato nº 1 Cimento', 'vaso_diamante_1'),
+        new item(8, 'Vaso Bojo Red. Diamante C/Prato nº 1 Cimento', 'vaso_diamante_1'),
         new item(6, 'Vaso Bojo Red. Diamante C/Prato nº 1 Marrom', 'vaso_diamante_1'),
         new item(9, 'Vaso Bojo Red. Diamante C/Prato nº 1 Preto', 'vaso_diamante_1'),
 
@@ -1298,7 +1299,7 @@ var alfa_polietileno = new Inventario(
         new item(10, 'Vaso Bojo Red. Lisboa C/Prato nº 2 Marrom', 'vaso_grafiato_4'),
         new item(10, 'Vaso Bojo Red. Lisboa C/Prato nº 2 Preto', 'vaso_grafiato_4'),
 
-        new item(10, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
+        new item(8, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
         new item(10, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
 
         new item(13, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
