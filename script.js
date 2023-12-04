@@ -313,7 +313,7 @@ var regaplan = new Inventario(
     '04/12/2023',
     [
         new item(90, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(102, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(90, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(92, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(109, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(113, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -327,12 +327,12 @@ var regaplan = new Inventario(
         new item(58, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
         new item(34, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
 
-        new item(93, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
-        new item(100, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
-        new item(101, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
-        new item(59, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
+        new item(73, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
+        new item(80, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
+        new item(81, 'Suporte A Reforçado 03 - 29cm Dourado', 'sp_a_reforçado'),
+        new item(49, 'Suporte A Reforçado 04 - 34cm Dourado', 'sp_a_reforçado'),
 
-        new item(81, 'Suporte Artístico 00 - 19cm Dourado', 'sp_artistico'),
+        new item(71, 'Suporte Artístico 00 - 19cm Dourado', 'sp_artistico'),
         new item(98, 'Suporte Artístico 01 - 26cm Dourado', 'sp_artistico'),
         new item(69, 'Suporte Artístico 02 - 31cm Dourado', 'sp_artistico'),
         new item(75, 'Suporte Artístico 03 - 37cm Dourado', 'sp_artistico'),
@@ -356,10 +356,10 @@ var regaplan = new Inventario(
         new item(32, 'Suporte Margarida 04 - 26 cm Dourado', 'sp_margarida'),
 
         new item(24, 'Suporte Rasteiro Chapa 01 - 18cm Dourado', 'sp_rasteiro'),
-        new item(30, 'Suporte Rasteiro Chapa 02 - 21cm Dourado', 'sp_rasteiro'),
+        new item(25, 'Suporte Rasteiro Chapa 02 - 21cm Dourado', 'sp_rasteiro'),
         new item(30, 'Suporte Rasteiro Chapa 03 - 24cm Dourado', 'sp_rasteiro'),
         new item(30, 'Suporte Rasteiro Chapa 04 - 27cm Dourado', 'sp_rasteiro'),
-        new item(34, 'Suporte Rasteiro Chapa 05 - 30cm Dourado', 'sp_rasteiro'),
+        new item(29, 'Suporte Rasteiro Chapa 05 - 30cm Dourado', 'sp_rasteiro'),
         new item(20, 'Suporte Rasteiro Chapa 06 - 33cm Dourado', 'sp_rasteiro'),
         new item(20, 'Suporte Rasteiro Chapa 07 - 36cm Dourado', 'sp_rasteiro'),
         new item(20, 'Suporte Rasteiro Chapa 08 - 40cm Dourado', 'sp_rasteiro'),
@@ -780,30 +780,30 @@ var emeAeme = new Inventario(
         new item(96, 'Prato B006 6cm Cerâmica', 'prato_b006'),
         new item(98, 'Prato B006 6cm Preto', 'prato_b006'),
 
-        new item(81, 'Prato B00 9.5cm Cerâmica', 'prato_b00'),
+        new item(57, 'Prato B00 9.5cm Cerâmica', 'prato_b00'),
         new item(45, 'Prato B00 9.5cm Cimento', 'prato_b00'),
         new item(45, 'Prato B00 9.5cm Marfim', 'prato_b00'),
-        new item(93, 'Prato B00 9.5cm Preto', 'prato_b00'),
+        new item(69, 'Prato B00 9.5cm Preto', 'prato_b00'),
 
-        new item(85, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
+        new item(61, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
         new item(53, 'Prato B01 11.5cm Cimento', 'prato_b01'),
         new item(49, 'Prato B01 11.5cm Marfim', 'prato_b01'),
-        new item(64, 'Prato B01 11.5cm Preto', 'prato_b01'),
+        new item(40, 'Prato B01 11.5cm Preto', 'prato_b01'),
 
         new item(79, 'Prato B02 13cm Cerâmica', 'prato_b02'),
         new item(49, 'Prato B02 13cm Cimento', 'prato_b02'),
         new item(49, 'Prato B02 13cm Marfim', 'prato_b02'),
-        new item(81, 'Prato B02 13cm Preto', 'prato_b02'),
+        new item(69, 'Prato B02 13cm Preto', 'prato_b02'),
 
         new item(76, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(57, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(48, 'Prato B03 16cm Marfim', 'prato_b03'),
-        new item(70, 'Prato B03 16cm Preto', 'prato_b03'),
+        new item(58, 'Prato B03 16cm Preto', 'prato_b03'),
 
         new item(125, 'Prato B04 21cm Cerâmica', 'prato_b04'),
         new item(56, 'Prato B04 21cm Cimento', 'prato_b04'),
         new item(50, 'Prato B04 21cm Marfim', 'prato_b04'),
-        new item(123, 'Prato B04 21cm Preto', 'prato_b04'),
+        new item(111, 'Prato B04 21cm Preto', 'prato_b04'),
 
         new item(91, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
         new item(58, 'Prato B04.5 22cm Cimento', 'prato_b4.5'),
@@ -813,12 +813,12 @@ var emeAeme = new Inventario(
         new item(85, 'Prato B05 24cm Cerâmica', 'prato_b05'),
         new item(56, 'Prato B05 24cm Cimento', 'prato_b05'),
         new item(44, 'Prato B05 24cm Marfim', 'prato_b05'),
-        new item(100, 'Prato B05 24cm Preto', 'prato_b05'),
+        new item(88, 'Prato B05 24cm Preto', 'prato_b05'),
 
         new item(87, 'Prato B06 27cm Cerâmica', 'prato_b06'),
         new item(55, 'Prato B06 27cm Cimento', 'prato_b06'),
         new item(59, 'Prato B06 27cm Marfim', 'prato_b06'),
-        new item(97, 'Prato B06 27cm Preto', 'prato_b06'),
+        new item(85, 'Prato B06 27cm Preto', 'prato_b06'),
 
         new item(84, 'Prato B07 30cm Cerâmica', 'prato_b07'),
         new item(50, 'Prato B07 30cm Cimento', 'prato_b07'),
@@ -1442,11 +1442,11 @@ var policamp = new Inventario(
 )
 var jel_plast = new Inventario(
     'Jel Plast',
-    '08/11/2023',
+    '04/12/2023',
     [
         new item(12, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
         new item(0, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
-        new item(54, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
+        new item(36, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
         new item(372, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
         new item(0, 'Nectar de Beija Flor Com Corante', 'nectar'),
         new item(0, 'Nectar de Beija Flor Sem Corante', 'nectar')
