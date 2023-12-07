@@ -1061,7 +1061,7 @@ var fuzil = new Inventario(
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '06/12/2023',
+    '07/12/2023',
     [
         new item(10, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(10, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -1304,11 +1304,11 @@ var alfa_polietileno = new Inventario(
         new item(8, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
         new item(10, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
 
-        new item(13, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
+        new item(12, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
         new item(10, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Vermelho', 'vaso_marmorizado_2'),
 
         new item(8, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Azul', 'vaso_marmorizado_3'),
-        new item(7, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Vermelho', 'vaso_marmorizado_3'),
+        new item(6, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Vermelho', 'vaso_marmorizado_3'),
 
         new item(10, 'Vaso Origame C/Prato nº 3 Bege', 'vaso_grafiato_4'),
         new item(10, 'Vaso Origame C/Prato nº 3 Cimento', 'vaso_grafiato_4'),
@@ -1318,7 +1318,7 @@ var alfa_polietileno = new Inventario(
         new item(5, 'Vaso Bojo Red. Polido C/Prato nº 1 Bege', 'vaso_polido_1'),
         new item(5, 'Vaso Bojo Red. Polido C/Prato nº 1 Cimento', 'vaso_polido_1'),
         new item(8, 'Vaso Bojo Red. Polido C/Prato nº 1 Marrom', 'vaso_polido_1'),
-        new item(7, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
+        new item(6, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
 
         new item(9, 'Vaso Bojo Red. Polido C/Prato nº 2 Bege', 'vaso_polido_2'),
         new item(6, 'Vaso Bojo Red. Polido C/Prato nº 2 Cimento', 'vaso_polido_2'),
