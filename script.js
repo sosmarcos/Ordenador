@@ -404,7 +404,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '06/12/2023',
+    '09/12/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -584,7 +584,7 @@ var rischioto = new Inventario(
         new item(22, 'Vaso Quadrado Bella Fiore n28 Cerâmica', 'quadrado_n28'),
         new item(21, 'Vaso Quadrado Bella Fiore n28 Preto', 'quadrado_n28'),
 
-        new item(26, 'Vaso Quadrado Bella Fiore n35 Areia', 'quadrado_n35'),
+        new item(20, 'Vaso Quadrado Bella Fiore n35 Areia', 'quadrado_n35'),
         new item(9, 'Vaso Quadrado Bella Fiore n35 Cerâmica', 'quadrado_n35'),
         new item(31, 'Vaso Quadrado Bella Fiore n35 Preto', 'quadrado_n35'),
 
@@ -600,15 +600,15 @@ var rischioto = new Inventario(
         new item(62, 'Vaso Redondo Bella Fiore n17 Cerâmica', 'redondo_n17'),
         new item(48, 'Vaso Redondo Bella Fiore n17 Preto', 'redondo_n17'),
 
-        new item(44, 'Vaso Redondo Bella Fiore n22 Areia', 'redondo_n22'),
+        new item(38, 'Vaso Redondo Bella Fiore n22 Areia', 'redondo_n22'),
         new item(42, 'Vaso Redondo Bella Fiore n22 Ceoâmica', 'redondo_n22'),
-        new item(44, 'Vaso Redondo Bella Fiore n22 Preto', 'redondo_n22'),
+        new item(38, 'Vaso Redondo Bella Fiore n22 Preto', 'redondo_n22'),
 
-        new item(47, 'Vaso Redondo Bella Fiore n28 Areia', 'redondo_n28'),
-        new item(24, 'Vaso Redondo Bella Fiore n28 Cerâmica', 'redondo_n28'),
-        new item(18, 'Vaso Redondo Bella Fiore n28 Preto', 'redondo_n28'),
+        new item(43, 'Vaso Redondo Bella Fiore n28 Areia', 'redondo_n28'),
+        new item(20, 'Vaso Redondo Bella Fiore n28 Cerâmica', 'redondo_n28'),
+        new item(14, 'Vaso Redondo Bella Fiore n28 Preto', 'redondo_n28'),
 
-        new item(27, 'Vaso Redondo Bella Fiore n35 Areia', 'redondo_n35'),
+        new item(21, 'Vaso Redondo Bella Fiore n35 Areia', 'redondo_n35'),
         new item(28, 'Vaso Redondo Bella Fiore n35 Cerâmica', 'redondo_n35'),
         new item(38, 'Vaso Redondo Bella Fiore n35 Preto', 'redondo_n35'),
 
@@ -671,7 +671,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '06/12/2023',
+    '09/12/2023',
     [
         new item(196, 'Alça Universal Branca', 'alça_universal'),
         new item(41, 'Alça Universal Café', 'alça_universal'),
@@ -791,12 +791,12 @@ var emeAeme = new Inventario(
         new item(61, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
         new item(53, 'Prato B01 11.5cm Cimento', 'prato_b01'),
         new item(49, 'Prato B01 11.5cm Marfim', 'prato_b01'),
-        new item(40, 'Prato B01 11.5cm Preto', 'prato_b01'),
+        new item(0, 'Prato B01 11.5cm Preto', 'prato_b01'),
 
-        new item(79, 'Prato B02 13cm Cerâmica', 'prato_b02'),
+        new item(67, 'Prato B02 13cm Cerâmica', 'prato_b02'),
         new item(49, 'Prato B02 13cm Cimento', 'prato_b02'),
         new item(49, 'Prato B02 13cm Marfim', 'prato_b02'),
-        new item(69, 'Prato B02 13cm Preto', 'prato_b02'),
+        new item(57, 'Prato B02 13cm Preto', 'prato_b02'),
 
         new item(76, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(57, 'Prato B03 16cm Cimento', 'prato_b03'),
@@ -922,7 +922,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '06/12/2023',
+    '09/12/2023',
     [
         new item(10, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -996,7 +996,7 @@ var forth = new Inventario(
         new item(16, 'Jardim - 400g', 'j'),
         new item(14, 'Jardim - 3kg', 'j'),
 
-        new item(5, 'Lesmicida isca granulada', 'l'),
+        new item(4, 'Lesmicida isca granulada', 'l'),
 
         new item(24, 'Mata cochonilha p/uso - 500ml', 'm'),
         new item(22, 'Mata lagarta p/uso - 500ml', 'm'),
@@ -1061,7 +1061,7 @@ var fuzil = new Inventario(
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '07/12/2023',
+    '09/12/2023',
     [
         new item(10, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(10, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -1193,7 +1193,7 @@ var alfa_polietileno = new Inventario(
 
         new item(9, 'Coluna Red. Marmorizada C/Prato nº 3 Azul', 'coluna_marmorizada_3'),
         new item(8, 'Coluna Red. Marmorizada C/Prato nº 3 verde', 'coluna_marmorizada_3'),
-        new item(9, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
+        new item(8, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
 
         new item(5, 'Coluna Red. Marmorizada C/Prato nº 4 Azul', 'coluna_marmorizada_4'),
         new item(10, 'Coluna Red. Marmorizada C/Prato nº 4 verde', 'coluna_marmorizada_4'),
@@ -1205,7 +1205,7 @@ var alfa_polietileno = new Inventario(
         new item(9, 'Coluna Red. Polida C/Prato nº 1 Preto', 'coluna_polida_1'),
 
         new item(10, 'Coluna Red. Polida C/Prato nº 2 Bege', 'coluna_polida_2'),
-        new item(9, 'Coluna Red. Polida C/Prato nº 2 Cimento', 'coluna_polida_2'),
+        new item(8, 'Coluna Red. Polida C/Prato nº 2 Cimento', 'coluna_polida_2'),
         new item(9, 'Coluna Red. Polida C/Prato nº 2 Marrom', 'coluna_polida_2'),
         new item(8, 'Coluna Red. Polida C/Prato nº 2 Preto', 'coluna_polida_2'),
 
@@ -1225,7 +1225,7 @@ var alfa_polietileno = new Inventario(
         new item(4, 'Jardineira Grafiato C/Prato nº 1 Bege', 'jardineira_grafiato_1'),
         new item(4, 'Jardineira Grafiato C/Prato nº 1 Cimento', 'jardineira_grafiato_1'),
         new item(4, 'Jardineira Grafiato C/Prato nº 1 Marrom', 'jardineira_grafiato_1'),
-        new item(6, 'Jardineira Grafiato C/Prato nº 1 Preto', 'jardineira_grafiato_1'),
+        new item(5, 'Jardineira Grafiato C/Prato nº 1 Preto', 'jardineira_grafiato_1'),
 
         new item(4, 'Jardineira Grafiato C/Prato nº 2 Bege', 'jardineira_grafiato_2'),
         new item(5, 'Jardineira Grafiato C/Prato nº 2 Marrom', 'jardineira_grafiato_2'),
@@ -1304,13 +1304,13 @@ var alfa_polietileno = new Inventario(
         new item(8, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
         new item(10, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
 
-        new item(12, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
+        new item(11, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
         new item(10, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Vermelho', 'vaso_marmorizado_2'),
 
         new item(8, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Azul', 'vaso_marmorizado_3'),
         new item(6, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Vermelho', 'vaso_marmorizado_3'),
 
-        new item(10, 'Vaso Origame C/Prato nº 3 Bege', 'vaso_grafiato_4'),
+        new item(8, 'Vaso Origame C/Prato nº 3 Bege', 'vaso_grafiato_4'),
         new item(10, 'Vaso Origame C/Prato nº 3 Cimento', 'vaso_grafiato_4'),
         new item(10, 'Vaso Origame C/Prato nº 3 Marrom', 'vaso_grafiato_4'),
         new item(10, 'Vaso Origame C/Prato nº 3 Preto', 'vaso_grafiato_4'),
@@ -1318,7 +1318,7 @@ var alfa_polietileno = new Inventario(
         new item(5, 'Vaso Bojo Red. Polido C/Prato nº 1 Bege', 'vaso_polido_1'),
         new item(5, 'Vaso Bojo Red. Polido C/Prato nº 1 Cimento', 'vaso_polido_1'),
         new item(8, 'Vaso Bojo Red. Polido C/Prato nº 1 Marrom', 'vaso_polido_1'),
-        new item(6, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
+        new item(5, 'Vaso Bojo Red. Polido C/Prato nº 1 Preto', 'vaso_polido_1'),
 
         new item(9, 'Vaso Bojo Red. Polido C/Prato nº 2 Bege', 'vaso_polido_2'),
         new item(6, 'Vaso Bojo Red. Polido C/Prato nº 2 Cimento', 'vaso_polido_2'),
@@ -1338,7 +1338,7 @@ var alfa_polietileno = new Inventario(
 )
 var alfa_fibraSintetica = new Inventario(
     'Alfa Fibra Sintética',
-    '30/11/2023',
+    '09/12/2023',
     [
         new item(10, "Cuia Sem Borda nº 0 Argila", 'cuia_1'),
         new item(10, "Cuia Sem Borda nº 0 Branco", 'cuia_1'),
@@ -1346,7 +1346,7 @@ var alfa_fibraSintetica = new Inventario(
         new item(10, "Cuia Sem Borda nº 0 Palha", 'cuia_1'),
 
         new item(23, "Cuia Sem Borda nº 1 Argila", 'cuia_1'),
-        new item(7, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
+        new item(6, "Cuia Sem Borda nº 1 Branco", 'cuia_1'),
         new item(20, "Cuia Sem Borda nº 1 Cappuccino", 'cuia_1'),
         new item(18, "Cuia Sem Borda nº 1 Envelhecido", 'cuia_1'),
         new item(8, "Cuia Sem Borda nº 1 Palha", 'cuia_1'),
@@ -1538,7 +1538,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '04/12/2023',
+    '09/12/2023',
     [
         new item(8, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(14, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1586,9 +1586,9 @@ var coquim = new Inventario(
 
         new item(3, '2013 - Placa Colmeia Coquim 30cm', 'placa_colmeia'),
 
-        new item(35, '2999 - Estaca Coquim 30cm', 'estaca_coquim'),
-        new item(36, '3000 - Estaca Coquim 40cm', 'estaca_coquim'),
-        new item(33, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
+        new item(33, '2999 - Estaca Coquim 30cm', 'estaca_coquim'),
+        new item(34, '3000 - Estaca Coquim 40cm', 'estaca_coquim'),
+        new item(31, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
         new item(33, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
 
         new item(13, '4000 - Mix Coquim 1kg', 'adubos'),
