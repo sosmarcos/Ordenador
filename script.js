@@ -282,7 +282,7 @@ var diversos = new Inventario(
         new item(22, 'Mini Floreira Roxo', 'mini_floreira'),
         new item(0, 'Mini Floreira Vermelho', 'mini_floreira'),
 
-        new item(300, 'pote de Mudas 1 litro', 'pote_muda'),
+        new item(250, 'pote de Mudas 1 litro', 'pote_muda'),
         new item(90, 'pote de Mudas 3 litro', 'pote_muda'),
         new item(158, 'pote de Mudas 4 litro', 'pote_muda'),
         new item(123, 'pote de Mudas 4C litro', 'pote_muda'),
@@ -313,7 +313,7 @@ var diversos = new Inventario(
 )
 var regaplan = new Inventario(
     'Regaplan',
-    '04/12/2023',
+    '11/12/2023',
     [
         new item(90, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(90, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -368,9 +368,9 @@ var regaplan = new Inventario(
         new item(20, 'Suporte Rasteiro Chapa 08 - 40cm Dourado', 'sp_rasteiro'),
 
         new item(5, 'Suporte Torre 40cm Dourado', 'sp_torre'),
-        new item(10, 'Suporte Torre 40cm Preto', 'sp_torre'),
+        new item(9, 'Suporte Torre 40cm Preto', 'sp_torre'),
         new item(5, 'Suporte Torre 60cm Dourado', 'sp_torre'),
-        new item(14, 'Suporte Torre 60cm Preto', 'sp_torre'),
+        new item(13, 'Suporte Torre 60cm Preto', 'sp_torre'),
         new item(6, 'Suporte Torre 80cm Dourado', 'sp_torre'),
         new item(19, 'Suporte Torre 80cm Preto', 'sp_torre'),
         new item(9, 'Suporte Torre 110cm Dourado', 'sp_torre'),
@@ -404,7 +404,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '09/12/2023',
+    '11/12/2023',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -581,8 +581,8 @@ var rischioto = new Inventario(
         new item(22, 'Vaso Quadrado Bella Fiore n22 Preto', 'quadrado_n22'),
 
         new item(30, 'Vaso Quadrado Bella Fiore n28 Areia', 'quadrado_n28'),
-        new item(22, 'Vaso Quadrado Bella Fiore n28 Cerâmica', 'quadrado_n28'),
-        new item(21, 'Vaso Quadrado Bella Fiore n28 Preto', 'quadrado_n28'),
+        new item(10, 'Vaso Quadrado Bella Fiore n28 Cerâmica', 'quadrado_n28'),
+        new item(9, 'Vaso Quadrado Bella Fiore n28 Preto', 'quadrado_n28'),
 
         new item(20, 'Vaso Quadrado Bella Fiore n35 Areia', 'quadrado_n35'),
         new item(9, 'Vaso Quadrado Bella Fiore n35 Cerâmica', 'quadrado_n35'),
@@ -590,7 +590,7 @@ var rischioto = new Inventario(
 
         new item(18, 'Vaso Quadrado Bella Fiore n42 Areia', 'quadrado_n42'),
         new item(14, 'Vaso Quadrado Bella Fiore n42 Cerâmica', 'quadrado_n42'),
-        new item(24, 'Vaso Quadrado Bella Fiore n42 Preto', 'quadrado_n42'),
+        new item(12, 'Vaso Quadrado Bella Fiore n42 Preto', 'quadrado_n42'),
         
         new item(48, 'Vaso Redondo Bella Fiore n13 Areia', 'redondo_n13'),
         new item(48, 'Vaso Redondo Bella Fiore n13 Cerâmica', 'redondo_n13'),
@@ -671,7 +671,7 @@ var rischioto = new Inventario(
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '09/12/2023',
+    '11/12/2023',
     [
         new item(196, 'Alça Universal Branca', 'alça_universal'),
         new item(41, 'Alça Universal Café', 'alça_universal'),
@@ -687,21 +687,21 @@ var emeAeme = new Inventario(
         new item(30, 'Cachepot Floreira Luxury Verde Caribe', 'floreira_luxyry'),
 
         new item(20, 'Cachepot Luxury 9 Bege', 'luxyry_9'),
-        new item(20, 'Cachepot Luxury 9 Branco', 'luxyry_9'),
+        new item(8, 'Cachepot Luxury 9 Branco', 'luxyry_9'),
         new item(20, 'Cachepot Luxury 9 Branco Carrara', 'luxyry_9'),
         new item(20, 'Cachepot Luxury 9 Cafe', 'luxyry_9'),
         new item(20, 'Cachepot Luxury 9 Diamante Negro', 'luxyry_9'),
         new item(20, 'Cachepot Luxury 9 Verde Caribe', 'luxyry_9'),
 
         new item(20, 'Cachepot Luxury 11 Bege', 'luxyry_11'),
-        new item(25, 'Cachepot Luxury 11 Branco', 'luxyry_11'),
+        new item(13, 'Cachepot Luxury 11 Branco', 'luxyry_11'),
         new item(20, 'Cachepot Luxury 11 Branco Carrara', 'luxyry_11'),
         new item(25, 'Cachepot Luxury 11 Cafe', 'luxyry_11'),
         new item(25, 'Cachepot Luxury 11 Diamante Negro', 'luxyry_11'),
         new item(20, 'Cachepot Luxury 11 Verde Caribe', 'luxyry_11'),
 
         new item(20, 'Cachepot Luxury 15 Bege', 'luxyry_15'),
-        new item(25, 'Cachepot Luxury 15 Branco', 'luxyry_15'),
+        new item(13, 'Cachepot Luxury 15 Branco', 'luxyry_15'),
         new item(20, 'Cachepot Luxury 15 Branco Carrara', 'luxyry_15'),
         new item(25, 'Cachepot Luxury 15 Cafe', 'luxyry_15'),
         new item(25, 'Cachepot Luxury 15 Diamante Negro', 'luxyry_15'),
@@ -786,7 +786,7 @@ var emeAeme = new Inventario(
         new item(57, 'Prato B00 9.5cm Cerâmica', 'prato_b00'),
         new item(45, 'Prato B00 9.5cm Cimento', 'prato_b00'),
         new item(45, 'Prato B00 9.5cm Marfim', 'prato_b00'),
-        new item(69, 'Prato B00 9.5cm Preto', 'prato_b00'),
+        new item(45, 'Prato B00 9.5cm Preto', 'prato_b00'),
 
         new item(61, 'Prato B01 11.5cm Cerâmica', 'prato_b01'),
         new item(53, 'Prato B01 11.5cm Cimento', 'prato_b01'),
@@ -796,39 +796,39 @@ var emeAeme = new Inventario(
         new item(67, 'Prato B02 13cm Cerâmica', 'prato_b02'),
         new item(49, 'Prato B02 13cm Cimento', 'prato_b02'),
         new item(49, 'Prato B02 13cm Marfim', 'prato_b02'),
-        new item(57, 'Prato B02 13cm Preto', 'prato_b02'),
+        new item(21, 'Prato B02 13cm Preto', 'prato_b02'),
 
         new item(76, 'Prato B03 16cm Cerâmica', 'prato_b03'),
         new item(57, 'Prato B03 16cm Cimento', 'prato_b03'),
         new item(48, 'Prato B03 16cm Marfim', 'prato_b03'),
-        new item(58, 'Prato B03 16cm Preto', 'prato_b03'),
+        new item(0, 'Prato B03 16cm Preto', 'prato_b03'),
 
         new item(125, 'Prato B04 21cm Cerâmica', 'prato_b04'),
         new item(56, 'Prato B04 21cm Cimento', 'prato_b04'),
         new item(50, 'Prato B04 21cm Marfim', 'prato_b04'),
-        new item(111, 'Prato B04 21cm Preto', 'prato_b04'),
+        new item(63, 'Prato B04 21cm Preto', 'prato_b04'),
 
         new item(91, 'Prato B04.5 22cm Cerâmica', 'prato_b4.5'),
         new item(58, 'Prato B04.5 22cm Cimento', 'prato_b4.5'),
         new item(56, 'Prato B04.5 22cm Marfim', 'prato_b4.5'),
-        new item(117, 'Prato B04.5 22cm Preto', 'prato_b4.5'),
+        new item(81, 'Prato B04.5 22cm Preto', 'prato_b4.5'),
 
         new item(85, 'Prato B05 24cm Cerâmica', 'prato_b05'),
         new item(56, 'Prato B05 24cm Cimento', 'prato_b05'),
         new item(44, 'Prato B05 24cm Marfim', 'prato_b05'),
-        new item(88, 'Prato B05 24cm Preto', 'prato_b05'),
+        new item(64, 'Prato B05 24cm Preto', 'prato_b05'),
 
         new item(87, 'Prato B06 27cm Cerâmica', 'prato_b06'),
         new item(55, 'Prato B06 27cm Cimento', 'prato_b06'),
         new item(59, 'Prato B06 27cm Marfim', 'prato_b06'),
-        new item(85, 'Prato B06 27cm Preto', 'prato_b06'),
+        new item(61, 'Prato B06 27cm Preto', 'prato_b06'),
 
-        new item(84, 'Prato B07 30cm Cerâmica', 'prato_b07'),
+        new item(72, 'Prato B07 30cm Cerâmica', 'prato_b07'),
         new item(50, 'Prato B07 30cm Cimento', 'prato_b07'),
         new item(51, 'Prato B07 30cm Marfim', 'prato_b07'),
-        new item(83, 'Prato B07 30cm Preto', 'prato_b07'),
+        new item(59, 'Prato B07 30cm Preto', 'prato_b07'),
 
-        new item(51, 'Prato B08 33cm Cerâmica', 'prato_b08'),
+        new item(39, 'Prato B08 33cm Cerâmica', 'prato_b08'),
         new item(38, 'Prato B08 33cm Cimento', 'prato_b08'),
         new item(33, 'Prato B08 33cm Marfim', 'prato_b08'),
         new item(61, 'Prato B08 33cm Preto', 'prato_b08'),
@@ -849,8 +849,8 @@ var emeAeme = new Inventario(
         new item(69, 'Vaso De Parede VP 14 Verde', 'vp_14'),
 
         new item(54, 'Vaso De Parede VP 20 Branco', 'vp_20'),
-        new item(55, 'Vaso De Parede VP 20 Cerâmica', 'vp_20'),
-        new item(60, 'Vaso De Parede VP 20 Preto', 'vp_20'),
+        new item(43, 'Vaso De Parede VP 20 Cerâmica', 'vp_20'),
+        new item(48, 'Vaso De Parede VP 20 Preto', 'vp_20'),
         new item(56, 'Vaso De Parede VP 20 Verde', 'vp_20'),
 
         new item(51, 'Vaso De Parede VP 30 Branco', 'vp_30'),
@@ -1431,9 +1431,9 @@ var alfa_fibraSintetica = new Inventario(
 )
 var policamp = new Inventario(
     'Policamp',
-    '06/12/2023',
+    '11/12/2023',
     [
-        new item(94, 'Pulverizador 500ml', 'pulverizador'),
+        new item(70, 'Pulverizador 500ml', 'pulverizador'),
         new item(62, 'Pulverizador 1 litro', 'pulverizador'),
         new item(33, 'Regador Com Cabo - Bico', 'Regador_cabo'),
         new item(29, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
@@ -1445,9 +1445,9 @@ var policamp = new Inventario(
 )
 var jel_plast = new Inventario(
     'Jel Plast',
-    '04/12/2023',
+    '11/12/2023',
     [
-        new item(12, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
+        new item(0, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
         new item(0, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
         new item(36, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
         new item(372, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
@@ -1471,7 +1471,7 @@ var insetimax = new Inventario(
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '28/11/2023',
+    '11/12/2023',
     [
         new item(3, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 50x50cm Pintada', 'treliça'),
@@ -1488,10 +1488,10 @@ var madeiras = new Inventario(
         new item(7, 'Cachepo Madeira 40 Simples', 'cachepo'),
         new item(10, 'Cachepo Madeira 40 Pintado', 'cachepo'),
 
-        new item(18, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
-        new item(16, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
-        new item(16, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
-        new item(18, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
+        new item(14, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
+        new item(11, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
+        new item(10, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
+        new item(12, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
         new item(0, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
         new item(2, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
 
