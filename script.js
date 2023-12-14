@@ -293,6 +293,8 @@ var diversos = new Inventario(
         new item(170, 'pote de Mudas 13.6 litro', 'pote_muda'),
         new item(47, 'pote de Mudas 25 litro', 'pote_muda'),
 
+        new item(26, 'Roundup 1 litro', 'roundup'),
+
         new item(20, 'Saquinho de Mudas 10x15', 'saquinho_muda'),
         new item(0, 'Saquinho de Mudas 10x20', 'saquinho_muda'),
         new item(21, 'Saquinho de Mudas 12x12', 'saquinho_muda'),
@@ -308,7 +310,10 @@ var diversos = new Inventario(
         new item(0, 'Saquinho de Mudas 40x40', 'saquinho_muda'),
         new item(0, 'Saquinho de Mudas 50x50', 'saquinho_muda'),
         new item(0, 'Saquinho de Mudas 60x60', 'saquinho_muda'),
-        new item(0, 'Saquinho de Mudas 60x70', 'saquinho_muda')
+        new item(0, 'Saquinho de Mudas 60x70', 'saquinho_muda'),
+
+        new item(14, 'Tordon 100ml', 'tordon'),
+        new item(1, 'Tordon 1 litro', 'tordon'),
     ]
 )
 var regaplan = new Inventario(
