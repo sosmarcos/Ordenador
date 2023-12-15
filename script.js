@@ -156,7 +156,7 @@ var inventorios = [
 ]
 var diversos = new Inventario(
     'Diversos',
-    '06/12/2023', 
+    '14/12/2023', 
     [
         new item(40, 'Baby Ball Amarelo', 'baby_ball'),
         new item(44, 'Baby Ball Azul', 'baby_ball'),
