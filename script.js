@@ -318,7 +318,7 @@ var diversos = new Inventario(
 )
 var regaplan = new Inventario(
     'Regaplan',
-    '18/12/2023',
+    '03/01/2024',
     [
         new item(90, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(90, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -373,7 +373,7 @@ var regaplan = new Inventario(
         new item(20, 'Suporte Rasteiro Chapa 08 - 40cm Dourado', 'sp_rasteiro'),
 
         new item(5, 'Suporte Torre 40cm Dourado', 'sp_torre'),
-        new item(9, 'Suporte Torre 40cm Preto', 'sp_torre'),
+        new item(8, 'Suporte Torre 40cm Preto', 'sp_torre'),
         new item(5, 'Suporte Torre 60cm Dourado', 'sp_torre'),
         new item(13, 'Suporte Torre 60cm Preto', 'sp_torre'),
         new item(6, 'Suporte Torre 80cm Dourado', 'sp_torre'),
@@ -409,7 +409,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '18/12/2023',
+    '03/01/2024',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -469,23 +469,23 @@ var rischioto = new Inventario(
 
         new item(42, 'Forma de Gelo 2 Peças', 'forma_gelo'),
 
-        new item(10, 'Floreira Floratta n30 Areia', 'floreira_30'),
+        new item(22, 'Floreira Floratta n30 Areia', 'floreira_30'),
         new item(49, 'Floreira Floratta n30 Azul', 'floreira_30'),
         new item(31, 'Floreira Floratta n30 cinza', 'floreira_30'),
         new item(20, 'Floreira Floratta n30 Preta', 'floreira_30'),
         new item(33, 'Floreira Floratta n30 Rosa', 'floreira_30'),
         new item(42, 'Floreira Floratta n30 Verde', 'floreira_30'),
-        new item(10, 'Floreira Floratta n30 Verde Escuro', 'floreira_30'),
+        new item(22, 'Floreira Floratta n30 Verde Escuro', 'floreira_30'),
 
         new item(18, 'Jarra Quadrada - 2 litros', 'jarra'),
         new item(19, 'Jarra Redonda - 1.5 litros', 'jarra'),
 
         new item(46, 'Jardineira Bella Fiore n35 Areia', 'jardineira_n35'),
-        new item(36, 'Jardineira Bella Fiore n35 Cerâmica', 'jardineira_n35'),
+        new item(60, 'Jardineira Bella Fiore n35 Cerâmica', 'jardineira_n35'),
         new item(44, 'Jardineira Bella Fiore n35 Preta', 'jardineira_n35'),
 
-        new item(24, 'Jardineira Bella Fiore n50 Areia', 'jardineira_n50'),
-        new item(32, 'Jardineira Bella Fiore n50 Cerâmica', 'jardineira_n50'),
+        new item(36, 'Jardineira Bella Fiore n50 Areia', 'jardineira_n50'),
+        new item(44, 'Jardineira Bella Fiore n50 Cerâmica', 'jardineira_n50'),
         new item(53, 'Jardineira Bella Fiore n50 Preta', 'jardineira_n50'),
 
         new item(10, 'Jardineira Floratta n50 Areia', 'jardineira_floratta_50'),
@@ -494,15 +494,15 @@ var rischioto = new Inventario(
         new item(21, 'Jardineira Floratta n50 Preta', 'jardineira_floratta_50'),
         new item(30, 'Jardineira Floratta n50 Rosa', 'jardineira_floratta_50'),
         new item(37, 'Jardineira Floratta n50 Verde', 'jardineira_floratta_50'),
-        new item(10, 'Jardineira Floratta n50 Verde Escuro', 'jardineira_floratta_50'),
+        new item(22, 'Jardineira Floratta n50 Verde Escuro', 'jardineira_floratta_50'),
 
-        new item(11, 'Jardineira Floratta n80 Areia', 'jardineira_floratta_80'),
+        new item(17, 'Jardineira Floratta n80 Areia', 'jardineira_floratta_80'),
         new item(0, 'Jardineira Floratta n80 cinza', 'jardineira_floratta_80'),
         new item(31, 'Jardineira Floratta n80 Azul', 'jardineira_floratta_80'),
         new item(12, 'Jardineira Floratta n80 Preta', 'jardineira_floratta_80'),
         new item(4, 'Jardineira Floratta n80 Rosa', 'jardineira_floratta_80'),
         new item(23, 'Jardineira Floratta n80 Verde', 'jardineira_floratta_80'),
-        new item(14, 'Jardineira Floratta n80 Verde Escuro', 'jardineira_floratta_80'),
+        new item(20, 'Jardineira Floratta n80 Verde Escuro', 'jardineira_floratta_80'),
 
         new item(0, 'Lixeira Basculante - 3.6 litros', 'lixeira_basculante'),
 
@@ -538,68 +538,68 @@ var rischioto = new Inventario(
         new item(0, 'Pote Volare - 2 Litros', 'pote_volare'),
         new item(0, 'Pote Volare - 3 Litros', 'pote_volare'),
 
-        new item(0, 'Vaso Coluna Floratta P Areia', 'vaso_coluna_p'),
-        new item(4, 'Vaso Coluna Floratta P Preto', 'vaso_coluna_p'),
+        new item(11, 'Vaso Coluna Floratta P Areia', 'vaso_coluna_p'),
+        new item(28, 'Vaso Coluna Floratta P Preto', 'vaso_coluna_p'),
         new item(4, 'Vaso Coluna Floratta P Rosa', 'vaso_coluna_p'),
-        new item(0, 'Vaso Coluna Floratta P Verde Escuro', 'vaso_coluna_p'),
+        new item(36, 'Vaso Coluna Floratta P Verde Escuro', 'vaso_coluna_p'),
 
-        new item(1, 'Vaso Coluna Floratta M Areia', 'vaso_coluna_m'),
-        new item(2, 'Vaso Coluna Floratta M Preto', 'vaso_coluna_m'),
+        new item(13, 'Vaso Coluna Floratta M Areia', 'vaso_coluna_m'),
+        new item(38, 'Vaso Coluna Floratta M Preto', 'vaso_coluna_m'),
         new item(4, 'Vaso Coluna Floratta M Rosa', 'vaso_coluna_m'),
-        new item(1, 'Vaso Coluna Floratta M Verde Escuro', 'vaso_coluna_m'),
+        new item(25, 'Vaso Coluna Floratta M Verde Escuro', 'vaso_coluna_m'),
 
         new item(2, 'Vaso Coluna Floratta G Areia', 'vaso_coluna_g'),
         new item(2, 'Vaso Coluna Floratta G Preto', 'vaso_coluna_g'),
         new item(2, 'Vaso Coluna Floratta G Rosa', 'vaso_coluna_g'),
-        new item(0, 'Vaso Coluna Floratta G Verde Escuro', 'vaso_coluna_g'),
+        new item(24, 'Vaso Coluna Floratta G Verde Escuro', 'vaso_coluna_g'),
 
         new item(18, 'Vaso de Parede Bella Fiore 1.7 litros Areia', 'vp_florença_1.7'),
         new item(30, 'Vaso de Parede Bella Fiore 1.7 litros Cerâmica', 'vp_florença_1.7'),
         new item(19, 'Vaso de Parede Bella Fiore 1.7 litros Preto', 'vp_florença_1.7'),
 
         new item(11, 'Vaso de Parede Bella Fiore 3.3 litros Areia', 'vp_florença_3.3'),
-        new item(19, 'Vaso de Parede Bella Fiore 3.3 litros Cerâmica', 'vp_florença_3.3'),
-        new item(32, 'Vaso de Parede Bella Fiore 3.3 litros Preto', 'vp_florença_3.3'),
+        new item(43, 'Vaso de Parede Bella Fiore 3.3 litros Cerâmica', 'vp_florença_3.3'),
+        new item(56, 'Vaso de Parede Bella Fiore 3.3 litros Preto', 'vp_florença_3.3'),
 
         new item(0, 'Vaso de Parede Floratta 3 litros Areia', 'vp_floratta_3'),
         new item(24, 'Vaso de Parede Floratta 3 litros Azul', 'vp_floratta_3'),
         new item(23, 'Vaso de Parede Floratta 3 litros cinza', 'vp_floratta_3'),
-        new item(10, 'Vaso de Parede Floratta 3 litros Preto', 'vp_floratta_3'),
+        new item(22, 'Vaso de Parede Floratta 3 litros Preto', 'vp_floratta_3'),
         new item(20, 'Vaso de Parede Floratta 3 litros Rosa', 'vp_floratta_3'),
         new item(17, 'Vaso de Parede Floratta 3 litros Verde', 'vp_floratta_3'),
-        new item(8, 'Vaso de Parede Floratta 3 litros Verde Escuro', 'vp_floratta_3'),
+        new item(20, 'Vaso de Parede Floratta 3 litros Verde Escuro', 'vp_floratta_3'),
 
-        new item(8, 'Vaso de Parede Floratta 6 litros Areia', 'vp_floratta_6'),
+        new item(20, 'Vaso de Parede Floratta 6 litros Areia', 'vp_floratta_6'),
         new item(16, 'Vaso de Parede Floratta 6 litros Azul', 'vp_floratta_6'),
         new item(0, 'Vaso de Parede Floratta 6 litros cinza', 'vp_floratta_6'),
-        new item(10, 'Vaso de Parede Floratta 6 litros Preto', 'vp_floratta_6'),
+        new item(22, 'Vaso de Parede Floratta 6 litros Preto', 'vp_floratta_6'),
         new item(18, 'Vaso de Parede Floratta 6 litros Rosa', 'vp_floratta_6'),
         new item(18, 'Vaso de Parede Floratta 6 litros Verde', 'vp_floratta_6'),
-        new item(8, 'Vaso de Parede Floratta 6 litros Verde Escuro', 'vp_floratta_6'),
+        new item(20, 'Vaso de Parede Floratta 6 litros Verde Escuro', 'vp_floratta_6'),
 
-        new item(48, 'Vaso Quadrado Bella Fiore n17 Areia', 'quadrado_n17'),
-        new item(43, 'Vaso Quadrado Bella Fiore n17 Cerâmica', 'quadrado_n17'),
-        new item(47, 'Vaso Quadrado Bella Fiore n17 Preto', 'quadrado_n17'),
+        new item(72, 'Vaso Quadrado Bella Fiore n17 Areia', 'quadrado_n17'),
+        new item(67, 'Vaso Quadrado Bella Fiore n17 Cerâmica', 'quadrado_n17'),
+        new item(71, 'Vaso Quadrado Bella Fiore n17 Preto', 'quadrado_n17'),
 
         new item(41, 'Vaso Quadrado Bella Fiore n22 Areia', 'quadrado_n22'),
-        new item(18, 'Vaso Quadrado Bella Fiore n22 Cerâmica', 'quadrado_n22'),
-        new item(22, 'Vaso Quadrado Bella Fiore n22 Preto', 'quadrado_n22'),
+        new item(42, 'Vaso Quadrado Bella Fiore n22 Cerâmica', 'quadrado_n22'),
+        new item(46, 'Vaso Quadrado Bella Fiore n22 Preto', 'quadrado_n22'),
 
         new item(30, 'Vaso Quadrado Bella Fiore n28 Areia', 'quadrado_n28'),
-        new item(10, 'Vaso Quadrado Bella Fiore n28 Cerâmica', 'quadrado_n28'),
+        new item(34, 'Vaso Quadrado Bella Fiore n28 Cerâmica', 'quadrado_n28'),
         new item(9, 'Vaso Quadrado Bella Fiore n28 Preto', 'quadrado_n28'),
 
         new item(20, 'Vaso Quadrado Bella Fiore n35 Areia', 'quadrado_n35'),
-        new item(9, 'Vaso Quadrado Bella Fiore n35 Cerâmica', 'quadrado_n35'),
+        new item(21, 'Vaso Quadrado Bella Fiore n35 Cerâmica', 'quadrado_n35'),
         new item(31, 'Vaso Quadrado Bella Fiore n35 Preto', 'quadrado_n35'),
 
         new item(18, 'Vaso Quadrado Bella Fiore n42 Areia', 'quadrado_n42'),
-        new item(14, 'Vaso Quadrado Bella Fiore n42 Cerâmica', 'quadrado_n42'),
+        new item(26, 'Vaso Quadrado Bella Fiore n42 Cerâmica', 'quadrado_n42'),
         new item(12, 'Vaso Quadrado Bella Fiore n42 Preto', 'quadrado_n42'),
         
         new item(48, 'Vaso Redondo Bella Fiore n13 Areia', 'redondo_n13'),
         new item(48, 'Vaso Redondo Bella Fiore n13 Cerâmica', 'redondo_n13'),
-        new item(39, 'Vaso Redondo Bella Fiore n13 Preto', 'redondo_n13'),
+        new item(63, 'Vaso Redondo Bella Fiore n13 Preto', 'redondo_n13'),
 
         new item(58, 'Vaso Redondo Bella Fiore n17 Areia', 'redondo_n17'),
         new item(62, 'Vaso Redondo Bella Fiore n17 Cerâmica', 'redondo_n17'),
@@ -611,72 +611,72 @@ var rischioto = new Inventario(
 
         new item(43, 'Vaso Redondo Bella Fiore n28 Areia', 'redondo_n28'),
         new item(20, 'Vaso Redondo Bella Fiore n28 Cerâmica', 'redondo_n28'),
-        new item(14, 'Vaso Redondo Bella Fiore n28 Preto', 'redondo_n28'),
+        new item(38, 'Vaso Redondo Bella Fiore n28 Preto', 'redondo_n28'),
 
-        new item(21, 'Vaso Redondo Bella Fiore n35 Areia', 'redondo_n35'),
-        new item(28, 'Vaso Redondo Bella Fiore n35 Cerâmica', 'redondo_n35'),
-        new item(38, 'Vaso Redondo Bella Fiore n35 Preto', 'redondo_n35'),
+        new item(33, 'Vaso Redondo Bella Fiore n35 Areia', 'redondo_n35'),
+        new item(40, 'Vaso Redondo Bella Fiore n35 Cerâmica', 'redondo_n35'),
+        new item(50, 'Vaso Redondo Bella Fiore n35 Preto', 'redondo_n35'),
 
         new item(32, 'Vaso Redondo Bella Fiore n42 Areia', 'redondo_n42'),
-        new item(19, 'Vaso Redondo Bella Fiore n42 Cerâmica', 'redondo_n42'),
+        new item(31, 'Vaso Redondo Bella Fiore n42 Cerâmica', 'redondo_n42'),
         new item(37, 'Vaso Redondo Bella Fiore n42 Preto', 'redondo_n42'),
 
-        new item(1, 'Vaso Redondo Bella Fiore n50 Areia', 'redondo_n50'),
-        new item(6, 'Vaso Redondo Bella Fiore n50 Cerâmica', 'redondo_n50'),
-        new item(14, 'Vaso Redondo Bella Fiore n50 Preto', 'redondo_n50'),
+        new item(9, 'Vaso Redondo Bella Fiore n50 Areia', 'redondo_n50'),
+        new item(14, 'Vaso Redondo Bella Fiore n50 Cerâmica', 'redondo_n50'),
+        new item(22, 'Vaso Redondo Bella Fiore n50 Preto', 'redondo_n50'),
 
-        new item(14, 'Vaso Redondo Floratta n15 Areia', 'redondo_floratta_15'),
+        new item(38, 'Vaso Redondo Floratta n15 Areia', 'redondo_floratta_15'),
         new item(2, 'Vaso Redondo Floratta n15 Azul', 'redondo_floratta_15'),
         new item(7, 'Vaso Redondo Floratta n15 cinza', 'redondo_floratta_15'),
         new item(43, 'Vaso Redondo Floratta n15 Preto', 'redondo_floratta_15'),
         new item(31, 'Vaso Redondo Floratta n15 Rosa', 'redondo_floratta_15'),
         new item(8, 'Vaso Redondo Floratta n15 Verde', 'redondo_floratta_15'),
-        new item(18, 'Vaso Redondo Floratta n15 Verde Escuro', 'redondo_floratta_15'),
+        new item(42, 'Vaso Redondo Floratta n15 Verde Escuro', 'redondo_floratta_15'),
 
-        new item(2, 'Vaso Redondo Floratta n19 Areia', 'redondo_floratta_19'),
+        new item(26, 'Vaso Redondo Floratta n19 Areia', 'redondo_floratta_19'),
         new item(3, 'Vaso Redondo Floratta n19 Azul', 'redondo_floratta_19'),
         new item(5, 'Vaso Redondo Floratta n19 cinza', 'redondo_floratta_19'),
-        new item(19, 'Vaso Redondo Floratta n19 Preto', 'redondo_floratta_19'),
+        new item(31, 'Vaso Redondo Floratta n19 Preto', 'redondo_floratta_19'),
         new item(15, 'Vaso Redondo Floratta n19 Rosa', 'redondo_floratta_19'),
         new item(7, 'Vaso Redondo Floratta n19 Verde', 'redondo_floratta_19'),
-        new item(14, 'Vaso Redondo Floratta n19 Verde Escuro', 'redondo_floratta_19'),
+        new item(38, 'Vaso Redondo Floratta n19 Verde Escuro', 'redondo_floratta_19'),
 
-        new item(8, 'Vaso Redondo Floratta n26 Areia', 'redondo_floratta_26'),
+        new item(32, 'Vaso Redondo Floratta n26 Areia', 'redondo_floratta_26'),
         new item(26, 'Vaso Redondo Floratta n26 Azul', 'redondo_floratta_26'),
         new item(13, 'Vaso Redondo Floratta n26 cinza', 'redondo_floratta_26'),
-        new item(19, 'Vaso Redondo Floratta n26 Preto', 'redondo_floratta_26'),
+        new item(31, 'Vaso Redondo Floratta n26 Preto', 'redondo_floratta_26'),
         new item(31, 'Vaso Redondo Floratta n26 Rosa', 'redondo_floratta_26'),
         new item(34, 'Vaso Redondo Floratta n26 Verde', 'redondo_floratta_26'),
-        new item(7, 'Vaso Redondo Floratta n26 Verde Escuro', 'redondo_floratta_26'),
+        new item(31, 'Vaso Redondo Floratta n26 Verde Escuro', 'redondo_floratta_26'),
 
         new item(30, 'Vaso Redondo Floratta n33 Areia', 'redondo_floratta_33'),
         new item(42, 'Vaso Redondo Floratta n33 Azul', 'redondo_floratta_33'),
         new item(42, 'Vaso Redondo Floratta n33 cinza', 'redondo_floratta_33'),
-        new item(17, 'Vaso Redondo Floratta n33 Preto', 'redondo_floratta_33'),
+        new item(29, 'Vaso Redondo Floratta n33 Preto', 'redondo_floratta_33'),
         new item(42, 'Vaso Redondo Floratta n33 Rosa', 'redondo_floratta_33'),
         new item(47, 'Vaso Redondo Floratta n33 Verde', 'redondo_floratta_33'),
-        new item(2, 'Vaso Redondo Floratta n33 Verde Escuro', 'redondo_floratta_33'),
+        new item(26, 'Vaso Redondo Floratta n33 Verde Escuro', 'redondo_floratta_33'),
 
-        new item(0, 'Vaso Redondo Floratta n40 Areia', 'redondo_floratta_40'),
+        new item(12, 'Vaso Redondo Floratta n40 Areia', 'redondo_floratta_40'),
         new item(31, 'Vaso Redondo Floratta n40 Azul', 'redondo_floratta_40'),
         new item(28, 'Vaso Redondo Floratta n40 cinza', 'redondo_floratta_40'),
-        new item(16, 'Vaso Redondo Floratta n40 Preto', 'redondo_floratta_40'),
+        new item(28, 'Vaso Redondo Floratta n40 Preto', 'redondo_floratta_40'),
         new item(0, 'Vaso Redondo Floratta n40 Rosa', 'redondo_floratta_40'),
         new item(32, 'Vaso Redondo Floratta n40 Verde', 'redondo_floratta_40'),
-        new item(8, 'Vaso Redondo Floratta n40 Verde Escuro', 'redondo_floratta_40'),
+        new item(20, 'Vaso Redondo Floratta n40 Verde Escuro', 'redondo_floratta_40'),
 
         new item(0, 'Vaso Redondo Floratta n50 Areia', 'redondo_floratta_50'),
         new item(0, 'Vaso Redondo Floratta n50 Azul', 'redondo_floratta_50'),
         new item(0, 'Vaso Redondo Floratta n50 cinza', 'redondo_floratta_50'),
-        new item(6, 'Vaso Redondo Floratta n50 Preto', 'redondo_floratta_50'),
+        new item(14, 'Vaso Redondo Floratta n50 Preto', 'redondo_floratta_50'),
         new item(0, 'Vaso Redondo Floratta n50 Rosa', 'redondo_floratta_50'),
         new item(0, 'Vaso Redondo Floratta n50 Verde', 'redondo_floratta_50'),
-        new item(6, 'Vaso Redondo Floratta n50 Verde Escuro', 'redondo_floratta_50')
+        new item(14, 'Vaso Redondo Floratta n50 Verde Escuro', 'redondo_floratta_50')
     ]
 )
 var emeAeme = new Inventario(
     'Eme A Eme',
-    '18/12/2023',
+    '03/01/2024',
     [
         new item(196, 'Alça Universal Branca', 'alça_universal'),
         new item(41, 'Alça Universal Café', 'alça_universal'),
@@ -751,7 +751,7 @@ var emeAeme = new Inventario(
         new item(54, 'Cuia CBB 30 Com Base Café', 'cuia_cbb_30'),
         new item(53, 'Cuia CBB 30 Com Base Cerâmica', 'cuia_cbb_30'),
         new item(51, 'Cuia CBB 30 Com Base Marfim', 'cuia_cbb_30'),
-        new item(51, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
+        new item(49, 'Cuia CBB 30 Com Base Preta', 'cuia_cbb_30'),
         new item(48, 'Cuia CBB 30 Com Base Verde', 'cuia_cbb_30'),
 
         new item(40, 'Cuia Gran Imperial CBB 40 Com Base Cerâmica', 'cuia_cbb_40'),
@@ -1083,10 +1083,10 @@ var alfa_polietileno = new Inventario(
         new item(9, 'Bacia Diamante nº 3 Marrom', 'bacia_diamante_3'),
         new item(10, 'Bacia Diamante nº 3 Preto', 'bacia_diamante_3'),
 
-        new item(6, 'Bacia Grafiato C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
-        new item(7, 'Bacia Grafiato C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
-        new item(7, 'Bacia Grafiato C/ Prato nº 1 Marrom', 'bacia_grafiato_1'),
-        new item(11, 'Bacia Grafiato C/ Prato nº 1 Preto', 'bacia_grafiato_1'),
+        new item(5, 'Bacia Grafiato C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
+        new item(4, 'Bacia Grafiato C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
+        new item(3, 'Bacia Grafiato C/ Prato nº 1 Marrom', 'bacia_grafiato_1'),
+        new item(8, 'Bacia Grafiato C/ Prato nº 1 Preto', 'bacia_grafiato_1'),
 
         new item(8, 'Bacia Grafiato C/Prato nº 2 Bege', 'bacia_grafiato_2'),
         new item(8, 'Bacia Grafiato C/Prato nº 2 Cimento', 'bacia_grafiato_2'),
@@ -1144,25 +1144,25 @@ var alfa_polietileno = new Inventario(
         new item(6, 'Coluna Red. Degrau Grafiato C/Prato nº 5 Marrom', 'coluna_degrau_5'),
         new item(6, 'Coluna Red. Degrau Grafiato C/Prato nº 5 Preto', 'coluna_degrau_5'),
 
-        new item(10, 'Coluna Red. Diamante C/Prato nº 1 Bege', 'coluna_diamante_1'),
-        new item(10, 'Coluna Red. Diamante C/Prato nº 1 Cimento', 'coluna_diamante_1'),
-        new item(10, 'Coluna Red. Diamante C/Prato nº 1 Marrom', 'coluna_diamante_1'),
-        new item(10, 'Coluna Red. Diamante C/Prato nº 1 Preta', 'coluna_diamante_1'),
+        new item(9, 'Coluna Red. Diamante C/Prato nº 1 Bege', 'coluna_diamante_1'),
+        new item(7, 'Coluna Red. Diamante C/Prato nº 1 Cimento', 'coluna_diamante_1'),
+        new item(7, 'Coluna Red. Diamante C/Prato nº 1 Marrom', 'coluna_diamante_1'),
+        new item(8, 'Coluna Red. Diamante C/Prato nº 1 Preta', 'coluna_diamante_1'),
 
         new item(10, 'Coluna Red. Diamante C/Prato nº 2 Bege', 'coluna_diamante_2'),
-        new item(9, 'Coluna Red. Diamante C/Prato nº 2 Cimento', 'coluna_diamante_2'),
+        new item(8, 'Coluna Red. Diamante C/Prato nº 2 Cimento', 'coluna_diamante_2'),
         new item(10, 'Coluna Red. Diamante C/Prato nº 2 Marrom', 'coluna_diamante_2'),
         new item(10, 'Coluna Red. Diamante C/Prato nº 2 Preta', 'coluna_diamante_2'),
 
         new item(10, 'Coluna Red. Diamante C/Prato nº 3 Bege', 'coluna_diamante_3'),
-        new item(10, 'Coluna Red. Diamante C/Prato nº 3 Cimento', 'coluna_diamante_3'),
-        new item(8, 'Coluna Red. Diamante C/Prato nº 3 Marrom', 'coluna_diamante_3'),
+        new item(9, 'Coluna Red. Diamante C/Prato nº 3 Cimento', 'coluna_diamante_3'),
+        new item(7, 'Coluna Red. Diamante C/Prato nº 3 Marrom', 'coluna_diamante_3'),
         new item(9, 'Coluna Red. Diamante C/Prato nº 3 Preta', 'coluna_diamante_3'),
 
-        new item(6, 'Coluna Red. Diamante C/Prato nº 4 Bege', 'coluna_diamante_4'),
-        new item(6, 'Coluna Red. Diamante C/Prato nº 4 Cimento', 'coluna_diamante_4'),
-        new item(5, 'Coluna Red. Diamante C/Prato nº 4 Marrom', 'coluna_diamante_4'),
-        new item(6, 'Coluna Red. Diamante C/Prato nº 4 Preta', 'coluna_diamante_4'),
+        new item(4, 'Coluna Red. Diamante C/Prato nº 4 Bege', 'coluna_diamante_4'),
+        new item(4, 'Coluna Red. Diamante C/Prato nº 4 Cimento', 'coluna_diamante_4'),
+        new item(4, 'Coluna Red. Diamante C/Prato nº 4 Marrom', 'coluna_diamante_4'),
+        new item(5, 'Coluna Red. Diamante C/Prato nº 4 Preta', 'coluna_diamante_4'),
 
         new item(6, 'Coluna Red. Diamante C/Prato nº 5 Bege', 'coluna_diamante_5'),
         new item(6, 'Coluna Red. Diamante C/Prato nº 5 Cimento', 'coluna_diamante_5'),
@@ -1179,14 +1179,14 @@ var alfa_polietileno = new Inventario(
         new item(8, 'Coluna Red. Grafiato C/Preto nº 2 Marrom', 'coluna_grafiato_2'),
         new item(8, 'Coluna Red. Grafiato C/Preto nº 2 Preto', 'coluna_grafiato_2'),
 
-        new item(7, 'Coluna Red. Grafiato C/Prato nº 3 Bege', 'coluna_grafiato_3'),
+        new item(5, 'Coluna Red. Grafiato C/Prato nº 3 Bege', 'coluna_grafiato_3'),
         new item(9, 'Coluna Red. Grafiato C/Prato nº 3 Cimento', 'coluna_grafiato_3'),
         new item(6, 'Coluna Red. Grafiato C/Prato nº 3 Marrom', 'coluna_grafiato_3'),
         new item(8, 'Coluna Red. Grafiato C/Prato nº 3 Preto', 'coluna_grafiato_3'),
 
         new item(4, 'Coluna Red. Grafiato C/Prato nº 4 Bege', 'coluna_grafiato_4'),
         new item(3, 'Coluna Red. Grafiato C/Prato nº 4 Cimento', 'coluna_grafiato_4'),
-        new item(2, 'Coluna Red. Grafiato C/Prato nº 4 Marrom', 'coluna_grafiato_4'),
+        new item(0, 'Coluna Red. Grafiato C/Prato nº 4 Marrom', 'coluna_grafiato_4'),
         new item(5, 'Coluna Red. Grafiato C/Prato nº 4 Preto', 'coluna_grafiato_4'),
 
         new item(5, 'Coluna Red. Marmorizada C/Prato nº 1 Azul', 'coluna_marmorizada_1'),
@@ -1200,9 +1200,9 @@ var alfa_polietileno = new Inventario(
         new item(6, 'Coluna Red. Marmorizada C/Prato nº 3 verde', 'coluna_marmorizada_3'),
         new item(7, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
 
-        new item(4, 'Coluna Red. Marmorizada C/Prato nº 4 Azul', 'coluna_marmorizada_4'),
-        new item(10, 'Coluna Red. Marmorizada C/Prato nº 4 verde', 'coluna_marmorizada_4'),
-        new item(5, 'Coluna Red. Marmorizada C/Prato nº 4 Vermelho', 'coluna_marmorizada_4'),
+        new item(2, 'Coluna Red. Marmorizada C/Prato nº 4 Azul', 'coluna_marmorizada_4'),
+        new item(6, 'Coluna Red. Marmorizada C/Prato nº 4 verde', 'coluna_marmorizada_4'),
+        new item(3, 'Coluna Red. Marmorizada C/Prato nº 4 Vermelho', 'coluna_marmorizada_4'),
 
         new item(10, 'Coluna Red. Polida C/Prato nº 1 Bege', 'coluna_polida_1'),
         new item(6, 'Coluna Red. Polida C/Prato nº 1 Cimento', 'coluna_polida_1'),
@@ -1219,12 +1219,12 @@ var alfa_polietileno = new Inventario(
         new item(10, 'Coluna Red. Polida C/Prato nº 3 Marrom', 'coluna_polida_3'),
         new item(6, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
 
-        new item(10, 'Coluna Red. Polida C/Prato nº 4 Bege', 'coluna_polida_4'),
-        new item(10, 'Coluna Red. Polida C/Prato nº 4 Cimento', 'coluna_polida_4'),
-        new item(10, 'Coluna Red. Polida C/Prato nº 4 Marrom', 'coluna_polida_4'),
+        new item(7, 'Coluna Red. Polida C/Prato nº 4 Bege', 'coluna_polida_4'),
+        new item(8, 'Coluna Red. Polida C/Prato nº 4 Cimento', 'coluna_polida_4'),
+        new item(8, 'Coluna Red. Polida C/Prato nº 4 Marrom', 'coluna_polida_4'),
         new item(9, 'Coluna Red. Polida C/Prato nº 4 Preto', 'coluna_polida_4'),
 
-        new item(1, 'Jardineira Frisada C/Prato Bege', 'jardineira_frisada_1'),
+        new item(0, 'Jardineira Frisada C/Prato Bege', 'jardineira_frisada_1'),
         new item(1, 'Jardineira Frisada C/Prato Preto', 'jardineira_frisada_1'),
 
         new item(1, 'Jardineira Grafiato C/Prato nº 1 Bege', 'jardineira_grafiato_1'),
@@ -1301,9 +1301,9 @@ var alfa_polietileno = new Inventario(
         new item(8, 'Vaso Bojo Red. Lisboa C/Prato nº 1 Marrom', 'vaso_grafiato_4'),
         new item(8, 'Vaso Bojo Red. Lisboa C/Prato nº 1 Preto', 'vaso_grafiato_4'),
 
-        new item(8, 'Vaso Bojo Red. Lisboa C/Prato nº 2 Bege', 'vaso_grafiato_4'),
+        new item(7, 'Vaso Bojo Red. Lisboa C/Prato nº 2 Bege', 'vaso_grafiato_4'),
         new item(8, 'Vaso Bojo Red. Lisboa C/Prato nº 2 Cimento', 'vaso_grafiato_4'),
-        new item(8, 'Vaso Bojo Red. Lisboa C/Prato nº 2 Marrom', 'vaso_grafiato_4'),
+        new item(7, 'Vaso Bojo Red. Lisboa C/Prato nº 2 Marrom', 'vaso_grafiato_4'),
         new item(8, 'Vaso Bojo Red. Lisboa C/Prato nº 2 Preto', 'vaso_grafiato_4'),
 
         new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
@@ -1543,12 +1543,12 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '09/12/2023',
+    '03/01/2024',
     [
         new item(8, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(14, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
         new item(15, '1001 - Vaso Coquim nº 5', 'vaso_coquim'),
-        new item(4, '1002 - Vaso Coquim nº 8', 'vaso_coquim'),
+        new item(0, '1002 - Vaso Coquim nº 8', 'vaso_coquim'),
         new item(0, '1003 - Vaso Coquim nº 10', 'vaso_coquim'),
         new item(11, '1004 - Vaso Coquim nº 12', 'vaso_coquim'),
         new item(5, '1005 - Vaso Coquim nº 14', 'vaso_coquim'),
@@ -1594,7 +1594,7 @@ var coquim = new Inventario(
         new item(33, '2999 - Estaca Coquim 30cm', 'estaca_coquim'),
         new item(34, '3000 - Estaca Coquim 40cm', 'estaca_coquim'),
         new item(31, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
-        new item(33, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
+        new item(30, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
 
         new item(13, '4000 - Mix Coquim 1kg', 'adubos'),
         new item(1, '4001 - Pó de Coco 1kg', 'adubos'),
