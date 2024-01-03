@@ -927,7 +927,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '18/12/2023',
+    '02/01/2024',
     [
         new item(9, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -1066,7 +1066,7 @@ var fuzil = new Inventario(
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '29/12/2023',
+    '03/01/2024',
     [
         new item(9, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(10, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -1119,15 +1119,15 @@ var alfa_polietileno = new Inventario(
         new item(11, 'Bacia Polida C/Prato nº 2 Marrom', 'bacia_polida_2'),
         new item(3, 'Bacia Polida C/Prato nº 2 Preto', 'bacia_polida_2'),
 
-        new item(10, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Bege', 'coluna_degrau_1'),
-        new item(10, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Cimento', 'coluna_degrau_1'),
-        new item(10, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Marrom', 'coluna_degrau_1'),
-        new item(10, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Preto', 'coluna_degrau_1'),
+        new item(7, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Bege', 'coluna_degrau_1'),
+        new item(9, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Cimento', 'coluna_degrau_1'),
+        new item(8, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Marrom', 'coluna_degrau_1'),
+        new item(9, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Preto', 'coluna_degrau_1'),
 
-        new item(7, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Bege', 'coluna_degrau_2'),
-        new item(8, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Cimento', 'coluna_degrau_2'),
+        new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Bege', 'coluna_degrau_2'),
+        new item(5, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Cimento', 'coluna_degrau_2'),
         new item(8, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Marrom', 'coluna_degrau_2'),
-        new item(8, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Preto', 'coluna_degrau_2'),
+        new item(6, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Preto', 'coluna_degrau_2'),
 
         new item(6, 'Coluna Red. Degrau Grafiato C/Prato nº 3 Bege', 'coluna_degrau_3'),
         new item(9, 'Coluna Red. Degrau Grafiato C/Prato nº 3 Cimento', 'coluna_degrau_3'),
@@ -1169,55 +1169,55 @@ var alfa_polietileno = new Inventario(
         new item(5, 'Coluna Red. Diamante C/Prato nº 5 Marrom', 'coluna_diamante_5'),
         new item(6, 'Coluna Red. Diamante C/Prato nº 5 Preta', 'coluna_diamante_5'),
 
-        new item(10, 'Coluna Red. Grafiato C/Preto nº 1 Bege', 'coluna_grafiato_1'),
+        new item(7, 'Coluna Red. Grafiato C/Preto nº 1 Bege', 'coluna_grafiato_1'),
         new item(10, 'Coluna Red. Grafiato C/Preto nº 1 Cimento', 'coluna_grafiato_1'),
-        new item(8, 'Coluna Red. Grafiato C/Preto nº 1 Marrom', 'coluna_grafiato_1'),
+        new item(7, 'Coluna Red. Grafiato C/Preto nº 1 Marrom', 'coluna_grafiato_1'),
         new item(9, 'Coluna Red. Grafiato C/Preto nº 1 Preto', 'coluna_grafiato_1'),
 
-        new item(7, 'Coluna Red. Grafiato C/Preto nº 2 Bege', 'coluna_grafiato_2'),
+        new item(5, 'Coluna Red. Grafiato C/Preto nº 2 Bege', 'coluna_grafiato_2'),
         new item(9, 'Coluna Red. Grafiato C/Preto nº 2 Ciemento', 'coluna_grafiato_2'),
         new item(8, 'Coluna Red. Grafiato C/Preto nº 2 Marrom', 'coluna_grafiato_2'),
         new item(8, 'Coluna Red. Grafiato C/Preto nº 2 Preto', 'coluna_grafiato_2'),
 
-        new item(8, 'Coluna Red. Grafiato C/Prato nº 3 Bege', 'coluna_grafiato_3'),
+        new item(7, 'Coluna Red. Grafiato C/Prato nº 3 Bege', 'coluna_grafiato_3'),
         new item(9, 'Coluna Red. Grafiato C/Prato nº 3 Cimento', 'coluna_grafiato_3'),
         new item(6, 'Coluna Red. Grafiato C/Prato nº 3 Marrom', 'coluna_grafiato_3'),
         new item(8, 'Coluna Red. Grafiato C/Prato nº 3 Preto', 'coluna_grafiato_3'),
 
-        new item(5, 'Coluna Red. Grafiato C/Prato nº 4 Bege', 'coluna_grafiato_4'),
+        new item(4, 'Coluna Red. Grafiato C/Prato nº 4 Bege', 'coluna_grafiato_4'),
         new item(3, 'Coluna Red. Grafiato C/Prato nº 4 Cimento', 'coluna_grafiato_4'),
         new item(2, 'Coluna Red. Grafiato C/Prato nº 4 Marrom', 'coluna_grafiato_4'),
         new item(5, 'Coluna Red. Grafiato C/Prato nº 4 Preto', 'coluna_grafiato_4'),
 
-        new item(8, 'Coluna Red. Marmorizada C/Prato nº 1 Azul', 'coluna_marmorizada_1'),
-        new item(10, 'Coluna Red. Marmorizada C/Prato nº 1 Vermelho', 'coluna_marmorizada_1'),
+        new item(5, 'Coluna Red. Marmorizada C/Prato nº 1 Azul', 'coluna_marmorizada_1'),
+        new item(7, 'Coluna Red. Marmorizada C/Prato nº 1 Vermelho', 'coluna_marmorizada_1'),
 
-        new item(5, 'Coluna Red. Marmorizada C/Prato nº 2 Azul', 'coluna_marmorizada_2'),
-        new item(9, 'Coluna Red. Marmorizada C/Prato nº 2 verde', 'coluna_marmorizada_2'),
-        new item(7, 'Coluna Red. Marmorizada C/Prato nº 2 Vermelho', 'coluna_marmorizada_2'),
+        new item(3, 'Coluna Red. Marmorizada C/Prato nº 2 Azul', 'coluna_marmorizada_2'),
+        new item(8, 'Coluna Red. Marmorizada C/Prato nº 2 verde', 'coluna_marmorizada_2'),
+        new item(5, 'Coluna Red. Marmorizada C/Prato nº 2 Vermelho', 'coluna_marmorizada_2'),
 
-        new item(9, 'Coluna Red. Marmorizada C/Prato nº 3 Azul', 'coluna_marmorizada_3'),
-        new item(8, 'Coluna Red. Marmorizada C/Prato nº 3 verde', 'coluna_marmorizada_3'),
-        new item(8, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
+        new item(7, 'Coluna Red. Marmorizada C/Prato nº 3 Azul', 'coluna_marmorizada_3'),
+        new item(6, 'Coluna Red. Marmorizada C/Prato nº 3 verde', 'coluna_marmorizada_3'),
+        new item(7, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
 
         new item(4, 'Coluna Red. Marmorizada C/Prato nº 4 Azul', 'coluna_marmorizada_4'),
         new item(10, 'Coluna Red. Marmorizada C/Prato nº 4 verde', 'coluna_marmorizada_4'),
         new item(5, 'Coluna Red. Marmorizada C/Prato nº 4 Vermelho', 'coluna_marmorizada_4'),
 
         new item(10, 'Coluna Red. Polida C/Prato nº 1 Bege', 'coluna_polida_1'),
-        new item(8, 'Coluna Red. Polida C/Prato nº 1 Cimento', 'coluna_polida_1'),
+        new item(6, 'Coluna Red. Polida C/Prato nº 1 Cimento', 'coluna_polida_1'),
         new item(7, 'Coluna Red. Polida C/Prato nº 1 Marrom', 'coluna_polida_1'),
-        new item(9, 'Coluna Red. Polida C/Prato nº 1 Preto', 'coluna_polida_1'),
+        new item(6, 'Coluna Red. Polida C/Prato nº 1 Preto', 'coluna_polida_1'),
 
-        new item(10, 'Coluna Red. Polida C/Prato nº 2 Bege', 'coluna_polida_2'),
-        new item(8, 'Coluna Red. Polida C/Prato nº 2 Cimento', 'coluna_polida_2'),
+        new item(8, 'Coluna Red. Polida C/Prato nº 2 Bege', 'coluna_polida_2'),
+        new item(6, 'Coluna Red. Polida C/Prato nº 2 Cimento', 'coluna_polida_2'),
         new item(9, 'Coluna Red. Polida C/Prato nº 2 Marrom', 'coluna_polida_2'),
-        new item(8, 'Coluna Red. Polida C/Prato nº 2 Preto', 'coluna_polida_2'),
+        new item(7, 'Coluna Red. Polida C/Prato nº 2 Preto', 'coluna_polida_2'),
 
-        new item(10, 'Coluna Red. Polida C/Prato nº 3 Bege', 'coluna_polida_3'),
-        new item(6, 'Coluna Red. Polida C/Prato nº 3 Cimento', 'coluna_polida_3'),
+        new item(8, 'Coluna Red. Polida C/Prato nº 3 Bege', 'coluna_polida_3'),
+        new item(5, 'Coluna Red. Polida C/Prato nº 3 Cimento', 'coluna_polida_3'),
         new item(10, 'Coluna Red. Polida C/Prato nº 3 Marrom', 'coluna_polida_3'),
-        new item(7, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
+        new item(6, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
 
         new item(10, 'Coluna Red. Polida C/Prato nº 4 Bege', 'coluna_polida_4'),
         new item(10, 'Coluna Red. Polida C/Prato nº 4 Cimento', 'coluna_polida_4'),
@@ -1309,7 +1309,7 @@ var alfa_polietileno = new Inventario(
         new item(5, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul', 'vaso_marmorizado_1'),
         new item(8, 'Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho', 'vaso_marmorizado_1'),
 
-        new item(11, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
+        new item(9, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul', 'vaso_marmorizado_2'),
         new item(10, 'Vaso Bojo Red. Marmorizado C/Prato nº 2 Vermelho', 'vaso_marmorizado_2'),
 
         new item(7, 'Vaso Bojo Red. Marmorizado C/Prato nº 3 Azul', 'vaso_marmorizado_3'),
@@ -1327,7 +1327,7 @@ var alfa_polietileno = new Inventario(
 
         new item(9, 'Vaso Bojo Red. Polido C/Prato nº 2 Bege', 'vaso_polido_2'),
         new item(6, 'Vaso Bojo Red. Polido C/Prato nº 2 Cimento', 'vaso_polido_2'),
-        new item(8, 'Vaso Bojo Red. Polido C/Prato nº 2 Marrom', 'vaso_polido_2'),
+        new item(6, 'Vaso Bojo Red. Polido C/Prato nº 2 Marrom', 'vaso_polido_2'),
         new item(9, 'Vaso Bojo Red. Polido C/Prato nº 2 Preto', 'vaso_polido_2'),
 
         new item(10, 'Vaso Bojo Red. Polido C/Prato nº 3 Bege', 'vaso_polido_3'),
