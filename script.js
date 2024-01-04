@@ -1000,31 +1000,31 @@ var forth = new Inventario(
         new item(6, 'Jardim Concentrado - 500ml', 'j'),
         new item(14, 'Jardim p/uso - 500ml', 'j'),
         new item(0, 'Jardim - 400g', 'j'),
-        new item(11, 'Jardim - 3kg', 'j'),
+        new item(10, 'Jardim - 3kg', 'j'),
 
         new item(4, 'Lesmicida isca granulada', 'l'),
 
-        new item(24, 'Mata cochonilha p/uso - 500ml', 'm'),
+        new item(23, 'Mata cochonilha p/uso - 500ml', 'm'),
         new item(22, 'Mata lagarta p/uso - 500ml', 'm'),
         new item(0, 'Mata mato Concentrado - 30ml', 'm'),
         new item(5, 'Mata mato p/uso - 500ml', 'm'),
-        new item(20, 'Mata pulgão p/uso - 500ml', 'm'),
+        new item(19, 'Mata pulgão p/uso - 500ml', 'm'),
 
         new item(27, 'Óleo Concentrado - 60ml', 'o'),
-        new item(16, 'Orquídeas Floração Concentrado - 60ml', 'o'),
+        new item(11, 'Orquídeas Floração Concentrado - 60ml', 'o'),
         new item(19, 'Orquídeas Floração p/uso - 500ml', 'o'),
-        new item(47, 'Orquídeas Manutenção Concentrado - 60ml', 'o'),
+        new item(44, 'Orquídeas Manutenção Concentrado - 60ml', 'o'),
         new item(23, 'Orquídeas Manutenção p/uso - 500ml', 'o'),
         new item(0, 'Orquídeas 09.45.15 - 100g', 'o'),
-        new item(36, 'Orquídeas 20.20.20 - 100g', 'o'),
-        new item(6, 'Orquídeas 30.10.10 - 100g', 'o'),
-        new item(6, 'Orquídeas 09.45.15 - 400g', 'o'),
+        new item(30, 'Orquídeas 20.20.20 - 100g', 'o'),
+        new item(0, 'Orquídeas 30.10.10 - 100g', 'o'),
+        new item(5, 'Orquídeas 09.45.15 - 400g', 'o'),
         new item(11, 'Orquídeas 20.20.20 - 400g', 'o'),
         new item(10, 'Orquídeas 30.10.10 - 400g', 'o'),
 
         new item(0, 'Palmeiras Concentrado - 60ml', 'p'),
         new item(8, 'Palmeiras p/uso - 500ml', 'p'),
-        new item(23, 'Palmeiras - 400g', 'p'),
+        new item(22, 'Palmeiras - 400g', 'p'),
         new item(12, 'Palmeiras - 3kg', 'p'),
         new item(17, 'Pasta selante', 'p'),
         new item(15, 'Plantio - 400g', 'p'),
@@ -1037,15 +1037,15 @@ var forth = new Inventario(
         new item(0, 'Rosa do Deserto - 400g', 'r'),
         new item(2, 'Rosa do Deserto - 3kg', 'r'),
 
-        new item(17, 'Samambaias Concentrado - 60ml', 's'),
+        new item(15, 'Samambaias Concentrado - 60ml', 's'),
         new item(11, 'Samambaias p/uso - 500ml', 's'),
-        new item(10, 'Samambaias - 400g', 's'),
+        new item(8, 'Samambaias - 400g', 's'),
         new item(0, 'Suculentas Concentrado - 60ml', 's'),
 
-        new item(14, 'Temperos Concentrado - 60ml', 't'),
+        new item(12, 'Temperos Concentrado - 60ml', 't'),
         new item(14, 'Temperos p/uso - 500ml', 't'),
 
-        new item(33, 'Violetas Concentrado - 60ml', 'v'),
+        new item(32, 'Violetas Concentrado - 60ml', 'v'),
     ]
 )
 var fuzil = new Inventario(
