@@ -928,7 +928,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '03/01/2024',
+    '04/01/2024',
     [
         new item(9, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -1453,9 +1453,9 @@ var jel_plast = new Inventario(
     'Jel Plast',
     '11/12/2023',
     [
-        new item(0, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
-        new item(0, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
-        new item(36, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
+        new item(168, 'Bebedouro Beija Flor Bandeija REF20', 'bebedouro'),
+        new item(198, 'Bebedouro Beija Flor Luxo Chapeu Com Poleiro REF50', 'bebedouro'),
+        new item(252, 'Bebedouro Beija Flor Puleiro REF55', 'bebedouro'),
         new item(372, 'Bebedouro Beija Flor Simples REF40', 'bebedouro'),
         new item(0, 'Nectar de Beija Flor Com Corante', 'nectar'),
         new item(0, 'Nectar de Beija Flor Sem Corante', 'nectar')
@@ -1472,7 +1472,7 @@ var insetimax = new Inventario(
 
         new item(8, 'Inseticom Jardim - Caixa', 'inseticom'),
 
-        new item(40, 'Malathion 500CE - 100ml', 'malathion')
+        new item(39, 'Malathion 500CE - 100ml', 'malathion')
     ]   
 )
 var madeiras = new Inventario(
