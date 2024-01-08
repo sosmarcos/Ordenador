@@ -54,7 +54,15 @@ class registroDeComanda {
         this.grandeza = grandeza
         this.unitario = unitario
         this.total = (unitario*quantidade).toFixed(2)
-        if (descrição == '') {this.descrição = 'Sem Descrição'} else {this.descrição = descrição}
+        if (descrição == '') {
+            if (this.unitario < 0) {
+                comanda.desconto += (this.unitario - this.unitario*2) * 100 / comanda.valorBruto
+                this.descrição = `Desconto de ${(this.unitario - this.unitario*2) * 100 / comanda.valorBruto}%`
+            }
+            else {
+                this.descrição = 'Sem Descrição'
+            }
+        } else {this.descrição = descrição}
     }
 }
 
@@ -2453,7 +2461,7 @@ function orçamento(index, ediçao=null) {
         if (ediçao == 'quantidade' && corretor.value == 0) {
             if (((comanda.registro[index].descrição).toLowerCase()).split(' ')[0] == 'desconto') {
                 let antigaPorcentagem = (comanda.registro[index].descrição).split(' ')[((comanda.registro[index].descrição).split(' ')).length -1]
-                comanda.desconto -= parseInt(antigaPorcentagem.split('%'))
+                comanda.desconto -= parseFloat(antigaPorcentagem.split('%'))
             }
             comanda.registro.splice(index, 1)
             indiceOrçamento -= 2
@@ -2483,13 +2491,13 @@ function orçamento(index, ediçao=null) {
                 if (((descriçãoCorreçao).toLowerCase()).split(' ')[0] == 'desconto') {
                     let novaPorcentagem = (descriçãoCorreçao).split(' ')[((descriçãoCorreçao).split(' ')).length - 1]
 
-                    comanda.desconto -= parseInt(
+                    comanda.desconto -= parseFloat(
                             (antigaPorcentagem[antigaPorcentagem.length - 1]).split('%')
                             )
                             
-                    comanda.desconto += parseInt(novaPorcentagem.split('%'))
+                    comanda.desconto += parseFloat(novaPorcentagem.split('%'))
 
-                    comanda.registro[index].unitario = -(parseFloat(parseInt(novaPorcentagem.split('%')[0]) * comanda.valorBruto / 100).toFixed(2)) 
+                    comanda.registro[index].unitario = -(parseFloat(novaPorcentagem.split('%')[0]) * comanda.valorBruto / 100) 
                     comanda.registro[index].total = (comanda.registro[index].unitario * comanda.registro[index].quantidade).toFixed(2)
 
                     document.getElementById(`unitario_orçamento_${index}`).innerText = `R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}`
@@ -2550,10 +2558,10 @@ function orçamento(index, ediçao=null) {
             console.log(`Valor descontado de R$ ${parseFloat(parseInt(porcentagem.split('%')[0]) * comanda.valorBruto / 100).toFixed(2)}`) 
 
             // este codigo trasforma ele em um valor real no registro
-            valorUnitario.value = -(parseFloat(parseInt(porcentagem.split('%')[0]) * comanda.valorBruto / 100).toFixed(2)) 
+            valorUnitario.value = -(parseFloat(porcentagem.split('%')[0]) * comanda.valorBruto / 100)
             
             //comanda.desconto = parseFloat(parseInt(porcentagem.split('%')[0]) * comanda.valorBruto / 100).toFixed(2)
-            comanda.desconto += parseInt(porcentagem.split('%')[0])
+            comanda.desconto += parseFloat(porcentagem.split('%')[0])
         }
         else if (valorUnitario.value == 0) {
             valorUnitario.value = null
@@ -2565,7 +2573,7 @@ function orçamento(index, ediçao=null) {
             if (valorUnitario.value != 0) {
                 if ((grandeza.value).replace(' ', '') == '') {grandeza.value = '--'}
                 comanda.registro.push(new registroDeComanda(quantidade.value, grandeza.value, descrição.value, valorUnitario.value))
-                if (((descrição.value).toLowerCase()).split(' ')[0] != 'desconto') {
+                if (((descrição.value).toLowerCase()).split(' ')[0] != 'desconto' && valorUnitario.value > 0) {
                     comanda.valorBruto += parseFloat(comanda.registro[index].total)
                 }
                 comanda.valorLiquido = (comanda.valorBruto * (100 - comanda.desconto)) / 100
@@ -2844,7 +2852,7 @@ function printPdf() {
             </tr>
             ${tabela}
         </table>     
-        <p class="total">Total: R$ ${((comanda.valorBruto).toFixed(2)).replace('.', ',')}</p>
+        <p class="total">Total: R$ ${((comanda.valorLiquido).toFixed(2)).replace('.', ',')}</p>
         <p style="margin: 25px;">${formaDePagamento}</p>
         ${ob}
         <script>
