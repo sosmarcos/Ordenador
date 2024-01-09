@@ -2398,6 +2398,7 @@ function orçamento(index, ediçao=null) {
             novaLinha(index)
             console.log(comanda.registro)
     }
+
     var formaDePagamento = window.document.getElementById('pagamento')
     var descontoDoOrçamento = [window.document.getElementById('descontos_debito'), window.document.getElementById('descontos_dinheiro')]
     var parcelasDoOrçamento = window.document.getElementById('parcelas')
@@ -2452,7 +2453,6 @@ function orçamento(index, ediçao=null) {
             comanda.desconto = parseInt(descontoDoOrçamento[1].value)
         }
         console.log(`numero de parcelas: ${comanda.parcelas}x\ndesconto total: ${comanda.desconto}%`)
-
     }
 
     else if (ediçao) {
@@ -2491,9 +2491,7 @@ function orçamento(index, ediçao=null) {
                 if (((descriçãoCorreçao).toLowerCase()).split(' ')[0] == 'desconto') {
                     let novaPorcentagem = (descriçãoCorreçao).split(' ')[((descriçãoCorreçao).split(' ')).length - 1]
 
-                    comanda.desconto -= parseFloat(
-                            (antigaPorcentagem[antigaPorcentagem.length - 1]).split('%')
-                            )
+                    comanda.desconto -= parseFloat((antigaPorcentagem[antigaPorcentagem.length - 1]).split('%'))
                             
                     comanda.desconto += parseFloat(novaPorcentagem.split('%'))
 
@@ -2543,39 +2541,52 @@ function orçamento(index, ediçao=null) {
         var valorTotal = window.document.getElementById(`total_orçamento_${index}`)
 
         inputToLabel()
-    
+        
+        let descontoDescrito = ((descrição.value).toLowerCase()).split(' ')
+
         // pulando as entradas
         if (quantidade.value == 0) {quantidade.value = 1}
         if (grandeza.value == '') {grandeza.select()}
         else if (descrição.value == '') {descrição.select()}
 
         // o calculo de desconto esta sendo integrado a declaraçao da tabela
-        else if (((descrição.value).toLowerCase()).split(' ')[0] == 'desconto') {
-            // este codigo define a porcentagem
-            let porcentagem = (descrição.value).split(' ')[((descrição.value).split(' ')).length - 1] 
+        else if (descontoDescrito[0] == 'desconto' && parseInt((descontoDescrito[descontoDescrito.length -1]).split('%')) >= 0)  {
+            try {
+                // este codigo define a porcentagem
+                let porcentagem = (descrição.value).split(' ')[((descrição.value).split(' ')).length - 1] 
 
-            // este codigo exibe a porcentagem no console
-            console.log(`Valor descontado de R$ ${parseFloat(parseInt(porcentagem.split('%')[0]) * comanda.valorBruto / 100).toFixed(2)}`) 
+                // este codigo exibe a porcentagem no console
+                console.log(`Valor descontado de R$ ${parseFloat(parseInt(porcentagem.split('%')[0]) * comanda.valorBruto / 100).toFixed(2)}`) 
 
-            // este codigo trasforma ele em um valor real no registro
-            valorUnitario.value = -(parseFloat(porcentagem.split('%')[0]) * comanda.valorBruto / 100)
-            
-            //comanda.desconto = parseFloat(parseInt(porcentagem.split('%')[0]) * comanda.valorBruto / 100).toFixed(2)
-            comanda.desconto += parseFloat(porcentagem.split('%')[0])
+                // este codigo trasforma ele em um valor real no registro
+                valorUnitario.value = -(parseFloat(porcentagem.split('%')[0]) * comanda.valorBruto / 100)
+                
+                //comanda.desconto = parseFloat(parseInt(porcentagem.split('%')[0]) * comanda.valorBruto / 100).toFixed(2)
+                comanda.desconto += parseFloat(porcentagem.split('%')[0])
+            } catch {window.alert('Entrada de desconto invalida')}
+            console.log('entrei')
         }
         else if (valorUnitario.value == 0) {
             valorUnitario.value = null
             valorUnitario.select()
         }
 
+        else if (valorUnitario.value < 0) {
+            console.log('numero negativo')
+            descrição.value = `Desconto de ${(valorUnitario.value - valorUnitario.value*2) * 100 / comanda.valorBruto}%`
+            comanda.desconto += parseFloat((valorUnitario.value - valorUnitario.value*2) * 100 / comanda.valorBruto)
+        }
+
         // registro dos valores
         if (!comanda.registro[index]) {
             if (valorUnitario.value != 0) {
                 if ((grandeza.value).replace(' ', '') == '') {grandeza.value = '--'}
+                
                 comanda.registro.push(new registroDeComanda(quantidade.value, grandeza.value, descrição.value, valorUnitario.value))
-                if (((descrição.value).toLowerCase()).split(' ')[0] != 'desconto' && valorUnitario.value > 0) {
-                    comanda.valorBruto += parseFloat(comanda.registro[index].total)
-                }
+
+                if (descontoDescrito[0] == 'desconto' && parseInt((descontoDescrito[descontoDescrito.length -1]).split('%')) >= 0) {null}
+                else {if (valorUnitario.value > 0) {comanda.valorBruto += parseFloat(comanda.registro[index].total)}}
+
                 comanda.valorLiquido = (comanda.valorBruto * (100 - comanda.desconto)) / 100
                 window.document.getElementById('total_total').innerText = `Total: R$ ${((comanda.valorLiquido).toFixed(2)).replace('.', ',')}`
             }
@@ -2597,6 +2608,7 @@ function novaLinha(index) {
     // criaçao de uma nova linha
     var grade = window.document.getElementById('grade_de_entrada')
 
+    // escrevendo o cabesalhio
     grade.innerHTML = `
         <tr id="legenda_do_orçamento">
             <th id="label_quantidade" class="coluna_quantidade">Quant.</th>
@@ -2606,41 +2618,92 @@ function novaLinha(index) {
             <th id="label_total" class="coluna_total">Total</th>
         </tr>
     `
+    // O primeiro laço for escreve os valores positivos
     for (let index in comanda.registro) {
-        grade.innerHTML += `
-            <tr>
-                <td class="coluna_quantidade">
-                    <label id="quantidade_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'quantidade')">${comanda.registro[index].quantidade}</label>
-                    <input type="number" value="${comanda.registro[index].quantidade}" id="quantidade_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'quantidade')">
-                </td>
-                <td class="coluna_grandeza">
-                    <label id="grandeza_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'grandeza')">${comanda.registro[index].grandeza}</label>
-                    <input type="text" value="${comanda.registro[index].grandeza}" id="grandeza_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'grandeza')">
-                </td>
-                <td class="coluna_descrição">
-                    <label id="descrição_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'descrição')">${comanda.registro[index].descrição}</label>
-                    <input type="text" value="${comanda.registro[index].descrição}" id="descrição_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'descrição')">
-                </td>
-                <td class="coluna_unitario">
-                    <label id="unitario_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'unitario')">R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}</label>
-                    <input type="number" value="${(parseFloat(comanda.registro[index].unitario)).toFixed(2)}" id="unitario_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'unitario')">
-                </td>
-                <td class="coluna_total">
-                    <label id="total_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'total')">R$ ${(comanda.registro[index].total).replace('.', ',')}</label>
-                    <input type="number" value="${comanda.registro[index].total}" id="total_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'total')">
-                </td>
-            </tr>
-        `
-        document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
+        if (comanda.registro[index].unitario > 0) {
 
-        document.getElementById(`grandeza_orçamento_edit_${index}`).style.display = 'none'
+            grade.innerHTML += `
+                <tr>
+                    <td class="coluna_quantidade">
+                        <label id="quantidade_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'quantidade')">${comanda.registro[index].quantidade}</label>
+                        <input type="number" value="${comanda.registro[index].quantidade}" id="quantidade_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'quantidade')">
+                    </td>
+                    <td class="coluna_grandeza">
+                        <label id="grandeza_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'grandeza')">${comanda.registro[index].grandeza}</label>
+                        <input type="text" value="${comanda.registro[index].grandeza}" id="grandeza_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'grandeza')">
+                    </td>
+                    <td class="coluna_descrição">
+                        <label id="descrição_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'descrição')">${comanda.registro[index].descrição}</label>
+                        <input type="text" value="${comanda.registro[index].descrição}" id="descrição_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'descrição')">
+                    </td>
+                    <td class="coluna_unitario">
+                        <label id="unitario_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'unitario')">R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}</label>
+                        <input type="number" value="${(parseFloat(comanda.registro[index].unitario)).toFixed(2)}" id="unitario_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'unitario')">
+                    </td>
+                    <td class="coluna_total">
+                        <label id="total_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'total')">R$ ${(comanda.registro[index].total).replace('.', ',')}</label>
+                        <input type="number" value="${comanda.registro[index].total}" id="total_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'total')">
+                    </td>
+                </tr>
+            `
+            document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
 
-        document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
-        
-        document.getElementById(`unitario_orçamento_edit_${index}`).style.display = 'none'
+            document.getElementById(`grandeza_orçamento_edit_${index}`).style.display = 'none'
 
-        document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
+            document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
+            
+            document.getElementById(`unitario_orçamento_edit_${index}`).style.display = 'none'
+
+            document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
+        }
     }
+
+    // o segundo laço for escreve os valores negativos
+    for (let index in comanda.registro) {
+        if (comanda.registro[index].unitario < 0) {
+
+            // este pequeno codigo de 3 linha corrige o valor do desconto unitario na tabela que e exibida na tela
+            let porcentagem = parseFloat(((comanda.registro[index].descrição).split(' ')[((comanda.registro[index].descrição).split(' ')).length - 1]).split('%'))
+            comanda.registro[index].unitario = -(comanda.valorBruto * porcentagem / 100)
+            comanda.registro[index].total = (comanda.registro[index].unitario * comanda.registro[index].quantidade).toFixed(2)
+
+            grade.innerHTML += `
+                <tr>
+                    <td class="coluna_quantidade">
+                        <label id="quantidade_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'quantidade')">${comanda.registro[index].quantidade}</label>
+                        <input type="number" value="${comanda.registro[index].quantidade}" id="quantidade_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'quantidade')">
+                    </td>
+                    <td class="coluna_grandeza">
+                        <label id="grandeza_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'grandeza')">${comanda.registro[index].grandeza}</label>
+                        <input type="text" value="${comanda.registro[index].grandeza}" id="grandeza_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'grandeza')">
+                    </td>
+                    <td class="coluna_descrição">
+                        <label id="descrição_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'descrição')">${comanda.registro[index].descrição}</label>
+                        <input type="text" value="${comanda.registro[index].descrição}" id="descrição_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'descrição')">
+                    </td>
+                    <td class="coluna_unitario">
+                        <label id="unitario_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'unitario')">R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}</label>
+                        <input type="number" value="${(parseFloat(comanda.registro[index].unitario)).toFixed(2)}" id="unitario_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'unitario')">
+                    </td>
+                    <td class="coluna_total">
+                        <label id="total_orçamento_${index}" class="entradaOrçamento" onclick="ediçaoDeTabela(${index}, 'total')">R$ ${(comanda.registro[index].total).replace('.', ',')}</label>
+                        <input type="number" value="${comanda.registro[index].total}" id="total_orçamento_edit_${index}" class="entradaOrçamento" onchange="orçamento(${index}, 'total')">
+                    </td>
+                </tr>
+            `
+            document.getElementById(`quantidade_orçamento_edit_${index}`).style.display = 'none'
+
+            document.getElementById(`grandeza_orçamento_edit_${index}`).style.display = 'none'
+
+            document.getElementById(`descrição_orçamento_edit_${index}`).style.display = 'none'
+            
+            document.getElementById(`unitario_orçamento_edit_${index}`).style.display = 'none'
+
+            document.getElementById(`total_orçamento_edit_${index}`).style.display = 'none'
+        }
+    }
+
+    // escrevendo a ultima linha em branco
     grade.innerHTML += `
     <tr>
         <td class="coluna_quantidade">
@@ -2707,7 +2770,6 @@ function printPdf() {
     } else {
         ob = `<h2>Observação</h2><p class="observaçao" style="border: 2px dashed #9e9c9c;">${window.document.getElementById('observaçao').value}</p>`
     }
-
 
     const rascunho = `<!DOCTYPE html>
     <html lang="pt-br">
