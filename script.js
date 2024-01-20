@@ -303,7 +303,7 @@ var diversos = new Inventario(
         new item(170, 'pote de Mudas 13.6 litro', 'pote_muda'),
         new item(47, 'pote de Mudas 25 litro', 'pote_muda'),
 
-        new item(21, 'Roundup 1 litro', 'roundup'),
+        new item(19, 'Roundup 1 litro', 'roundup'),
 
         new item(20, 'Saquinho de Mudas 10x15', 'saquinho_muda'),
         new item(10, 'Saquinho de Mudas 10x20', 'saquinho_muda'),
@@ -341,9 +341,9 @@ var regaplan = new Inventario(
         new item(90, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
         new item(95, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
-        new item(23, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
-        new item(58, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
-        new item(24, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
+        new item(13, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
+        new item(48, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
+        new item(14, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
 
         new item(53, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
         new item(50, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
@@ -352,8 +352,8 @@ var regaplan = new Inventario(
 
         new item(64, 'Suporte Artístico 00 - 19cm Dourado', 'sp_artistico'),
         new item(88, 'Suporte Artístico 01 - 26cm Dourado', 'sp_artistico'),
-        new item(62, 'Suporte Artístico 02 - 31cm Dourado', 'sp_artistico'),
-        new item(65, 'Suporte Artístico 03 - 37cm Dourado', 'sp_artistico'),
+        new item(52, 'Suporte Artístico 02 - 31cm Dourado', 'sp_artistico'),
+        new item(55, 'Suporte Artístico 03 - 37cm Dourado', 'sp_artistico'),
         new item(88, 'Suporte Artístico 04 - 43cm Dourado', 'sp_artistico'),
 
         new item(1, 'Suporte Arvore - 3 Vasos Dourado', 'sp_arvore'),
@@ -368,8 +368,8 @@ var regaplan = new Inventario(
 
         new item(12, 'Suporte de Canto 27cm Dourado'),
 
-        new item(22, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
-        new item(34, 'Suporte Margarida 02 - 21 cm Dourado', 'sp_margarida'),
+        new item(17, 'Suporte Margarida 01 - 19 cm Dourado', 'sp_margarida'),
+        new item(29, 'Suporte Margarida 02 - 21 cm Dourado', 'sp_margarida'),
         new item(20, 'Suporte Margarida 03 - 23 cm Dourado', 'sp_margarida'),
         new item(32, 'Suporte Margarida 04 - 26 cm Dourado', 'sp_margarida'),
 
@@ -446,7 +446,7 @@ var rischioto = new Inventario(
         new item(5, 'Caixa Organizadora - 80 litros', 'conteiner'),
 
         new item(19, 'Caixa Rattan Areia - 2.5 litros', 'caixa_rattan'),
-        new item(19, 'Caixa Rattan Areia - 4 litros', 'caixa_rattan'),
+        new item(17, 'Caixa Rattan Areia - 4 litros', 'caixa_rattan'),
         new item(9, 'Caixa Rattan Areia - 7.5 litros', 'caixa_rattan'),
         new item(5, 'Caixa Rattan Areia - 15 litros', 'caixa_rattan'),
 
@@ -533,7 +533,7 @@ var rischioto = new Inventario(
         new item(22, 'Porta Talheres Com Tampa', 'porta_talheres'),
 
         new item(0, 'Pote Fliplock 400ml', 'fliplock'),
-        new item(17, 'Pote Fliplock 800ml', 'fliplock'),
+        new item(15, 'Pote Fliplock 800ml', 'fliplock'),
         new item(0, 'Pote Fliplock 1.4 Litros', 'fliplock'),
 
         new item(0, 'Pote Premium - 3 Litros', 'pote_premium'),
@@ -1059,7 +1059,7 @@ var forth = new Inventario(
 )
 var fuzil = new Inventario(
     'Fuzil',
-    '05/01/2024',
+    '20/01/2024',
     [
         new item(11, 'Ancinho p/Jardim 3 dentes', 'fuzil'),
         new item(1, 'Arrancador de Inço', 'fuzil'),
@@ -1068,9 +1068,9 @@ var fuzil = new Inventario(
         new item(9, 'Pazinha p/jardim Larga', 'fuzil'),
         new item(1, 'Pazinha p/jardim Estreita', 'fuzil'),
         new item(11, 'Sacho 2P CB Madeira', 'fuzil'),
-        new item(10, 'Tesoura de poda Palisad', 'fuzil'),
+        new item(8, 'Tesoura de poda Palisad', 'fuzil'),
         new item(14, 'Tesoura de poda Tramontina', 'fuzil'),
-        new item(7, 'Tesoura Grama', 'fuzil'),
+        new item(6, 'Tesoura Grama', 'fuzil'),
         new item(6, 'Vasoura palheta s/regulagem', 'fuzil')
     ]
 )
@@ -1134,7 +1134,7 @@ var alfa_polietileno = new Inventario(
         new item(8, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Marrom', 'coluna_degrau_1'),
         new item(9, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Preto', 'coluna_degrau_1'),
 
-        new item(3, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Bege', 'coluna_degrau_2'),
+        new item(2, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Bege', 'coluna_degrau_2'),
         new item(5, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Cimento', 'coluna_degrau_2'),
         new item(8, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Marrom', 'coluna_degrau_2'),
         new item(6, 'Coluna Red. Degrau Grafiato C/Prato nº 2 Preto', 'coluna_degrau_2'),
@@ -1214,12 +1214,12 @@ var alfa_polietileno = new Inventario(
         new item(6, 'Coluna Red. Marmorizada C/Prato nº 4 verde', 'coluna_marmorizada_4'),
         new item(0, 'Coluna Red. Marmorizada C/Prato nº 4 Vermelho', 'coluna_marmorizada_4'),
 
-        new item(9, 'Coluna Red. Polida C/Prato nº 1 Bege', 'coluna_polida_1'),
+        new item(6, 'Coluna Red. Polida C/Prato nº 1 Bege', 'coluna_polida_1'),
         new item(5, 'Coluna Red. Polida C/Prato nº 1 Cimento', 'coluna_polida_1'),
         new item(7, 'Coluna Red. Polida C/Prato nº 1 Marrom', 'coluna_polida_1'),
         new item(6, 'Coluna Red. Polida C/Prato nº 1 Preto', 'coluna_polida_1'),
 
-        new item(7, 'Coluna Red. Polida C/Prato nº 2 Bege', 'coluna_polida_2'),
+        new item(6, 'Coluna Red. Polida C/Prato nº 2 Bege', 'coluna_polida_2'),
         new item(6, 'Coluna Red. Polida C/Prato nº 2 Cimento', 'coluna_polida_2'),
         new item(9, 'Coluna Red. Polida C/Prato nº 2 Marrom', 'coluna_polida_2'),
         new item(7, 'Coluna Red. Polida C/Prato nº 2 Preto', 'coluna_polida_2'),
@@ -1276,7 +1276,7 @@ var alfa_polietileno = new Inventario(
         new item(5, 'Vaso Bojo Frisado C/Prato nº 2 Marrom', 'vaso_frisado_2'),
         new item(5, 'Vaso Bojo Frisado C/Prato nº 2 Preto', 'vaso_frisado_2'),
 
-        new item(8, 'Vaso Bojo Frisado C/Prato nº 3 Bege', 'vaso_frisado_3'),
+        new item(7, 'Vaso Bojo Frisado C/Prato nº 3 Bege', 'vaso_frisado_3'),
         new item(8, 'Vaso Bojo Frisado C/Prato nº 3 Cimento', 'vaso_frisado_3'),
         new item(7, 'Vaso Bojo Frisado C/Prato nº 3 Marrom', 'vaso_frisado_3'),
         new item(8, 'Vaso Bojo Frisado C/Prato nº 3 Preto', 'vaso_frisado_3'),
@@ -1472,16 +1472,16 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '04/01/2024',
+    '20/01/2024',
     [
-        new item(51, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
+        new item(48, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
-        new item(52, 'Formicida Insetimaster - 100ml', 'formicida'),
+        new item(47, 'Formicida Insetimaster - 100ml', 'formicida'),
         new item(0, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
-        new item(8, 'Inseticom Jardim - Caixa', 'inseticom'),
+        new item(7, 'Inseticom Jardim - Caixa', 'inseticom'),
 
-        new item(39, 'Malathion 500CE - 100ml', 'malathion')
+        new item(35, 'Malathion 500CE - 100ml', 'malathion')
     ]   
 )
 var madeiras = new Inventario(
@@ -1601,8 +1601,8 @@ var coquim = new Inventario(
 
         new item(23, '2999 - Estaca Coquim 30cm', 'estaca_coquim'),
         new item(24, '3000 - Estaca Coquim 40cm', 'estaca_coquim'),
-        new item(21, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
-        new item(17, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
+        new item(19, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
+        new item(14, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
 
         new item(11, '4000 - Mix Coquim 1kg', 'adubos'),
         new item(1, '4001 - Pó de Coco 1kg', 'adubos'),
