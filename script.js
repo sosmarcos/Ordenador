@@ -161,7 +161,7 @@ var inventorios = [
 ]
 var diversos = new Inventario(
     'Diversos',
-    '20/01/2024', 
+    '28/01/2024', 
     [
         new item(26, 'Baby Ball Amarelo', 'baby_ball'),
         new item(44, 'Baby Ball Azul', 'baby_ball'),
@@ -299,7 +299,7 @@ var diversos = new Inventario(
         new item(170, 'pote de Mudas 13.6 litro', 'pote_muda'),
         new item(47, 'pote de Mudas 25 litro', 'pote_muda'),
 
-        new item(18, 'Roundup 1 litro', 'roundup'),
+        new item(17, 'Roundup 1 litro', 'roundup'),
 
         new item(20, 'Saquinho de Mudas 10x15', 'saquinho_muda'),
         new item(10, 'Saquinho de Mudas 10x20', 'saquinho_muda'),
@@ -324,9 +324,9 @@ var diversos = new Inventario(
 )
 var regaplan = new Inventario(
     'Regaplan',
-    '22/01/2024',
+    '28/01/2024',
     [
-        new item(76, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(66, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(78, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(71, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(109, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -415,7 +415,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '22/01/2024',
+    '28/01/2024',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -565,7 +565,7 @@ var rischioto = new Inventario(
 
         new item(0, 'Vaso de Parede Bella Fiore 3.3 litros Areia', 'vp_florença_3.3'),
         new item(38, 'Vaso de Parede Bella Fiore 3.3 litros Cerâmica', 'vp_florença_3.3'),
-        new item(32, 'Vaso de Parede Bella Fiore 3.3 litros Preto', 'vp_florença_3.3'),
+        new item(24, 'Vaso de Parede Bella Fiore 3.3 litros Preto', 'vp_florença_3.3'),
 
         new item(0, 'Vaso de Parede Floratta 3 litros Areia', 'vp_floratta_3'),
         new item(23, 'Vaso de Parede Floratta 3 litros Azul', 'vp_floratta_3'),
@@ -647,7 +647,7 @@ var rischioto = new Inventario(
         new item(7, 'Vaso Redondo Floratta n19 Verde', 'redondo_floratta_19'),
         new item(33, 'Vaso Redondo Floratta n19 Verde Escuro', 'redondo_floratta_19'),
 
-        new item(32, 'Vaso Redondo Floratta n26 Areia', 'redondo_floratta_26'),
+        new item(27, 'Vaso Redondo Floratta n26 Areia', 'redondo_floratta_26'),
         new item(25, 'Vaso Redondo Floratta n26 Azul', 'redondo_floratta_26'),
         new item(13, 'Vaso Redondo Floratta n26 cinza', 'redondo_floratta_26'),
         new item(27, 'Vaso Redondo Floratta n26 Preto', 'redondo_floratta_26'),
@@ -666,7 +666,7 @@ var rischioto = new Inventario(
         new item(12, 'Vaso Redondo Floratta n40 Areia', 'redondo_floratta_40'),
         new item(31, 'Vaso Redondo Floratta n40 Azul', 'redondo_floratta_40'),
         new item(27, 'Vaso Redondo Floratta n40 cinza', 'redondo_floratta_40'),
-        new item(26, 'Vaso Redondo Floratta n40 Preto', 'redondo_floratta_40'),
+        new item(22, 'Vaso Redondo Floratta n40 Preto', 'redondo_floratta_40'),
         new item(0, 'Vaso Redondo Floratta n40 Rosa', 'redondo_floratta_40'),
         new item(32, 'Vaso Redondo Floratta n40 Verde', 'redondo_floratta_40'),
         new item(19, 'Vaso Redondo Floratta n40 Verde Escuro', 'redondo_floratta_40'),
@@ -1072,7 +1072,7 @@ var fuzil = new Inventario(
 )
 var alfa_polietileno = new Inventario(
     'Alfa Polietileno',
-    '22/01/2024',
+    '28/01/2024',
     [
         new item(9, 'Bacia Diamante nº 1 Bege', 'bacia_diamante_1'),
         new item(10, 'Bacia Diamante nº 1 Cimento', 'bacia_diamante_1'),
@@ -1259,7 +1259,7 @@ var alfa_polietileno = new Inventario(
 
         new item(8, 'Vaso Bojo Red. Diamante C/Prato nº 4 Bege', 'vaso_diamante_4'),
         new item(8, 'Vaso Bojo Red. Diamante C/Prato nº 4 Cimento', 'vaso_diamante_4'),
-        new item(8, 'Vaso Bojo Red. Diamante C/Prato nº 4 Marrom', 'vaso_diamante_4'),
+        new item(7, 'Vaso Bojo Red. Diamante C/Prato nº 4 Marrom', 'vaso_diamante_4'),
         new item(7, 'Vaso Bojo Red. Diamante C/Prato nº 4 Preto', 'vaso_diamante_4'),
 
         new item(9, 'Vaso Bojo Frisado C/Prato nº 1 Bege', 'vaso_frisado_1'),
@@ -2473,21 +2473,15 @@ function orçamento(index, ediçao=null) {
             case 'quantidade':
                 comanda.registro[index].quantidade = corretor.value
                 comanda.registro[index].total = (comanda.registro[index].unitario * comanda.registro[index].quantidade).toFixed(2)
-
-                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = comanda.registro[index].quantidade
-                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
                 break
             case 'grandeza':
                 comanda.registro[index].grandeza = window.document.getElementById(`grandeza_orçamento_edit_${index}`).value
-
-                document.getElementById(`grandeza_orçamento_${index}`).innerText = comanda.registro[index].grandeza
                 break
             case 'descrição':
                 let descriçãoCorreçao = window.document.getElementById(`descrição_orçamento_edit_${index}`).value
                 let antigaPorcentagem = (comanda.registro[index].descrição).split(' ')
 
                 comanda.registro[index].descrição = descriçãoCorreçao
-                document.getElementById(`descrição_orçamento_${index}`).innerText = descriçãoCorreçao
 
                 if (((descriçãoCorreçao).toLowerCase()).split(' ')[0] == 'desconto') {
                     let novaPorcentagem = (descriçãoCorreçao).split(' ')[((descriçãoCorreçao).split(' ')).length - 1]
@@ -2498,17 +2492,11 @@ function orçamento(index, ediçao=null) {
 
                     comanda.registro[index].unitario = -(parseFloat(novaPorcentagem.split('%')[0]) * comanda.valorBruto / 100) 
                     comanda.registro[index].total = (comanda.registro[index].unitario * comanda.registro[index].quantidade).toFixed(2)
-
-                    document.getElementById(`unitario_orçamento_${index}`).innerText = `R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}`
-                    document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
                 }
                 break
             case 'unitario':
                 comanda.registro[index].unitario = window.document.getElementById(`unitario_orçamento_edit_${index}`).value
                 comanda.registro[index].total = (comanda.registro[index].unitario * comanda.registro[index].quantidade).toFixed(2)
-
-                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = `R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}`
-                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
                 break
             case 'total':
                 comanda.registro[index].total = window.document.getElementById(`total_orçamento_edit_${index}`).value
@@ -2603,6 +2591,7 @@ function orçamento(index, ediçao=null) {
 function novaLinha(index) {
     // criaçao de uma nova linha
     var grade = window.document.getElementById('grade_de_entrada')
+    console.log('|========================|Nova Linha|========================|')
 
     // escrevendo o cabesalhio
     grade.innerHTML = `
