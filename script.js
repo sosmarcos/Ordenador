@@ -299,7 +299,7 @@ var diversos = new Inventario(
         new item(170, 'pote de Mudas 13.6 litro', 'pote_muda'),
         new item(47, 'pote de Mudas 25 litro', 'pote_muda'),
 
-        new item(17, 'Roundup 1 litro', 'roundup'),
+        new item(3, 'Roundup 1 litro', 'roundup'),
 
         new item(20, 'Saquinho de Mudas 10x15', 'saquinho_muda'),
         new item(10, 'Saquinho de Mudas 10x20', 'saquinho_muda'),
@@ -666,7 +666,7 @@ var rischioto = new Inventario(
         new item(32, 'Vaso Redondo Floratta n40 Verde', 'redondo_floratta_40'),
         new item(17, 'Vaso Redondo Floratta n40 Verde Escuro', 'redondo_floratta_40'),
 
-        new item(0, 'Vaso Redondo Floratta n50 Areia', 'redondo_floratta_50'),
+        new item(6, 'Vaso Redondo Floratta n50 Areia', 'redondo_floratta_50'),
         new item(10, 'Vaso Redondo Floratta n50 Preto', 'redondo_floratta_50'),
         new item(0, 'Vaso Redondo Floratta n50 Rosa', 'redondo_floratta_50'),
         new item(7, 'Vaso Redondo Floratta n50 Verde Escuro', 'redondo_floratta_50')
@@ -944,8 +944,8 @@ var emeAeme = new Inventario(
         new item(39, 'Vaso T 20 Cerâmica', 'vaso_t_20'),
         new item(51, 'Vaso T 20 Preto', 'vaso_t_20'),
 
-        new item(30, 'Vaso T 25 Cerâmica', 'vaso_t_25'),
-        new item(31, 'Vaso T 25 Preto', 'vaso_t_25'),
+        new item(22, 'Vaso T 25 Cerâmica', 'vaso_t_25'),
+        new item(20, 'Vaso T 25 Preto', 'vaso_t_25'),
 
         new item(30, 'Vaso T 27 Cerâmica', 'vaso_t_27'),
         new item(30, 'Vaso T 27 Preto', 'vaso_t_27'),
@@ -1081,7 +1081,7 @@ var forth = new Inventario(
 )
 var fuzil = new Inventario(
     'Fuzil',
-    '20/01/2024',
+    '08/02/2024',
     [
         new item(11, 'Ancinho p/Jardim 3 dentes', 'fuzil'),
         new item(1, 'Arrancador de Inço', 'fuzil'),
@@ -1090,9 +1090,11 @@ var fuzil = new Inventario(
         new item(9, 'Pazinha p/jardim Larga', 'fuzil'),
         new item(1, 'Pazinha p/jardim Estreita', 'fuzil'),
         new item(11, 'Sacho 2P CB Madeira', 'fuzil'),
-        new item(8, 'Tesoura de poda Palisad', 'fuzil'),
+        new item(0, 'Tesoura de poda Palisad', 'fuzil'),
         new item(14, 'Tesoura de poda Tramontina', 'fuzil'),
-        new item(6, 'Tesoura Grama', 'fuzil'),
+        new item(3, 'Tesoura de poda Strongfer', 'fuzil'),
+        new item(6, 'Tesoura Grama 12', 'fuzil'),
+        new item(2, 'Vasoura de plastico 22 dentes Verde', 'fuzil')
         new item(6, 'Vasoura palheta s/regulagem', 'fuzil')
     ]
 )
