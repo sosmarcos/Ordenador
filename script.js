@@ -1094,7 +1094,7 @@ var fuzil = new Inventario(
         new item(14, 'Tesoura de poda Tramontina', 'fuzil'),
         new item(3, 'Tesoura de poda Strongfer', 'fuzil'),
         new item(6, 'Tesoura Grama 12', 'fuzil'),
-        new item(2, 'Vasoura de plastico 22 dentes Verde', 'fuzil')
+        new item(2, 'Vasoura de plastico 22 dentes Verde', 'fuzil'),
         new item(6, 'Vasoura palheta s/regulagem', 'fuzil')
     ]
 )
