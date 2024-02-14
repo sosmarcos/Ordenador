@@ -1118,7 +1118,7 @@ var alfa_polietileno = new Inventario(
         new item(10, 'Bacia Diamante nº 3 Preto', 'bacia_diamante_3'),
 
         new item(0, 'Bacia Grafiato C/ Prato nº 1 Bege', 'bacia_grafiato_1'),
-        new item(0, 'Bacia Grafiato C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
+        new item(2, 'Bacia Grafiato C/ Prato nº 1 Cimento', 'bacia_grafiato_1'),
         new item(0, 'Bacia Grafiato C/ Prato nº 1 Marrom', 'bacia_grafiato_1'),
         new item(4, 'Bacia Grafiato C/ Prato nº 1 Preto', 'bacia_grafiato_1'),
 
@@ -1138,20 +1138,20 @@ var alfa_polietileno = new Inventario(
         new item(10, 'Bacia Grafiato C/Prato nº 4 Preto', 'bacia_grafiato_4'),
 
         new item(5, 'Bacia Marmorizada C/Prato nº 1 Azul', 'bacia_marmorizada_1'),
-        new item(8, 'Bacia Marmorizada C/Prato nº 1 Vermelho', 'bacia_marmorizada_1'),
+        new item(10, 'Bacia Marmorizada C/Prato nº 1 Vermelho', 'bacia_marmorizada_1'),
 
         new item(2, 'Bacia Marmorizada C/Prato nº 2 Azul', 'bacia_marmorizada_2'),
-        new item(1, 'Bacia Marmorizada C/Prato nº 2 Vermelho', 'bacia_marmorizada_2'),
+        new item(0, 'Bacia Marmorizada C/Prato nº 2 Vermelho', 'bacia_marmorizada_2'),
 
         new item(4, 'Bacia Polida C/Prato nº 1 Bege', 'bacia_polida_1'),
-        new item(3, 'Bacia Polida C/Prato nº 1 Cimento', 'bacia_polida_1'),
+        new item(1, 'Bacia Polida C/Prato nº 1 Cimento', 'bacia_polida_1'),
         new item(6, 'Bacia Polida C/Prato nº 1 Marrom', 'bacia_polida_1'),
         new item(5, 'Bacia Polida C/Prato nº 1 Preto', 'bacia_polida_1'),
 
-        new item(7, 'Bacia Polida C/Prato nº 2 Bege', 'bacia_polida_2'),
+        new item(5, 'Bacia Polida C/Prato nº 2 Bege', 'bacia_polida_2'),
         new item(5, 'Bacia Polida C/Prato nº 2 Cimento', 'bacia_polida_2'),
-        new item(11, 'Bacia Polida C/Prato nº 2 Marrom', 'bacia_polida_2'),
-        new item(3, 'Bacia Polida C/Prato nº 2 Preto', 'bacia_polida_2'),
+        new item(9, 'Bacia Polida C/Prato nº 2 Marrom', 'bacia_polida_2'),
+        new item(2, 'Bacia Polida C/Prato nº 2 Preto', 'bacia_polida_2'),
 
         new item(7, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Bege', 'coluna_degrau_1'),
         new item(8, 'Coluna Red. Degrau Grafiato C/Prato nº 1 Cimento', 'coluna_degrau_1'),
