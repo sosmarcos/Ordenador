@@ -2251,6 +2251,8 @@ function impreção(sec, empresa, identificador) {
     sec.innerHTML += `<h1>${empresa.nome}</h1>`
     sec.innerHTML += `<h2>${empresa.data}</h2>`
     
+    console.log(empresa)
+
     let repeatNumber = 0
     for (let index in empresa.inventario) {
         if (empresa.inventario[index].nome.length > repeatNumber) {repeatNumber = empresa.inventario[index].nome.length}
