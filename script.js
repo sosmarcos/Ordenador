@@ -122,6 +122,7 @@ var articleRischioto = window.document.getElementById('rischioto')
 var articleEmeAEme = window.document.getElementById('eme_a_eme')
 var articleForth = window.document.getElementById('forth')
 var articleFuzil = window.document.getElementById('fuzil')
+var articleAlfa_cestas = window.document.getElementById('alfa_cestas')
 var articleAlfa_polietileno = window.document.getElementById('alfa_polietileno')
 var articleAlfa_fibraSintetica = window.document.getElementById('alfa_fibraSintetica')
 var articleJelPlast = window.document.getElementById('jel_plast')
@@ -150,6 +151,7 @@ var inventorios = [
     'eme_a_eme',
     'forth',
     'fuzil',
+    'alfa_cestas',
     'alfa_polietileno',
     'alfa_fibraSintetica',
     'jel_plast',
@@ -1096,6 +1098,45 @@ var fuzil = new Inventario(
         new item(6, 'Tesoura Grama 12', 'fuzil'),
         new item(2, 'Vasoura de plastico 22 dentes Verde', 'fuzil'),
         new item(6, 'Vasoura palheta s/regulagem', 'fuzil')
+    ]
+)
+var alfa_cestas =  new Inventario(
+    'Alfa Cestas',
+    '19/02/2024',
+    [
+        new item(1, 'Cesta Café da Manhã N° 1 Argila', 'cesta_cafe_1'),
+        new item(2, 'Cesta Café da Manhã N° 1 Argila-Palha', 'cesta_cafe_1'),
+
+        new item(7, 'Cesta Café da Manhã N° 2 Argila-Palha', 'cesta_cafe_2'),
+
+        new item(4, 'Cesta red. Sintética 30 Cm N° 3 Argila', 'cesta_red_3'),
+        new item(4, 'Cesta red. Sintética 30 Cm N° 3 Palha', 'cesta_red_3'),
+
+        new item(4, 'Cesta red. Sintética 30 Cm N° 4 Argila', 'cesta_red_4'),
+        new item(4, 'Cesta red. Sintética 30 Cm N° 4 Palha', 'cesta_red_4'),
+
+        new item(1, 'Cesta Vovó N° 1 Argila', 'cesta_vovó_1'),
+        new item(1, 'Cesta Vovó N° 1 Argila-Palha', 'cesta_vovó_1'),
+        new item(1, 'Cesta Vovó N° 1 Café', 'cesta_vovó_1'),
+
+        new item(1, 'Cesta Vovó N° 2 Argila-Palha', 'cesta_vovó_2'),
+
+        new item(1, 'Cesta Vovó N° 3 Argila-Palha', 'cesta_vovó_3'),
+
+        new item(3, 'Coração Sintético N° 1 Argila', 'coração_1'),
+        new item(3, 'Coração Sintético N° 1 Branco', 'coração_1') ,
+
+        new item(3, 'Coração Sintético N° 2 Argila', 'coração_2'),
+        new item(3, 'Coração Sintético N° 2 Branco', 'coração_2') ,
+
+        new item(3, 'Coração Sintético N° 3 Argila', 'coração_3'),
+        new item(3, 'Coração Sintético N° 3 Branco', 'coração_3') ,
+
+        new item(3, 'Maleta N° 1 Argila-palha', 'maleta_1'),
+
+        new item(3, 'Maleta N° 2 Argila-palha', 'maleta_2'),
+
+        new item(2, 'Maleta N° 3 Argila-palha', 'maleta_3'),
     ]
 )
 var alfa_polietileno = new Inventario(
@@ -2263,6 +2304,8 @@ function buscadorDeInventario(nome) {
             return forth
         case 'fuzil':
             return fuzil
+        case 'alfa_cestas':
+            return alfa_cestas
         case 'alfa_polietileno':
             return alfa_polietileno
         case 'alfa_fibraSintetica':
@@ -2961,6 +3004,7 @@ impreção(articleRegaplan, regaplan, 'regaplan')
 impreção(articleEmeAEme, emeAeme, 'emeAeme')
 impreção(articleForth, forth, 'forth')
 impreção(articleFuzil, fuzil, 'fuzil')
+impreção(articleAlfa_cestas, alfa_cestas, 'alfa_cestas')
 impreção(articleAlfa_polietileno, alfa_polietileno, 'alfa_polietileno')
 impreção(articleAlfa_fibraSintetica, alfa_fibraSintetica, 'alfa_fibraSintetica')
 impreção(articleRischioto, rischioto, 'rischioto')
