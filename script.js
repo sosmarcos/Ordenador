@@ -1271,12 +1271,12 @@ var alfa_polietileno = new Inventario(
         new item(3, 'Coluna Red. Marmorizada C/Prato nº 2 verde', 'coluna_marmorizada_2'),
         new item(0, 'Coluna Red. Marmorizada C/Prato nº 2 Vermelho', 'coluna_marmorizada_2'),
 
-        new item(5, 'Coluna Red. Marmorizada C/Prato nº 3 Azul', 'coluna_marmorizada_3'),
-        new item(5, 'Coluna Red. Marmorizada C/Prato nº 3 verde', 'coluna_marmorizada_3'),
-        new item(5, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
+        new item(2, 'Coluna Red. Marmorizada C/Prato nº 3 Azul', 'coluna_marmorizada_3'),
+        new item(0, 'Coluna Red. Marmorizada C/Prato nº 3 verde', 'coluna_marmorizada_3'),
+        new item(2, 'Coluna Red. Marmorizada C/Prato nº 3 Vermelho', 'coluna_marmorizada_3'),
 
         new item(0, 'Coluna Red. Marmorizada C/Prato nº 4 Azul', 'coluna_marmorizada_4'),
-        new item(6, 'Coluna Red. Marmorizada C/Prato nº 4 verde', 'coluna_marmorizada_4'),
+        new item(5, 'Coluna Red. Marmorizada C/Prato nº 4 verde', 'coluna_marmorizada_4'),
         new item(0, 'Coluna Red. Marmorizada C/Prato nº 4 Vermelho', 'coluna_marmorizada_4'),
 
         new item(3, 'Coluna Red. Polida C/Prato nº 1 Bege', 'coluna_polida_1'),
@@ -1289,10 +1289,10 @@ var alfa_polietileno = new Inventario(
         new item(9, 'Coluna Red. Polida C/Prato nº 2 Marrom', 'coluna_polida_2'),
         new item(5, 'Coluna Red. Polida C/Prato nº 2 Preto', 'coluna_polida_2'),
 
-        new item(5, 'Coluna Red. Polida C/Prato nº 3 Bege', 'coluna_polida_3'),
-        new item(4, 'Coluna Red. Polida C/Prato nº 3 Cimento', 'coluna_polida_3'),
-        new item(9, 'Coluna Red. Polida C/Prato nº 3 Marrom', 'coluna_polida_3'),
-        new item(4, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
+        new item(2, 'Coluna Red. Polida C/Prato nº 3 Bege', 'coluna_polida_3'),
+        new item(1, 'Coluna Red. Polida C/Prato nº 3 Cimento', 'coluna_polida_3'),
+        new item(6, 'Coluna Red. Polida C/Prato nº 3 Marrom', 'coluna_polida_3'),
+        new item(1, 'Coluna Red. Polida C/Prato nº 3 Preto', 'coluna_polida_3'),
 
         new item(2, 'Coluna Red. Polida C/Prato nº 4 Bege', 'coluna_polida_4'),
         new item(3, 'Coluna Red. Polida C/Prato nº 4 Cimento', 'coluna_polida_4'),
