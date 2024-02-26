@@ -320,6 +320,18 @@ var diversos = new Inventario(
         new item(10, 'Saquinho de Mudas 60x60', 'saquinho_muda'),
         new item(10, 'Saquinho de Mudas 60x70', 'saquinho_muda'),
 
+        new item(23, "Substrato Cactu's Mix 2Kg Fardo com 8", 'cactomix'),
+        new item(14, "Substrato Cactu's Mix 5Kg", 'cactomix'),
+
+        new item(35, 'Substrato Flormix 2Kg Fardo com 8', 'flormix'),
+
+        new item(41, 'Substrato Orquimix 1Kg Fardo com 8', 'orquimix'),
+        new item(25, 'Substrato Orquimix 4Kg', 'orquimix'),
+
+        new item(25, 'Substrato Rosa do Deserto 2Kg Fardo com 8', 'rosa_do_deserto'),
+
+        new item(30, "Substrato Zamioculca's Mix 2Kg Fardo com 8", 'zamioculca'),
+
         new item(14, 'Tordon 100ml', 'tordon'),
         new item(1, 'Tordon 1 litro', 'tordon'),
     ]
