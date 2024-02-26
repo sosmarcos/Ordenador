@@ -417,7 +417,7 @@ var regaplan = new Inventario(
 )
 var rischioto = new Inventario(
     'Rischioto',
-    '22/02/2024',
+    '26/02/2024',
     [
         new item(28, 'Alça Universal Areia', 'alça'),
 
@@ -604,7 +604,7 @@ var rischioto = new Inventario(
         new item(18, 'Vaso Quadrado Bella Fiore n42 Cerâmica', 'quadrado_n42'),
         new item(10, 'Vaso Quadrado Bella Fiore n42 Preto', 'quadrado_n42'),
         
-        new item(35, 'Vaso Redondo Bella Fiore n13 Areia', 'redondo_n13'),
+        new item(5, 'Vaso Redondo Bella Fiore n13 Areia', 'redondo_n13'),
         new item(44, 'Vaso Redondo Bella Fiore n13 Cerâmica', 'redondo_n13'),
         new item(54, 'Vaso Redondo Bella Fiore n13 Preto', 'redondo_n13'),
 
@@ -650,7 +650,7 @@ var rischioto = new Inventario(
         new item(27, 'Vaso Redondo Floratta n26 Preto', 'redondo_floratta_26'),
         new item(28, 'Vaso Redondo Floratta n26 Rosa', 'redondo_floratta_26'),
         new item(32, 'Vaso Redondo Floratta n26 Verde', 'redondo_floratta_26'),
-        new item(28, 'Vaso Redondo Floratta n26 Verde Escuro', 'redondo_floratta_26'),
+        new item(27, 'Vaso Redondo Floratta n26 Verde Escuro', 'redondo_floratta_26'),
 
         new item(30, 'Vaso Redondo Floratta n33 Areia', 'redondo_floratta_33'),
         new item(42, 'Vaso Redondo Floratta n33 Azul', 'redondo_floratta_33'),
@@ -961,116 +961,116 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '22/02/2024',
+    '26/02/2024',
     [
-        new item(6, 'Acaricida Concentrado - 60ml', 'a'),
+        new item(4, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
 
         new item(25, 'Baraticida Gel', 'b'),
-        new item(15, 'Bokashi - 250g', 'b'),
+        new item(7, 'Bokashi - 250g', 'b'),
         new item(13, 'Bonsai Concentrado - 60ml', 'b'),
         new item(18, 'Bonsai p/uso - 500ml', 'b'),
         new item(12, 'Brilha folha Concentrado - 60ml', 'b'),
-        new item(8, 'Brilha folha p/uso - 500ml', 'b'),
+        new item(7, 'Brilha folha p/uso - 500ml', 'b'),
 
-        new item(9, 'Cactos Concentrado - 60ml', 'c'),
+        new item(7, 'Cactos Concentrado - 60ml', 'c'),
         new item(11, 'Cactos Concentrado - 500m', 'c'),
-        new item(22, 'Cobre Concentrado - 60ml', 'c'),
+        new item(19, 'Cobre Concentrado - 60ml', 'c'),
         new item(12, 'Cobre Concentrado - 500m', 'c'),
-        new item(23, 'Coqueiros - 400g', 'c'),
-        new item(18, 'Coqueiros - 3kg', 'c'),
+        new item(19, 'Coqueiros - 400g', 'c'),
+        new item(16, 'Coqueiros - 3kg', 'c'),
         new item(1, 'Coqueiros - 10Kg', 'c'),
-        new item(2, 'Cote 14.14.14 - 150g', 'c'),
+        new item(1, 'Cote 14.14.14 - 150g', 'c'),
         new item(0, 'Cote 15.09.12 - 150g', 'c'),
         new item(8, 'Cote 14.14.14 - 400g', 'c'),
-        new item(2, 'Cote 15.09.12 - 400g', 'c'),
+        new item(1, 'Cote 15.09.12 - 400g', 'c'),
         new item(4, 'Cupinicida Concentrado - 60ml', 'c'),
 
         new item(0, 'Defende Concentrado - 30ml', 'd'),
-        new item(7, 'Defende p/uso - 500ml', 'd'),
+        new item(6, 'Defende p/uso - 500ml', 'd'),
 
-        new item(7, 'Enraizador Concentrado - 60ml', 'e'),
-        new item(35, 'Enxofre Concentrado - 60ml', 'e'),
+        new item(5, 'Enraizador Concentrado - 60ml', 'e'),
+        new item(34, 'Enxofre Concentrado - 60ml', 'e'),
         new item(13, 'Enxofre p/uso - 500ml', 'e'),
-        new item(13, 'Equilibrio Concentrado - 60ml', 'e'),
+        new item(10, 'Equilibrio Concentrado - 60ml', 'e'),
         new item(6, 'Equilibrio Concentrado - 500ml', 'e'),
 
-        new item(12, 'Fipronil+imidacloprid Concentrado - 60ml', 'f'),
-        new item(10, 'Flores Concentrado - 60ml', 'f'),
+        new item(10, 'Fipronil+imidacloprid Concentrado - 60ml', 'f'),
+        new item(8, 'Flores Concentrado - 60ml', 'f'),
         new item(14, 'Flores p/uso - 500ml', 'f'),
-        new item(60, 'Flores - 400g', 'f'),
-        new item(27, 'Flores - 3kg', 'f'),
+        new item(54, 'Flores - 400g', 'f'),
+        new item(26, 'Flores - 3kg', 'f'),
         new item(0, 'Flores - 10Kg', 'f'),
         new item(29, 'Formicida Gel', 'f'),
-        new item(8, 'Formicida isca granulada', 'f'), 
-        new item(8, 'Formicida Mata no ninho p/uso - 500ml', 'f'),
+        new item(7, 'Formicida isca granulada', 'f'), 
+        new item(5, 'Formicida Mata no ninho p/uso - 500ml', 'f'),
         new item(0, 'Fosfito - 60ml', 'f'),
-        new item(7, 'Fosfito p/uso - 500ml', 'f'),
+        new item(6, 'Fosfito p/uso - 500ml', 'f'),
         new item(0, 'Frutas Concentrado - 60ml', 'f'),
         new item(17, 'Frutas p/uso - 500ml', 'f'),
-        new item(49, 'Frutas - 400g', 'f'),
-        new item(27, 'Frutas - 3kg', 'f'),
+        new item(38, 'Frutas - 400g', 'f'),
+        new item(25, 'Frutas - 3kg', 'f'),
         new item(0, 'Frutas - 10Kg', 'f'),
-        new item(11, 'Fungicida Concentrado - 30ml', 'f'),
-        new item(16, 'Fungicida p/uso - 500ml', 'f'),
+        new item(8, 'Fungicida Concentrado - 30ml', 'f'),
+        new item(13, 'Fungicida p/uso - 500ml', 'f'),
         new item(10, 'Fungicida cobre p/uso - 500ml', 'f'),
 
         new item(0, 'Gel para plantio - 100g', 'g'),
 
-        new item(8, 'Hortaliças Concentrado - 60ml', 'h'),
+        new item(10, 'Hortaliças Concentrado - 60ml', 'h'),
         new item(13, 'Hortaliças p/uso - 500ml', 'h'),
-        new item(34, 'Hortaliças - 400g', 'h'),
+        new item(30, 'Hortaliças - 400g', 'h'),
         new item(12, 'Hortaliças - 3kg', 'h'),
         new item(0, 'Hortaliças - 10Kg', 'h'),
 
-        new item(26, 'Inseticida Concentrado - 30ml', 'i'),
-        new item(20, 'Inseticida p/uso - 500ml', 'i'),
+        new item(14, 'Inseticida Concentrado - 30ml', 'i'),
+        new item(16, 'Inseticida p/uso - 500ml', 'i'),
 
-        new item(6, 'Jabuticabeiras Concentrado - 60ml', 'j'),
-        new item(7, 'Jabuticabeiras - 400g', 'j'),
+        new item(2, 'Jabuticabeiras Concentrado - 60ml', 'j'),
+        new item(0, 'Jabuticabeiras - 400g', 'j'),
         new item(11, 'Jabuticabeiras - 3kg', 'j'),
-        new item(3, 'Jardim Concentrado - 60ml', 'j'),
+        new item(0, 'Jardim Concentrado - 60ml', 'j'),
         new item(12, 'Jardim Concentrado - 500ml', 'j'),
         new item(14, 'Jardim p/uso - 500ml', 'j'),
-        new item(27, 'Jardim - 400g', 'j'),
-        new item(16, 'Jardim - 3kg', 'j'),
+        new item(20, 'Jardim - 400g', 'j'),
+        new item(15, 'Jardim - 3kg', 'j'),
 
         new item(3, 'Lesmicida isca granulada', 'l'),
 
-        new item(29, 'Mata cochonilha p/uso - 500ml', 'm'),
+        new item(28, 'Mata cochonilha p/uso - 500ml', 'm'),
         new item(18, 'Mata lagarta p/uso - 500ml', 'm'),
         new item(0, 'Mata mato Concentrado - 30ml', 'm'),
         new item(5, 'Mata mato p/uso - 500ml', 'm'),
         new item(26, 'Mata pulgão p/uso - 500ml', 'm'),
 
         new item(24, 'Óleo Concentrado - 60ml', 'o'),
-        new item(20, 'Orquídeas Floração Concentrado - 60ml', 'o'),
-        new item(13, 'Orquídeas Floração p/uso - 500ml', 'o'),
-        new item(41, 'Orquídeas Manutenção Concentrado - 60ml', 'o'),
-        new item(15, 'Orquídeas Manutenção p/uso - 500ml', 'o'),
-        new item(18, 'Orquídeas 09.45.15 - 100g', 'o'),
+        new item(17, 'Orquídeas Floração Concentrado - 60ml', 'o'),
+        new item(10, 'Orquídeas Floração p/uso - 500ml', 'o'),
+        new item(40, 'Orquídeas Manutenção Concentrado - 60ml', 'o'),
+        new item(14, 'Orquídeas Manutenção p/uso - 500ml', 'o'),
+        new item(16, 'Orquídeas 09.45.15 - 100g', 'o'),
         new item(28, 'Orquídeas 20.20.20 - 100g', 'o'),
         new item(22, 'Orquídeas 30.10.10 - 100g', 'o'),
-        new item(4, 'Orquídeas 09.45.15 - 400g', 'o'),
+        new item(1, 'Orquídeas 09.45.15 - 400g', 'o'),
         new item(10, 'Orquídeas 20.20.20 - 400g', 'o'),
         new item(9, 'Orquídeas 30.10.10 - 400g', 'o'),
 
         new item(0, 'Palmeiras Concentrado - 60ml', 'p'),
         new item(8, 'Palmeiras p/uso - 500ml', 'p'),
-        new item(16, 'Palmeiras - 400g', 'p'),
+        new item(15, 'Palmeiras - 400g', 'p'),
         new item(12, 'Palmeiras - 3kg', 'p'),
-        new item(17, 'Pasta selante', 'p'),
-        new item(12, 'Plantio - 400g', 'p'),
+        new item(14, 'Pasta selante', 'p'),
+        new item(11, 'Plantio - 400g', 'p'),
         new item(8, 'Plantio - 3kg', 'p'),
 
         new item(0, 'Raticida Bloco - 200g', 'r'),
-        new item(21, 'Raticida Isca Anticoagulante', 'r'),
+        new item(20, 'Raticida Isca Anticoagulante', 'r'),
         new item(4, 'Rosa do Deserto Concentrado - 60ml', 'r'),
         new item(11, 'Rosa do Deserto p/uso - 500ml', 'r'),
-        new item(25, 'Rosa do Deserto - 400g', 'r'),
+        new item(24, 'Rosa do Deserto - 400g', 'r'),
         new item(2, 'Rosa do Deserto - 3kg', 'r'),
 
-        new item(11, 'Samambaias Concentrado - 60ml', 's'),
+        new item(10, 'Samambaias Concentrado - 60ml', 's'),
         new item(8, 'Samambaias p/uso - 500ml', 's'),
         new item(29, 'Samambaias - 400g', 's'),
         new item(0, 'Suculentas Concentrado - 60ml', 's'),
@@ -1541,21 +1541,21 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '07/02/2024',
+    '26/02/2024',
     [
         new item(48, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
-        new item(41, 'Formicida Insetimaster - 100ml', 'formicida'),
+        new item(35, 'Formicida Insetimaster - 100ml', 'formicida'),
         new item(14, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
-        new item(4, 'Inseticon Display 20 Unidades', 'inseticom'),
+        new item(2, 'Inseticon Display 20 Unidades', 'inseticom'),
 
-        new item(29, 'Malathion 500CE - 100ml', 'malathion')
+        new item(27, 'Malathion 500CE - 100ml', 'malathion')
     ]   
 )
 var madeiras = new Inventario(
     'Madeiras',
-    '07/02/2024',
+    '26/02/2024',
     [
         new item(3, 'Treliça 50x50cm Simples', 'treliça'),
         new item(1, 'Treliça 50x50cm Pintada', 'treliça'),
@@ -1572,20 +1572,20 @@ var madeiras = new Inventario(
         new item(7, 'Cachepo Madeira 40 Simples', 'cachepo'),
         new item(10, 'Cachepo Madeira 40 Pintado', 'cachepo'),
 
-        new item(13, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
+        new item(2, 'Rodízio Redondo 20cm', 'rodízio_redondo'),
         new item(0, 'Rodízio Redondo 25cm', 'rodízio_redondo'),
-        new item(7, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
-        new item(12, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
+        new item(0, 'Rodízio Redondo 30cm', 'rodízio_redondo'),
+        new item(10, 'Rodízio Redondo 35cm', 'rodízio_redondo'),
         new item(0, 'Rodízio Redondo 40cm', 'rodízio_redondo'),
-        new item(2, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
+        new item(0, 'Rodízio Redondo 50cm', 'rodízio_redondo'),
 
-        new item(11, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
-        new item(8, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
-        new item(8, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
+        new item(3, 'Rodízio Quadrado 20cm', 'rodízio_quadrado'),
+        new item(0, 'Rodízio Quadrado 25cm', 'rodízio_quadrado'),
+        new item(0, 'Rodízio Quadrado 30cm', 'rodízio_quadrado'),
         new item(10, 'Rodízio Quadrado 35cm', 'rodízio_quadrado'),
-        new item(9, 'Rodízio Quadrado 40cm', 'rodízio_quadrado'),
+        new item(10, 'Rodízio Quadrado 40cm', 'rodízio_quadrado'),
         new item(3, 'Rodízio Quadrado 45cm', 'rodízio_quadrado'),
-        new item(2, 'Rodízio Quadrado 50cm', 'rodízio_quadrado'),
+        new item(0, 'Rodízio Quadrado 50cm', 'rodízio_quadrado'),
     ]
 )
 var nutriplan = new Inventario(
@@ -1620,7 +1620,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '07/02/2024',
+    '26/02/2024',
     [
         new item(5, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(9, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1677,7 +1677,7 @@ var coquim = new Inventario(
         new item(14, '3005 - Estaca Bastão 80cm', 'estaca_bastao'),
 
         new item(21, '4000 - Mix Coquim 1kg', 'adubos'),
-        new item(31, '4001 - Pó de Coco 1kg', 'adubos'),
+        new item(23, '4001 - Pó de Coco 1kg', 'adubos'),
         new item(40, '4002 - Fibra de Coco 200g', 'adubos'),
         new item(3, '4003 - Pó de Coco Magico 400g', 'adubos'),
         new item(3, '4004 - Fibra de Coco Curta 1kg', 'adubos'),
