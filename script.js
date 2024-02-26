@@ -608,12 +608,12 @@ var rischioto = new Inventario(
         new item(24, 'Vaso Quadrado Bella Fiore n28 Cerâmica', 'quadrado_n28'),
         new item(0, 'Vaso Quadrado Bella Fiore n28 Preto', 'quadrado_n28'),
 
-        new item(9, 'Vaso Quadrado Bella Fiore n35 Areia', 'quadrado_n35'),
+        new item(5, 'Vaso Quadrado Bella Fiore n35 Areia', 'quadrado_n35'),
         new item(4, 'Vaso Quadrado Bella Fiore n35 Cerâmica', 'quadrado_n35'),
         new item(16, 'Vaso Quadrado Bella Fiore n35 Preto', 'quadrado_n35'),
 
         new item(16, 'Vaso Quadrado Bella Fiore n42 Areia', 'quadrado_n42'),
-        new item(18, 'Vaso Quadrado Bella Fiore n42 Cerâmica', 'quadrado_n42'),
+        new item(12, 'Vaso Quadrado Bella Fiore n42 Cerâmica', 'quadrado_n42'),
         new item(10, 'Vaso Quadrado Bella Fiore n42 Preto', 'quadrado_n42'),
         
         new item(5, 'Vaso Redondo Bella Fiore n13 Areia', 'redondo_n13'),
@@ -691,7 +691,7 @@ var emeAeme = new Inventario(
     '26/02/2024',
     [
         new item(196, 'Alça Universal Branca', 'alça_universal'),
-        new item(32, 'Alça Universal Café', 'alça_universal'),
+        new item(22, 'Alça Universal Café', 'alça_universal'),
         new item(104, 'Alça Universal Cerâmica', 'alça_universal'),
         new item(74, 'Alça Universal Marfim', 'alça_universal'),
         new item(103, 'Alça Universal Preta', 'alça_universal'),
