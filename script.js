@@ -2598,7 +2598,7 @@ function orçamento(index, ediçao=null) {
             document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'none'
         }
 
-        // Aqui o valor total e recalculado do caso de ediçao da tabela
+        // Aqui o valor total e recalculado no caso de ediçao da tabela
         comanda.valorBruto = 0
         for (let index in comanda.registro) {
             if (comanda.registro[index].total > 0) {comanda.valorBruto += parseFloat(comanda.registro[index].total)}   
