@@ -2256,26 +2256,26 @@ function sectionExpand(section, identidade='', menu='') {
 }
 
 function impreção(sec, empresa, identificador) {
-    sec.innerHTML += `<h1>${empresa.nome}</h1>`
-    sec.innerHTML += `<h2>${empresa.data}</h2>`
+    //sec.innerHTML += `<h1>${empresa.nome}</h1>`
+    //sec.innerHTML += `<h2>${empresa.data}</h2>`
     
-    console.log(empresa)
+    //console.log(empresa)
 
-    let repeatNumber = 0
-    for (let index in empresa.inventario) {
-        if (empresa.inventario[index].nome.length > repeatNumber) {repeatNumber = empresa.inventario[index].nome.length}
-    }
+    //let repeatNumber = 0
+    //for (let index in empresa.inventario) {
+    //    if (empresa.inventario[index].nome.length > repeatNumber) {repeatNumber = empresa.inventario[index].nome.length}
+    //}
 
-    let objeto = empresa.inventario[0].objeto
-    for (let index in empresa.inventario) {
-        if (objeto != empresa.inventario[index].objeto) {sec.innerHTML += '<br>'}
-        sec.innerHTML += `
-        <label id='${identificador}${index}' class='inventario'>
-            ${empresa.inventario[index].nome}${'.'.repeat(repeatNumber - (empresa.inventario[index].nome.length))}${'.'.repeat(5 - String(empresa.inventario[index].quantidade).length)}${empresa.inventario[index].quantidade}
-        </label>`
-        objeto = empresa.inventario[index].objeto
-        //onclick="linhaDestacada(${identificador}${index})"
-    }
+    //let objeto = empresa.inventario[0].objeto
+    //for (let index in empresa.inventario) {
+    //    if (objeto != empresa.inventario[index].objeto) {sec.innerHTML += '<br>'}
+    //    sec.innerHTML += `
+    //    <label id='${identificador}${index}' class='inventario'>
+    //        ${empresa.inventario[index].nome}${'.'.repeat(repeatNumber - (empresa.inventario[index].nome.length))}${'.'.repeat(5 - String(empresa.inventario[index].quantidade).length)}${empresa.inventario[index].quantidade}
+    //    </label>`
+    //    objeto = empresa.inventario[index].objeto
+    //    //onclick="linhaDestacada(${identificador}${index})"
+    //}
 }
 
 function linhaDestacada(identidade) {
