@@ -2373,7 +2373,9 @@ function validação(identidade) {
     }
 }
 
-function repositor(identidade) {
+function repositor(
+    //identidade
+    ) {
     function contato(texto, tag='p class="repositor"') {quadroDeEntrada.innerHTML += `<${tag}>${texto}</${tag}>`}
     
     let empresa = buscadorDeInventario(identidade)
