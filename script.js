@@ -163,7 +163,7 @@ var inventorios = [
 ]
 var diversos = new Inventario(
     'Diversos',
-    '26/02/2024', 
+    '07/03/2024', 
     [
         new item(26, 'Baby Ball Amarelo', 'baby_ball'),
         new item(44, 'Baby Ball Azul', 'baby_ball'),
@@ -320,17 +320,17 @@ var diversos = new Inventario(
         new item(10, 'Saquinho de Mudas 60x60', 'saquinho_muda'),
         new item(10, 'Saquinho de Mudas 60x70', 'saquinho_muda'),
 
-        new item(23, "Substrato Cactu's Mix 2Kg Fardo com 8", 'cactomix'),
-        new item(14, "Substrato Cactu's Mix 5Kg", 'cactomix'),
+        new item(16, "Substrato Cactu's Mix 2Kg Fardo com 8", 'cactomix'),
+        new item(11, "Substrato Cactu's Mix 5Kg", 'cactomix'),
 
-        new item(35, 'Substrato Flormix 2Kg Fardo com 8', 'flormix'),
+        new item(33, 'Substrato Flormix 2Kg Fardo com 8', 'flormix'),
 
-        new item(41, 'Substrato Orquimix 1Kg Fardo com 8', 'orquimix'),
+        new item(34, 'Substrato Orquimix 1Kg Fardo com 8', 'orquimix'),
         new item(25, 'Substrato Orquimix 4Kg', 'orquimix'),
 
-        new item(25, 'Substrato Rosa do Deserto 2Kg Fardo com 8', 'rosa_do_deserto'),
+        new item(21, 'Substrato Rosa do Deserto 2Kg Fardo com 8', 'rosa_do_deserto'),
 
-        new item(30, "Substrato Zamioculca's Mix 2Kg Fardo com 8", 'zamioculca'),
+        new item(29, "Substrato Zamioculca's Mix 2Kg Fardo com 8", 'zamioculca'),
 
         new item(14, 'Tordon 100ml', 'tordon'),
         new item(1, 'Tordon 1 litro', 'tordon'),
@@ -338,22 +338,22 @@ var diversos = new Inventario(
 )
 var regaplan = new Inventario(
     'Regaplan',
-    '26/02/2024',
+    '07/03/2024',
     [
-        new item(42, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(40, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(42, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(71, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
-        new item(85, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(61, 'Corrente 64cm - Dourado 1.6mm', 'corrente_1.6mm'),
+        new item(80, 'Corrente 74cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(113, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
 
         new item(94, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
         new item(84, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(90, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(84, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
         new item(95, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
         new item(0, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
-        new item(48, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
-        new item(14, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
+        new item(42, 'Gancho S Médio - Dourado 10cm', 'gancho_S'),
+        new item(7, 'Gancho S Pequeno - Dourado 7cm', 'gancho_S'),
 
         new item(0, 'Suporte A Reforçado 01 - 19cm Dourado', 'sp_a_reforçado'),
         new item(0, 'Suporte A Reforçado 02 - 24cm Dourado', 'sp_a_reforçado'),
@@ -973,7 +973,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '26/02/2024',
+    '07/03/2024',
     [
         new item(4, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -989,8 +989,8 @@ var forth = new Inventario(
         new item(11, 'Cactos Concentrado - 500m', 'c'),
         new item(19, 'Cobre Concentrado - 60ml', 'c'),
         new item(12, 'Cobre Concentrado - 500m', 'c'),
-        new item(19, 'Coqueiros - 400g', 'c'),
-        new item(16, 'Coqueiros - 3kg', 'c'),
+        new item(0, 'Coqueiros - 400g', 'c'),
+        new item(13, 'Coqueiros - 3kg', 'c'),
         new item(1, 'Coqueiros - 10Kg', 'c'),
         new item(1, 'Cote 14.14.14 - 150g', 'c'),
         new item(0, 'Cote 15.09.12 - 150g', 'c'),
@@ -1010,17 +1010,17 @@ var forth = new Inventario(
         new item(10, 'Fipronil+imidacloprid Concentrado - 60ml', 'f'),
         new item(8, 'Flores Concentrado - 60ml', 'f'),
         new item(14, 'Flores p/uso - 500ml', 'f'),
-        new item(54, 'Flores - 400g', 'f'),
+        new item(44, 'Flores - 400g', 'f'),
         new item(26, 'Flores - 3kg', 'f'),
         new item(0, 'Flores - 10Kg', 'f'),
         new item(29, 'Formicida Gel', 'f'),
-        new item(7, 'Formicida isca granulada', 'f'), 
+        new item(5, 'Formicida isca granulada', 'f'), 
         new item(5, 'Formicida Mata no ninho p/uso - 500ml', 'f'),
         new item(0, 'Fosfito - 60ml', 'f'),
         new item(6, 'Fosfito p/uso - 500ml', 'f'),
         new item(0, 'Frutas Concentrado - 60ml', 'f'),
         new item(17, 'Frutas p/uso - 500ml', 'f'),
-        new item(38, 'Frutas - 400g', 'f'),
+        new item(28, 'Frutas - 400g', 'f'),
         new item(25, 'Frutas - 3kg', 'f'),
         new item(0, 'Frutas - 10Kg', 'f'),
         new item(8, 'Fungicida Concentrado - 30ml', 'f'),
@@ -1079,7 +1079,7 @@ var forth = new Inventario(
         new item(20, 'Raticida Isca Anticoagulante', 'r'),
         new item(4, 'Rosa do Deserto Concentrado - 60ml', 'r'),
         new item(11, 'Rosa do Deserto p/uso - 500ml', 'r'),
-        new item(24, 'Rosa do Deserto - 400g', 'r'),
+        new item(14, 'Rosa do Deserto - 400g', 'r'),
         new item(2, 'Rosa do Deserto - 3kg', 'r'),
 
         new item(10, 'Samambaias Concentrado - 60ml', 's'),
@@ -1527,15 +1527,15 @@ var alfa_fibraSintetica = new Inventario(
 )
 var policamp = new Inventario(
     'Policamp',
-    '22/04/2024',
+    '07/03/2024',
     [
-        new item(64, 'Pulverizador 500ml', 'pulverizador'),
-        new item(56, 'Pulverizador 1 litro', 'pulverizador'),
+        new item(52, 'Pulverizador 500ml', 'pulverizador'),
+        new item(39, 'Pulverizador 1 litro', 'pulverizador'),
         new item(25, 'Regador Com Cabo - Bico', 'Regador_cabo'),
         new item(21, 'Regador Com Cabo - Chuveiro', 'Regador_cabo'),
         new item(100, 'Regador - 2 litros', 'Regador'),
         new item(116, 'Regador - 4 litros', 'Regador'),
-        new item(90, 'Regador - 5 litros', 'Regador'),
+        new item(89, 'Regador - 5 litros', 'Regador'),
         new item(55, 'Regador - 10 litros', 'Regador')
     ]
 )
@@ -1553,11 +1553,11 @@ var jel_plast = new Inventario(
 )
 var insetimax = new Inventario(
     'Insetimax',
-    '26/02/2024',
+    '07/03/2024',
     [
         new item(48, 'Cupinicida Insetimaster - 100ml', 'cupinicida'),
 
-        new item(35, 'Formicida Insetimaster - 100ml', 'formicida'),
+        new item(31, 'Formicida Insetimaster - 100ml', 'formicida'),
         new item(14, 'Formicida Insetimaster - 1 litro', 'formicida'),
 
         new item(2, 'Inseticon Display 20 Unidades', 'inseticom'),
@@ -1628,7 +1628,7 @@ var nutriplan = new Inventario(
 )
 var coquim = new Inventario(
     'Coquim',
-    '26/02/2024',
+    '07/03/2024',
     [
         new item(5, '999 - Vaso Coquim nº 3', 'vaso_coquim'),
         new item(9, '1000 - Vaso Coquim nº 4', 'vaso_coquim'),
@@ -1643,9 +1643,9 @@ var coquim = new Inventario(
         new item(0, '1008 - Vaso Coquim nº 12 Virola', 'vaso_virola'),
         new item(0, '1009 - Vaso Coquim nº 14 Virola', 'vaso_virola'),
 
-        new item(5, '1010 - Vaso Coquim nº 17', 'vaso_coquim'),
-        new item(5, '1011 - Vaso Coquim nº 13', 'vaso_coquim'),
-        new item(5, '1012 - Vaso Coquim nº 15', 'vaso_coquim'),
+        new item(0, '1010 - Vaso Coquim nº 17', 'vaso_coquim'),
+        new item(0, '1011 - Vaso Coquim nº 13', 'vaso_coquim'),
+        new item(0, '1012 - Vaso Coquim nº 15', 'vaso_coquim'),
 
         new item(2, '1021 - Vaso Coquim nº 10 C/Furos', 'vaso_furos'),
         new item(2, '1022 - Vaso Coquim nº 12 C/Furos', 'vaso_furos'),
@@ -1661,10 +1661,10 @@ var coquim = new Inventario(
         new item(2, '1030 - 1/2 Vaso nº 12 C/Furos', '1/2_vaso_furos'),
 
         new item(5, '2001 - Placa Coquim 20x20', 'placa_coquim'),
-        new item(3, '2002 - Placa Coquim 20x40', 'placa_coquim'),
+        new item(0, '2002 - Placa Coquim 20x40', 'placa_coquim'),
         new item(6, '2003 - Placa Coquim 20x60', 'placa_coquim'),
         new item(7, '2004 - Placa Coquim 20x80', 'placa_coquim'),
-        new item(8, '2005 - Placa Coquim 40x40', 'placa_coquim'),
+        new item(5, '2005 - Placa Coquim 40x40', 'placa_coquim'),
         new item(6, '2006 - Placa Coquim 40x80', 'placa_coquim'),
 
         new item(3, '2007 - Placa Redonda Coquim 20cm', 'placa_redonda'),
@@ -1685,8 +1685,8 @@ var coquim = new Inventario(
         new item(12, '3005 - Estaca Bastão 80cm', 'estaca_bastao'),
 
         new item(21, '4000 - Mix Coquim 1kg', 'adubos'),
-        new item(23, '4001 - Pó de Coco 1kg', 'adubos'),
-        new item(40, '4002 - Fibra de Coco 200g', 'adubos'),
+        new item(17, '4001 - Pó de Coco 1kg', 'adubos'),
+        new item(37, '4002 - Fibra de Coco 200g', 'adubos'),
         new item(3, '4003 - Pó de Coco Magico 400g', 'adubos'),
         new item(3, '4004 - Fibra de Coco Curta 1kg', 'adubos'),
         new item(20, '4005 - Chips de Coco 200g', 'adubos'),
@@ -2375,7 +2375,7 @@ function validação(identidade) {
 }
 
 function repositor(
-    //identidade
+    identidade
     ) {
     function contato(texto, tag='p class="repositor"') {quadroDeEntrada.innerHTML += `<${tag}>${texto}</${tag}>`}
     
