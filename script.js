@@ -1677,9 +1677,9 @@ var coquim = new Inventario(
         new item(5, '2013 - Placa Colmeia Coquim 30cm', 'placa_colmeia'),
 
         new item(33, '2999 - Estaca Coquim 30cm', 'estaca_coquim'),
-        new item(34, '3000 - Estaca Coquim 40cm', 'estaca_coquim'),
+        new item(28, '3000 - Estaca Coquim 40cm', 'estaca_coquim'),
         new item(24, '3001 - Estaca Coquim 60cm', 'estaca_coquim'),
-        new item(24, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
+        new item(18, '3002 - Estaca Coquim 80cm', 'estaca_coquim'),
 
         new item(11, '3004 - Estaca Bastão 60cm', 'estaca_bastao'),
         new item(12, '3005 - Estaca Bastão 80cm', 'estaca_bastao'),
