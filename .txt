@@ -1,328 +1,176 @@
-Bacia Diamante nº 1 Bege....................................9
-Bacia Diamante nº 1 Cimento................................10
-Bacia Diamante nº 1 Marrom.................................10
-Bacia Diamante nº 1 Preto...................................8
+Ordem de Reposição Rischioto
 
-Bacia Diamante nº 2 Bege....................................7
-Bacia Diamante nº 2 Cimento................................10
-Bacia Diamante nº 2 Marrom..................................9
-Bacia Diamante nº 2 Preto..................................10
+Caixa Rattan Tabaco - 15 litros /-2
 
-Bacia Diamante nº 3 Bege...................................10
-Bacia Diamante nº 3 Cimento.................................9
-Bacia Diamante nº 3 Marrom..................................9
-Bacia Diamante nº 3 Preto..................................10
+Cuia Bella Fiore 4 litros Cerâmica /-6
+Cuia Bella Fiore 4 litros Preto /-6
+Cuia Bella Fiore 4 litros Verde /-6
 
-Bacia Grafiato C/Prato nº 1 Bege............................6
-Bacia Grafiato C/Prato nº 1 Chumbo.........................10
-Bacia Grafiato C/Prato nº 1 Cimento.........................4
-Bacia Grafiato C/Prato nº 1 Marrom..........................6
-Bacia Grafiato C/Prato nº 1 Preto...........................2
+Cuia Bella Fiore 7.5 litros Areia /-4
+Cuia Bella Fiore 7.5 litros Cerâmica /-6
+Cuia Bella Fiore 7.5 litros Preto /-3
+Cuia Bella Fiore 7.5 litros Verde /-6
 
-Bacia Grafiato C/Prato nº 2 Bege............................5
-Bacia Grafiato C/Prato nº 2 Chumbo..........................6
-Bacia Grafiato C/Prato nº 2 Cimento.........................6
-Bacia Grafiato C/Prato nº 2 Marrom..........................5
-Bacia Grafiato C/Prato nº 2 Preto...........................6
+Escorredor de Talheres /-1
 
-Bacia Grafiato C/Prato nº 3 Bege............................7
-Bacia Grafiato C/Prato nº 3 Chumbo.........................10
-Bacia Grafiato C/Prato nº 3 Cimento.........................9
-Bacia Grafiato C/Prato nº 3 Marrom..........................7
-Bacia Grafiato C/Prato nº 3 Preto...........................9
+Forma de Gelo 2 Peças /-2
 
-Bacia Grafiato C/Prato nº 4 Bege............................9
-Bacia Grafiato C/Prato nº 4 Chumbo.........................10
-Bacia Grafiato C/Prato nº 4 Cimento.........................9
-Bacia Grafiato C/Prato nº 4 Marrom..........................6
-Bacia Grafiato C/Prato nº 4 Preto..........................10
+Floreira Floratta n30 Rosa /-1
 
-Bacia Marmorizada C/Prato nº 1 Azul.........................5
-Bacia Marmorizada C/Prato nº 1 Cimento Queimado............10
-Bacia Marmorizada C/Prato nº 1 Verde.......................10
-Bacia Marmorizada C/Prato nº 1 Vermelho....................10
+Jarra Quadrada - 2 litros /-2
+Jardineira Bella Fiore n35 Preta /-5
+Jardineira Bella Fiore n35 Verde /-6
 
-Bacia Marmorizada C/Prato nº 2 Azul.........................4
-Bacia Marmorizada C/Prato nº 2 Cimento Queimado............10
-Bacia Marmorizada C/Prato nº 2 Verde.......................10
-Bacia Marmorizada C/Prato nº 2 Vermelho.....................6
+Jardineira Bella Fiore n50 Areia /-8
+Jardineira Bella Fiore n50 Cerâmica /-8
+Jardineira Bella Fiore n50 Preta /-8
+Jardineira Bella Fiore n50 Verde /-8
 
-Bacia Polida C/Prato nº 1 Bege..............................6
-Bacia Polida C/Prato nº 1 Cimento...........................5
-Bacia Polida C/Prato nº 1 Marrom............................4
-Bacia Polida C/Prato nº 1 Preto.............................7
+Jardineira Floratta n50 Areia /-2
+Jardineira Floratta n50 Azul /-5
+Jardineira Floratta n50 cinza /-2
+Jardineira Floratta n50 Rosa /-2
+Jardineira Floratta n50 Verde Escuro /-2
 
-Bacia Polida C/Prato nº 2 Bege..............................6
-Bacia Polida C/Prato nº 2 Cimento...........................7
-Bacia Polida C/Prato nº 2 Marrom............................9
-Bacia Polida C/Prato nº 2 Preto.............................5
+Jardineira Floratta n80 Preta /-1
 
-Coluna Red. Degrau Grafiato C/Prato nº 1 Bege...............5
-Coluna Red. Degrau Grafiato C/Prato nº 1 Chumbo............10
-Coluna Red. Degrau Grafiato C/Prato nº 1 Cimento............8
-Coluna Red. Degrau Grafiato C/Prato nº 1 Marrom.............7
-Coluna Red. Degrau Grafiato C/Prato nº 1 Preto..............9
+Prato Vaso Coluna Floratta G Areia /-4
+Prato Vaso Coluna Floratta G Preto /-4
+Prato Vaso Coluna Floratta G Rosa /-4
+Prato Vaso Coluna Floratta G Verde /-4
 
-Coluna Red. Degrau Grafiato C/Prato nº 2 Bege...............4
-Coluna Red. Degrau Grafiato C/Prato nº 2 Chumbo............10
-Coluna Red. Degrau Grafiato C/Prato nº 2 Cimento............7
-Coluna Red. Degrau Grafiato C/Prato nº 2 Marrom.............8
-Coluna Red. Degrau Grafiato C/Prato nº 2 Preto..............5
+Prato Vaso Coluna Floratta M Areia /-4
+Prato Vaso Coluna Floratta M Preto /-4
+Prato Vaso Coluna Floratta M Rosa /-4
+Prato Vaso Coluna Floratta M Verde /-4
 
-Coluna Red. Degrau Grafiato C/Prato nº 3 Bege...............5
-Coluna Red. Degrau Grafiato C/Prato nº 3 Chumbo............10
-Coluna Red. Degrau Grafiato C/Prato nº 3 Cimento............7
-Coluna Red. Degrau Grafiato C/Prato nº 3 Marrom.............9
-Coluna Red. Degrau Grafiato C/Prato nº 3 Preto..............9
+Prato Vaso Coluna Floratta P Areia /-4
+Prato Vaso Coluna Floratta P Preto /-4
+Prato Vaso Coluna Floratta P Rosa /-4
+Prato Vaso Coluna Floratta P Verde /-4
 
-Coluna Red. Degrau Grafiato C/Prato nº 4 Bege...............5
-Coluna Red. Degrau Grafiato C/Prato nº 4 Chumbo............10
-Coluna Red. Degrau Grafiato C/Prato nº 4 Cimento............6
-Coluna Red. Degrau Grafiato C/Prato nº 4 Marrom.............4
-Coluna Red. Degrau Grafiato C/Prato nº 4 Preto..............7
+Pote Fliplock 800ml /-2
 
-Coluna Red. Degrau Grafiato C/Prato nº 5 Bege...............6
-Coluna Red. Degrau Grafiato C/Prato nº 5 Chumbo............10
-Coluna Red. Degrau Grafiato C/Prato nº 5 Cimento............4
-Coluna Red. Degrau Grafiato C/Prato nº 5 Marrom.............4
-Coluna Red. Degrau Grafiato C/Prato nº 5 Preto..............5
+Vaso Coluna Floratta M Areia /-1
+Vaso Coluna Floratta M Preto /-2
+Vaso Coluna Floratta M Rosa /-1
 
-Coluna Red. Diamante C/Prato nº 1 Bege......................5
-Coluna Red. Diamante C/Prato nº 1 Chumbo...................10
-Coluna Red. Diamante C/Prato nº 1 Cimento...................6
-Coluna Red. Diamante C/Prato nº 1 Marrom....................3
-Coluna Red. Diamante C/Prato nº 1 Preta.....................7
+Vaso Coluna Floratta G Verde Escuro /-2
 
-Coluna Red. Diamante C/Prato nº 2 Bege......................5
-Coluna Red. Diamante C/Prato nº 2 Chumbo...................10
-Coluna Red. Diamante C/Prato nº 2 Cimento...................8
-Coluna Red. Diamante C/Prato nº 2 Marrom....................4
-Coluna Red. Diamante C/Prato nº 2 Preta.....................6
+Vaso de Parede Bella Fiore 1.7 litros Verde /-10
 
-Coluna Red. Diamante C/Prato nº 3 Bege......................4
-Coluna Red. Diamante C/Prato nº 3 Chumbo...................10
-Coluna Red. Diamante C/Prato nº 3 Cimento...................4
-Coluna Red. Diamante C/Prato nº 3 Marrom....................6
-Coluna Red. Diamante C/Prato nº 3 Preta.....................5
+Vaso de Parede Bella Fiore 3.3 litros Areia /-6
+Vaso de Parede Bella Fiore 3.3 litros Preto /-10
+Vaso de Parede Bella Fiore 3.3 litros Verde /-10
 
-Coluna Red. Diamante C/Prato nº 4 Bege......................4
-Coluna Red. Diamante C/Prato nº 4 Chumbo...................10
-Coluna Red. Diamante C/Prato nº 4 Cimento...................7
-Coluna Red. Diamante C/Prato nº 4 Marrom....................6
-Coluna Red. Diamante C/Prato nº 4 Preta.....................7
+Vaso de Parede Floratta 3 litros Areia /-2
+Vaso de Parede Floratta 3 litros cinza /-2
+Vaso de Parede Floratta 3 litros Preto /-2
+Vaso de Parede Floratta 3 litros Rosa /-2
 
-Coluna Red. Diamante C/Prato nº 5 Bege......................6
-Coluna Red. Diamante C/Prato nº 5 Chumbo...................10
-Coluna Red. Diamante C/Prato nº 5 Cimento...................6
-Coluna Red. Diamante C/Prato nº 5 Marrom....................6
-Coluna Red. Diamante C/Prato nº 5 Preta.....................5
+Vaso de Parede Floratta 6 litros Preto /-1
+Vaso de Parede Floratta 6 litros Verde Escuro /-1
 
-Coluna Red. Grafiato C/Prato nº 1 Bege......................6
-Coluna Red. Grafiato C/Prato nº 1 Chumbo....................6
-Coluna Red. Grafiato C/Prato nº 1 Cimento...................8
-Coluna Red. Grafiato C/Prato nº 1 Marrom....................6
-Coluna Red. Grafiato C/Prato nº 1 Preto.....................7
+Vaso Quadrado Bella Fiore n17 Cerâmica /-8
+Vaso Quadrado Bella Fiore n17 Preto /-3
+Vaso Quadrado Bella Fiore n17 Verde /-8
 
-Coluna Red. Grafiato C/Prato nº 2 Bege......................6
-Coluna Red. Grafiato C/Prato nº 2 Chumbo...................10
-Coluna Red. Grafiato C/Prato nº 2 Ciemento..................8
-Coluna Red. Grafiato C/Prato nº 2 Marrom....................6
-Coluna Red. Grafiato C/Prato nº 2 Preto.....................7
+Vaso Quadrado Bella Fiore n22 Cerâmica /-10
+Vaso Quadrado Bella Fiore n22 Preto /-5
+Vaso Quadrado Bella Fiore n22 Verde /-10
 
-Coluna Red. Grafiato C/Prato nº 3 Bege......................6
-Coluna Red. Grafiato C/Prato nº 3 Chumbo...................10
-Coluna Red. Grafiato C/Prato nº 3 Cimento...................0
-Coluna Red. Grafiato C/Prato nº 3 Marrom....................6
-Coluna Red. Grafiato C/Prato nº 3 Preto.....................2
+Vaso Quadrado Bella Fiore n28 Areia /-5
+Vaso Quadrado Bella Fiore n28 Cerâmica /-4
+Vaso Quadrado Bella Fiore n28 Verde /-6
 
-Coluna Red. Grafiato C/Prato nº 4 Bege......................6
-Coluna Red. Grafiato C/Prato nº 4 Chumbo...................10
-Coluna Red. Grafiato C/Prato nº 4 Cimento..................10
-Coluna Red. Grafiato C/Prato nº 4 Marrom....................8
-Coluna Red. Grafiato C/Prato nº 4 Preto....................11
+Vaso Quadrado Bella Fiore n35 Cerâmica /-10
+Vaso Quadrado Bella Fiore n35 Verde /-10
 
-Coluna Red. Marmorizada C/Prato nº 1 Azul...................6
-Coluna Red. Marmorizada C/Prato nº 1 Cimento Queimado......10
-Coluna Red. Marmorizada C/Prato nº 1 verde.................10
-Coluna Red. Marmorizada C/Prato nº 1 Vermelho...............3
+Vaso Quadrado Bella Fiore n42 Areia /-2
+Vaso Quadrado Bella Fiore n42 Preto /-2
+Vaso Quadrado Bella Fiore n42 Verde /-6
 
-Coluna Red. Marmorizada C/Prato nº 2 Azul...................6
-Coluna Red. Marmorizada C/Prato nº 2 Cimento Queimado......10
-Coluna Red. Marmorizada C/Prato nº 2 verde.................13
-Coluna Red. Marmorizada C/Prato nº 2 Vermelho...............3
+Vaso Redondo Bella Fiore n13 Areia /-5
+Vaso Redondo Bella Fiore n13 Preto /-3
+Vaso Redondo Bella Fiore n13 Verde /-10
 
-Coluna Red. Marmorizada C/Prato nº 3 Azul...................0
-Coluna Red. Marmorizada C/Prato nº 3 Cimento Queimado.......6
-Coluna Red. Marmorizada C/Prato nº 3 verde..................0
-Coluna Red. Marmorizada C/Prato nº 3 Vermelho...............0
+Vaso Redondo Bella Fiore n17 Cerâmica /-4
+Vaso Redondo Bella Fiore n17 Preto /-10
+Vaso Redondo Bella Fiore n17 Verde /-10
 
-Coluna Red. Marmorizada C/Prato nº 4 Azul...................6
-Coluna Red. Marmorizada C/Prato nº 4 Cimento Queimado......10
-Coluna Red. Marmorizada C/Prato nº 4 verde..................5
-Coluna Red. Marmorizada C/Prato nº 4 Vermelho...............6
+Vaso Redondo Bella Fiore n22 Areia /-8
+Vaso Redondo Bella Fiore n22 Cerâmica /-8
+Vaso Redondo Bella Fiore n22 Preto /-8
+Vaso Redondo Bella Fiore n22 Verde /-8
 
-Coluna Red. Polida C/Prato nº 1 Bege........................6
-Coluna Red. Polida C/Prato nº 1 Cimento.....................5
-Coluna Red. Polida C/Prato nº 1 Marrom......................5
-Coluna Red. Polida C/Prato nº 1 Preto.......................2
+Vaso Redondo Bella Fiore n28 Cerâmica /-4
+Vaso Redondo Bella Fiore n28 Preto /-5
+Vaso Redondo Bella Fiore n28 Verde /-10
 
-Coluna Red. Polida C/Prato nº 2 Bege........................2
-Coluna Red. Polida C/Prato nº 2 Cimento.....................7
-Coluna Red. Polida C/Prato nº 2 Marrom......................9
-Coluna Red. Polida C/Prato nº 2 Preto.......................5
+Vaso Redondo Bella Fiore n35 Areia /-2
+Vaso Redondo Bella Fiore n35 Preto /-2
+Vaso Redondo Bella Fiore n35 Verde /-6
 
-Coluna Red. Polida C/Prato nº 3 Bege........................4
-Coluna Red. Polida C/Prato nº 3 Cimento.....................3
-Coluna Red. Polida C/Prato nº 3 Marrom......................5
-Coluna Red. Polida C/Prato nº 3 Preto.......................2
+Vaso Redondo Bella Fiore n42 Areia /-2
+Vaso Redondo Bella Fiore n42 Cerâmica /-3
+Vaso Redondo Bella Fiore n42 Preto /-6
 
-Coluna Red. Polida C/Prato nº 4 Bege........................4
-Coluna Red. Polida C/Prato nº 4 Cimento.....................5
-Coluna Red. Polida C/Prato nº 4 Marrom......................5
-Coluna Red. Polida C/Prato nº 4 Preto.......................8
+Vaso Redondo Bella Fiore n50 Preto /-5
+Vaso Redondo Bella Fiore n50 Verde /-6
 
-Jardineira Frisada C/Prato Bege.............................4
-Jardineira Frisada C/Prato Chumbo...........................4
-Jardineira Frisada C/Prato Preto............................1
+Vaso Quadrado Floratta n15 Areia /-6
+Vaso Quadrado Floratta n15 Preto /-6
+Vaso Quadrado Floratta n15 Rosa /-6
+Vaso Quadrado Floratta n15 Verde Escuro /-6
 
-Jardineira Grafiato C/Prato nº 1 Bege.......................3
-Jardineira Grafiato C/Prato nº 1 Chumbo.....................4
-Jardineira Grafiato C/Prato nº 1 Cimento....................0
-Jardineira Grafiato C/Prato nº 1 Marrom.....................3
-Jardineira Grafiato C/Prato nº 1 Preto......................0
+Vaso Quadrado Floratta n19 Areia /-4
+Vaso Quadrado Floratta n19 Preto /-4
+Vaso Quadrado Floratta n19 Rosa /-4
+Vaso Quadrado Floratta n19 Verde Escuro /-4
 
-Jardineira Grafiato C/Prato nº 2 Bege.......................3
-Jardineira Grafiato C/Prato nº 2 Chumbo.....................3
-Jardineira Grafiato C/Prato nº 2 Marrom.....................1
-Jardineira Grafiato C/Prato nº 2 Preto......................3
+Vaso Quadrado Floratta n26 Areia /-4
+Vaso Quadrado Floratta n26 Preto /-4
+Vaso Quadrado Floratta n26 Rosa /-4
+Vaso Quadrado Floratta n26 Verde Escuro /-4
 
-Vaso Bojo Red. Diamante C/Prato nº 1 Bege...................6
-Vaso Bojo Red. Diamante C/Prato nº 1 Chumbo................10
-Vaso Bojo Red. Diamante C/Prato nº 1 Cimento................6
-Vaso Bojo Red. Diamante C/Prato nº 1 Marrom.................5
-Vaso Bojo Red. Diamante C/Prato nº 1 Preto..................7
+Vaso Quadrado Floratta n33 Areia /-4
+Vaso Quadrado Floratta n33 Preto /-4
+Vaso Quadrado Floratta n33 Rosa /-4
+Vaso Quadrado Floratta n33 Verde Escuro /-4
 
-Vaso Bojo Red. Diamante C/Prato nº 2 Bege...................8
-Vaso Bojo Red. Diamante C/Prato nº 2 Chumbo................10
-Vaso Bojo Red. Diamante C/Prato nº 2 Cimento................6
-Vaso Bojo Red. Diamante C/Prato nº 2 Marrom.................6
-Vaso Bojo Red. Diamante C/Prato nº 2 Preto..................8
+Vaso Redondo Floratta n15 Preto /-4
+Vaso Redondo Floratta n15 Rosa /-3
 
-Vaso Bojo Red. Diamante C/Prato nº 3 Bege...................6
-Vaso Bojo Red. Diamante C/Prato nº 3 Chumbo................10
-Vaso Bojo Red. Diamante C/Prato nº 3 Cimento................7
-Vaso Bojo Red. Diamante C/Prato nº 3 Marrom.................6
-Vaso Bojo Red. Diamante C/Prato nº 3 Preto..................3
+Vaso Redondo Floratta n19 Areia /-4
+Vaso Redondo Floratta n19 cinza /-4
+Vaso Redondo Floratta n19 Preto /-4
+Vaso Redondo Floratta n19 Rosa /-4
+Vaso Redondo Floratta n19 Verde /-3
+Vaso Redondo Floratta n19 Verde Escuro /-4
 
-Vaso Bojo Red. Diamante C/Prato nº 4 Bege...................8
-Vaso Bojo Red. Diamante C/Prato nº 4 Chumbo................10
-Vaso Bojo Red. Diamante C/Prato nº 4 Cimento................8
-Vaso Bojo Red. Diamante C/Prato nº 4 Marrom.................5
-Vaso Bojo Red. Diamante C/Prato nº 4 Preto..................7
+Vaso Redondo Floratta n26 Areia /-4
+Vaso Redondo Floratta n26 cinza /-4
+Vaso Redondo Floratta n26 Preto /-3
+Vaso Redondo Floratta n26 Rosa /-4
+Vaso Redondo Floratta n26 Verde /-4
+Vaso Redondo Floratta n26 Verde Escuro /-4
 
-Vaso Bojo Frisado C/Prato nº 1 Bege.........................6
-Vaso Bojo Frisado C/Prato nº 1 Chumbo......................10
-Vaso Bojo Frisado C/Prato nº 1 Cimento......................2
-Vaso Bojo Frisado C/Prato nº 1 Marrom.......................6
-Vaso Bojo Frisado C/Prato nº 1 Preto........................4
+Vaso Redondo Floratta n33 Areia /-3
+Vaso Redondo Floratta n33 Azul /-3
+Vaso Redondo Floratta n33 cinza /-3
+Vaso Redondo Floratta n33 Preto /-2
+Vaso Redondo Floratta n33 Verde /-3
+Vaso Redondo Floratta n33 Verde Escuro /-3
 
-Vaso Bojo Frisado C/Prato nº 2 Bege.........................6
-Vaso Bojo Frisado C/Prato nº 2 Chumbo......................10
-Vaso Bojo Frisado C/Prato nº 2 Cimento......................7
-Vaso Bojo Frisado C/Prato nº 2 Marrom.......................7
-Vaso Bojo Frisado C/Prato nº 2 Preto........................6
+Vaso Redondo Floratta n40 Areia /-2
+Vaso Redondo Floratta n40 Azul /-1
+Vaso Redondo Floratta n40 cinza /-1
+Vaso Redondo Floratta n40 Preto /-2
+Vaso Redondo Floratta n40 Rosa /-2
+Vaso Redondo Floratta n40 Verde /-2
+Vaso Redondo Floratta n40 Verde Escuro /0
 
-Vaso Bojo Frisado C/Prato nº 3 Bege.........................5
-Vaso Bojo Frisado C/Prato nº 3 Chumbo......................10
-Vaso Bojo Frisado C/Prato nº 3 Cimento......................8
-Vaso Bojo Frisado C/Prato nº 3 Marrom.......................6
-Vaso Bojo Frisado C/Prato nº 3 Preto........................6
-
-Vaso Bojo Frisado C/Prato nº 4 Bege.........................5
-Vaso Bojo Frisado C/Prato nº 4 Chumbo......................10
-Vaso Bojo Frisado C/Prato nº 4 Cimento......................8
-Vaso Bojo Frisado C/Prato nº 4 Marrom.......................6
-Vaso Bojo Frisado C/Prato nº 4 Preto........................8
-
-Vaso Bojo Red. Grafiato C/Prato nº 1 Bege...................6
-Vaso Bojo Red. Grafiato C/Prato nº 1 Chumbo................10
-Vaso Bojo Red. Grafiato C/Prato nº 1 Cimento................2
-Vaso Bojo Red. Grafiato C/Prato nº 1 Marrom.................6
-Vaso Bojo Red. Grafiato C/Prato nº 1 Preto..................0
-
-Vaso Bojo Red. Grafiato C/Prato nº 2 Bege...................5
-Vaso Bojo Red. Grafiato C/Prato nº 2 Chumbo................10
-Vaso Bojo Red. Grafiato C/Prato nº 2 Cimento................3
-Vaso Bojo Red. Grafiato C/Prato nº 2 Marrom.................6
-Vaso Bojo Red. Grafiato C/Prato nº 2 Preto.................10
-
-Vaso Bojo Red. Grafiato C/Prato nº 3 Bege...................5
-Vaso Bojo Red. Grafiato C/Prato nº 3 Chumbo................10
-Vaso Bojo Red. Grafiato C/Prato nº 3 Cimento................9
-Vaso Bojo Red. Grafiato C/Prato nº 3 Marrom.................7
-Vaso Bojo Red. Grafiato C/Prato nº 3 Preto..................9
-
-Vaso Bojo Red. Grafiato C/Prato nº 4 Bege...................5
-Vaso Bojo Red. Grafiato C/Prato nº 4 Chumbo................10
-Vaso Bojo Red. Grafiato C/Prato nº 4 Cimento................6
-Vaso Bojo Red. Grafiato C/Prato nº 4 Marrom.................5
-Vaso Bojo Red. Grafiato C/Prato nº 4 Preto..................7
-
-Vaso Bojo Red. Lisboa C/Prato nº 1 Bege.....................5
-Vaso Bojo Red. Lisboa C/Prato nº 1 Chumbo..................10
-Vaso Bojo Red. Lisboa C/Prato nº 1 Cimento..................6
-Vaso Bojo Red. Lisboa C/Prato nº 1 Marrom...................6
-Vaso Bojo Red. Lisboa C/Prato nº 1 Preto....................5
-
-Vaso Bojo Red. Lisboa C/Prato nº 2 Bege.....................7
-Vaso Bojo Red. Lisboa C/Prato nº 2 Chumbo..................10
-Vaso Bojo Red. Lisboa C/Prato nº 2 Cimento..................6
-Vaso Bojo Red. Lisboa C/Prato nº 2 Marrom...................7
-Vaso Bojo Red. Lisboa C/Prato nº 2 Preto....................8
-
-Vaso Bojo Red. Marmorizado C/Prato nº 1 Azul................2
-Vaso Bojo Red. Marmorizado C/Prato nº 1 Cimento Queimado...10
-Vaso Bojo Red. Marmorizado C/Prato nº 1 Verde..............10
-Vaso Bojo Red. Marmorizado C/Prato nº 1 Vermelho............4
-
-Vaso Bojo Red. Marmorizado C/Prato nº 2 Azul................5
-Vaso Bojo Red. Marmorizado C/Prato nº 2 Cimento Queimado...10
-Vaso Bojo Red. Marmorizado C/Prato nº 2 Verde..............10
-Vaso Bojo Red. Marmorizado C/Prato nº 2 Vermelho............7
-
-Vaso Bojo Red. Marmorizado C/Prato nº 3 Azul................6
-Vaso Bojo Red. Marmorizado C/Prato nº 3 Cimento Queimado...10
-Vaso Bojo Red. Marmorizado C/Prato nº 3 Verde..............10
-Vaso Bojo Red. Marmorizado C/Prato nº 3 Vermelho............5
-
-Vaso Bojo Red. Polido C/Prato nº 1 Bege.....................6
-Vaso Bojo Red. Polido C/Prato nº 1 Cimento..................6
-Vaso Bojo Red. Polido C/Prato nº 1 Marrom...................3
-Vaso Bojo Red. Polido C/Prato nº 1 Preto....................4
-
-Vaso Bojo Red. Polido C/Prato nº 2 Bege.....................8
-Vaso Bojo Red. Polido C/Prato nº 2 Cimento..................5
-Vaso Bojo Red. Polido C/Prato nº 2 Marrom...................6
-Vaso Bojo Red. Polido C/Prato nº 2 Preto....................6
-
-Vaso Bojo Red. Polido C/Prato nº 3 Bege.....................8
-Vaso Bojo Red. Polido C/Prato nº 3 Cimento..................5
-Vaso Bojo Red. Polido C/Prato nº 3 Marrom...................8
-Vaso Bojo Red. Polido C/Prato nº 3 Preto...................10
-
-Vaso Cone Polido C/Prato nº 4 Bege..........................0
-Vaso Cone Polido C/Prato nº 4 Cimento.......................0
-Vaso Cone Polido C/Prato nº 4 Marrom........................0
-Vaso Cone Polido C/Prato nº 4 Preto.........................1
-
-Vaso Origame C/Prato nº 1 Bege..............................6
-Vaso Origame C/Prato nº 1 Chumbo............................6
-Vaso Origame C/Prato nº 1 Cimento...........................6
-Vaso Origame C/Prato nº 1 Marrom............................6
-Vaso Origame C/Prato nº 1 Preto.............................6
-
-Vaso Origame C/Prato nº 3 Bege..............................5
-Vaso Origame C/Prato nº 3 Chumbo............................6
-Vaso Origame C/Prato nº 3 Cimento...........................7
-Vaso Origame C/Prato nº 3 Marrom............................8
-Vaso Origame C/Prato nº 3 Preto.............................6
+Vaso Redondo Floratta n50 Areia /-1
+Vaso Redondo Floratta n50 Preto /-1
+Vaso Redondo Floratta n50 Rosa /-2
+Vaso Redondo Floratta n50 Verde Escuro /-2
