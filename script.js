@@ -338,7 +338,7 @@ var diversos = new Inventario(
 )
 var regaplan = new Inventario(
     'Regaplan',
-    '16/03/2024',
+    '21/03/2024',
     [
         new item(88, 'Corrente 44cm - Dourado 1.6mm', 'corrente_1.6mm'),
         new item(68, 'Corrente 54cm - Dourado 1.6mm', 'corrente_1.6mm'),
@@ -347,8 +347,8 @@ var regaplan = new Inventario(
         new item(113, 'Corrente 84cm - Dourado 1.6mm', 'corrente_1.6mm'),
 
         new item(106, 'Corrente Lustre 50 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(108, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
-        new item(96, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(96, 'Corrente Lustre 60 - Dourado 2.0mm', 'corrente_2.0mm'),
+        new item(84, 'Corrente Lustre 70 - Dourado 2.0mm', 'corrente_2.0mm'),
         new item(107, 'Corrente Lustre 80 - Dourado 2.0mm', 'corrente_2.0mm'),
 
         new item(40, 'Gancho S Grande - Dourado 18cm', 'gancho_S'),
@@ -579,7 +579,7 @@ var rischioto = new Inventario(
         new item(0, 'Pote Volare - 2 Litros', 'pote_volare'),
         new item(0, 'Pote Volare - 3 Litros', 'pote_volare'),
 
-        new item(14, 'Vaso Coluna Floratta P Areia', 'vaso_coluna_p'),
+        new item(8, 'Vaso Coluna Floratta P Areia', 'vaso_coluna_p'),
         new item(24, 'Vaso Coluna Floratta P Preto', 'vaso_coluna_p'),
         new item(8, 'Vaso Coluna Floratta P Rosa', 'vaso_coluna_p'),
         new item(32, 'Vaso Coluna Floratta P Verde Escuro', 'vaso_coluna_p'),
@@ -1028,7 +1028,7 @@ var emeAeme = new Inventario(
 )
 var forth = new Inventario(
     'Forth',
-    '16/03/2024',
+    '21/03/2024',
     [
         new item(4, 'Acaricida Concentrado - 60ml', 'a'),
         new item(10, 'Acaricida p/uso - 500ml', 'a'),
@@ -1111,7 +1111,7 @@ var forth = new Inventario(
         new item(26, 'Mata pulgão p/uso - 500ml', 'm'),
 
         new item(24, 'Óleo Concentrado - 60ml', 'o'),
-        new item(17, 'Orquídeas Floração Concentrado - 60ml', 'o'),
+        new item(11, 'Orquídeas Floração Concentrado - 60ml', 'o'),
         new item(10, 'Orquídeas Floração p/uso - 500ml', 'o'),
         new item(40, 'Orquídeas Manutenção Concentrado - 60ml', 'o'),
         new item(14, 'Orquídeas Manutenção p/uso - 500ml', 'o'),
@@ -1542,7 +1542,7 @@ var alfa_polietileno = new Inventario(
 )
 var alfa_fibraSintetica = new Inventario(
     'Alfa Fibra Sintética',
-    '16/03/2024',
+    '21/03/2024',
     [
         new item(10, "Cuia Sem Borda nº 0 Argila", 'cuia_0'),
         new item(0, "Cuia Sem Borda nº 0 Branco", 'cuia_0'),
@@ -1662,11 +1662,11 @@ var alfa_fibraSintetica = new Inventario(
         new item(11, "Cachepot Sem Borda nº 3 Envelhecido", 'cachepot_3'),
         new item(20, "Cachepot Sem Borda nº 3 Palha", 'cachepot_3'),
 
-        new item(26, "Cachepot Sem Borda nº 4 Argila", 'cachepot_4'),
+        new item(20, "Cachepot Sem Borda nº 4 Argila", 'cachepot_4'),
         new item(0, "Cachepot Sem Borda nº 4 Braco", 'cachepot_4'),
-        new item(20, "Cachepot Sem Borda nº 4 Café", 'cachepot_4'),
-        new item(19, "Cachepot Sem Borda nº 4 Cappuccino", 'cachepot_4'),
-        new item(3, "Cachepot Sem Borda nº 4 Envelhecido", 'cachepot_4'),
+        new item(18, "Cachepot Sem Borda nº 4 Café", 'cachepot_4'),
+        new item(17, "Cachepot Sem Borda nº 4 Cappuccino", 'cachepot_4'),
+        new item(1, "Cachepot Sem Borda nº 4 Envelhecido", 'cachepot_4'),
         new item(23, "Cachepot Sem Borda nº 4 Palha", 'cachepot_4'),
 
         new item(4, "Coluna Quadrada nº 2 Argila", 'coluna_2'),
@@ -1702,7 +1702,7 @@ var alfa_fibraSintetica = new Inventario(
 )
 var policamp = new Inventario(
     'Policamp',
-    '16/03/2024',
+    '21/03/2024',
     [
         new item(40, 'Pulverizador 500ml', 'pulverizador'),
         new item(0, 'Pulverizador 1 litro', 'pulverizador'),
