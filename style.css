@@ -602,6 +602,19 @@ label.orçamento {
     border-collapse: collapse;
 }
 
+.entradaDescontoNoOrçamento {
+    display: inline-block;
+    padding: 0px;
+    width: 100%;
+    border-width: 0px;
+    /* border: 2px dashed #2d5c96; */
+    font-size: 1.2em;
+    font-family: 'syne';
+    font-weight: normal;
+    border-collapse: collapse;
+    color: red;
+}
+
 table input {
     background: transparent;
 }

@@ -11,68 +11,16 @@
     <title>Ordenador</title>
 </head>
 <body>
-
-    <section id="calculadora">
-        <input type="button" class="botao" title="5% de desconto" value="5%" onclick="porcento5()">
-        <input type="button" class="botao" title="3% de desconto" value="3%" onclick="porcento3()">
-        <input type="button" id="botaoIsento" title="Isentar de desconto: Desativado" class="botao" value="&Oslash;" onclick="isentarDeDesconto()">
-        <input type="button" id="botaoReset" title="Zerar o Cálculo" class="botao" value="&#x2672;" onclick="calculoReset()">
-        <!--<label for="entrada" id="label_for_entrada">Valor: </label>--><input type="number" id="entrada" onchange="soma()">
-        <p id="retorno"></p>
-    </section>
     <main id="principal">
-        <section id="home_page">
-            <h1>Plantas Novas</h1>
-            Abacaxi roxo PT..............R$ 15,00<br>
-            Azaleia Árvore..............R$ 135,00<br>
-            Azaleia pt17.................R$ 55,00<br>
-            Azaleia pt24................R$ 110,00<br>
-            <br>
-            Bambu Mosso.................R$ 149,00<br>
-            Begonia flor.................R$ 18,00<br>
-            Bromelia Faciata.............R$ 58,00<br>
-            <br>
-            Calathea.....................R$ 69,00<br>
-            Camarão......................R$ 65,00<br>
-            Comigo ninguém pode pt17.....R$ 29,00<br>
-            Croton......................R$ 215,00<br>
-            Cuia 7 ervas.................R$ 28,00<br>
-            <br>
-            Espadinha pt11...............R$ 14,00<br>
-            <br>
-            Filodendro birks.............R$ 35,00<br>
-            Filodendro Red sun...........R$ 45,00<br>
-            <br>
-            Kaizuka G...................R$ 249,00<br>
-            Kaizuka M...................R$ 198,00<br>
-            <br>
-            Mini rosa colombiana muda.....R$ 8,00<br>
-            Mini rosa pt6.................R$ 8,00<br>
-            Morango pt15.................R$ 16,00<br>
-            <br>
-            Orquidea chuva de ouro.......R$ 45,00<br>
-            <br>
-            Pata de elefante pt24.......R$ 135,00<br>
-            Peixinho comestível pt15.....R$ 12,00<br>
-            Peperomia G..................R$ 79,00<br>
-            Peperomia verde..............R$ 32,00<br>
-            <br>
-            Rabo de macaco florida......R$ 115,00<br>
-            Rosa do deserto.............R$ 129,00<br>
-            Rosa pt15....................R$ 19,00<br>
-            <br>
-            Samambaia holandesa..........R$ 89,00<br>
-            Samambaia Rabo de peixe......R$ 89,00<br>
-            <br>
-            Tomate cereja pt15...........R$ 12,00<br>
-            <br>
-            Yuca.........................R$ 85,00<br>
-            <br>
-            Zamioculca Black.............R$ 75,00<br>
-        </section>
-
         <!--<========================================|Seção da Calculadora|==========================================================>-->
-
+        <section id="calculadora">
+            <input type="button" class="botao" title="5% de desconto" value="5%" onclick="porcento5()">
+            <input type="button" class="botao" title="3% de desconto" value="3%" onclick="porcento3()">
+            <input type="button" id="botaoIsento" title="Isentar de desconto: Desativado" class="botao" value="&Oslash;" onclick="isentarDeDesconto()">
+            <input type="button" id="botaoReset" title="Zerar o Cálculo" class="botao" value="&#x2672;" onclick="calculoReset()">
+            <input type="number" id="entrada" onchange="soma()">
+            <p id="retorno"></p>
+        </section>
         <!--<========================================|Seção de Orçamento|==========================================================>-->
         <section id="orçamento" style="margin-top: 75px;">
             <table id="dados_do_cliente">
@@ -89,36 +37,6 @@
                     <td style="width: 90%;"><input type="text" id="endereço" class="cliente"></td>
                 </tr>
             </table>
-
-            <select name="descontos_dinheiro" id="descontos_dinheiro" onchange="orçamento('desconto')" style="margin-left: -142px; padding-right: 27px; color: black; background-color: #e8b30f;">
-                <option value="0">Desconto 0%</option>
-                <option value="5">Desconto 5%</option>
-                <option value="n">Desconto n%</option>
-            </select>
-
-            <select name="descontos_debito" id="descontos_debito" onchange="orçamento('desconto')" style="margin-left: -142px; padding-right: 27px; color: black; background-color: #e8b30f; display: none;">
-                <option value="0">Desconto 0%</option>
-                <option value="3">Desconto 3%</option>
-                <option value="n">Desconto n%</option>
-            </select>
-
-            <select name="parcelas" id="parcelas" onchange="orçamento('parcelas')" style="margin-left: -142px; padding-right: 60px; color: black; background-color: #e8b30f; display: none;">
-                <option value="0">A vista</option>
-                <option value="2">2x s/juros</option>
-                <option value="3">3x s/juros</option>
-                <option value="4">4x s/juros</option>
-                <option value="5">5x s/juros</option>
-                <option value="6">6x s/juros</option>
-            </select>
-
-            <select name="pagamento" id="pagamento" onchange="orçamento('pagamento')" style="float: left;">
-                <option value="dinheiro">Dinheiro</option>
-                <option value="pix">Pix</option>
-                <option value="debito">Débito</option>
-                <option value="credito">Crédito</option>
-                
-            </select>
-
             <table id="grade_de_entrada">
                 <tbody>
                     <tr id="legenda_do_orçamento">
@@ -155,232 +73,10 @@
             <label for="observaçao" class="cliente" style="display: block; width: 40%; margin-top: 15px;">Observação</label>
             <textarea name="observaçao" id="observaçao" cols="30" rows="10" style="display: block; margin-top: 0px;"></textarea>
         </section>
-        
-        <!--<==========================================|Seção dos Plantas|==========================================================>-->
-        <section id="plantas">
-            <article id="internas">
-                <h1>Plantas para ambientes internos</h1>
-                <h2>Se há luz solar</h2>
-                <ul>
-                    <li>Ráfia</li>
-                    <li>Guaimbê</li>
-                    <li>Chameodória</li>
-                    <li>Pleomele</li>
-                    <li>Palmeira-Aréca</li>
-                    <li>Costela de adão</li>
-                    <li>Espada</li>
-                    <li>Arvore da felicidade</li>
-                    <li>Anturio</li>
-                    <li>Lirio</li>
-                </ul>
-                <h2>Sombra total</h2>
-                <ul>
-                    <li>Zameoculca</li>
-                    <li>Lança</li>
-                    <li>Bambu da Sorte</li>
-                </ul>
-            </article>
-            <article id="jardins">
-                <h1>Plantas para jardins</h1>
-                <h2>Ambiente de sol</h2>
-                <ul>
-                    <li>Palmeira Aréca</li>
-                    <li>Palmeira Fenix</li>
-                    <li>Palmeira Ravenala</li>
-                    <li>Palmeira Cica</li>
-                    <li>Pinheiro Kaizuka</li>
-                    <li>Yucca</li>
-                    <li>Clúsia</li>
-                    <li>Cróton</li>
-                    <li>Dracena</li>
-                    <li>Pleomele Variegato</li>
-                    <li>Buxinho</li>
-                    <li>Pata de Elefante</li>
-                </ul>
-                <h2>Ambiente de meia sombra</h2>
-                <ul>
-                    <li>Palmeira Aréca</li>
-                    <li>Pleomele Variegato</li>
-                    <li>Pata de Elefante</li>
-                    <li>Cróton</li>
-                    <li>Yucca</li>
-                    <li>Lança</li>
-                    <li>Espada</li>
-                </ul>
-            </article>
-            <article id="forracao">
-                <h1>Plantas para forração</h1>
-                <ul>
-                    <li>Érica</li>
-                    <li>11 Horas</li>
-                    <li>9 Horas</li>
-                    <li>Comfete</li>
-                    <li>Hemigrafis</li>
-                    <li>Paulistinha</li>
-                    <li>Grama amendoin</li>
-                    <li>Grama preta</li>
-                    <li>Barba de serpente</li>
-                </ul>
-            </article>
-            <article id="cercas">
-                <h1>Cercas vivas</h1>
-                <ul>
-                    <li>Podocarpo</li>
-                    <li>Moreia</li>
-                    <li>Horquidea Bambu</li>
-                    <li>Tumbergia</li>
-                    <li>Murta</li>
-                </ul>
-            </article>
-            <article id="pendentes">
-                <h1>Plantas pendentes</h1>
-                <h2>Pendentes de sol</h2>
-                <ul>
-                    <li>Aspargo</li>
-                    <li>Lizimáquia</li>
-                    <li>Lambari Roxo</li>
-                    <li>Suculenta Dedinho</li>
-                    <li>Rhipsales</li>
-                    <li>11 Horas</li>
-                    <li>9 Horas</li>
-                    <li>Aptênia/Rosinha de Sol</li>
-                    <li>Geranio Pendente</li>
-                    <li>Petúnia</li>
-                    <li>Angelonia</li>
-                </ul>
-                <h2>Pendentes de sombra</h2>
-                <ul>
-                    <li>Aspargo</li>
-                    <li>Rhipsales</li>
-                    <li>Jiboia</li>
-                    <li>Filodendro</li>
-                    <li>Samanbaia</li>
-                    <li>Peperômia</li>
-                    <li>Hera</li>
-                    <li>Columeia</li>
-                </ul>
-            </article>
-            <article id="calcadas">
-                <h1>Plantas para calçadas</h1>
-                <ul>
-                    <li>Ipê</li>
-                    <li>Resedá</li>
-                    <li>Espirradeira</li>
-                    <li>Mussaenda</li>
-                    <li>Palmeiras</li>
-                    <li>Coqueiros</li>
-                </ul>
-            </article>
-            <article id="piscinas">
-                <h1>Plantas para áreas de piscina</h1>
-                <ul>
-                    <li>Palmeira Fenix</li>
-                    <li>Yucca</li>
-                    <li>Se for em vaso/Todas as de Jardim</li>
-                </ul>
-            </article>
-            <article id="presentes">
-                <h1>Plantas para presentes</h1>
-                <ul>
-                    <li>Orquídea</li>
-                    <li>Kalanchoe</li>
-                    <li>Rosa no Vaso</li>
-                    <li>Rosa do Deserto</li>
-                    <li>Antúrio</li>
-                    <li>Violeta</li>
-                </ul>
-            </article>
-            <article id="vento">
-                <h1>Plantas resistentes ao vento</h1>
-                <ul>
-                    <li>Pleomele Variegato</li>
-                    <li>Pinheiro Kaizuka</li> 
-                    <li>Peperomia</li>
-                </ul>
-            </article>
-        </section>
-
-        <input type="button" value="print" id="btn_imp" style="display: none;">
-
-        <!--<========================================|Seção dos inventarios|========================================================>-->
-        <section id="inventarios">
-            <article id="diversos" class="inventario"></article>
-            <article id="alfa_polietileno" class="inventario"></article>
-            <article id="alfa_fibraSintetica" class="inventario"></article>
-            <article id="coquim" cass="inventario"></article>
-            <article id="eme_a_eme" class="inventario"></article>
-            <article id="forth" class="inventario"></article>
-            <article id="fuzil" class="inventario"></article>
-            <article id="insetimax" class="inventario"></article>
-            <article id="jel_plast" class="inventario"></article>
-            <article id="madeiras" class="inventario"></article>
-            <article id="nutriplan" class="inventario"></article>
-            <article id="policamp" class="inventario"></article>
-            <article id="regaplan" class="inventario"></article>
-            <article id="rischioto" class="inventario"></article>
-        </section>
-
-        <!--<========================================|Seção dos repositores|========================================================>-->
-        <section id="repositor">
-            <div id="divDeEntrada"></div>
-            <div id="divDeSaida"></div>
-        </section>
-        
     </main>
     <header>
         <h1 class="cabeça"><strong onclick="sectionExpand('home_page')" style="font: normal 1.5em ctrl;">O</strong>rdenador</h1>
         <nav>
-            <div id="div_botao_plantas" style="display: inline-block;">
-                <input type="button" id="botao_plantas" title="Plantas" value="Y" class="navButton" style="font: normal 2.9em leaf; top: 0px;">
-                <ul id="navMenuPlantas">
-                    <li class="navItem"><input type="button" value="Internas" class="navItem" onclick="sectionExpand('plantas', 'internas', 'navMenuPlantas')"></li>
-                    <li class="navItem"><input type="button" value="Jardins" class="navItem" onclick="sectionExpand('plantas', 'jardins', 'navMenuPlantas')"></li>
-                    <li class="navItem"><input type="button" value="Forração" class="navItem" onclick="sectionExpand('plantas', 'forracao', 'navMenuPlantas')"></li>
-                    <li class="navItem"><input type="button" value="Cercas vivas" class="navItem" onclick="sectionExpand('plantas', 'cercas', 'navMenuPlantas')"></li>
-                    <li class="navItem"><input type="button" value="Pendentes" class="navItem" onclick="sectionExpand('plantas', 'pendentes', 'navMenuPlantas')"></li>
-                    <li class="navItem"><input type="button" value="Calçadas" class="navItem" onclick="sectionExpand('plantas', 'calcadas', 'navMenuPlantas')"></li>
-                    <li class="navItem"><input type="button" value="Piscinas" class="navItem" onclick="sectionExpand('plantas', 'piscinas', 'navMenuPlantas')"></li>
-                    <li class="navItem"><input type="button" value="Presentes" class="navItem" onclick="sectionExpand('plantas', 'presentes', 'navMenuPlantas')"></li>
-                    <li class="navItem"><input type="button" value="Vento" class="navItem" onclick="sectionExpand('plantas', 'vento', 'navMenuPlantas')"></li>
-                </ul>
-            </div>
-            <div id="div_botao_inventarios" style="display: inline-block;">
-                <input type="button" id="botao_inventarios" title="Inventarios" value="c" class="navButton" style="font: normal 2.9em bank; top: 1px;">
-                <ul id="navMenuInventarios">
-                    <li class="navItem"><input type="button" value="Alfa Polietileno" class="navItem" onclick="sectionExpand('inventarios', 'alfa_polietileno', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Alfa Fibra Sintética" class="navItem" onclick="sectionExpand('inventarios', 'alfa_fibraSintetica', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Coquim" class="navItem" onclick="sectionExpand('inventarios', 'coquim', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Eme A Eme" class="navItem" onclick="sectionExpand('inventarios', 'eme_a_eme', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Forth" class="navItem" onclick="sectionExpand('inventarios', 'forth', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Fuzil" class="navItem" onclick="sectionExpand('inventarios', 'fuzil', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Insetimax" class="navItem" onclick="sectionExpand('inventarios', 'insetimax', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Jel Plast" class="navItem" onclick="sectionExpand('inventarios','jel_plast','navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Madeiras" class="navItem" onclick="sectionExpand('inventarios', 'madeiras', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Nutriplan" class="navItem" onclick="sectionExpand('inventarios', 'nutriplan', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Policamp" class="navItem" onclick="sectionExpand('inventarios','policamp','navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Regaplan" class="navItem" onclick="sectionExpand('inventarios', 'regaplan', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Rischioto" class="navItem" onclick="sectionExpand('inventarios', 'rischioto', 'navMenuInventarios')"></li>
-                    <li class="navItem"><input type="button" value="Diversos" class="navItem" onclick="sectionExpand('inventarios', 'diversos', 'navMenuInventarios')"></li>
-                </ul>
-            </div>
-            <div id="div_botao_repositorios" style="display: inline-block;">
-                <input type="button" id="botao_repositorios" title="Repositorios" value="\" class="navButton" style="font: normal 2.7em trans; top: 0px;">
-                <ul id="navMenuRepositorios">
-                    <li class="navItem"><input type="button" value="Alfa Polietileno" class="navItem" onclick="sectionExpand('repositor', 'alfa_polietileno', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Alfa Fibra Sintética" class="navItem" onclick="sectionExpand('repositor', 'alfa_fibraSintetica', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Coquim" class="navItem" onclick="sectionExpand('repositor', 'coquim', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Eme A Eme" class="navItem" onclick="sectionExpand('repositor', 'eme_a_eme', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Forth" class="navItem" onclick="sectionExpand('repositor', 'forth', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Fuzil" class="navItem" onclick="sectionExpand('repositor', 'fuzil', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Insetimax" class="navItem" onclick="sectionExpand('repositor', 'insetimax', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Jel Plast" class="navItem" onclick="sectionExpand('repositor','jel_plast','navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Madeiras" class="navItem" onclick="sectionExpand('repositor', 'madeiras', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Nutriplan" class="navItem" onclick="sectionExpand('repositor', 'nutriplan', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Policamp" class="navItem" onclick="sectionExpand('repositor','policamp','navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Regaplan" class="navItem" onclick="sectionExpand('repositor', 'regaplan', 'navMenuRepositorios')"></li>
-                    <li class="navItem"><input type="button" value="Rischioto" class="navItem" onclick="sectionExpand('repositor', 'rischioto', 'navMenuRepositorios')"></li>
-                </ul>
-            </div>
             <div style="display: inline-block; border-left: 2px solid #ffffffdb; padding-left: 14px; height: 50px;">
                 <input type="button" value="s" title="Orçamentos" class="navButton" onclick="sectionExpand('orçamento')" style="font: normal 2.9em bank; top: -1px;">
                 <input type="button" value="¥" title="Calculadora" class="navButton" onclick="sectionExpand('calculadora')" style="font: normal 2.9em science; top: -1px;">

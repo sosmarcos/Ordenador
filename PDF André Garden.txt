@@ -1,0 +1,154 @@
+`<!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>orçamento_${cliente.nome}_${dataAtual}</title>
+        <link href="https://db.onlinewebfonts.com/c/5d581e5a140723d14358ddbf1b0d15ee?family=gc16-Mono" rel="stylesheet">
+        <link href="https://db.onlinewebfonts.com/c/51eab992a8b6cf5094d8aada3ee52856?family=Society" rel="stylesheet">
+        <style type="text/css"> 
+            @font-face {font-family: 'luxi';src: url(fonts/Luxi-Mono/luximr.ttf) format('TrueType');}
+            
+            * {
+                margin: 0; 
+                padding: 0;
+                text-indent: 0; 
+            }
+    
+            p { 
+                font-family:'Times New Roman', Times, serif; 
+                font-size: 1.2em;
+            }
+            
+            header {
+                background-color: #446b2f;
+                background-image: linear-gradient(90deg, #325121 5%, transparent);
+                padding: 20px 0px;
+            }
+    
+            h1 {
+                text-shadow: -1px 3px 0px #00000057;
+                padding: 0px 0px 15px 20px;
+                color: #f0c300; 
+                font-family: Society; 
+                font-style: normal; 
+                font-weight: normal; 
+                text-decoration: none; 
+                font-size: 5.1em;
+            }
+        
+            h2 {
+                margin: 0px 20px;
+                font-family: 'Times New Roman', Times, serif;
+                font-style: normal;
+                font-weight: normal;
+                text-decoration: none;
+                font-size: 1.4em;
+            }
+    
+            table {
+                border-collapse: collapse;
+            }
+        
+            .cabeçalio {
+                color: #ffffff;
+                text-shadow: 1px 1px 1px #000000ba;
+                font-family: 'Times New Roman', Times, serif;                
+                font-size: 1em;
+                padding: 0px 0px 0px 20px;
+            }
+    
+            .cliente {
+                font-family: 'Times New Roman', Times, serif;
+                padding: 20px 20px 10px 0px;
+                margin-left: 20px;
+            }
+
+            .observaçao {
+                font-family: 'Times New Roman', Times, serif;
+                padding: 10px;
+                margin: 0px 20px 20px 20px;
+                white-space: pre-line;
+            }
+    
+            .total {
+                margin: 0px 20px;
+                padding: 20px 0px 5px 0px;
+                font-size: 1.5em;
+                /* padding-left: 20pt; */
+                text-indent: 0pt;
+                text-align: left;
+                font-family: 'Times New Roman', Times, serif;
+                border-bottom: 2px dashed #9e9c9c;
+            }
+    
+            #orçamento {
+                margin: 20px;
+            }
+            
+            .orçamento {
+                padding: 2px 5px;
+                font-size: 1em;
+                font-family: 'Times New Roman', Times, serif;
+                border-width: 2px;
+                border-color: black;
+                border-style: solid;
+                text-align: left;
+            }
+    
+            #legenda_do_orçamento {
+                margin-top: 5px;
+            }
+    
+            #label_quantidade, #var_quantidade {
+                width: 5%;
+            }
+
+            #label_grandeza, #var_grandeza{
+                width: 5%
+            }
+    
+            #label_descrição, #var_descrição {
+                width: 45%;
+                
+            }
+    
+            #label_unitario, #var_unitario {
+                width: 14%;
+            }
+    
+            #label_total, #var_total {
+                width: 14%;
+            }
+    
+        </style>
+    </head>
+    <body onclick="imprimir()">
+        <header>
+            <h1>André Garden</h1>
+            <p class="cabeçalio">ANDRÉ DE ASSIS PEREIRA JARDINAGEM EIRELI</p>
+            <p class="cabeçalio">Av. João Batista leal - 523, Centro Itanhaém SP</p>
+            <p class="cabeçalio">Contato: (13) 97408-6628</p>
+        </header>
+        <p class="cliente">Cliente: ${cliente.nome}<br>Contato: ${cliente.contato}<br>Endereço: ${cliente.endereço}<br></p>
+        <p class="observaçao" style="border-bottom: 2px dashed #9e9c9c;"></p>
+        <table id="orçamento">
+            <tr id="legenda_do_orçamento">
+                <th id="label_quantidade" class="orçamento">Quant.</th>
+                <th id="label_grandeza" class="orçamento">Uni.</th>
+                <th id="label_descrição" class="orçamento">Descrição</th>
+                <th id="label_unitario" class="orçamento">Unitario</th>
+                <th id="label_total" class="orçamento">Total</th>
+            </tr>
+            ${tabela}
+        </table>     
+        <p class="total">Total: R$ ${((comanda.valor).toFixed(2)).replace('.', ',')}</p>
+        <p style="margin: 25px;">${formaDePagamento}</p>
+        ${ob}
+        <script>
+        function imprimir() {
+            window.print()
+            window.close()
+            }
+        </script>
+    </body>
+    </html>`
