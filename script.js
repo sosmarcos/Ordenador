@@ -60,6 +60,7 @@ class Cliente {
 }
 
 //=============================================||Variaveis||======================================================
+const formatStackTrace = (stack) => {return stack.split("\n").map(line => line.trim());}//Aparentemente isso mapea o erro, não tenho ideia
 
 var data = new Date()
 var dia = String(data.getDate()).padStart(2, '0')
@@ -503,15 +504,15 @@ function sectionExpand(section) {
     } else if (section == 'calculadora'){
         if (sectCalculo.style.display == 'block') {
             sectCalculo.style.display = 'none'
-            console.log('\u001b[34mfunction\u001b[33m sectionExpand\u001b[37m diz:\nCalculadora fechada.')
+            console.log('\u001b[34mfunction\u001b[33m sectionExpand\u001b[37m fechou a Calculadora.')
 
         } else {
             sectCalculo.style.display = 'block'
-            console.log('\u001b[34mfunction\u001b[33m sectionExpand\u001b[37m diz:\nCalculadora Aberta.')
+            console.log('\u001b[34mfunction\u001b[33m sectionExpand\u001b[37m abriu a Calculadora.')
             document.getElementById('entrada').select()
         }
     } else if (section =='orçamento') {
-        console.log('\u001b[34mfunction\u001b[33m sectionExpand\u001b[37m diz:\nTabela de comanda Aberta.')
+        console.log('\u001b[34mfunction\u001b[33m sectionExpand\u001b[37m abriu a Tabela de comanda.')
 
         sectComanda.style.display = 'block'
         sectCalculo.style.display = 'none'
@@ -611,31 +612,31 @@ function orçamento(index, ediçao=null) {
                 comanda.registro[index].quantidade = corretor.value
                 comanda.registro[index].total = (comanda.registro[index].unitario * comanda.registro[index].quantidade).toFixed(2)
 
-                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = comanda.registro[index].quantidade
-                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
+                //document.getElementById(`${ediçao}_orçamento_${index}`).innerText = comanda.registro[index].quantidade
+                //document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
                 break
             case 'grandeza':
                 comanda.registro[index].grandeza = window.document.getElementById(`grandeza_orçamento_edit_${index}`).value
 
-                document.getElementById(`grandeza_orçamento_${index}`).innerText = comanda.registro[index].grandeza
+                //document.getElementById(`grandeza_orçamento_${index}`).innerText = comanda.registro[index].grandeza
                 break
             case 'descrição':
                 comanda.registro[index].descrição = window.document.getElementById(`descrição_orçamento_edit_${index}`).value
 
-                document.getElementById(`descrição_orçamento_${index}`).innerText = comanda.registro[index].descrição
+                //document.getElementById(`descrição_orçamento_${index}`).innerText = comanda.registro[index].descrição
                 break
             case 'unitario':
                 comanda.registro[index].unitario = window.document.getElementById(`unitario_orçamento_edit_${index}`).value
                 comanda.registro[index].total = (comanda.registro[index].unitario * comanda.registro[index].quantidade).toFixed(2)
 
-                document.getElementById(`${ediçao}_orçamento_${index}`).innerText = `R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}`
-                document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
+                //document.getElementById(`${ediçao}_orçamento_${index}`).innerText = `R$ ${(parseFloat(comanda.registro[index].unitario).toFixed(2)).replace('.', ',')}`
+                //document.getElementById(`total_orçamento_${index}`).innerText = `R$ ${(comanda.registro[index].total).replace('.', ',')}`
                 break
             case 'total':
                 comanda.registro[index].total = window.document.getElementById(`total_orçamento_edit_${index}`).value
                 break
             }
-            console.log(`\u001b[34mfunction\u001b[33m orçamento\u001b[37m diz:\nValor \u001b[36m"${corretor.value}"\u001b[37m adicionado à \u001b[36m${ediçao}\u001b[37m com sucesso.`)
+            console.log(`\u001b[34mfunction\u001b[33m orçamento\u001b[37m diz:\nValor \u001b[36m"${corretor.value}"\u001b[37m adicionado à \u001b[36m${ediçao}\u001b[37m da linha \u001b[33m${index}\u001b[37m.`)
             
             document.getElementById(`${ediçao}_orçamento_${index}`).style.display = 'inline-block'
             document.getElementById(`${ediçao}_orçamento_edit_${index}`).style.display = 'none'
@@ -650,6 +651,8 @@ function orçamento(index, ediçao=null) {
         }
         
         document.getElementById('total_total').innerText = `Total: R$ ${(comanda.valor.toFixed(2)).replace('.', ',')}`
+        indiceOrçamento--
+        novaLinha(index)
     }
     else {
         var quantidade = window.document.getElementById(`quantidade_orçamento_${index}`)
@@ -672,9 +675,17 @@ function orçamento(index, ediçao=null) {
         // registro dos valores
         if (!comanda.registro[index]) {
             if (valorUnitario.value != 0) {
-                comanda.registro.push(new registroDeComanda(quantidade.value, grandeza.value, descrição.value, valorUnitario.value))
-                comanda.valor += parseFloat(comanda.registro[index].total)
-                window.document.getElementById('total_total').innerText = `Total: R$ ${(comanda.valor.toFixed(2)).replace('.', ',')}`
+                try {
+                    comanda.registro.push(new registroDeComanda(quantidade.value, grandeza.value, descrição.value, valorUnitario.value))
+                    comanda.valor += parseFloat(comanda.registro[index].total)
+                    window.document.getElementById('total_total').innerText = `Total: R$ ${(comanda.valor.toFixed(2)).replace('.', ',')}`
+
+                    console.log(`\u001b[34mfunction\u001b[33m orçamento\u001b[37m registrou os novos valores.`)
+                } catch (erro) {
+                    const stackTraceArr = formatStackTrace(erro.stack)
+                    console.log(`\u001b[31mUm erro impediu o registro de novos valores
+                    \n${erro}\n${stackTraceArr[1].split(' ')[2]}\u001b[37m`)
+                }
             }
         }
     }
@@ -683,17 +694,19 @@ function orçamento(index, ediçao=null) {
         if (!ediçao) {
             try {
                 console.log(`\u001b[34mfunction\u001b[33m orçamento\u001b[37m diz:
-Registro da \u001b[34mClase \u001b[32mComanda\u001b[37m acionado pela linha \u001b[33m${index}\u001b[37m da Tabela.
+Registro da \u001b[34mClase \u001b[35mComanda\u001b[37m acionado pela linha \u001b[33m${index}\u001b[37m da Tabela.
 
 quantidade: \u001b[36m${quantidade.value}\u001b[37m
 grandeza: \u001b[36m${grandeza.value}\u001b[37m
 descrição: \u001b[36m${descrição.value}\u001b[37m
 valorUnitario: \u001b[36m${valorUnitario.value}\u001b[37m
-valorTotal: \u001b[36m${valorTotal.value}\u001b[37m`)
+valorTotal: \u001b[36m${comanda.registro[index].total}\u001b[37m`)
             }   
-            catch (error){console.log(`\u001b[34mfunction\u001b[33m orçamento\u001b[37m diz:
+            catch (erro){
+                const stackTraceArr = formatStackTrace(erro.stack)
+                console.log(`\u001b[34mfunction\u001b[33m orçamento\u001b[37m diz:
 Registro da \u001b[34mClase \u001b[32mComanda\u001b[37m acionado pela linha \u001b[33m${index}\u001b[37m da Tabela
-\n\u001b[31mImpossível exibir as informações da tabela\n${error}\u001b[37m`)
+\n\u001b[31mImpossível exibir as informações da tabela\n${erro}\n${stackTraceArr[1].split(' ')[2]}\u001b[37m`)
             }
         }
         novaLinha(index)
@@ -771,11 +784,12 @@ function novaLinha(index) {
             </td>
         </tr>
         `
-        console.log('\u001b[34mfunction\u001b[33m novaLinha\u001b[37m diz:\nNova linha criada com sucesso.')
+        console.log('\u001b[34mfunction\u001b[33m novaLinha\u001b[37m reescreveu a tabela.')
         window.document.getElementById(`quantidade_orçamento_${indiceOrçamento}`).select()
-    } catch (error) {
-        console.log(`\u001b[34mfunction\u001b[33m novaLinha\u001b[37m diz:\nUm erro impediu a criação de uma nova linha.
-            \n\u001b[31m${error}\u001b[37m`)
+    } catch (erro) {
+        const stackTraceArr = formatStackTrace(erro.stack)
+        console.log(`\u001b[34mfunction\u001b[33m novaLinha\u001b[37m diz:\nUm erro impediu a reescrição da tabela.
+            \n\u001b[31m${erro}\n${stackTraceArr[1].split(' ')[2]}\u001b[37m`)
     }
 }
 
@@ -820,7 +834,6 @@ function printPdf() {
     } else {
         ob = `<h2>Observação</h2><p class="observaçao" style="border: 2px dashed #9e9c9c;">${window.document.getElementById('observaçao').value}</p>`
     }
-
 
     try {
         const rascunho = `<!DOCTYPE html>
@@ -983,10 +996,12 @@ function printPdf() {
         </html>`
         const win = window.open('', '', 'height=700,width=700');
         win.document.write(rascunho);
-        console.log(`\u001b[34mfunction\u001b[33m printPdf\u001b[37m diz:\nPagina HTML gerada com sucesso.`)
+        console.log(`\u001b[34mfunction\u001b[33m printPdf\u001b[37m gerou uma pagina HTML`)
     } 
-    catch (erro) {console.log(`\u001b[34mfunction\u001b[33m printPdf\u001b[37m diz:\nUm erro impediu a criação da pagina HTML.
-        \n\u001b[31m${erro}\n\u001b[37m`)}
+    catch (erro) {
+        const stackTraceArr = formatStackTrace(erro.stack)
+        console.log(`\u001b[34mfunction\u001b[33m printPdf\u001b[37m diz:\nUm erro impediu a criação da pagina HTML.
+        \n\u001b[31m${erro}\n${stackTraceArr[1].split(' ')[2]}\u001b[37m`)}
 }
 
 //====================================================||Comandos||================================================
